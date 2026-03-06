@@ -177,6 +177,20 @@ feeds_dagster: ## Generate RSS feed for Dagster Blog
 	$(Q)python feed_generators/dagster_blog.py
 	$(call print_success,Dagster Blog feed generated)
 
+.PHONY: feeds_openai_codex_changelog
+feeds_openai_codex_changelog: ## Generate RSS feed for OpenAI Codex Changelog
+	$(call check_venv)
+	$(call print_info,Generating OpenAI Codex Changelog feed)
+	$(Q)python feed_generators/openai_codex_changelog.py
+	$(call print_success,OpenAI Codex Changelog feed generated)
+
+.PHONY: feeds_devin_release_notes
+feeds_devin_release_notes: ## Generate RSS feed for Devin Release Notes
+	$(call check_venv)
+	$(call print_info,Generating Devin Release Notes feed)
+	$(Q)python feed_generators/devin_release_notes.py
+	$(call print_success,Devin Release Notes feed generated)
+
 .PHONY: clean_feeds
 clean_feeds: ## Clean generated RSS feed files
 	$(call print_warning,Removing generated RSS feeds)
