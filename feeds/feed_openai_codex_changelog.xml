@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Mar 2026 17:26:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 18:27:56 +0000</lastBuildDate>
     <item>
       <title>Codex CLIartifact-runtime-v2.4.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-05-Codex CLIartifact-runtime-v2.4.0</link>
@@ -1821,7 +1821,7 @@ out.&lt;/p&gt;</description>
       <title>Web search is now enabled by default</title>
       <link>https://developers.openai.com/codex/changelog/#2026-01-28-Web search is now enabled by default</link>
       <description>&lt;p&gt;Codex now enables web search for local tasks in the Codex CLI and IDE Extension.
-By default, Codex uses a web search cache, which is an OpenAI-maintained index of web results. Cached mode returns pre-indexed results instead of fetching live pages, while live mode fetches the most recent data from the web. If you are using &lt;code&gt;--yolo&lt;/code&gt; or another &lt;a href="/codex/security"&gt;full access sandbox setting&lt;/a&gt;, web search defaults to live results. To disable this behavior or switch modes, use the &lt;code&gt;web_search&lt;/code&gt; configuration option:&lt;/p&gt;
+By default, Codex uses a web search cache, which is an OpenAI-maintained index of web results. Cached mode returns pre-indexed results instead of fetching live pages, while live mode fetches the most recent data from the web. If you are using &lt;code&gt;--yolo&lt;/code&gt; or another &lt;a href="/codex/agent-approvals-security"&gt;full access sandbox setting&lt;/a&gt;, web search defaults to live results. To disable this behavior or switch modes, use the &lt;code&gt;web_search&lt;/code&gt; configuration option:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;web_search = "cached"&lt;/code&gt; (default; serves results from the web search cache)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;web_search = "live"&lt;/code&gt; (fetches the most recent data from the web; same as &lt;code&gt;--search&lt;/code&gt;)&lt;/li&gt;
