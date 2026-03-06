@@ -135,7 +135,7 @@ def generate_rss_feed(blog_posts, feed_name="hamel"):
         fg.subtitle("Applied AI engineering, machine learning, and data science")
         fg.link(href="https://hamel.dev/", rel="alternate")
         fg.link(
-            href=f"https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_{feed_name}.xml",
+            href=f"https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_{feed_name}.xml",
             rel="self",
         )
 

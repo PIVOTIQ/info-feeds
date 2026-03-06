@@ -157,7 +157,7 @@ def generate_rss_feed(changelog_entries, feed_name="windsurf_next_changelog"):
         fg.author({"name": "Windsurf"})
         fg.subtitle("Latest version updates from Windsurf Next")
         fg.link(href="https://windsurf.com/changelog/windsurf-next", rel="alternate")
-        fg.link(href=f"https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_{feed_name}.xml", rel="self")
+        fg.link(href=f"https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_{feed_name}.xml", rel="self")
 
         # Sort for correct feed order (newest first in output)
         entries_sorted = sort_posts_for_feed(changelog_entries, date_field="date")

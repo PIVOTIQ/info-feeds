@@ -221,7 +221,7 @@ python feed_generators/<source>_blog.py --full
 
 2. **Update README.md table** (alphabetical order):
    ```markdown
-   | [Source Name](https://example.com/blog) | [feed_<source>.xml](https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_<source>.xml) |
+   | [Source Name](https://example.com/blog) | [feed_<source>.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_<source>.xml) |
    ```
 
 3. **Add to `run_all_feeds.py`** if not auto-discovered
