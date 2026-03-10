@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Devin Release Notes</title>
+    <link>https://docs.devin.ai/release-notes/overview</link>
+    <description>Latest release notes and updates from Devin AI</description>
+    <atom:link href="https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_devin_release_notes.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Mar 2026 20:20:57 +0000</lastBuildDate>
+    <item>
+      <title>Release Notes - March 7, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#march-7-2026</link>
+      <description>Release Notes - March 7, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#march-7-2026</guid>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - February 27, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#february-27-2026</link>
+      <description>Release Notes - February 27, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-27-2026</guid>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - February 24, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#february-24-2026</link>
+      <description>Release Notes - February 24, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-24-2026</guid>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - February 20, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#february-20-2026</link>
+      <description>Release Notes - February 20, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-20-2026</guid>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - February 13, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#february-13-2026</link>
+      <description>Release Notes - February 13, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-13-2026</guid>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - February 6, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#february-6-2026</link>
+      <description>Release Notes - February 6, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-6-2026</guid>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - February 3, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#february-3-2026</link>
+      <description>Release Notes - February 3, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-3-2026</guid>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - January 22, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#january-22-2026</link>
+      <description>Release Notes - January 22, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#january-22-2026</guid>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - January 9, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#january-9-2026</link>
+      <description>Release Notes - January 9, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#january-9-2026</guid>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - December 19, 2025</title>
+      <link>https://docs.devin.ai/release-notes/overview#december-19-2025</link>
+      <description>Release Notes - December 19, 2025</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#december-19-2025</guid>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - December 12, 2025</title>
+      <link>https://docs.devin.ai/release-notes/overview#december-12-2025</link>
+      <description>Release Notes - December 12, 2025</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#december-12-2025</guid>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - December 5, 2025</title>
+      <link>https://docs.devin.ai/release-notes/overview#december-5-2025</link>
+      <description>Release Notes - December 5, 2025</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#december-5-2025</guid>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
