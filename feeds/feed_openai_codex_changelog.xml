@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Mar 2026 14:38:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 15:48:11 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.113.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-10-Codex CLI0.113.0</link>
@@ -1477,6 +1477,23 @@ Full release on Github
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Codex app26.212</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-02-12-Codex app26.212</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for GPT-5.3-Codex-Spark&lt;/li&gt;
+&lt;li&gt;Added conversation forking&lt;/li&gt;
+&lt;li&gt;Added &lt;a href="/codex/app/features#floating-pop-out-window"&gt;floating pop-out window&lt;/a&gt; to take a conversation with you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="bug-fixes"&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved performance and bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Alpha testing for the Codex app on Windows is also starting. &lt;a href="https://openai.com/form/codex-app/"&gt;Sign up here&lt;/a&gt; to be a potential alpha tester.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-12-Codex app26.212</guid>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Introducing GPT-5.3-Codex-Spark</title>
       <link>https://developers.openai.com/codex/changelog/#2026-02-12-Introducing GPT-5.3-Codex-Spark</link>
       <description>&lt;p&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex-spark/"&gt;Today, we’re releasing a research preview of GPT-5.3-Codex-Spark&lt;/a&gt;,
@@ -1504,23 +1521,6 @@ Codex app to the latest version.&lt;/p&gt;
 &lt;p&gt;GPT-5.3-Codex-Spark isn’t available in the API at launch.
 For API-key workflows, continue using &lt;code&gt;gpt-5.2-codex&lt;/code&gt;.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-12-Introducing GPT-5.3-Codex-Spark</guid>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Codex app26.212</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-02-12-Codex app26.212</link>
-      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Support for GPT-5.3-Codex-Spark&lt;/li&gt;
-&lt;li&gt;Added conversation forking&lt;/li&gt;
-&lt;li&gt;Added &lt;a href="/codex/app/features#floating-pop-out-window"&gt;floating pop-out window&lt;/a&gt; to take a conversation with you&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="bug-fixes"&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Improved performance and bug fixes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Alpha testing for the Codex app on Windows is also starting. &lt;a href="https://openai.com/form/codex-app/"&gt;Sign up here&lt;/a&gt; to be a potential alpha tester.&lt;/p&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-12-Codex app26.212</guid>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
