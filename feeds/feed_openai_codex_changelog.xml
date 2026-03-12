@@ -8,7 +8,221 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Mar 2026 22:14:57 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 23:17:27 +0000</lastBuildDate>
+    <item>
+      <title>Codex app26.312</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-03-12-Codex app26.312</link>
+      <description>&lt;h3 id="themes"&gt;Themes&lt;/h3&gt;
+&lt;p&gt;Change the Codex app appearance in &lt;strong&gt;Settings&lt;/strong&gt; by choosing a base theme,
+adjusting accent, background, and foreground colors, and changing the UI and
+code fonts. You can also share your custom theme with friends.&lt;/p&gt;
+&lt;div data-codex-screenshot-root=""&gt; &lt;button aria-label="Open Codex app theme settings showing custom themes, color controls, and font settings" class="not-prose flex w-full cursor-zoom-in justify-center rounded-xl items-start overflow-hidden mb-8" data-codex-screenshot-trigger="" style="max-height: 720px;" type="button"&gt; &lt;img alt="Codex app theme settings showing custom themes, color controls, and font settings" class="mx-auto w-full max-w-full h-auto rounded-xl dark:hidden" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/themes-side-by-side.webp"/&gt; &lt;img alt="Codex app theme settings showing custom themes, color controls, and font settings" class="mx-auto w-full max-w-full h-auto rounded-xl hidden dark:block" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/themes-side-by-side.webp"/&gt; &lt;/button&gt; &lt;div aria-label="Codex app theme settings showing custom themes, color controls, and font settings" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-6" data-codex-screenshot-overlay="" role="dialog"&gt; &lt;button aria-label="Close" class="absolute right-6 top-6 inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white/5 text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:scale-95" data-codex-screenshot-close="" type="button"&gt; &lt;svg class="h-6 w-6" fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path clip-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt; &lt;/button&gt; &lt;div class="flex h-full w-full items-center justify-center"&gt; &lt;img alt="Codex app theme settings showing custom themes, color controls, and font settings" class="max-h-[90vh] w-auto max-w-full object-contain dark:hidden" loading="lazy" src="/images/codex/app/themes-side-by-side.webp"/&gt; &lt;img alt="Codex app theme settings showing custom themes, color controls, and font settings" class="hidden max-h-[90vh] w-auto max-w-full object-contain dark:block" loading="lazy" src="/images/codex/app/themes-side-by-side.webp"/&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script data-astro-rerun=""&gt;
+  const openOverlay = (overlay) =&gt; {
+    if (!overlay) return;
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
+
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+    const previousPaddingRight = document.body.style.paddingRight;
+    document.body.dataset.codexScreenshotPaddingRight = previousPaddingRight;
+    document.documentElement.classList.add("codex-screenshot-open");
+    document.body.classList.add("codex-screenshot-open");
+    if (scrollbarWidth &gt; 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+  };
+
+  const closeOverlay = (overlay) =&gt; {
+    if (!overlay) return;
+    overlay.classList.add("hidden");
+    overlay.classList.remove("flex");
+
+    const previousPaddingRight =
+      document.body.dataset.codexScreenshotPaddingRight ?? "";
+    document.body.style.paddingRight = previousPaddingRight;
+    delete document.body.dataset.codexScreenshotPaddingRight;
+    document.documentElement.classList.remove("codex-screenshot-open");
+    document.body.classList.remove("codex-screenshot-open");
+  };
+
+  const applyInlineImageWidth = (root) =&gt; {
+    if (!(root instanceof HTMLElement)) return;
+
+    const configuredMaxWidth = root.dataset.codexScreenshotInlineMaxWidth;
+    if (!configuredMaxWidth) return;
+
+    const parsedWidth = Number.parseFloat(configuredMaxWidth);
+    if (!Number.isFinite(parsedWidth) || parsedWidth &lt;= 0) return;
+
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    const inlineMaxWidth = Math.floor(parsedWidth / devicePixelRatio);
+    if (inlineMaxWidth &lt;= 0) return;
+
+    root
+      .querySelectorAll("[data-codex-screenshot-inline-image]")
+      .forEach((image) =&gt; {
+        if (!(image instanceof HTMLImageElement)) return;
+        image.style.maxWidth = `min(100%, ${inlineMaxWidth}px)`;
+      });
+  };
+
+  const rootElement = document.documentElement;
+  if (rootElement.dataset.codexScreenshotBound !== "true") {
+    rootElement.dataset.codexScreenshotBound = "true";
+
+    const getRoot = (element) =&gt;
+      element?.closest("[data-codex-screenshot-root]");
+    const getOverlay = (root) =&gt;
+      root?.querySelector("[data-codex-screenshot-overlay]");
+
+    document.addEventListener("click", (event) =&gt; {
+      if (!(event.target instanceof Element)) return;
+
+      const trigger = event.target.closest("[data-codex-screenshot-trigger]");
+      if (trigger) {
+        openOverlay(getOverlay(getRoot(trigger)));
+        return;
+      }
+
+      const closeButton = event.target.closest("[data-codex-screenshot-close]");
+      if (closeButton) {
+        closeOverlay(getOverlay(getRoot(closeButton)));
+        return;
+      }
+
+      const overlay = event.target.closest("[data-codex-screenshot-overlay]");
+      if (overlay &amp;&amp; event.target === overlay) {
+        closeOverlay(overlay);
+      }
+    });
+
+    document.addEventListener("keydown", (event) =&gt; {
+      if (event.key !== "Escape") return;
+
+      document
+        .querySelectorAll("[data-codex-screenshot-overlay]:not(.hidden)")
+        .forEach((overlay) =&gt; closeOverlay(overlay));
+    });
+  }
+
+  document
+    .querySelectorAll("[data-codex-screenshot-root]")
+    .forEach((root) =&gt; applyInlineImageWidth(root));
+&lt;/script&gt; &lt;style&gt;
+  html.codex-screenshot-open,
+  body.codex-screenshot-open {
+    overflow: hidden;
+  }
+&lt;/style&gt;
+&lt;h3 id="revamped-automations"&gt;Revamped Automations&lt;/h3&gt;
+&lt;p&gt;You can now choose whether automations run locally or on a worktree, define
+custom reasoning levels and models, and use templates to find inspiration for
+new automations.&lt;/p&gt;
+&lt;div data-codex-screenshot-root=""&gt; &lt;button aria-label="Open Automations settings showing local and worktree options alongside scheduling controls" class="not-prose flex w-full cursor-zoom-in justify-center rounded-xl items-center p-2 bg-[url('/images/codex/codex-wallpaper-1.webp')] bg-cover bg-center mb-8" data-codex-screenshot-trigger="" type="button"&gt; &lt;img alt="Automations settings showing local and worktree options alongside scheduling controls" class="mx-auto w-full max-w-full object-contain dark:hidden" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/codex-automations-light.webp" style="max-height: 400px;"/&gt; &lt;img alt="Automations settings showing local and worktree options alongside scheduling controls" class="mx-auto w-full max-w-full object-contain hidden dark:block" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/codex-automations-dark.webp" style="max-height: 400px;"/&gt; &lt;/button&gt; &lt;div aria-label="Automations settings showing local and worktree options alongside scheduling controls" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-6" data-codex-screenshot-overlay="" role="dialog"&gt; &lt;button aria-label="Close" class="absolute right-6 top-6 inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white/5 text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:scale-95" data-codex-screenshot-close="" type="button"&gt; &lt;svg class="h-6 w-6" fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path clip-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt; &lt;/button&gt; &lt;div class="flex h-full w-full items-center justify-center"&gt; &lt;img alt="Automations settings showing local and worktree options alongside scheduling controls" class="max-h-[90vh] w-auto max-w-full object-contain dark:hidden" loading="lazy" src="/images/codex/app/codex-automations-light.webp"/&gt; &lt;img alt="Automations settings showing local and worktree options alongside scheduling controls" class="hidden max-h-[90vh] w-auto max-w-full object-contain dark:block" loading="lazy" src="/images/codex/app/codex-automations-dark.webp"/&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script data-astro-rerun=""&gt;
+  const openOverlay = (overlay) =&gt; {
+    if (!overlay) return;
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
+
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+    const previousPaddingRight = document.body.style.paddingRight;
+    document.body.dataset.codexScreenshotPaddingRight = previousPaddingRight;
+    document.documentElement.classList.add("codex-screenshot-open");
+    document.body.classList.add("codex-screenshot-open");
+    if (scrollbarWidth &gt; 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+  };
+
+  const closeOverlay = (overlay) =&gt; {
+    if (!overlay) return;
+    overlay.classList.add("hidden");
+    overlay.classList.remove("flex");
+
+    const previousPaddingRight =
+      document.body.dataset.codexScreenshotPaddingRight ?? "";
+    document.body.style.paddingRight = previousPaddingRight;
+    delete document.body.dataset.codexScreenshotPaddingRight;
+    document.documentElement.classList.remove("codex-screenshot-open");
+    document.body.classList.remove("codex-screenshot-open");
+  };
+
+  const applyInlineImageWidth = (root) =&gt; {
+    if (!(root instanceof HTMLElement)) return;
+
+    const configuredMaxWidth = root.dataset.codexScreenshotInlineMaxWidth;
+    if (!configuredMaxWidth) return;
+
+    const parsedWidth = Number.parseFloat(configuredMaxWidth);
+    if (!Number.isFinite(parsedWidth) || parsedWidth &lt;= 0) return;
+
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    const inlineMaxWidth = Math.floor(parsedWidth / devicePixelRatio);
+    if (inlineMaxWidth &lt;= 0) return;
+
+    root
+      .querySelectorAll("[data-codex-screenshot-inline-image]")
+      .forEach((image) =&gt; {
+        if (!(image instanceof HTMLImageElement)) return;
+        image.style.maxWidth = `min(100%, ${inlineMaxWidth}px)`;
+      });
+  };
+
+  const rootElement = document.documentElement;
+  if (rootElement.dataset.codexScreenshotBound !== "true") {
+    rootElement.dataset.codexScreenshotBound = "true";
+
+    const getRoot = (element) =&gt;
+      element?.closest("[data-codex-screenshot-root]");
+    const getOverlay = (root) =&gt;
+      root?.querySelector("[data-codex-screenshot-overlay]");
+
+    document.addEventListener("click", (event) =&gt; {
+      if (!(event.target instanceof Element)) return;
+
+      const trigger = event.target.closest("[data-codex-screenshot-trigger]");
+      if (trigger) {
+        openOverlay(getOverlay(getRoot(trigger)));
+        return;
+      }
+
+      const closeButton = event.target.closest("[data-codex-screenshot-close]");
+      if (closeButton) {
+        closeOverlay(getOverlay(getRoot(closeButton)));
+        return;
+      }
+
+      const overlay = event.target.closest("[data-codex-screenshot-overlay]");
+      if (overlay &amp;&amp; event.target === overlay) {
+        closeOverlay(overlay);
+      }
+    });
+
+    document.addEventListener("keydown", (event) =&gt; {
+      if (event.key !== "Escape") return;
+
+      document
+        .querySelectorAll("[data-codex-screenshot-overlay]:not(.hidden)")
+        .forEach((overlay) =&gt; closeOverlay(overlay));
+    });
+  }
+
+  document
+    .querySelectorAll("[data-codex-screenshot-root]")
+    .forEach((root) =&gt; applyInlineImageWidth(root));
+&lt;/script&gt; &lt;style&gt;
+  html.codex-screenshot-open,
+  body.codex-screenshot-open {
+    overflow: hidden;
+  }
+&lt;/style&gt;
+&lt;h3 id="performance-improvements-and-bug-fixes"&gt;Performance improvements and bug fixes&lt;/h3&gt;
+&lt;p&gt;Various bug fixes and performance improvements.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-12-Codex app26.312</guid>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.114.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-11-Codex CLI0.114.0</link>
@@ -506,6 +720,20 @@ composer.&lt;/li&gt;
 &lt;p&gt;If you don’t see GPT-5.4 yet, update the CLI, IDE extension, or Codex app to
 the latest version.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-05-Introducing GPT-5.4 in Codex</guid>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codex app26.305</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-03-05-Codex app26.305</link>
+      <description>&lt;h3 id="performance-improvements-and-bug-fixes"&gt;Performance improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved remote connections with clearer connection errors, better status updates, and clearer host labels in thread and settings views.&lt;/li&gt;
+&lt;li&gt;Fixed copy and paste shortcuts in the integrated terminal on Windows.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where archived pinned threads could reappear in the sidebar.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where repeated &lt;code&gt;codex://new&lt;/code&gt; links could stop prefilling a new conversation when the app was already open.&lt;/li&gt;
+&lt;li&gt;Additional performance improvements and bug fixes.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-05-Codex app26.305</guid>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
