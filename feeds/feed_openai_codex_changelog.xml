@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Mar 2026 16:25:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 17:26:44 +0000</lastBuildDate>
     <item>
       <title>Codex app26.312</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-12-Codex app26.312</link>
@@ -1724,6 +1724,22 @@ next few weeks.&lt;/p&gt;</description>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Codex app26.205</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for &lt;strong&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex/"&gt;GPT-5.3-Codex&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Added mid-turn steering. Submit a message while Codex is working to direct its behavior.&lt;/li&gt;
+&lt;li&gt;Attach or drop any file type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="bug-fixes"&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix flickering of the app.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</guid>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Introducing GPT-5.3-Codex</title>
       <link>https://developers.openai.com/codex/changelog/#2026-02-05-Introducing GPT-5.3-Codex</link>
       <description>&lt;p&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex/"&gt;Today we’re releasing GPT-5.3-Codex&lt;/a&gt;,
@@ -1752,22 +1768,6 @@ to the latest version.&lt;/li&gt;
 &lt;p&gt;For API-key workflows, continue using &lt;code&gt;gpt-5.2-codex&lt;/code&gt; while API support rolls
 out.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-05-Introducing GPT-5.3-Codex</guid>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Codex app26.205</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</link>
-      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Support for &lt;strong&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex/"&gt;GPT-5.3-Codex&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Added mid-turn steering. Submit a message while Codex is working to direct its behavior.&lt;/li&gt;
-&lt;li&gt;Attach or drop any file type.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="bug-fixes"&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix flickering of the app.&lt;/li&gt;
-&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</guid>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
