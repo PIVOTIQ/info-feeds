@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Mar 2026 22:18:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 23:17:54 +0000</lastBuildDate>
     <item>
       <title>Codex app26.312</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-12-Codex app26.312</link>
@@ -288,6 +288,20 @@ new automations.&lt;/p&gt;
 Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-11-Codex CLI0.114.0</guid>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codex app26.311</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-03-11-Codex app26.311</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Codex can now read the integrated terminal for the current thread, so it can check the status of a running development server or refer back to failed build output while it works with you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="performance-improvements-and-bug-fixes"&gt;Performance improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Additional performance improvements and bug fixes.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-11-Codex app26.311</guid>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
