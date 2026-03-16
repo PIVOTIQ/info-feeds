@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Mar 2026 06:13:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 08:01:16 +0000</lastBuildDate>
     <item>
       <title>Codex app26.312</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-12-Codex app26.312</link>
@@ -1393,45 +1393,6 @@ Full release on Github
       <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Codex CLI0.104.0</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-02-18-Codex CLI0.104.0</link>
-      <description>&lt;div class="w-full [&amp;amp;&amp;gt;pre]:w-full [&amp;amp;&amp;gt;pre]:max-w-full [&amp;amp;&amp;gt;pre]:mb-0 pt-4"&gt;&lt;pre class="astro-code astro-code-themes min-light github-dark" data-language="bash" style="background-color:#ffffff;--shiki-dark-bg:#24292e;color:#24292eff;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span style="color:#6F42C1;--shiki-dark:#B392F0"&gt;$&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; npm&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; install&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#79B8FF"&gt; -g&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; @openai/codex@0.104.0&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt; &lt;details class="group mt-4 overflow-hidden"&gt; &lt;summary class="flex cursor-pointer items-center gap-2 rounded-lg text-lg font-medium list-none outline-hidden transition-colors hover:text-slate-900 hover:dark:text-white focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 ring-offset-slate-50 group-open:rounded-b-none group-open:text-gray-900 dark:ring-offset-slate-900 dark:group-open:text-gray-200 dark:!text-white"&gt; &lt;span&gt;View details&lt;/span&gt; &lt;svg aria-hidden="true" class="h-4 w-4 flex-none text-slate-500 transition-transform duration-200 group-open:rotate-180" fill="currentColor" viewbox="0 0 20 20"&gt; &lt;path clip-rule="evenodd" d="M5.22 7.47a.75.75 0 011.06 0L10 11.19l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 8.53a.75.75 0 010-1.06z" fill-rule="evenodd"&gt;&lt;/path&gt; &lt;/svg&gt; &lt;/summary&gt; &lt;div class="prose-content prose dark:prose-invert prose-sm py-3 text-sm pb-0"&gt;&lt;h2&gt;New Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Added &lt;code&gt;WS_PROXY&lt;/code&gt;/&lt;code&gt;WSS_PROXY&lt;/code&gt; environment support (including lowercase variants) for websocket proxying in the network proxy. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/11784/hovercard" data-id="3939293520" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/11784" href="https://github.com/openai/codex/pull/11784"&gt;#11784&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;App-server v2 now emits notifications when threads are archived or unarchived, enabling clients to react without polling. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12030/hovercard" data-id="3954404583" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12030" href="https://github.com/openai/codex/pull/12030"&gt;#12030&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Protocol/core now carry distinct approval IDs for command approvals to support multiple approvals within a single shell command execution flow. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12051/hovercard" data-id="3955077853" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12051" href="https://github.com/openai/codex/pull/12051"&gt;#12051&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Bug Fixes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Ctrl+C&lt;/code&gt;/&lt;code&gt;Ctrl+D&lt;/code&gt; now cleanly exits the cwd-change prompt during resume/fork flows instead of implicitly selecting an option. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12040/hovercard" data-id="3954697226" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12040" href="https://github.com/openai/codex/pull/12040"&gt;#12040&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Reduced false-positive safety-check downgrade behavior by relying on the response header model (and websocket top-level events) rather than the response body model slug. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12061/hovercard" data-id="3955202852" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12061" href="https://github.com/openai/codex/pull/12061"&gt;#12061&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Documentation&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated docs and schemas to cover websocket proxy configuration, new thread archive/unarchive notifications, and the command approval ID plumbing. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/11784/hovercard" data-id="3939293520" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/11784" href="https://github.com/openai/codex/pull/11784"&gt;#11784&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12030/hovercard" data-id="3954404583" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12030" href="https://github.com/openai/codex/pull/12030"&gt;#12030&lt;/a&gt;, &lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12051/hovercard" data-id="3955077853" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12051" href="https://github.com/openai/codex/pull/12051"&gt;#12051&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Chores&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Made the Rust release workflow resilient to &lt;code&gt;npm publish&lt;/code&gt; attempts for an already-published version. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12044/hovercard" data-id="3954850187" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12044" href="https://github.com/openai/codex/pull/12044"&gt;#12044&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Standardized remote compaction test mocking and refreshed related snapshots to align with the default production-shaped behavior. (&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12050/hovercard" data-id="3955063754" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12050" href="https://github.com/openai/codex/pull/12050"&gt;#12050&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Changelog&lt;/h2&gt;
-&lt;p&gt;Full Changelog: &lt;a class="commit-link" href="https://github.com/openai/codex/compare/rust-v0.103.0...rust-v0.104.0"&gt;&lt;tt&gt;rust-v0.103.0...rust-v0.104.0&lt;/tt&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/11784/hovercard" data-id="3939293520" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/11784" href="https://github.com/openai/codex/pull/11784"&gt;#11784&lt;/a&gt; feat(network-proxy): add websocket proxy env support &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/viyatb-oai/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/viyatb-oai"&gt;@viyatb-oai&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12044/hovercard" data-id="3954850187" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12044" href="https://github.com/openai/codex/pull/12044"&gt;#12044&lt;/a&gt; don't fail if an npm publish attempt is for an existing version. &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/iceweasel-oai/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/iceweasel-oai"&gt;@iceweasel-oai&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12040/hovercard" data-id="3954697226" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12040" href="https://github.com/openai/codex/pull/12040"&gt;#12040&lt;/a&gt; tui: exit session on Ctrl+C in cwd change prompt &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/charley-oai/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/charley-oai"&gt;@charley-oai&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12030/hovercard" data-id="3954404583" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12030" href="https://github.com/openai/codex/pull/12030"&gt;#12030&lt;/a&gt; app-server: Emit thread archive/unarchive notifications &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/euroelessar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/euroelessar"&gt;@euroelessar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12061/hovercard" data-id="3955202852" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12061" href="https://github.com/openai/codex/pull/12061"&gt;#12061&lt;/a&gt; Chore: remove response model check and rely on header model for downgrade &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/shijie-oai/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/shijie-oai"&gt;@shijie-oai&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12051/hovercard" data-id="3955077853" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12051" href="https://github.com/openai/codex/pull/12051"&gt;#12051&lt;/a&gt; feat(core): plumb distinct approval ids for command approvals &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/owenlin0/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/owenlin0"&gt;@owenlin0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="issue-link js-issue-link" data-error-text="Failed to load title" data-hovercard-type="pull_request" data-hovercard-url="/openai/codex/pull/12050/hovercard" data-id="3955063754" data-permission-text="Title is private" data-url="https://github.com/openai/codex/issues/12050" href="https://github.com/openai/codex/pull/12050"&gt;#12050&lt;/a&gt; Unify remote compaction snapshot mocks around default endpoint behavior &lt;a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/charley-oai/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/charley-oai"&gt;@charley-oai&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt; &lt;p class="mt-2 text-sm text-gray-500 dark:text-gray-400"&gt; &lt;a class="font-medium text-secondary hover:text-default" href="https://github.com/openai/codex/releases/tag/rust-v0.104.0" rel="noreferrer" target="_blank"&gt;
-Full release on Github
-&lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-18-Codex CLI0.104.0</guid>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Codex app26.217</title>
       <link>https://developers.openai.com/codex/changelog/#2026-02-17-Codex app26.217</link>
       <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
@@ -1554,22 +1515,6 @@ next few weeks.&lt;/p&gt;</description>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Codex app26.205</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</link>
-      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Support for &lt;strong&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex/"&gt;GPT-5.3-Codex&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Added mid-turn steering. Submit a message while Codex is working to direct its behavior.&lt;/li&gt;
-&lt;li&gt;Attach or drop any file type.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="bug-fixes"&gt;Bug fixes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix flickering of the app.&lt;/li&gt;
-&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</guid>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Introducing GPT-5.3-Codex</title>
       <link>https://developers.openai.com/codex/changelog/#2026-02-05-Introducing GPT-5.3-Codex</link>
       <description>&lt;p&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex/"&gt;Today we’re releasing GPT-5.3-Codex&lt;/a&gt;,
@@ -1598,6 +1543,22 @@ to the latest version.&lt;/li&gt;
 &lt;p&gt;For API-key workflows, continue using &lt;code&gt;gpt-5.2-codex&lt;/code&gt; while API support rolls
 out.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-05-Introducing GPT-5.3-Codex</guid>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Codex app26.205</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for &lt;strong&gt;&lt;a href="https://openai.com/index/introducing-gpt-5-3-codex/"&gt;GPT-5.3-Codex&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Added mid-turn steering. Submit a message while Codex is working to direct its behavior.&lt;/li&gt;
+&lt;li&gt;Attach or drop any file type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="bug-fixes"&gt;Bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix flickering of the app.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-02-05-Codex app26.205</guid>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
