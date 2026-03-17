@@ -8,7 +8,36 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Mar 2026 16:53:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 17:56:22 +0000</lastBuildDate>
+    <item>
+      <title>Introducing GPT-5.4 mini in Codex</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-03-17-Introducing GPT-5.4 mini in Codex</link>
+      <description>&lt;p&gt;GPT-5.4 mini is now available in Codex as a fast, efficient model for lighter
+coding tasks and subagents.&lt;/p&gt;
+&lt;p&gt;It improves over GPT-5 mini across coding, reasoning, image understanding, and
+tool use while running more than 2x faster. In Codex, GPT-5.4 mini uses 30% as
+much of your included limits as GPT-5.4, so comparable tasks can last about
+3.3x longer before you hit those limits.&lt;/p&gt;
+&lt;p&gt;GPT-5.4 mini is available in the Codex app, the CLI, the IDE extension, and
+Codex on the web. GPT-5.4 mini is also available in the API.&lt;/p&gt;
+&lt;p&gt;Use GPT-5.4 mini for codebase exploration, large-file review, processing
+supporting documents, and other less reasoning-intensive subagent work. For
+more complex planning, coordination, and final judgment, start with GPT-5.4.&lt;/p&gt;
+&lt;p&gt;To switch to GPT-5.4 mini:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the CLI, start a new thread with:
+&lt;pre class="astro-code astro-code-themes github-light github-dark" data-language="bash" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span style="color:#6F42C1;--shiki-dark:#B392F0"&gt;codex&lt;/span&gt;&lt;span style="color:#005CC5;--shiki-dark:#79B8FF"&gt; --model&lt;/span&gt;&lt;span style="color:#032F62;--shiki-dark:#9ECBFF"&gt; gpt-5.4-mini&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+Or use &lt;code&gt;/model&lt;/code&gt; during a session.&lt;/li&gt;
+&lt;li&gt;In the IDE extension, choose GPT-5.4 mini from the model selector in the
+composer.&lt;/li&gt;
+&lt;li&gt;In the Codex app, choose GPT-5.4 mini from the model selector in the
+composer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you don’t see GPT-5.4 mini yet, update the CLI, IDE extension, or Codex app
+to the latest version.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-17-Introducing GPT-5.4 mini in Codex</guid>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.115.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-16-Codex CLI0.115.0</link>
