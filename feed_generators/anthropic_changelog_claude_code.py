@@ -44,8 +44,8 @@ def fetch_version_dates():
         logger.info(f"Fetched publish dates for {len(time_data)} versions from npm")
         return time_data
     except requests.RequestException as e:
-        logger.warning(f"Failed to fetch npm version dates: {str(e)}")
-        return {}
+        logger.error(f"Failed to fetch npm version dates: {e}")
+        raise
 
 
 def parse_changelog_markdown(markdown_content, version_dates=None, max_versions=50):
@@ -116,26 +116,44 @@ def parse_changelog_markdown(markdown_content, version_dates=None, max_versions=
 
         # Interpolate dates for versions missing from npm registry
         if version_dates:
-            for i, item in enumerate(items):
-                if "pub_date" in item:
+            i = 0
+            while i < len(items):
+                if "pub_date" in items[i]:
+                    i += 1
                     continue
-                # Find nearest neighbors with dates
-                before = next(
-                    (items[j]["pub_date"] for j in range(i - 1, -1, -1) if "pub_date" in items[j]),
-                    None,
+
+                # Find contiguous range of missing pub_date entries
+                start = i - 1
+                end = i
+                while end < len(items) and "pub_date" not in items[end]:
+                    end += 1
+
+                before = (
+                    items[start]["pub_date"]
+                    if start >= 0 and "pub_date" in items[start]
+                    else None
                 )
-                after = next(
-                    (items[j]["pub_date"] for j in range(i + 1, len(items)) if "pub_date" in items[j]),
-                    None,
+                after = (
+                    items[end]["pub_date"]
+                    if end < len(items) and "pub_date" in items[end]
+                    else None
                 )
+
+                gap_size = end - start
                 if before and after:
-                    item["pub_date"] = before + (after - before) / 2
-                elif before:
-                    item["pub_date"] = before
-                elif after:
-                    item["pub_date"] = after
-                if "pub_date" in item:
-                    logger.info(f"Interpolated date for {item['title']}: {item['pub_date']}")
+                    step = (after - before) / gap_size
+                    for offset, idx in enumerate(range(start + 1, end), start=1):
+                        items[idx]["pub_date"] = before + step * offset
+                elif before or after:
+                    fallback = before or after
+                    for idx in range(start + 1, end):
+                        items[idx]["pub_date"] = fallback
+
+                for idx in range(start + 1, end):
+                    if "pub_date" in items[idx]:
+                        logger.info(f"Interpolated date for {items[idx]['title']}: {items[idx]['pub_date']}")
+
+                i = end
 
         logger.info(f"Successfully parsed {len(items)} changelog items")
         return items
