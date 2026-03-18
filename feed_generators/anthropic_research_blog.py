@@ -179,8 +179,10 @@ def parse_research_html(html_content):
                 if not href:
                     continue
 
-                # Skip the main research page
+                # Skip the main research page and team pages
                 if href == "/research" or href.endswith("/research/"):
+                    continue
+                if "/research/team/" in href:
                     continue
 
                 # Construct full URL
