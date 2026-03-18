@@ -114,6 +114,29 @@ def parse_changelog_markdown(markdown_content, version_dates=None, max_versions=
                 )
             items.append(item)
 
+        # Interpolate dates for versions missing from npm registry
+        if version_dates:
+            for i, item in enumerate(items):
+                if "pub_date" in item:
+                    continue
+                # Find nearest neighbors with dates
+                before = next(
+                    (items[j]["pub_date"] for j in range(i - 1, -1, -1) if "pub_date" in items[j]),
+                    None,
+                )
+                after = next(
+                    (items[j]["pub_date"] for j in range(i + 1, len(items)) if "pub_date" in items[j]),
+                    None,
+                )
+                if before and after:
+                    item["pub_date"] = before + (after - before) / 2
+                elif before:
+                    item["pub_date"] = before
+                elif after:
+                    item["pub_date"] = after
+                if "pub_date" in item:
+                    logger.info(f"Interpolated date for {item['title']}: {item['pub_date']}")
+
         logger.info(f"Successfully parsed {len(items)} changelog items")
         return items
 
