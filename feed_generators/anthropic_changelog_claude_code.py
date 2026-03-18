@@ -1,24 +1,19 @@
 import logging
 import re
-from pathlib import Path
+from datetime import datetime, timezone
 
 import requests
 from feedgen.feed import FeedGenerator
+
+from utils import get_feeds_dir, setup_feed_links
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 
-
-def get_project_root():
-    return Path(__file__).parent.parent
-
-
-def ensure_feeds_directory():
-    feeds_dir = get_project_root() / "feeds"
-    feeds_dir.mkdir(exist_ok=True)
-    return feeds_dir
+BLOG_URL = "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+FEED_NAME = "anthropic_changelog_claude_code"
 
 
 def fetch_changelog_content(
@@ -36,7 +31,24 @@ def fetch_changelog_content(
         raise
 
 
-def parse_changelog_markdown(markdown_content, max_versions=50):
+def fetch_version_dates():
+    """Fetch version publish dates from npm registry."""
+    try:
+        response = requests.get(
+            "https://registry.npmjs.org/@anthropic-ai/claude-code",
+            headers={"Accept": "application/json"},
+            timeout=15,
+        )
+        response.raise_for_status()
+        time_data = response.json().get("time", {})
+        logger.info(f"Fetched publish dates for {len(time_data)} versions from npm")
+        return time_data
+    except requests.RequestException as e:
+        logger.warning(f"Failed to fetch npm version dates: {str(e)}")
+        return {}
+
+
+def parse_changelog_markdown(markdown_content, version_dates=None, max_versions=50):
     try:
         items = []
         lines = markdown_content.split("\n")
@@ -51,20 +63,23 @@ def parse_changelog_markdown(markdown_content, max_versions=50):
                 # Save previous version if exists
                 if current_version and current_changes:
                     version_anchor = current_version.replace(".", "")
-                    # Create HTML list for description
                     description_html = (
                         "<ul>"
                         + "".join(f"<li>{change}</li>" for change in current_changes)
                         + "</ul>"
                     )
-                    items.append(
-                        {
-                            "title": f"v{current_version}",
-                            "link": f"https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#{version_anchor}",
-                            "description": description_html,
-                            "category": "Changelog",
-                        }
-                    )
+                    item = {
+                        "title": f"v{current_version}",
+                        "link": f"{BLOG_URL}#{version_anchor}",
+                        "description": description_html,
+                        "category": "Changelog",
+                    }
+                    # Add pubDate from npm registry
+                    if version_dates and current_version in version_dates:
+                        item["pub_date"] = datetime.fromisoformat(
+                            version_dates[current_version].replace("Z", "+00:00")
+                        )
+                    items.append(item)
                     if len(items) >= max_versions:
                         break
 
@@ -87,14 +102,17 @@ def parse_changelog_markdown(markdown_content, max_versions=50):
                 + "".join(f"<li>{change}</li>" for change in current_changes)
                 + "</ul>"
             )
-            items.append(
-                {
-                    "title": f"v{current_version}",
-                    "link": f"https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#{version_anchor}",
-                    "description": description_html,
-                    "category": "Changelog",
-                }
-            )
+            item = {
+                "title": f"v{current_version}",
+                "link": f"{BLOG_URL}#{version_anchor}",
+                "description": description_html,
+                "category": "Changelog",
+            }
+            if version_dates and current_version in version_dates:
+                item["pub_date"] = datetime.fromisoformat(
+                    version_dates[current_version].replace("Z", "+00:00")
+                )
+            items.append(item)
 
         logger.info(f"Successfully parsed {len(items)} changelog items")
         return items
@@ -104,22 +122,17 @@ def parse_changelog_markdown(markdown_content, max_versions=50):
         raise
 
 
-def generate_rss_feed(items, feed_name="anthropic_changelog_claude_code"):
+def generate_rss_feed(items):
     try:
         fg = FeedGenerator()
         fg.title("Claude Code Changelog")
         fg.description("Version updates and changes from Claude Code CHANGELOG.md")
-        fg.link(href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md")
         fg.language("en")
-
         fg.author({"name": "Anthropic"})
         fg.logo("https://www.anthropic.com/images/icons/apple-touch-icon.png")
         fg.subtitle("Claude Code Changelog")
-        fg.link(
-            href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
-            rel="alternate",
-        )
-        fg.link(href=f"https://anthropic.com/feed_{feed_name}.xml", rel="self")
+
+        setup_feed_links(fg, blog_url=BLOG_URL, feed_name=FEED_NAME)
 
         # feedgen reverses order, so reverse items to maintain newest-first
         for item in reversed(items):
@@ -129,6 +142,8 @@ def generate_rss_feed(items, feed_name="anthropic_changelog_claude_code"):
             fe.link(href=item["link"])
             fe.category(term=item["category"])
             fe.id(item["link"])
+            if "pub_date" in item:
+                fe.pubDate(item["pub_date"])
 
         logger.info("Successfully generated RSS feed")
         return fg
@@ -138,10 +153,10 @@ def generate_rss_feed(items, feed_name="anthropic_changelog_claude_code"):
         raise
 
 
-def save_rss_feed(feed_generator, feed_name="anthropic_changelog_claude_code"):
+def save_rss_feed(feed_generator):
     try:
-        feeds_dir = ensure_feeds_directory()
-        output_filename = feeds_dir / f"feed_{feed_name}.xml"
+        feeds_dir = get_feeds_dir()
+        output_filename = feeds_dir / f"feed_{FEED_NAME}.xml"
         feed_generator.rss_file(str(output_filename), pretty=True)
         logger.info(f"Successfully saved RSS feed to {output_filename}")
         return output_filename
@@ -150,17 +165,18 @@ def save_rss_feed(feed_generator, feed_name="anthropic_changelog_claude_code"):
         raise
 
 
-def main(feed_name="anthropic_changelog_claude_code"):
+def main():
     try:
         markdown_content = fetch_changelog_content()
-        items = parse_changelog_markdown(markdown_content)
+        version_dates = fetch_version_dates()
+        items = parse_changelog_markdown(markdown_content, version_dates)
 
         if not items:
             logger.warning("No changelog items found")
             return False
 
-        feed = generate_rss_feed(items, feed_name)
-        output_file = save_rss_feed(feed, feed_name)
+        feed = generate_rss_feed(items)
+        output_file = save_rss_feed(feed)
 
         logger.info(f"Successfully generated RSS feed with {len(items)} items")
         return True
