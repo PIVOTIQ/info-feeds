@@ -13,7 +13,31 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Mar 2026 18:36:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 21:25:00 +0000</lastBuildDate>
+    <item>
+      <title>Mar 23, 2026ScienceVibe physics: The AI grad student</title>
+      <link>https://www.anthropic.com/research/vibe-physics</link>
+      <description>Mar 23, 2026ScienceVibe physics: The AI grad student</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/vibe-physics</guid>
+      <category>Research</category>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mar 23, 2026ScienceLong-running Claude for scientific computing</title>
+      <link>https://www.anthropic.com/research/long-running-Claude</link>
+      <description>Mar 23, 2026ScienceLong-running Claude for scientific computing</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/long-running-Claude</guid>
+      <category>Research</category>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mar 23, 2026ScienceIntroducing our Science Blog</title>
+      <link>https://www.anthropic.com/research/introducing-anthropic-science</link>
+      <description>Mar 23, 2026ScienceIntroducing our Science Blog</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/introducing-anthropic-science</guid>
+      <category>Research</category>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Mar 5, 2026Economic ResearchLabor market impacts of AI: A new measure and early evidence</title>
       <link>https://www.anthropic.com/research/labor-market-impacts</link>
@@ -69,22 +93,6 @@
       <guid isPermaLink="false">https://www.anthropic.com/research/AI-assistance-coding-skills</guid>
       <category>Research</category>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jan 28, 2026AlignmentDisempowerment patterns in real-world AI usage</title>
-      <link>https://www.anthropic.com/research/disempowerment-patterns</link>
-      <description>Jan 28, 2026AlignmentDisempowerment patterns in real-world AI usage</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/disempowerment-patterns</guid>
-      <category>Research</category>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jan 19, 2026InterpretabilityThe assistant axis: situating and stabilizing the character of large language models</title>
-      <link>https://www.anthropic.com/research/assistant-axis</link>
-      <description>Jan 19, 2026InterpretabilityThe assistant axis: situating and stabilizing the character of large language models</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/assistant-axis</guid>
-      <category>Research</category>
-      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?</title>
