@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Mar 2026 14:10:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 15:58:30 +0000</lastBuildDate>
+    <item>
+      <title>Closing the knowledge gap with agent skills</title>
+      <link>https://developers.googleblog.com/closing-the-knowledge-gap-with-agent-skills/</link>
+      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_API_Skills_Banner_v2.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;To bridge the gap between static model knowledge and rapidly evolving software practices, Google DeepMind developed a "Gemini API developer skill" that provides agents with live documentation and SDK guidance. Evaluation results show a massive performance boost, with the gemini-3.1-pro-preview model jumping from a 28.2% to a 96.6% success rate when equipped with the skill. This lightweight approach demonstrates how giving models strong reasoning capabilities and access to a "source of truth" can effectively eliminate outdated coding patterns.</description>
+      <category>AI</category>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Jump to play: Building with Gemini &amp; MediaPipe</title>
       <link>https://developers.googleblog.com/jump-to-play-building-with-gemini-mediapipe/</link>
@@ -71,13 +78,6 @@
       <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/banner2.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the "Tiny Garden" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gallery app on both Android and iOS, FunctionGemma allows developers to move beyond simple text generation toward building responsive, "agentic" applications that interact seamlessly with the physical and digital world without relying on cloud processing.</description>
       <category>Mobile</category>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Turn creative prompts into interactive XR experiences with Gemini</title>
-      <link>https://developers.googleblog.com/turn-creative-prompts-into-interactive-xr-experiences-with-gemini/</link>
-      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_gasezsgasez.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.</description>
-      <category>Gemini</category>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
