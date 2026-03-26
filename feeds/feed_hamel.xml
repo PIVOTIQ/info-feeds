@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Mar 2026 04:22:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 06:05:22 +0000</lastBuildDate>
     <item>
       <title>Automated Machine Learning — A Paradigm Shift That Accelerates Data Scientist Productivity @ Airbnb</title>
       <link>https://medium.com/airbnb-engineering/automated-machine-learning-a-paradigm-shift-that-accelerates-data-scientist-productivity-airbnb-f1f8a10d61f8</link>
@@ -295,6 +295,13 @@
       <description>Evals Skills for Coding Agents</description>
       <guid isPermaLink="false">https://hamel.dev/./blog/posts/evals-skills/index.html</guid>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Revenge of the Data Scientist</title>
+      <link>https://hamel.dev/./blog/posts/revenge/index.html</link>
+      <description>The Revenge of the Data Scientist</description>
+      <guid isPermaLink="false">https://hamel.dev/./blog/posts/revenge/index.html</guid>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
