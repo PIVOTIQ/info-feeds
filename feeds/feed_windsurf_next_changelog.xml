@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Mar 2026 04:23:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 06:06:02 +0000</lastBuildDate>
     <item>
       <title>Windsurf Next 1.9600.1002</title>
       <link>https://windsurf.com/changelog/windsurf-next#1.9600.1002</link>
@@ -28,7 +28,7 @@
     <item>
       <title>Windsurf Next 1.9577.1043</title>
       <link>https://windsurf.com/changelog/windsurf-next#1.9577.1043</link>
-      <description>&lt;h3&gt;Bug Fixes and Improvements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Fix build for Mac x64&lt;/li&gt;&lt;/ul&gt;</description>
+      <description>&lt;h3&gt;Quota Billing&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Added support for the new quota billing system&lt;/li&gt;&lt;li&gt;Daily and Weekly quota usage is now displayed directly in the IDE&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Bug Fixes and Improvements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Fix build for Mac x64&lt;/li&gt;&lt;/ul&gt;</description>
       <guid isPermaLink="false">https://windsurf.com/changelog/windsurf-next#1.9577.1043#1.9577.1043</guid>
       <category>Changelog</category>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
