@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>野村総合研究所(NRI) レポート</title>
+    <link>https://www.nri.com/jp/knowledge/report</link>
+    <description>NRI ナレッジ・インサイト レポート</description>
+    <atom:link href="https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_nri_report.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <image>
+      <url>https://www.nri.com/favicon.ico</url>
+      <title>野村総合研究所(NRI) レポート</title>
+      <link>https://www.nri.com/jp/knowledge/report</link>
+    </image>
+    <language>ja</language>
+    <lastBuildDate>Sat, 28 Mar 2026 10:43:13 +0000</lastBuildDate>
+    <item>
+      <title>ITロードマップ2026年版【Day2】 エージェント型AIと汎用人工知能</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum407.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum407.html</guid>
+      <category>技術</category>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>ITロードマップ2026年版【Day1】フィジカルAIと宇宙空間におけるサイバーセキュリティ</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum406.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum406.html</guid>
+      <category>技術</category>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>日・米・中・独4か国調査にみるAI利用の受容性と日本におけるAI浸透の未来像</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum405.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum405.html</guid>
+      <category>社会</category>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>［Featured Charts］「規模の追求」から「課題解決」で変革する:自立経済都市（圏）</title>
+      <link>https://www.nri.com/jp/knowledge/report/20260313_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20260313_1.html</guid>
+      <category>社会</category>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>Fundmark Report　最新号（2026年3月号）</title>
+      <link>https://www.nri.com/jp/knowledge/report/20260312.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20260312.html</guid>
+      <category>経済・金融</category>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>インバウンドを起点とした日本食市場拡大の方向性</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum404.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum404.html</guid>
+      <category>産業</category>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>インド産業アウトルック2026</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum403.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum403.html</guid>
+      <category>産業</category>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>インバウンド6,000万人時代に向けた交通ネットワーク再編戦略</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum402.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum402.html</guid>
+      <category>産業</category>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>［Featured Charts］AIと日本</title>
+      <link>https://www.nri.com/jp/knowledge/report/20260217_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20260217_1.html</guid>
+      <category>社会</category>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>テクノロジーが創出する新しい高齢者就労の在り方</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum401.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum401.html</guid>
+      <category>社会</category>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>ライドシェアの現在地と自動運転時代への道筋</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum400.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum400.html</guid>
+      <category>社会</category>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>都市部・長距離鉄道の将来見通しから考える今後の鉄道政策の方向性</title>
+      <link>https://www.nri.com/jp/knowledge/report/2026forum399.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2026forum399.html</guid>
+      <category>社会</category>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>［Featured Charts］普通の人が起業家に変わる</title>
+      <link>https://www.nri.com/jp/knowledge/report/20260115_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20260115_1.html</guid>
+      <category>産業</category>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>2035年を視野に入れた障害者雇用の価値創造戦略</title>
+      <link>https://www.nri.com/jp/knowledge/report/20251224_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20251224_1.html</guid>
+      <category>社会</category>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>⽇本における家計の決済⾏動に関するアンケート結果とCBDC最適流通量の分析</title>
+      <link>https://www.nri.com/jp/knowledge/report/20251223_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20251223_1.html</guid>
+      <category>経済・金融</category>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>ITナビゲーター2026年版</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum398.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum398.html</guid>
+      <category>産業</category>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>［Featured Charts］サステナビリティ・アプローチの範囲</title>
+      <link>https://www.nri.com/jp/knowledge/report/20251204_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20251204_1.html</guid>
+      <category>社会</category>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>［Featured Charts］豪雨発生が倍増！？過去・現在・未来の警告</title>
+      <link>https://www.nri.com/jp/knowledge/report/20251104_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20251104_1.html</guid>
+      <category>社会</category>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>日本市場における株主アクティビズムのあゆみと展望</title>
+      <link>https://www.nri.com/jp/knowledge/report/20251104_2.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20251104_2.html</guid>
+      <category>経済・金融</category>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>［Featured Charts］AIで存在感を増す「デプス・エコノミー」（深さの経済）</title>
+      <link>https://www.nri.com/jp/knowledge/report/20251014_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20251014_1.html</guid>
+      <category>経済・金融</category>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>社会・経済に求められるトランジションデザイン</title>
+      <link>https://www.nri.com/jp/knowledge/report/20250909_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20250909_1.html</guid>
+      <category>社会</category>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>耐量子計算機暗号（PQC）の現状と今後</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum397.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum397.html</guid>
+      <category>技術</category>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>生成AIを用いた仮想マーケットデータシナリオ生成</title>
+      <link>https://www.nri.com/jp/knowledge/report/20250804_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20250804_1.html</guid>
+      <category>経済・金融</category>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>中国における人型ロボット産業の現状と将来展望</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum396.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum396.html</guid>
+      <category>産業</category>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>【国内債券】SDGs債対象銘柄一覧（2025年5月末時点）</title>
+      <link>https://www.nri.com/jp/knowledge/report/20250612_2.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20250612_2.html</guid>
+      <category>経済・金融</category>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>2040年の住宅市場と課題</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum395.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum395.html</guid>
+      <category>産業</category>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>決済・ポイント実態調査</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum394.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum394.html</guid>
+      <category>産業</category>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>現役時代の行動で変わるシニアの生活満足度</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum393.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum393.html</guid>
+      <category>産業</category>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>今こそ企業が向き合うべき「孤独・孤立」</title>
+      <link>https://www.nri.com/jp/knowledge/report/2025forum392.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum392.html</guid>
+      <category>社会</category>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>AIと「デプス・エコノミー」（深さの経済）</title>
+      <link>https://www.nri.com/jp/knowledge/report/20250512_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20250512_1.html</guid>
+      <category>社会</category>
+      <pubDate>Mon, 12 May 2025 00:00:00 +0919</pubDate>
+    </item>
+  </channel>
+</rss>

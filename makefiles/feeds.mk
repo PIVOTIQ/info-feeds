@@ -191,6 +191,20 @@ feeds_devin_release_notes: ## Generate RSS feed for Devin Release Notes
 	$(Q)python feed_generators/devin_release_notes.py
 	$(call print_success,Devin Release Notes feed generated)
 
+.PHONY: feeds_nri_report
+feeds_nri_report: ## Generate RSS feed for NRI (野村総合研究所) Reports
+	$(call check_venv)
+	$(call print_info,Generating NRI Report feed)
+	$(Q)python feed_generators/nri_report_blog.py
+	$(call print_success,NRI Report feed generated)
+
+.PHONY: feeds_pwc_japan
+feeds_pwc_japan: ## Generate RSS feed for PwC Japan Thought Leadership
+	$(call check_venv)
+	$(call print_info,Generating PwC Japan feed)
+	$(Q)python feed_generators/pwc_japan_blog.py
+	$(call print_success,PwC Japan feed generated)
+
 .PHONY: clean_feeds
 clean_feeds: ## Clean generated RSS feed files
 	$(call print_warning,Removing generated RSS feeds)
