@@ -182,3 +182,12 @@ cython_debug/
 
 # Cache (keep .gitkeep but ignore JSON cache files)
 cache/*.json
+
+# Claude Code session
+session/
+upload/
+settings.local.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
