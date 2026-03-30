@@ -8,7 +8,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Mar 2026 15:58:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 16:50:53 +0000</lastBuildDate>
+    <item>
+      <title>Audit Claude Platform activity with the Compliance API</title>
+      <link>https://claude.com/blog/claude-platform-compliance-api</link>
+      <description>Audit Claude Platform activity with the Compliance API</description>
+      <guid isPermaLink="false">https://claude.com/blog/claude-platform-compliance-api</guid>
+      <category>Product announcements</category>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Auto mode for Claude Code</title>
       <link>https://claude.com/blog/auto-mode</link>
