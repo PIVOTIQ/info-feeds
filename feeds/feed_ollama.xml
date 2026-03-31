@@ -13,7 +13,7 @@
       <link>https://ollama.com/blog/feed_ollama.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Mar 2026 01:10:07 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 04:25:45 +0000</lastBuildDate>
     <item>
       <title>Run Llama 2 uncensored locally</title>
       <link>https://ollama.com/blog/run-llama2-uncensored-locally</link>
@@ -342,6 +342,13 @@
       <description>Setup OpenClaw in under two minutes with a single Ollama command.</description>
       <guid isPermaLink="false">https://ollama.com/blog/openclaw-tutorial</guid>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ollama is now powered by MLX on Apple Silicon in preview</title>
+      <link>https://ollama.com/blog/mlx</link>
+      <description>Today, we're previewing the fastest way to run Ollama on Apple silicon, powered by MLX, Apple's machine learning framework.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/mlx</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
