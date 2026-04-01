@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Apr 2026 14:24:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 16:00:53 +0000</lastBuildDate>
+    <item>
+      <title>Developer’s Guide to Building ADK Agents with Skills</title>
+      <link>https://developers.googleblog.com/developers-guide-to-building-adk-agents-with-skills/</link>
+      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/part1-cover.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;The Agent Development Kit (ADK) SkillToolset introduces a "progressive disclosure" architecture that allows AI agents to load domain expertise on demand, reducing token usage by up to 90% compared to traditional monolithic prompts. Through four distinct patterns—ranging from simple inline checklists to "skill factories" where agents write their own code—the system enables agents to dynamically expand their capabilities at runtime using the universal agentskills.io specification. This modular approach ensures that complex instructions and external resources are only accessed when relevant, creating a scalable and self-extending framework for modern AI development.</description>
+      <category>AI</category>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>ADK Go 1.0 Arrives!</title>
       <link>https://developers.googleblog.com/adk-go-10-arrives/</link>
@@ -64,13 +71,6 @@
       <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_CLI_plan_mode_hero_image.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;Gemini CLI now features Plan Mode, a read-only environment that allows the AI to analyze complex codebases and map out architectural changes without the risk of accidental execution. By leveraging the new ask_user tool and expanded Model Context Protocol (MCP) support, developers can collaboratively refine strategies and pull in external data before committing to implementation.</description>
       <category>AI</category>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Unleash Your Development Superpowers: Refining the Core Coding Experience</title>
-      <link>https://developers.googleblog.com/unleash-your-development-superpowers-refining-the-core-coding-experience/</link>
-      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_y2nrxky2nrx.2e16d0ba.fill-800x400.jpg" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;The Gemini Code Assist team has introduced a suite of updates focused on streamlining the core coding workflow through high-velocity tools like Agent Mode with Auto Approve and Inline Diff Views. These enhancements, along with new features for precise context management and custom commands, aim to transform the AI from a general assistant into a highly tailored, seamless collaborator that adapts to your specific development style.</description>
-      <category>AI</category>
-      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Introducing Finish Changes and Outlines, now available in Gemini Code Assist extensions on IntelliJ and VS Code</title>
