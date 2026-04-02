@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Apr 2026 17:41:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 18:39:13 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.118.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-31-Codex CLI0.118.0</link>
@@ -1269,15 +1269,6 @@ Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-08-Codex CLI0.112.0</guid>
       <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Codex CLIartifact-runtime-v2.4.0</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-03-05-Codex CLIartifact-runtime-v2.4.0</link>
-      <description>&lt;div class="w-full [&amp;amp;&amp;gt;pre]:w-full [&amp;amp;&amp;gt;pre]:max-w-full [&amp;amp;&amp;gt;pre]:mb-0 pt-4"&gt;&lt;pre class="astro-code astro-code-themes min-light github-dark" data-language="bash" style="background-color:#ffffff;--shiki-dark-bg:#24292e;color:#24292eff;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span style="color:#6F42C1;--shiki-dark:#B392F0"&gt;$&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; npm&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; install&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#79B8FF"&gt; -g&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; @openai/codex@2.4.0&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt; &lt;details class="group mt-4 overflow-hidden"&gt; &lt;summary class="flex cursor-pointer items-center gap-2 rounded-lg text-lg font-medium list-none outline-hidden transition-colors hover:text-slate-900 hover:dark:text-white focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 ring-offset-slate-50 group-open:rounded-b-none group-open:text-gray-900 dark:ring-offset-slate-900 dark:group-open:text-gray-200 dark:!text-white"&gt; &lt;span&gt;View details&lt;/span&gt; &lt;svg aria-hidden="true" class="h-4 w-4 flex-none text-slate-500 transition-transform duration-200 group-open:rotate-180" fill="currentColor" viewbox="0 0 20 20"&gt; &lt;path clip-rule="evenodd" d="M5.22 7.47a.75.75 0 011.06 0L10 11.19l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 8.53a.75.75 0 010-1.06z" fill-rule="evenodd"&gt;&lt;/path&gt; &lt;/svg&gt; &lt;/summary&gt; &lt;div class="prose-content prose dark:prose-invert prose-sm py-3 text-sm pb-0"&gt;&lt;p&gt;Empty draft&lt;/p&gt;&lt;/div&gt; &lt;p class="mt-2 text-sm text-gray-500 dark:text-gray-400"&gt; &lt;a class="font-medium text-secondary hover:text-default" href="https://github.com/openai/codex/releases/tag/artifact-runtime-v2.4.0" rel="noreferrer" target="_blank"&gt;
-Full release on Github
-&lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-03-05-Codex CLIartifact-runtime-v2.4.0</guid>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Codex CLI0.110.0</title>
