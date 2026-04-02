@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Apr 2026 23:26:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 01:06:29 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.90</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2190</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added `/powerup` — interactive lessons teaching Claude Code features with animated demos&lt;/li&gt;&lt;li&gt;Added `CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE` env var to keep the existing marketplace cache when `git pull` fails, useful in offline environments&lt;/li&gt;&lt;li&gt;Added `.husky` to protected directories (acceptEdits mode)&lt;/li&gt;&lt;li&gt;Fixed an infinite loop where the rate-limit options dialog would repeatedly auto-open after hitting your usage limit, eventually crashing the session&lt;/li&gt;&lt;li&gt;Fixed `--resume` causing a full prompt-cache miss on the first request for users with deferred tools, MCP servers, or custom agents (regression since v2.1.69)&lt;/li&gt;&lt;li&gt;Fixed `Edit`/`Write` failing with "File content has changed" when a PostToolUse format-on-save hook rewrites the file between consecutive edits&lt;/li&gt;&lt;li&gt;Fixed `PreToolUse` hooks that emit JSON to stdout and exit with code 2 not correctly blocking the tool call&lt;/li&gt;&lt;li&gt;Fixed collapsed search/read summary badge appearing multiple times in fullscreen scrollback when a CLAUDE.md file auto-loads during a tool call&lt;/li&gt;&lt;li&gt;Fixed auto mode not respecting explicit user boundaries ("don't push", "wait for X before Y") even when the action would otherwise be allowed&lt;/li&gt;&lt;li&gt;Fixed click-to-expand hover text being nearly invisible on light terminal themes&lt;/li&gt;&lt;li&gt;Fixed UI crash when malformed tool input reached the permission dialog&lt;/li&gt;&lt;li&gt;Fixed headers disappearing when scrolling `/model`, `/config`, and other selection screens&lt;/li&gt;&lt;li&gt;Hardened PowerShell tool permission checks: fixed trailing `&amp;` background job bypass, `-ErrorAction Break` debugger hang, archive-extraction TOCTOU, and parse-fail fallback deny-rule degradation&lt;/li&gt;&lt;li&gt;Improved performance: eliminated per-turn JSON.stringify of MCP tool schemas on cache-key lookup&lt;/li&gt;&lt;li&gt;Improved performance: SSE transport now handles large streamed frames in linear time (was quadratic)&lt;/li&gt;&lt;li&gt;Improved performance: SDK sessions with long conversations no longer slow down quadratically on transcript writes&lt;/li&gt;&lt;li&gt;Improved `/resume` all-projects view to load project sessions in parallel, improving load times for users with many projects&lt;/li&gt;&lt;li&gt;Changed `--resume` picker to no longer show sessions created by `claude -p` or SDK invocations&lt;/li&gt;&lt;li&gt;Removed `Get-DnsClientCache` and `ipconfig /displaydns` from auto-allow (DNS cache privacy)&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2190</guid>
+      <category>Changelog</category>
+      <pubDate>Wed, 01 Apr 2026 23:31:39 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.89</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2189</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2130</guid>
       <category>Changelog</category>
       <pubDate>Tue, 03 Feb 2026 16:34:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.29</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2129</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed startup performance issues when resuming sessions that have `saved_hook_context`&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2129</guid>
-      <category>Changelog</category>
-      <pubDate>Sat, 31 Jan 2026 20:13:22 +0000</pubDate>
     </item>
   </channel>
 </rss>
