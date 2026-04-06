@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Apr 2026 19:44:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 20:27:09 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.118.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-31-Codex CLI0.118.0</link>
@@ -1434,7 +1434,7 @@ project.&lt;/li&gt;
 &lt;p&gt;If you prefer to develop in WSL, you can also switch the Codex agent and the
 integrated terminal to run there.&lt;/p&gt;
 &lt;p&gt;Download it from the
-&lt;a href="https://apps.microsoft.com/detail/9plm9xgg6vks?hl=en-US&amp;amp;gl=US"&gt;Microsoft Store&lt;/a&gt;
+&lt;a href="https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi"&gt;Microsoft Store&lt;/a&gt;
 and sign in with your ChatGPT account or an API key. For setup and
 configuration details, see &lt;a href="/codex/app/windows#setup"&gt;Setup&lt;/a&gt;, &lt;a href="/codex/app/windows#use-wsl-with-the-codex-app"&gt;Use WSL with the
 Codex app&lt;/a&gt;, and &lt;a href="/codex/app/windows#customize-the-app-for-your-development-setup"&gt;Customize the
