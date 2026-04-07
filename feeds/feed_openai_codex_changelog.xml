@@ -8,7 +8,21 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Apr 2026 19:48:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 20:34:34 +0000</lastBuildDate>
+    <item>
+      <title>Codex model availability update</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-04-07-Codex model availability update</link>
+      <description>&lt;p&gt;We’re updating model availability for users who sign in with ChatGPT. Starting
+April 7, the model picker no longer shows &lt;code&gt;gpt-5.2-codex&lt;/code&gt;,
+&lt;code&gt;gpt-5.1-codex-mini&lt;/code&gt;, &lt;code&gt;gpt-5.1-codex-max&lt;/code&gt;, &lt;code&gt;gpt-5.1-codex&lt;/code&gt;, &lt;code&gt;gpt-5.1&lt;/code&gt;, or
+&lt;code&gt;gpt-5&lt;/code&gt;. On April 14, we’ll remove those models from Codex for ChatGPT sign-in.&lt;/p&gt;
+&lt;p&gt;Users can still choose from &lt;code&gt;gpt-5.4&lt;/code&gt;, &lt;code&gt;gpt-5.4-mini&lt;/code&gt;, &lt;code&gt;gpt-5.3-codex&lt;/code&gt;, and
+&lt;code&gt;gpt-5.2&lt;/code&gt;. ChatGPT Pro users can also choose &lt;code&gt;gpt-5.3-codex-spark&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To use another API-supported model in Codex, sign in with an API key or
+configure a model provider.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-04-07-Codex model availability update</guid>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.118.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-03-31-Codex CLI0.118.0</link>
