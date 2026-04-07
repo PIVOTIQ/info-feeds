@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Apr 2026 20:35:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 21:35:54 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.94</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2194</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added support for Amazon Bedrock powered by Mantle, set `CLAUDE_CODE_USE_MANTLE=1`&lt;/li&gt;&lt;li&gt;Changed default effort level from medium to high for API-key, Bedrock/Vertex/Foundry, Team, and Enterprise users (control this with `/effort`)&lt;/li&gt;&lt;li&gt;Added compact `Slacked #channel` header with a clickable channel link for Slack MCP send-message tool calls&lt;/li&gt;&lt;li&gt;Added `keep-coding-instructions` frontmatter field support for plugin output styles&lt;/li&gt;&lt;li&gt;Added `hookSpecificOutput.sessionTitle` to `UserPromptSubmit` hooks for setting the session title&lt;/li&gt;&lt;li&gt;Plugin skills declared via `"skills": ["./"]` now use the skill's frontmatter `name` for the invocation name instead of the directory basename, giving a stable name across install methods&lt;/li&gt;&lt;li&gt;Fixed agents appearing stuck after a 429 rate-limit response with a long Retry-After header — the error now surfaces immediately instead of silently waiting&lt;/li&gt;&lt;li&gt;Fixed Console login on macOS silently failing with "Not logged in" when the login keychain is locked or its password is out of sync — the error is now surfaced and `claude doctor` diagnoses the fix&lt;/li&gt;&lt;li&gt;Fixed plugin skill hooks defined in YAML frontmatter being silently ignored&lt;/li&gt;&lt;li&gt;Fixed plugin hooks failing with "No such file or directory" when `CLAUDE_PLUGIN_ROOT` was not set&lt;/li&gt;&lt;li&gt;Fixed `${CLAUDE_PLUGIN_ROOT}` resolving to the marketplace source directory instead of the installed cache for local-marketplace plugins on startup&lt;/li&gt;&lt;li&gt;Fixed scrollback showing the same diff repeated and blank pages in long-running sessions&lt;/li&gt;&lt;li&gt;Fixed multiline user prompts in the transcript indenting wrapped lines under the `❯` caret instead of under the text&lt;/li&gt;&lt;li&gt;Fixed Shift+Space inserting the literal word "space" instead of a space character in search inputs&lt;/li&gt;&lt;li&gt;Fixed hyperlinks opening two browser tabs when clicked inside tmux running in an xterm.js-based terminal (VS Code, Hyper, Tabby)&lt;/li&gt;&lt;li&gt;Fixed an alt-screen rendering bug where content height changes mid-scroll could leave compounding ghost lines&lt;/li&gt;&lt;li&gt;Fixed `FORCE_HYPERLINK` environment variable being ignored when set via `settings.json` `env`&lt;/li&gt;&lt;li&gt;Fixed native terminal cursor not tracking the selected tab in dialogs, so screen readers and magnifiers can follow tab navigation&lt;/li&gt;&lt;li&gt;Fixed Bedrock invocation of Sonnet 3.5 v2 by using the `us.` inference profile ID&lt;/li&gt;&lt;li&gt;Fixed SDK/print mode not preserving the partial assistant response in conversation history when interrupted mid-stream&lt;/li&gt;&lt;li&gt;Improved `--resume` to resume sessions from other worktrees of the same repo directly instead of printing a `cd` command&lt;/li&gt;&lt;li&gt;Fixed CJK and other multibyte text being corrupted with U+FFFD in stream-json input/output when chunk boundaries split a UTF-8 sequence&lt;/li&gt;&lt;li&gt;[VSCode] Reduced cold-open subprocess work on starting a session&lt;/li&gt;&lt;li&gt;[VSCode] Fixed dropdown menus selecting the wrong item when the mouse was over the list while typing or using arrow keys&lt;/li&gt;&lt;li&gt;[VSCode] Added a warning banner when `settings.json` files fail to parse, so users know their permission rules are not being applied&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2194</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 07 Apr 2026 21:04:05 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.92</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2192</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2133</guid>
       <category>Changelog</category>
       <pubDate>Fri, 06 Feb 2026 00:16:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.32</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2132</link>
-      <description>&lt;ul&gt;&lt;li&gt;Claude Opus 4.6 is now available!&lt;/li&gt;&lt;li&gt;Added research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)&lt;/li&gt;&lt;li&gt;Claude now automatically records and recalls memories as it works&lt;/li&gt;&lt;li&gt;Added "Summarize from here" to the message selector, allowing partial conversation summarization.&lt;/li&gt;&lt;li&gt;Skills defined in `.claude/skills/` within additional directories (`--add-dir`) are now loaded automatically.&lt;/li&gt;&lt;li&gt;Fixed `@` file completion showing incorrect relative paths when running from a subdirectory&lt;/li&gt;&lt;li&gt;Updated --resume to re-use --agent value specified in previous conversation by default.&lt;/li&gt;&lt;li&gt;Fixed: Bash tool no longer throws "Bad substitution" errors when heredocs contain JavaScript template literals like `${index + 1}`, which previously interrupted tool execution&lt;/li&gt;&lt;li&gt;Skill character budget now scales with context window (2% of context), so users with larger context windows can see more skill descriptions without truncation&lt;/li&gt;&lt;li&gt;Fixed Thai/Lao spacing vowels (สระ า, ำ) not rendering correctly in the input field&lt;/li&gt;&lt;li&gt;VSCode: Fixed slash commands incorrectly being executed when pressing Enter with preceding text in the input field&lt;/li&gt;&lt;li&gt;VSCode: Added spinner when loading past conversations list&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2132</guid>
-      <category>Changelog</category>
-      <pubDate>Thu, 05 Feb 2026 17:03:20 +0000</pubDate>
     </item>
   </channel>
 </rss>
