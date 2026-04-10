@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Apr 2026 14:08:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 15:39:00 +0000</lastBuildDate>
+    <item>
+      <title>Anthropic’s Claude Mythos Problem, Dark DNA Unveiled, Pitfalls for Assistive Models, Simulating Fluid Dynamics</title>
+      <link>https://www.deeplearning.ai/the-batch/issue-348/</link>
+      <description>The Batch AI News and Insights: As AI agents accelerate coding, what is the future of software engineering?</description>
+      <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-348/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Claude Code’s Source Leaks, OpenAI Exits Video Generation, Gemini Adds Music Generation, LLMs Learn at Inference</title>
       <link>https://www.deeplearning.ai/the-batch/issue-347/</link>
@@ -323,13 +330,6 @@
       <description>The Batch AI News and Insights: Everyone can benefit by learning to code with AI! At AI Fund, the venture studio I lead, everyone — not just the engineers — can vibe code or use more sophisticated AI-assisted coding techniques.</description>
       <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-304/</guid>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude 4 Advances Code Gen, How DeepSeek Built V3 For $5.6m, Google I/O Roundup, O’Reilly Versus OpenAI</title>
-      <link>https://www.deeplearning.ai/the-batch/issue-303/</link>
-      <description>The Batch AI News and Insights: I am alarmed by the proposed cuts to U.S. funding for basic research, analyzed here, and the impact this would have for U.S. competitiveness in AI and other areas.</description>
-      <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-303/</guid>
-      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Codex’s Robot Dev Team, Grok’s Fixation on South Africa, Saudi Arabia’s AI Power Play, 4-Bit Efficiency With 16-Bit Accuracy</title>
@@ -1485,13 +1485,6 @@
       <description>The U.S. government punished an app vendor for building an algorithm based on ill-gotten data | Animal Animations From Video | Learning After Overfitting | Machine Learning boosts renewable fuels</description>
       <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-139/</guid>
       <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Batch: AI Designs Chemical Weapons, AI Gains Cultural Awareness, New Chip Accelerates Transformers, Spotting Dangerous Mutations</title>
-      <link>https://www.deeplearning.ai/the-batch/issue-138/</link>
-      <description>AI Fund, the venture studio and investment firm that I lead, recently held a summit where CEOs and founders of portfolio companies shared ideas on topics from fundraising to building team culture.</description>
-      <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-138/</guid>
-      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>The Batch: AI Builds AI, Face Recognition Sees Genetic Disorders, Stock Market Simulation, Tracking AI's Global Progress</title>
