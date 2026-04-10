@@ -8,13 +8,21 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Apr 2026 17:39:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 18:38:18 +0000</lastBuildDate>
     <item>
       <title>Multi-agent coordination patterns: Five approaches and when to use them</title>
       <link>https://claude.com/blog/multi-agent-coordination-patterns</link>
       <description>Multi-agent coordination patterns: Five approaches and when to use them</description>
       <guid isPermaLink="false">https://claude.com/blog/multi-agent-coordination-patterns</guid>
       <category>Agents</category>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Seeing like an agent: how we design tools in Claude Code</title>
+      <link>https://claude.com/blog/seeing-like-an-agent</link>
+      <description>Seeing like an agent: how we design tools in Claude Code</description>
+      <guid isPermaLink="false">https://claude.com/blog/seeing-like-an-agent</guid>
+      <category>Claude Code</category>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
