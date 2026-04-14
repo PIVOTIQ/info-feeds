@@ -13,7 +13,14 @@
       <link>https://cursor.com/blog</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Apr 2026 11:49:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 12:56:32 +0000</lastBuildDate>
+    <item>
+      <title>Speeding up GPU kernels by 38% with a multi-agent system</title>
+      <link>https://cursor.com/blog/multi-agent-kernels</link>
+      <guid isPermaLink="false">https://cursor.com/blog/multi-agent-kernels</guid>
+      <category>research</category>
+      <pubDate>Mon, 13 Apr 2026 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Bugbot now self-improves with learned rules</title>
       <link>https://cursor.com/blog/bugbot-learning</link>
@@ -90,13 +97,6 @@
       <description>We use a hybrid online-offline eval process to keep our understanding of model quality aligned with what developers actually do.</description>
       <guid isPermaLink="false">https://cursor.com/blog/cursorbench</guid>
       <pubDate>Wed, 11 Mar 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Over 30 new plugins join the Cursor Marketplace</title>
-      <link>https://cursor.com/blog/new-plugins</link>
-      <guid isPermaLink="false">https://cursor.com/blog/new-plugins</guid>
-      <category>product</category>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>PlanetScale protects production reliability with Bugbot</title>
