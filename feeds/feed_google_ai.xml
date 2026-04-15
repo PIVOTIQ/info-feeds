@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Apr 2026 14:25:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 15:57:56 +0000</lastBuildDate>
+    <item>
+      <title>Subagents have arrived in Gemini CLI</title>
+      <link>https://developers.googleblog.com/subagents-have-arrived-in-gemini-cli/</link>
+      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_CLI_subagents_hero_image.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;Gemini CLI has introduced subagents, specialized expert agents that handle complex or high-volume tasks in isolated context windows to keep the primary session fast and focused. These agents can be customized via Markdown files, run in parallel to boost productivity, and are easily invoked using the @agent syntax for targeted delegation. This architecture prevents "context rot" by consolidating intricate multi-step executions into concise summaries for the main orchestrator.</description>
+      <category>AI</category>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Build Better AI Agents: 5 Developer Tips from the Agent Bake-Off</title>
       <link>https://developers.googleblog.com/build-better-ai-agents-5-developer-tips-from-the-agent-bake-off/</link>
@@ -71,13 +78,6 @@
       <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/jump_to_play_banner.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;The provided workflow streamlines motion-controlled game development by using Gemini Canvas to rapidly prototype mechanics like the MediaPipe Pose Landmarker through high-level prompting. Developers can refine these prototypes in Google AI Studio by optimizing for low-latency "lite" models and stable tracking points, such as shoulder landmarks, to ensure responsive gameplay. The process concludes by using Gemini Code Assist to refactor experimental code into a modular, production-ready application capable of supporting various multimodal inputs.</description>
       <category>Mobile</category>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Build a smart financial assistant with LlamaParse and Gemini 3.1</title>
-      <link>https://developers.googleblog.com/build-a-smart-financial-assistant-with-llamaparse-and-gemini-31/</link>
-      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/llamaindex_gemini-api_1.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;This blog post introduces a workflow for extracting high-quality data from complex, unstructured documents by combining LlamaParse with Gemini 3.1 models. It demonstrates an event-driven architecture that uses Gemini 3.1 Pro for agentic parsing of dense financial tables and Gemini 3.1 Flash for cost-effective summarization. By following the provided tutorial, developers can build a personal finance assistant capable of transforming messy brokerage statements into structured, human-readable insights.</description>
-      <category>AI</category>
-      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
