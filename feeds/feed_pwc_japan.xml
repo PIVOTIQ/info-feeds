@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Tue, 14 Apr 2026 23:34:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 01:14:40 +0000</lastBuildDate>
+    <item>
+      <title>Digital Trust Insights 2026：日本企業向け示唆</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trust-insights2026.html</link>
+      <description>PwCは、世界のビジネスリーダーとテクノロジーリーダーを対象に、サイバーリスクに関する年次調査「Global Digital Trust Insights」を実施しました。本稿では、調査の結果を踏まえて日本企業を取り巻くサイバーリスク環境を概観し、日本企業が特に注目すべき課題を紹介します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trust-insights2026.html</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>グローバルコンプライアンス調査2025 加速する未来へ：コンプライアンスの再構築\―\―失敗せずに進むために</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/global-compliance-survey-2025.html</link>
@@ -90,13 +97,6 @@
       <description>PwCは、世界72カ国のビジネスリーダーおよびテクノロジーリーダー計3,887名を対象に、年次調査「Global Digital Trust Insights 2026」を実施しました。本稿では、調査結果を基に、企業のリーダーが、この不確実な時代にどのように対処しているのといった点を明らかにしています。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/2026-global-digital-trust-insights.html</guid>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>AIの民主化が切り開く、ファイナンス変革の新時代</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/democratisation-of-ai.html</link>
-      <description>技術革新が進む生成AIについて、企業における「先行導入部門」としてファイナンス部門が注目されています。本稿では、ファイナンス部門での生成AIの実装・定着に向けたポイントや、企業全体の変革につなげていくために必要な対応策を解説します。 </description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/democratisation-of-ai.html</guid>
-      <pubDate>Fri, 27 Feb 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
