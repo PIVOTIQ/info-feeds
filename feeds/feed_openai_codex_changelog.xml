@@ -8,7 +8,160 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2026 16:15:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 18:02:17 +0000</lastBuildDate>
+    <item>
+      <title>Codex can now help with more of your work26.415</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-04-16-Codex can now help with more of your work26.415</link>
+      <description>&lt;p&gt;Codex is becoming a broader workspace for getting work done with AI. This
+update makes it easier to start work with less setup, verify what Codex is
+building, create richer outputs, and keep momentum across longer-running tasks.&lt;/p&gt;
+&lt;h4 id="verify-more-of-your-work"&gt;Verify more of your work&lt;/h4&gt;
+&lt;p&gt;The Codex app now includes an early &lt;a href="/codex/app/browser"&gt;&lt;strong&gt;in-app browser&lt;/strong&gt;&lt;/a&gt;. You
+can open local or public pages that don’t require sign-in, comment directly on
+the rendered page, and ask Codex to address page-level feedback.&lt;/p&gt;
+&lt;div data-codex-screenshot-root=""&gt; &lt;button aria-label="Open Codex app showing a browser comment on a local web app preview" class="not-prose flex w-full cursor-zoom-in justify-center rounded-xl items-start overflow-hidden mb-8" data-codex-screenshot-trigger="" style="max-height: 400px;" type="button"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="mx-auto w-full max-w-full h-auto rounded-xl dark:hidden" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/in-app-browser-light.webp"/&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="mx-auto w-full max-w-full h-auto rounded-xl hidden dark:block" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/in-app-browser-dark.webp"/&gt; &lt;/button&gt; &lt;div aria-label="Codex app showing a browser comment on a local web app preview" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-6" data-codex-screenshot-overlay="" role="dialog"&gt; &lt;button aria-label="Close" class="absolute right-6 top-6 inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white/5 text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:scale-95" data-codex-screenshot-close="" type="button"&gt; &lt;svg class="h-6 w-6" fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path clip-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt; &lt;/button&gt; &lt;div class="flex h-full w-full items-center justify-center"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="max-h-[90vh] w-auto max-w-full object-contain dark:hidden" loading="lazy" src="/images/codex/app/in-app-browser-light.webp"/&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="hidden max-h-[90vh] w-auto max-w-full object-contain dark:block" loading="lazy" src="/images/codex/app/in-app-browser-dark.webp"/&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script data-astro-rerun=""&gt;
+  const openOverlay = (overlay) =&gt; {
+    if (!overlay) return;
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
+
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+    const previousPaddingRight = document.body.style.paddingRight;
+    document.body.dataset.codexScreenshotPaddingRight = previousPaddingRight;
+    document.documentElement.classList.add("codex-screenshot-open");
+    document.body.classList.add("codex-screenshot-open");
+    if (scrollbarWidth &gt; 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+  };
+
+  const closeOverlay = (overlay) =&gt; {
+    if (!overlay) return;
+    overlay.classList.add("hidden");
+    overlay.classList.remove("flex");
+
+    const previousPaddingRight =
+      document.body.dataset.codexScreenshotPaddingRight ?? "";
+    document.body.style.paddingRight = previousPaddingRight;
+    delete document.body.dataset.codexScreenshotPaddingRight;
+    document.documentElement.classList.remove("codex-screenshot-open");
+    document.body.classList.remove("codex-screenshot-open");
+  };
+
+  const applyInlineImageWidth = (root) =&gt; {
+    if (!(root instanceof HTMLElement)) return;
+
+    const configuredMaxWidth = root.dataset.codexScreenshotInlineMaxWidth;
+    if (!configuredMaxWidth) return;
+
+    const parsedWidth = Number.parseFloat(configuredMaxWidth);
+    if (!Number.isFinite(parsedWidth) || parsedWidth &lt;= 0) return;
+
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    const inlineMaxWidth = Math.floor(parsedWidth / devicePixelRatio);
+    if (inlineMaxWidth &lt;= 0) return;
+
+    root
+      .querySelectorAll("[data-codex-screenshot-inline-image]")
+      .forEach((image) =&gt; {
+        if (!(image instanceof HTMLImageElement)) return;
+        image.style.maxWidth = `min(100%, ${inlineMaxWidth}px)`;
+      });
+  };
+
+  const rootElement = document.documentElement;
+  if (rootElement.dataset.codexScreenshotBound !== "true") {
+    rootElement.dataset.codexScreenshotBound = "true";
+
+    const getRoot = (element) =&gt;
+      element?.closest("[data-codex-screenshot-root]");
+    const getOverlay = (root) =&gt;
+      root?.querySelector("[data-codex-screenshot-overlay]");
+
+    document.addEventListener("click", (event) =&gt; {
+      if (!(event.target instanceof Element)) return;
+
+      const trigger = event.target.closest("[data-codex-screenshot-trigger]");
+      if (trigger) {
+        openOverlay(getOverlay(getRoot(trigger)));
+        return;
+      }
+
+      const closeButton = event.target.closest("[data-codex-screenshot-close]");
+      if (closeButton) {
+        closeOverlay(getOverlay(getRoot(closeButton)));
+        return;
+      }
+
+      const overlay = event.target.closest("[data-codex-screenshot-overlay]");
+      if (overlay &amp;&amp; event.target === overlay) {
+        closeOverlay(overlay);
+      }
+    });
+
+    document.addEventListener("keydown", (event) =&gt; {
+      if (event.key !== "Escape") return;
+
+      document
+        .querySelectorAll("[data-codex-screenshot-overlay]:not(.hidden)")
+        .forEach((overlay) =&gt; closeOverlay(overlay));
+    });
+  }
+
+  document
+    .querySelectorAll("[data-codex-screenshot-root]")
+    .forEach((root) =&gt; applyInlineImageWidth(root));
+&lt;/script&gt; &lt;style&gt;
+  html.codex-screenshot-open,
+  body.codex-screenshot-open {
+    overflow: hidden;
+  }
+&lt;/style&gt;
+&lt;p&gt;&lt;a href="/codex/app/computer-use"&gt;&lt;strong&gt;Computer use&lt;/strong&gt;&lt;/a&gt; lets Codex operate macOS apps by seeing,
+clicking, and typing, which helps with native app testing, simulator flows,
+low-risk app settings, and GUI-only bugs.&lt;/p&gt;
+&lt;p&gt;The feature isn’t available in the European Economic Area, the United Kingdom, or
+Switzerland at launch.&lt;/p&gt;
+&lt;h4 id="start-follow-and-steer-work"&gt;Start, follow, and steer work&lt;/h4&gt;
+&lt;p&gt;&lt;a href="/codex/app/features#projectless-threads"&gt;&lt;strong&gt;Chats&lt;/strong&gt;&lt;/a&gt; are threads you can start
+without choosing a project folder first. They’re useful for research, writing,
+planning, analysis, source gathering, and tool-driven work that doesn’t begin in
+a codebase.&lt;/p&gt;
+&lt;p&gt;For work that needs a later check-in,
+&lt;a href="/codex/app/automations#thread-automations"&gt;&lt;strong&gt;thread automations&lt;/strong&gt;&lt;/a&gt; can wake up
+the same thread on a schedule while preserving the conversation context. Use
+them to check a long-running process, watch for updates, or continue a
+follow-up loop without starting from scratch.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/codex/app/features#task-sidebar"&gt;&lt;strong&gt;The task sidebar&lt;/strong&gt;&lt;/a&gt; makes plans, sources,
+generated artifacts, and summaries easier to follow while Codex works.
+&lt;a href="/codex/app/settings#context-aware-suggestions"&gt;&lt;strong&gt;Context-aware suggestions&lt;/strong&gt;&lt;/a&gt;
+can also help you pick up relevant follow-ups when you start or return to Codex.&lt;/p&gt;
+&lt;h4 id="stronger-for-software-development"&gt;Stronger for software development&lt;/h4&gt;
+&lt;p&gt;Codex now brings more of the &lt;strong&gt;pull request workflow&lt;/strong&gt; into the app. You can
+inspect &lt;a href="/codex/app/review#pull-request-reviews"&gt;&lt;strong&gt;GitHub pull requests&lt;/strong&gt;&lt;/a&gt; in the
+sidebar, review comments in the diff, review changed files, then ask Codex to
+explain feedback, make changes, check them, and keep the review moving.&lt;/p&gt;
+&lt;h4 id="review-richer-outputs"&gt;Review richer outputs&lt;/h4&gt;
+&lt;p&gt;The &lt;a href="/codex/app/features#artifact-viewer"&gt;&lt;strong&gt;artifact viewer&lt;/strong&gt;&lt;/a&gt; can preview
+generated files such as PDF files, spreadsheets, documents, and presentations in
+the sidebar before you commit or share them. &lt;a href="/codex/memories"&gt;&lt;strong&gt;Memories&lt;/strong&gt;&lt;/a&gt;,
+where available, can also carry useful context from past tasks into future
+threads, including stable preferences, project conventions, and recurring work
+patterns.&lt;/p&gt;
+&lt;h4 id="other-features"&gt;Other features&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/codex/remote-connections"&gt;Remote connections&lt;/a&gt; - We are gradually rolling out SSH remote connections in alpha&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href="/codex/app/features#integrated-terminal"&gt;multiple terminals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;macOS menu bar and &lt;a href="/codex/app/windows"&gt;Windows system tray&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;a href="/codex/app/features#floating-pop-out-window"&gt;Multi-window support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/codex/app"&gt;Intel Mac support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/codex/plugins"&gt;New plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improved thread and tool rendering&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-04-16-Codex can now help with more of your work26.415</guid>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.121.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-04-15-Codex CLI0.121.0</link>

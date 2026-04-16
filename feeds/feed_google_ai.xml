@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2026 16:15:38 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 18:02:16 +0000</lastBuildDate>
     <item>
       <title>MaxText Expands Post-Training Capabilities: Introducing SFT and RL on Single-Host TPUs</title>
       <link>https://developers.googleblog.com/maxtext-expands-post-training-capabilities-introducing-sft-and-rl-on-single-host-tpus/</link>
