@@ -13,7 +13,14 @@
       <link>https://cursor.com/blog</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2026 12:59:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 14:52:00 +0000</lastBuildDate>
+    <item>
+      <title>Better AI models enable more ambitious work</title>
+      <link>https://cursor.com/blog/better-ai-models-ambitious-work</link>
+      <guid isPermaLink="false">https://cursor.com/blog/better-ai-models-ambitious-work</guid>
+      <category>research</category>
+      <pubDate>Thu, 16 Apr 2026 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Interact with agent-created visualizations in canvases</title>
       <link>https://cursor.com/blog/canvas</link>
@@ -90,13 +97,6 @@
       <guid isPermaLink="false">https://cursor.com/blog/self-summarization</guid>
       <category>research</category>
       <pubDate>Tue, 17 Mar 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Securing our codebase with autonomous agents</title>
-      <link>https://cursor.com/blog/security-agents</link>
-      <guid isPermaLink="false">https://cursor.com/blog/security-agents</guid>
-      <category>product</category>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>How we compare model quality in Cursor</title>
