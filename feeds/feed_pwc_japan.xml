@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Thu, 16 Apr 2026 23:31:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 01:17:54 +0000</lastBuildDate>
+    <item>
+      <title>「ベンダー任せ」が招く経営危機\―\―IT訴訟で問われるユーザー企業の\\u201c協力義務\\u201dとは</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/duty-to-cooperate.html</link>
+      <description>情報システムは、事業に不可欠であり、競争力を生み出す源泉でもある一方、システム導入プロジェクトの失敗が後を絶ちません。本稿では、訴訟事例を踏まえて失敗の背景を分析するとともに、ユーザー企業に課される「協力義務」に焦点を当て、プロジェクト成功の道筋を探ります。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/duty-to-cooperate.html</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>Digital Trust Insights 2026：日本企業向け示唆</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trust-insights2026.html</link>
@@ -43,17 +50,17 @@
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>半導体とその先へ</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/semiconductor-and-beyond.html</link>
-      <description>半導体が産業のイノベーションを支える中、輸出管理や重要資材の制限、貿易同盟の変化が業界の勢力図を再定義しています。本稿では、業界動向、エンドマーケット別の需要、新興技術の影響を分析し、半導体市場における将来の意思決定に役立つ洞察を提供します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/semiconductor-and-beyond.html</guid>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>気候変動の鍵を握るデジタルインフラ</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-infrastructures-defining-moment-on-climate.html</link>
       <description>急速に成長する大規模なデジタルインフラ部門は、気候変動に関する重要な分岐点に直面しています。本稿では、AIなどのサービス需要の増大に対処しつつ、温室効果ガス（GHG）排出量の削減を実現するために、企業が取るべき対応策を紹介します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-infrastructures-defining-moment-on-climate.html</guid>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>半導体とその先へ</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/semiconductor-and-beyond.html</link>
+      <description>半導体が産業のイノベーションを支える中、輸出管理や重要資材の制限、貿易同盟の変化が業界の勢力図を再定義しています。本稿では、業界動向、エンドマーケット別の需要、新興技術の影響を分析し、半導体市場における将来の意思決定に役立つ洞察を提供します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/semiconductor-and-beyond.html</guid>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <description>日本の株式市場におけるアクティビストの活動は増加傾向にあります。本稿ではアクティビストへの対応を変革の好機として捉え、自社の変革アプローチにアクティビストの視点を取り入れつつ、外部リソースも活用しながら体制整備と人材育成を進める方策を提示します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/activist-response-strategy.html</guid>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>「Global Digital Trust Insights 2026」：CxOプレイブックおよび調査結果</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/2026-global-digital-trust-insights.html</link>
-      <description>PwCは、世界72カ国のビジネスリーダーおよびテクノロジーリーダー計3,887名を対象に、年次調査「Global Digital Trust Insights 2026」を実施しました。本稿では、調査結果を基に、企業のリーダーが、この不確実な時代にどのように対処しているのといった点を明らかにしています。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/2026-global-digital-trust-insights.html</guid>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
