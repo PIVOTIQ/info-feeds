@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Apr 2026 21:36:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 22:30:16 +0000</lastBuildDate>
     <item>
       <title>Production-Ready AI Agents: 5 Lessons from Refactoring a Monolith</title>
       <link>https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/</link>
