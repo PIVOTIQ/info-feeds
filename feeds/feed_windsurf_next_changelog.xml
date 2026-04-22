@@ -8,7 +8,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Apr 2026 04:36:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 06:28:50 +0000</lastBuildDate>
+    <item>
+      <title>Windsurf Next 2.0.1067</title>
+      <link>https://windsurf.com/changelog/windsurf-next#2.0.1067</link>
+      <description>&lt;h3&gt;Bug Fixes and Improvements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Fixed OAuth authentication issues for some MCP servers&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://windsurf.com/changelog/windsurf-next#2.0.1067#2.0.1067</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Windsurf Next 2.0.1063</title>
       <link>https://windsurf.com/changelog/windsurf-next#2.0.1063</link>
