@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Apr 2026 20:01:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 20:51:43 +0000</lastBuildDate>
     <item>
       <title>Built-in memory for Claude Managed Agents</title>
       <link>https://claude.com/blog/claude-managed-agents-memory</link>
@@ -662,6 +662,14 @@
       <guid isPermaLink="false">https://claude.com/blog/claude-now-available-in-microsoft-365-copilot</guid>
       <category>Product announcements</category>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bringing memory to Claude</title>
+      <link>https://claude.com/blog/memory</link>
+      <description>Bringing memory to Claude</description>
+      <guid isPermaLink="false">https://claude.com/blog/memory</guid>
+      <category>Product announcements</category>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Claude can now create and edit files</title>
