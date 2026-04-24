@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Apr 2026 16:43:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 17:41:35 +0000</lastBuildDate>
     <item>
       <title>GLM 5.1 Thinks Strategically, Data-Center Revolt Intensifies, When Helpful LLMs Turn Unhelpful, Humanoid Robots Get to Work</title>
       <link>https://www.deeplearning.ai/the-batch/issue-350/</link>
@@ -330,6 +330,13 @@
       <description>The Batch AI News and Insights: One of the most effective things the U.S. or any other nation can do to ensure its competitiveness in AI is to welcome high-skilled immigration and international students who have the potential to become high-skilled.</description>
       <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-306/</guid>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>FLUX.1 Kontext’s Consistent Characters, Benchmarking Costs Climb, Mary Meeker’s Action-Packed AI Report, Better Video Gen</title>
+      <link>https://www.deeplearning.ai/the-batch/issue-305/</link>
+      <description>The Batch AI News and Insights: There’s a new breed of GenAI Application Engineers who can build more-powerful applications faster than was possible before, thanks to generative AI.</description>
+      <guid isPermaLink="false">https://www.deeplearning.ai/the-batch/issue-305/</guid>
+      <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>DeepSeek-R1 Refreshed, AI’s Energy Conundrum, Agents Get Phished, Machine Translation in Action</title>
