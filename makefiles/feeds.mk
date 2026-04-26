@@ -177,6 +177,13 @@ feeds_dagster: ## Generate RSS feed for Dagster Blog
 	$(Q)python feed_generators/dagster_blog.py
 	$(call print_success,Dagster Blog feed generated)
 
+.PHONY: feeds_openai_codex_tags
+feeds_openai_codex_tags: ## Generate RSS feed for OpenAI Codex stable tags (releases)
+	$(call check_venv)
+	$(call print_info,Generating OpenAI Codex Tags feed)
+	$(Q)python feed_generators/openai_codex_tags.py
+	$(call print_success,OpenAI Codex Tags feed generated)
+
 .PHONY: feeds_openai_codex_changelog
 feeds_openai_codex_changelog: ## Generate RSS feed for OpenAI Codex Changelog
 	$(call check_venv)
