@@ -51,7 +51,7 @@ def strip_changelog_section(body):
     """Remove ## Changelog section and everything after it from markdown body."""
     if not body:
         return ""
-    result = re.sub(r"\n## Changelog\b.*", "", body, flags=re.DOTALL | re.IGNORECASE)
+    result = re.sub(r"(?:^|\n)##\s*changelog\b.*", "", body, flags=re.DOTALL | re.IGNORECASE)
     return result.strip()
 
 
