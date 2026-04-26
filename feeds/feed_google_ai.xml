@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Apr 2026 22:26:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 23:28:11 +0000</lastBuildDate>
     <item>
       <title>Building real-world on-device AI with LiteRT and NPU</title>
       <link>https://developers.googleblog.com/building-real-world-on-device-ai-with-litert-and-npu/</link>
