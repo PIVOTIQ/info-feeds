@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Apr 2026 01:29:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 05:19:40 +0000</lastBuildDate>
+    <item>
+      <title>Strategy\\\\u0026 病院やクリニックでの治療から、日常において生活者が健康を管理する「ケア」へ エコシステムが導くヘルスケアの未来</title>
+      <link>https://www.strategyand.pwc.com/jp/ja/publications/report/from-medtech-to-welltech.html</link>
+      <description>医療機関での治療や管理「Disease Care」から、日常生活における健康管理「WellCare」へとヘルスケアのあり方が変わる中、その変化を支え市場拡大が期待されるテクノロジーが「WellTech」です。本稿ではWellTechの活用とエコシステムの構築によって導かれるヘルスケアの未来について、日本のヘルスデータを取り巻く環境を交えて探ります。</description>
+      <guid isPermaLink="false">https://www.strategyand.pwc.com/jp/ja/publications/report/from-medtech-to-welltech.html</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>自動車サプライヤー業界の展望\―\―150社超への調査結果から見えた変革のステップ</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/outlook-for-oem-supplier.html</link>
@@ -71,17 +78,17 @@
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>気候変動の鍵を握るデジタルインフラ</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-infrastructures-defining-moment-on-climate.html</link>
-      <description>急速に成長する大規模なデジタルインフラ部門は、気候変動に関する重要な分岐点に直面しています。本稿では、AIなどのサービス需要の増大に対処しつつ、温室効果ガス（GHG）排出量の削減を実現するために、企業が取るべき対応策を紹介します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-infrastructures-defining-moment-on-climate.html</guid>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>半導体とその先へ</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/semiconductor-and-beyond.html</link>
       <description>半導体が産業のイノベーションを支える中、輸出管理や重要資材の制限、貿易同盟の変化が業界の勢力図を再定義しています。本稿では、業界動向、エンドマーケット別の需要、新興技術の影響を分析し、半導体市場における将来の意思決定に役立つ洞察を提供します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/semiconductor-and-beyond.html</guid>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>気候変動の鍵を握るデジタルインフラ</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-infrastructures-defining-moment-on-climate.html</link>
+      <description>急速に成長する大規模なデジタルインフラ部門は、気候変動に関する重要な分岐点に直面しています。本稿では、AIなどのサービス需要の増大に対処しつつ、温室効果ガス（GHG）排出量の削減を実現するために、企業が取るべき対応策を紹介します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-infrastructures-defining-moment-on-climate.html</guid>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <description>現在、世界の医薬品産業は、人口動態と疾患構造の変化など、複数の構造変化の重なりの中にあります。本稿では、こうした変化の中で日本企業が今後直面する競争環境と、その対応の方向性を整理し、次の10年に向けて構築すべき戦略に関する示唆を提示します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/future-pharma-next-decade-vol1.html</guid>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>日本企業のためのファミリーガバナンス\―グローバルファミリービジネスサーベイ2025 日本分析結果\―</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/family-business-survey-jp.html</link>
-      <description>2025年のグローバルファミリービジネスサーベイでは、日本においても127名のファミリービジネスのオーナーにインタビューを実施しました。グローバルと比較した分析結果を基に、日本のファミリービジネスの課題と特徴を解説します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/family-business-survey-jp.html</guid>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
