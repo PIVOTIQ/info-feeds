@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Apr 2026 21:50:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 22:44:59 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.122</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21122</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added `ANTHROPIC_BEDROCK_SERVICE_TIER` environment variable to select a Bedrock service tier (`default`, `flex`, or `priority`), sent as the `X-Amzn-Bedrock-Service-Tier` header&lt;/li&gt;&lt;li&gt;Pasting a PR URL into the `/resume` search box now finds the session that created that PR (GitHub, GitHub Enterprise, GitLab, and Bitbucket)&lt;/li&gt;&lt;li&gt;`/mcp` now shows claude.ai connectors hidden by a manually-added server with the same URL, with a hint to remove the duplicate&lt;/li&gt;&lt;li&gt;Clarified the `/mcp` message shown when an MCP server is still unauthorized after the browser sign-in flow&lt;/li&gt;&lt;li&gt;OpenTelemetry: numeric attributes on `api_request`/`api_error` log events are now emitted as numbers, not strings&lt;/li&gt;&lt;li&gt;OpenTelemetry: added `claude_code.at_mention` log event for `@`-mention resolution&lt;/li&gt;&lt;li&gt;Fixed `/branch` producing forks that fail with "tool_use ids were found without tool_result blocks" when the source session contained entries from rewound timelines&lt;/li&gt;&lt;li&gt;Fixed `/model` not showing the Effort option for Bedrock application inference profile ARNs, and those ARNs not receiving `output_config.effort`&lt;/li&gt;&lt;li&gt;Fixed Vertex AI / Bedrock returning `invalid_request_error: output_config: Extra inputs are not permitted` on session-title generation and other structured-output queries&lt;/li&gt;&lt;li&gt;Fixed Vertex AI `count_tokens` endpoint returning 400 errors for users behind proxy gateways&lt;/li&gt;&lt;li&gt;Fixed `spinnerTipsOverride.excludeDefault` not suppressing the time-based spinner tips&lt;/li&gt;&lt;li&gt;Fixed ToolSearch missing MCP tools that connected after session start in nonblocking mode&lt;/li&gt;&lt;li&gt;Fixed `!exit` / `!quit` in bash mode terminating the CLI instead of running as a shell command&lt;/li&gt;&lt;li&gt;Fixed images sent to newer models being resized to 2576px per side instead of the correct 2000px maximum&lt;/li&gt;&lt;li&gt;Fixed remote control session idle status redrawing twice per second, which could flood `tmux -CC` control pipes and pause the terminal&lt;/li&gt;&lt;li&gt;Fixed assistant messages appearing blank in some sessions due to a stale view preference&lt;/li&gt;&lt;li&gt;Fixed a malformed hooks entry in `settings.json` no longer invalidating the entire file&lt;/li&gt;&lt;li&gt;Voice mode: keybindings bound to Caps Lock now show an error since terminals don't deliver Caps Lock as a key event&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21122</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 28 Apr 2026 17:35:53 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.121</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21121</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2158</guid>
       <category>Changelog</category>
       <pubDate>Wed, 25 Feb 2026 19:22:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.56</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2156</link>
-      <description>&lt;ul&gt;&lt;li&gt;VS Code: Fixed another cause of "command 'claude-vscode.editor.openLast' not found" crashes&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2156</guid>
-      <category>Changelog</category>
-      <pubDate>Wed, 25 Feb 2026 05:55:32 +0000</pubDate>
     </item>
   </channel>
 </rss>
