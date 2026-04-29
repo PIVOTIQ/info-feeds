@@ -13,7 +13,14 @@
       <link>https://cursor.com/blog</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Apr 2026 13:16:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 15:50:40 +0000</lastBuildDate>
+    <item>
+      <title>Build programmatic agents with the Cursor SDK</title>
+      <link>https://cursor.com/blog/typescript-sdk</link>
+      <guid isPermaLink="false">https://cursor.com/blog/typescript-sdk</guid>
+      <category>product</category>
+      <pubDate>Wed, 29 Apr 2026 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>National Australia Bank accelerates legacy migrations with Cursor</title>
       <link>https://cursor.com/blog/nab</link>
@@ -102,13 +109,6 @@
       <guid isPermaLink="false">https://cursor.com/blog/self-hosted-cloud-agents</guid>
       <category>product</category>
       <pubDate>Wed, 25 Mar 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Fast regex search: indexing text for agent tools</title>
-      <link>https://cursor.com/blog/fast-regex-search</link>
-      <guid isPermaLink="false">https://cursor.com/blog/fast-regex-search</guid>
-      <category>research</category>
-      <pubDate>Mon, 23 Mar 2026 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Introducing Composer 2</title>
