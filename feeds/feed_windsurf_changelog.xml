@@ -8,7 +8,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Apr 2026 01:31:57 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 05:16:36 +0000</lastBuildDate>
+    <item>
+      <title>Windsurf 2.1.29</title>
+      <link>https://windsurf.com/changelog#2.1.29</link>
+      <description>&lt;h3&gt;Devin for Terminal&lt;/h3&gt;&lt;p&gt;Devin is now availablefor Terminal. All Windsurf users can use this new CLI agent with your existing subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Runs on your machine— Optimized for interactive work, with full access to your codebase, tools, and environment.&lt;/li&gt;&lt;li&gt;Hand off to the cloud— Seamless hand off to Devin in the cloud, with its own VM, testing, video recordings, autofix and more. Come back to a finished PR.&lt;/li&gt;&lt;li&gt;Multi-model— All of your favorite frontier models in one place, including Opus 4.7, GPT-5.5, and SWE-1.6.&lt;/li&gt;&lt;li&gt;Fast— Written in Rust and so performant that the binary can run on an original VT100.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Devin Agent in Windsurf&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;You can also enable the new Devin Local agent in Windsurf. This is the same agent harness used on the terminal and sessions can be accessed from both Windsurf and the CLI.&lt;/p&gt;&lt;p&gt;In our testing, it's up to 30% more token-efficient than the existing Cascade agent.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Additional Changes&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Improved search subtitle layout during streaming&lt;/li&gt;&lt;li&gt;Fixed file drag-and-drop in agent window Cascade tabs&lt;/li&gt;&lt;li&gt;Fixed Go to Line/Column keybinding on Windows/Linux (Ctrl+Shift+G)&lt;/li&gt;&lt;li&gt;Added support for server-driven extension deny lists&lt;/li&gt;&lt;li&gt;Stability and performance improvements&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://windsurf.com/changelog#2.1.29#2.1.29</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Windsurf 2.0.67</title>
       <link>https://windsurf.com/changelog#2.0.67</link>

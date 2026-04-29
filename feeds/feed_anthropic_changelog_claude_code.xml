@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Apr 2026 01:32:52 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 05:17:27 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.123</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21123</link>
+      <description>&lt;ul&gt;&lt;li&gt;Fixed OAuth authentication failing with a 401 retry loop when `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` is set&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21123</guid>
+      <category>Changelog</category>
+      <pubDate>Wed, 29 Apr 2026 01:52:47 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.122</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21122</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2159</guid>
       <category>Changelog</category>
       <pubDate>Wed, 25 Feb 2026 23:38:34 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.58</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2158</link>
-      <description>&lt;ul&gt;&lt;li&gt;Expand Remote Control to more users&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2158</guid>
-      <category>Changelog</category>
-      <pubDate>Wed, 25 Feb 2026 19:22:07 +0000</pubDate>
     </item>
   </channel>
 </rss>
