@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Apr 2026 20:03:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 21:45:37 +0000</lastBuildDate>
     <item>
       <title>How Kepler built verifiable AI for financial services with Claude</title>
       <link>https://claude.com/blog/how-kepler-built-verifiable-ai-for-financial-services-with-claude</link>
@@ -31,6 +31,14 @@
       <description>Claude Security is now in public beta</description>
       <guid isPermaLink="false">https://claude.com/blog/claude-security-public-beta</guid>
       <category>Product announcements</category>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Building AI agents for the enterprise</title>
+      <link>https://claude.com/blog/building-ai-agents-for-the-enterprise</link>
+      <description>Building AI agents for the enterprise</description>
+      <guid isPermaLink="false">https://claude.com/blog/building-ai-agents-for-the-enterprise</guid>
+      <category>Agents</category>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
