@@ -8,7 +8,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 17:14:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 19:02:50 +0000</lastBuildDate>
+    <item>
+      <title>Deploying Claude across financial services</title>
+      <link>https://claude.com/blog/deploying-claude-across-financial-services</link>
+      <description>Deploying Claude across financial services</description>
+      <guid isPermaLink="false">https://claude.com/blog/deploying-claude-across-financial-services</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>How a non-technical project manager built and shipped a stress management app with Claude Code in six weeks</title>
       <link>https://claude.com/blog/how-a-non-technical-project-manager-built-and-shipped-a-stress-management-app-with-claude-code-in-six-weeks</link>
