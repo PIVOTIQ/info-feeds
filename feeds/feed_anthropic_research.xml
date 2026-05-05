@@ -13,7 +13,23 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Apr 2026 17:08:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 21:52:30 +0000</lastBuildDate>
+    <item>
+      <title>Apr 30, 2026Societal ImpactsHow people ask Claude for personal guidance</title>
+      <link>https://www.anthropic.com/research/claude-personal-guidance</link>
+      <description>Apr 30, 2026Societal ImpactsHow people ask Claude for personal guidance</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-personal-guidance</guid>
+      <category>Research</category>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Apr 29, 2026ScienceEvaluating Claude’s bioinformatics research capabilities with BioMysteryBench</title>
+      <link>https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench</link>
+      <description>Apr 29, 2026ScienceEvaluating Claude’s bioinformatics research capabilities with BioMysteryBench</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench</guid>
+      <category>Research</category>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Apr 22, 2026Economic ResearchWhat 81,000 people told us about the economics of AI</title>
       <link>https://www.anthropic.com/research/81k-economics</link>
@@ -47,9 +63,9 @@
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Emotion concepts and their function in a large language model</title>
+      <title>InterpretabilityApr 2, 2026Emotion concepts and their function in a large language modelAll modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.</title>
       <link>https://www.anthropic.com/research/emotion-concepts-function</link>
-      <description>Emotion concepts and their function in a large language model</description>
+      <description>InterpretabilityApr 2, 2026Emotion concepts and their function in a large language modelAll modern language models sometimes act like they have emotions. What’s behind these behaviors? Our interpretability team investigates.</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/emotion-concepts-function</guid>
       <category>Research</category>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
@@ -71,36 +87,12 @@
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Mar 23, 2026ScienceVibe physics: The AI grad student</title>
-      <link>https://www.anthropic.com/research/vibe-physics</link>
-      <description>Mar 23, 2026ScienceVibe physics: The AI grad student</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/vibe-physics</guid>
-      <category>Research</category>
-      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mar 23, 2026ScienceLong-running Claude for scientific computing</title>
-      <link>https://www.anthropic.com/research/long-running-Claude</link>
-      <description>Mar 23, 2026ScienceLong-running Claude for scientific computing</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/long-running-Claude</guid>
-      <category>Research</category>
-      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Mar 23, 2026ScienceIntroducing our Science Blog</title>
       <link>https://www.anthropic.com/research/introducing-anthropic-science</link>
       <description>Mar 23, 2026ScienceIntroducing our Science Blog</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/introducing-anthropic-science</guid>
       <category>Research</category>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Economic ResearchMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this paper, we present a new framework for understanding AI’s labor market impacts, and test it against early data.</title>
-      <link>https://www.anthropic.com/research/labor-market-impacts</link>
-      <description>Economic ResearchMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this paper, we present a new framework for understanding AI’s labor market impacts, and test it against early data.</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/labor-market-impacts</guid>
-      <category>Research</category>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?</title>
