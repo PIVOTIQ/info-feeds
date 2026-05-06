@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 May 2026 15:19:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 17:21:43 +0000</lastBuildDate>
+    <item>
+      <title>New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration</title>
+      <link>https://claude.com/blog/new-in-claude-managed-agents</link>
+      <description>New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration</description>
+      <guid isPermaLink="false">https://claude.com/blog/new-in-claude-managed-agents</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Deploying Claude across financial services</title>
       <link>https://claude.com/blog/deploying-claude-across-financial-services</link>
@@ -600,6 +607,14 @@
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>Building AI agents for financial services</title>
+      <link>https://claude.com/blog/building-ai-agents-in-financial-services</link>
+      <description>Building AI agents for financial services</description>
+      <guid isPermaLink="false">https://claude.com/blog/building-ai-agents-in-financial-services</guid>
+      <category>Agents</category>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Building AI agents for healthcare and life sciences</title>
       <link>https://claude.com/blog/building-ai-agents-in-healthcare-and-life-sciences</link>
       <description>Building AI agents for healthcare and life sciences</description>
@@ -613,13 +628,6 @@
       <description>Introduction to agentic coding</description>
       <guid isPermaLink="false">https://claude.com/blog/introduction-to-agentic-coding</guid>
       <category>Claude Code</category>
-      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Building AI agents for financial services</title>
-      <link>https://claude.com/blog/building-ai-agents-in-financial-services</link>
-      <description>Building AI agents for financial services</description>
-      <guid isPermaLink="false">https://claude.com/blog/building-ai-agents-in-financial-services</guid>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
