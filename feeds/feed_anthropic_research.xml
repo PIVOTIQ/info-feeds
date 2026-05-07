@@ -13,7 +13,15 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2026 08:11:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 12:27:39 +0000</lastBuildDate>
+    <item>
+      <title>May 7, 2026PolicyFocus areas for The Anthropic Institute</title>
+      <link>https://www.anthropic.com/research/anthropic-institute-agenda</link>
+      <description>May 7, 2026PolicyFocus areas for The Anthropic Institute</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/anthropic-institute-agenda</guid>
+      <category>Research</category>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Apr 30, 2026Societal ImpactsHow people ask Claude for personal guidance</title>
       <link>https://www.anthropic.com/research/claude-personal-guidance</link>
@@ -85,14 +93,6 @@
       <guid isPermaLink="false">https://www.anthropic.com/research/economic-index-march-2026-report</guid>
       <category>Research</category>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mar 23, 2026ScienceIntroducing our Science Blog</title>
-      <link>https://www.anthropic.com/research/introducing-anthropic-science</link>
-      <description>Mar 23, 2026ScienceIntroducing our Science Blog</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/introducing-anthropic-science</guid>
-      <category>Research</category>
-      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?</title>
