@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 07 May 2026 23:44:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 01:48:24 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.133</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21133</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added `worktree.baseRef` setting (`fresh` | `head`) to choose whether `--worktree`, `EnterWorktree`, and agent-isolation worktrees branch from `origin/&lt;default&gt;` or local `HEAD`. **Note:** the default `fresh` changes `EnterWorktree`'s base back to `origin/&lt;default&gt;` (it has been local `HEAD` since 2.1.128) — set `worktree.baseRef: "head"` to keep unpushed commits in new worktrees&lt;/li&gt;&lt;li&gt;Added `sandbox.bwrapPath` and `sandbox.socatPath` managed settings (Linux/WSL) to specify custom bubblewrap and socat binary locations&lt;/li&gt;&lt;li&gt;Added `parentSettingsBehavior` admin-tier key (`'first-wins' | 'merge'`) to let admins opt SDK `managedSettings` (parent tier) into the policy merge&lt;/li&gt;&lt;li&gt;Hooks now receive the active effort level via the `effort.level` JSON input field and the `$CLAUDE_EFFORT` environment variable, and Bash tool commands can read `$CLAUDE_EFFORT`&lt;/li&gt;&lt;li&gt;Improved focus mode behavior&lt;/li&gt;&lt;li&gt;Improved memory usage by releasing warm-spare background workers under memory pressure&lt;/li&gt;&lt;li&gt;Fixed parallel sessions all dead-ending at 401 after a refresh-token race wiped shared credentials&lt;/li&gt;&lt;li&gt;Fixed `Edit`/`Write` allow rules scoped to a drive root (`C:\`) or POSIX `/` matching incorrectly and always prompting&lt;/li&gt;&lt;li&gt;Fixed an unhandled rejection (`ECOMPROMISED`) when a history or session-log file lock is compromised by clock skew or slow disk&lt;/li&gt;&lt;li&gt;Fixed pressing Esc during conversation compaction showing a spurious "Error compacting conversation" notification&lt;/li&gt;&lt;li&gt;Fixed `HTTP(S)_PROXY` / `NO_PROXY` / mTLS not being respected for the full MCP OAuth flow including discovery, dynamic client registration, token exchange, and token refresh&lt;/li&gt;&lt;li&gt;Fixed Read/Write/Edit being denied on mapped network drives passed via `--add-dir` / SDK `additionalDirectories`&lt;/li&gt;&lt;li&gt;Fixed Remote Control stop/interrupt from claude.ai not fully canceling the CLI session the same way local Esc does, causing queued messages to never advance after interrupting a stuck tool or prompt&lt;/li&gt;&lt;li&gt;Fixed `/effort` in one session unexpectedly changing the effort level of other concurrent sessions, and a related issue where an IDE effort change could be silently dropped&lt;/li&gt;&lt;li&gt;Fixed subagents not discovering project, user, or plugin skills via the Skill tool&lt;/li&gt;&lt;li&gt;`claude --help` now lists `--remote-control` alongside `--remote-control-session-name-prefix`&lt;/li&gt;&lt;li&gt;[VSCode] Fixed `claudeCode.claudeProcessWrapper` failing with "Unsupported platform" when the extension build doesn't bundle a Claude binary&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21133</guid>
+      <category>Changelog</category>
+      <pubDate>Thu, 07 May 2026 20:19:32 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.132</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21132</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2169</guid>
       <category>Changelog</category>
       <pubDate>Wed, 04 Mar 2026 21:46:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.68</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2168</link>
-      <description>&lt;ul&gt;&lt;li&gt;Opus 4.6 now defaults to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with `/model`&lt;/li&gt;&lt;li&gt;Re-introduced the "ultrathink" keyword to enable high effort for the next turn&lt;/li&gt;&lt;li&gt;Removed Opus 4 and 4.1 from Claude Code on the first-party API — users with these models pinned are automatically moved to Opus 4.6&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2168</guid>
-      <category>Changelog</category>
-      <pubDate>Wed, 04 Mar 2026 09:20:53 +0000</pubDate>
     </item>
   </channel>
 </rss>
