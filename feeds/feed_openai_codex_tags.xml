@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 May 2026 14:30:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 16:08:22 +0000</lastBuildDate>
     <item>
       <title>0.129.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.129.0</link>
@@ -3718,6 +3718,16 @@ New Features:&#13;
   - [#2474](https://github.com/openai/codex/pull/2474) Add a slash command to control permissions</description>
       <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.23.0</guid>
       <pubDate>Wed, 20 Aug 2025 05:48:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.22.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.22.0</link>
+      <description>- https://github.com/openai/codex/pull/2294 moves the login server from Python to Rust, which should help with both https://github.com/openai/codex/issues/2000 and https://github.com/openai/codex/issues/2044.&#13;
+- https://github.com/openai/codex/pull/2029 adds support for markdown streaming&#13;
+- https://github.com/openai/codex/pull/2270 improves the UI treatment of diffs so they are more readable when using a light background&#13;
+- https://github.com/openai/codex/pull/2113 `ctrl-z` can be used to suspend the TUI</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.22.0</guid>
+      <pubDate>Fri, 15 Aug 2025 17:31:58 +0000</pubDate>
     </item>
     <item>
       <title>0.22.0</title>
