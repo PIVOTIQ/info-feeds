@@ -8,7 +8,37 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 May 2026 22:44:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 23:45:55 +0000</lastBuildDate>
+    <item>
+      <title>0.130.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.130.0</link>
+      <description>## New Features
+- Plugin details now show bundled hooks, and plugin sharing exposes link metadata plus discoverability controls. (#21447, #21495, #21637)
+- Added `codex remote-control` as a simpler entrypoint for starting a headless, remotely controllable app-server. (#21424)
+- App-server clients can page large threads with unloaded, summary, or full turn item views. (#21566)
+- Bedrock auth can now use AWS console-login credentials from `aws login` profiles. (#21623)
+- `view_image` can resolve files through the selected environment for multi-environment sessions. (#21143)
+
+## Bug Fixes
+- Live app-server threads now pick up config changes without requiring a restart. (#21187)
+- Turn diffs stay accurate across apply-patch operations, including partial failures that still mutated files. (#21180, #21518)
+- Thread summaries, renames, resume, and fork paths work better through `ThreadStore`, including threads without local rollout paths. (#21264, #21265, #21266)
+- Remote compaction now emits `response.processed` for v2 streams and avoids sending `service_tier` on API-key compact requests. (#21642, #21676)
+- Windows sandbox setup now grants sandbox users access to the desktop runtime binary cache. (#21564)
+- Removed stale “research preview” wording from the `codex exec` startup banner. (#21683)
+
+## Documentation
+- Fixed issue templates so CLI reports keep the intended guidance, labels apply correctly, and feature requests link to the right contributing docs. (#21685, #21686, #21688)
+- Updated install and tooling docs to consistently use `cargo install --locked`. (#21592)
+
+## Chores
+- Added a faster Cargo profiling build profile and disabled empty doctest targets to speed up Rust development loops. (#21574, #21584)
+- Hardened dependency and CI hygiene with fully qualified GitHub Action pins, a Dependabot cooldown, and a `cargo-shear` upgrade. (#21436, #21547, #21599)
+- Simplified internal surfaces by removing unused device-key APIs, extra skills roots, the remote thread-store implementation, and string-keyed MCP tool maps. (#21487, #21485, #21596, #21454)
+- Added configurable OpenTelemetry trace metadata and richer review/feedback analytics for better debugging and triage. (#21556, #18747, #21434, #21498)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.130.0</guid>
+      <pubDate>Fri, 08 May 2026 23:09:55 +0000</pubDate>
+    </item>
     <item>
       <title>0.129.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.129.0</link>
