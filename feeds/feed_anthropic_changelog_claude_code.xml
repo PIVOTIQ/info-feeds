@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 08 May 2026 23:46:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 01:32:06 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.137</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21137</link>
+      <description>&lt;ul&gt;&lt;li&gt;[VSCode] Fixed extension failing to activate on Windows&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21137</guid>
+      <category>Changelog</category>
+      <pubDate>Sat, 09 May 2026 00:04:08 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.136</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21136</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2171</guid>
       <category>Changelog</category>
       <pubDate>Fri, 06 Mar 2026 22:47:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.70</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2170</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed API 400 errors when using `ANTHROPIC_BASE_URL` with a third-party gateway — tool search now correctly detects proxy endpoints and disables `tool_reference` blocks&lt;/li&gt;&lt;li&gt;Fixed `API Error: 400 This model does not support the effort parameter` when using custom Bedrock inference profiles or other model identifiers not matching standard Claude naming patterns&lt;/li&gt;&lt;li&gt;Fixed empty model responses immediately after `ToolSearch` — the server renders tool schemas with system-prompt-style tags at the prompt tail, which could confuse models into stopping early&lt;/li&gt;&lt;li&gt;Fixed prompt-cache bust when an MCP server with `instructions` connects after the first turn&lt;/li&gt;&lt;li&gt;Fixed Enter inserting a newline instead of submitting when typing over a slow SSH connection&lt;/li&gt;&lt;li&gt;Fixed clipboard corrupting non-ASCII text (CJK, emoji) on Windows/WSL by using PowerShell `Set-Clipboard`&lt;/li&gt;&lt;li&gt;Fixed extra VS Code windows opening at startup on Windows when running from the VS Code integrated terminal&lt;/li&gt;&lt;li&gt;Fixed voice mode failing on Windows native binary with "native audio module could not be loaded"&lt;/li&gt;&lt;li&gt;Fixed push-to-talk not activating on session start when `voiceEnabled: true` was set in settings&lt;/li&gt;&lt;li&gt;Fixed markdown links containing `#NNN` references incorrectly pointing to the current repository instead of the linked URL&lt;/li&gt;&lt;li&gt;Fixed repeated "Model updated to Opus 4.6" notification when a project's `.claude/settings.json` has a legacy Opus model string pinned&lt;/li&gt;&lt;li&gt;Fixed plugins showing as inaccurately installed in `/plugin`&lt;/li&gt;&lt;li&gt;Fixed plugins showing "not found in marketplace" errors on fresh startup by auto-refreshing after marketplace installation&lt;/li&gt;&lt;li&gt;Fixed `/security-review` command failing with `unknown option merge-base` on older git versions&lt;/li&gt;&lt;li&gt;Fixed `/color` command having no way to reset back to the default color — `/color default`, `/color gray`, `/color reset`, and `/color none` now restore the default&lt;/li&gt;&lt;li&gt;Fixed a performance regression in the `AskUserQuestion` preview dialog that re-ran markdown rendering on every keystroke in the notes input&lt;/li&gt;&lt;li&gt;Fixed feature flags read during early startup never refreshing their disk cache, causing stale values to persist across sessions&lt;/li&gt;&lt;li&gt;Fixed `permissions.defaultMode` settings values other than `acceptEdits` or `plan` being applied in Claude Code Remote environments — they are now ignored&lt;/li&gt;&lt;li&gt;Fixed skill listing being re-injected on every `--resume` (~600 tokens saved per resume)&lt;/li&gt;&lt;li&gt;Fixed teleport marker not rendering in VS Code teleported sessions&lt;/li&gt;&lt;li&gt;Improved error message when microphone captures silence to distinguish from "no speech detected"&lt;/li&gt;&lt;li&gt;Improved compaction to preserve images in the summarizer request, allowing prompt cache reuse for faster and cheaper compaction&lt;/li&gt;&lt;li&gt;Improved `/rename` to work while Claude is processing, instead of being silently queued&lt;/li&gt;&lt;li&gt;Reduced prompt input re-renders during turns by ~74%&lt;/li&gt;&lt;li&gt;Reduced startup memory by ~426KB for users without custom CA certificates&lt;/li&gt;&lt;li&gt;Reduced Remote Control `/poll` rate to once per 10 minutes while connected (was 1–2s), cutting server load ~300×. Reconnection is unaffected — transport loss immediately wakes fast polling.&lt;/li&gt;&lt;li&gt;[VSCode] Added spark icon in VS Code activity bar that lists all Claude Code sessions, with sessions opening as full editors&lt;/li&gt;&lt;li&gt;[VSCode] Added full markdown document view for plans in VS Code, with support for adding comments to provide feedback&lt;/li&gt;&lt;li&gt;[VSCode] Added native MCP server management dialog — use `/mcp` in the chat panel to enable/disable servers, reconnect, and manage OAuth authentication without switching to the terminal&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2170</guid>
-      <category>Changelog</category>
-      <pubDate>Fri, 06 Mar 2026 00:09:06 +0000</pubDate>
     </item>
   </channel>
 </rss>
