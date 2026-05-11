@@ -13,7 +13,20 @@
       <link>https://cursor.com/blog</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 11 May 2026 11:54:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 17:16:06 +0000</lastBuildDate>
+    <item>
+      <title>PayPal increases roadmap throughput by 40% with Cursor</title>
+      <link>https://cursor.com/blog/paypal</link>
+      <guid isPermaLink="false">https://cursor.com/blog/paypal</guid>
+      <pubDate>Mon, 11 May 2026 12:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Updates to Bugbot for Teams and Individuals</title>
+      <link>https://cursor.com/blog/may-2026-bugbot-changes</link>
+      <guid isPermaLink="false">https://cursor.com/blog/may-2026-bugbot-changes</guid>
+      <category>product</category>
+      <pubDate>Mon, 11 May 2026 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Bootstrapping Composer with autoinstall</title>
       <link>https://cursor.com/blog/bootstrapping-composer-with-autoinstall</link>
@@ -104,13 +117,6 @@
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>A technical report on Composer 2</title>
-      <link>https://cursor.com/blog/composer-2-technical-report</link>
-      <guid isPermaLink="false">https://cursor.com/blog/composer-2-technical-report</guid>
-      <category>research</category>
-      <pubDate>Fri, 27 Mar 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Introducing Composer 2</title>
       <link>https://cursor.com/blog/composer-2</link>
       <description>Frontier-level coding with strong CursorBench results, higher token efficiency, and a faster default variant.</description>
@@ -136,12 +142,6 @@
       <description>A third era of AI software development is emerging as autonomous cloud agents take on larger tasks over longer timescales.</description>
       <guid isPermaLink="false">https://cursor.com/blog/third-era</guid>
       <pubDate>Thu, 26 Feb 2026 19:35:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Box chooses Cursor for enterprise-grade quality, security, and control</title>
-      <link>https://cursor.com/blog/box</link>
-      <guid isPermaLink="false">https://cursor.com/blog/box</guid>
-      <pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Building a better Bugbot</title>
