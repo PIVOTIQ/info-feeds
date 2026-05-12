@@ -8,7 +8,20 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 May 2026 23:45:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 01:45:14 +0000</lastBuildDate>
+    <item>
+      <title>Expanded Auto-review documentation</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-05-11-Expanded Auto-review documentation</link>
+      <description>&lt;p&gt;Added a dedicated
+&lt;a href="/codex/concepts/sandboxing/auto-review"&gt;Auto-review&lt;/a&gt; page covering the
+reviewer lifecycle, trigger conditions, failure behavior, and local or managed
+configuration.&lt;/p&gt;
+&lt;p&gt;Also updated the &lt;a href="/codex/agent-approvals-security"&gt;Agent approvals &amp;amp; security&lt;/a&gt;
+and &lt;a href="/codex/concepts/sandboxing"&gt;Sandbox&lt;/a&gt; docs so they explain more clearly how
+Auto-review relates to the sandbox boundary.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-11-Expanded Auto-review documentation</guid>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.130.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-05-08-Codex CLI0.130.0</link>
