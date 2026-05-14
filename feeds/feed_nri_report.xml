@@ -13,7 +13,21 @@
       <link>https://www.nri.com/jp/knowledge/report</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Thu, 14 May 2026 01:54:40 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 05:39:10 +0000</lastBuildDate>
+    <item>
+      <title>テレワークは日本に定着したのか</title>
+      <link>https://www.nri.com/jp/knowledge/report/20260514_1.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20260514_1.html</guid>
+      <category>社会</category>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>日・米・中における2014→2025年の消費価値観変化</title>
+      <link>https://www.nri.com/jp/knowledge/report/20260514_2.html</link>
+      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20260514_2.html</guid>
+      <category>社会</category>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>日・米・中における2014→2025年の家族観変化</title>
       <link>https://www.nri.com/jp/knowledge/report/20260513_1.html</link>
@@ -204,25 +218,11 @@
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>社会・経済に求められるトランジションデザイン</title>
-      <link>https://www.nri.com/jp/knowledge/report/20250909_1.html</link>
-      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20250909_1.html</guid>
-      <category>社会</category>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>耐量子計算機暗号（PQC）の現状と今後</title>
       <link>https://www.nri.com/jp/knowledge/report/2025forum397.html</link>
       <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/2025forum397.html</guid>
       <category>技術</category>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>生成AIを用いた仮想マーケットデータシナリオ生成</title>
-      <link>https://www.nri.com/jp/knowledge/report/20250804_1.html</link>
-      <guid isPermaLink="false">https://www.nri.com/jp/knowledge/report/20250804_1.html</guid>
-      <category>経済・金融</category>
-      <pubDate>Mon, 04 Aug 2025 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
