@@ -8,7 +8,16 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 May 2026 18:27:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 20:22:18 +0000</lastBuildDate>
+    <item>
+      <title>Codex mobile documentation</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-05-13-Codex mobile documentation</link>
+      <description>&lt;p&gt;Added documentation for using Codex from the ChatGPT mobile app, including setup
+steps, connected-host behavior, security requirements, and troubleshooting for
+common connection issues.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-13-Codex mobile documentation</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Expanded Auto-review documentation</title>
       <link>https://developers.openai.com/codex/changelog/#2026-05-11-Expanded Auto-review documentation</link>
@@ -392,6 +401,17 @@ Analytics dashboard charts, data export options, and enterprise Analytics API
 endpoints.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-06-Codex analytics governance docs update</guid>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Create Codex access tokens</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-05-05-Create Codex access tokens</link>
+      <description>&lt;p&gt;ChatGPT Enterprise workspace owners and admins can allow permitted members to
+create Codex access tokens for trusted, non-interactive Codex local workflows.
+Members can use access tokens to run Codex from scripts, schedulers, and private
+CI runners with their ChatGPT workspace identity.&lt;/p&gt;
+&lt;p&gt;Learn more in &lt;a href="/codex/enterprise/access-tokens"&gt;Access tokens&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-05-Create Codex access tokens</guid>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Codex CLI0.128.0</title>
