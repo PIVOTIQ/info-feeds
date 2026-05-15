@@ -8,15 +8,21 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 May 2026 21:46:25 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 22:41:54 +0000</lastBuildDate>
     <item>
-      <title>Codex mobile documentation</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-05-13-Codex mobile documentation</link>
-      <description>&lt;p&gt;Added documentation for using Codex from the ChatGPT mobile app, including setup
-steps, connected-host behavior, security requirements, and troubleshooting for
-common connection issues.&lt;/p&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-13-Codex mobile documentation</guid>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <title>Work with Codex from anywhere</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-05-14-Work with Codex from anywhere</link>
+      <description>&lt;p&gt;You can now use Codex from the ChatGPT mobile app by connecting it to a Mac
+running the Codex app. Codex runs from the connected host, so the same projects,
+files, credentials, plugins, skills, and configuration are available from your
+phone.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="/codex/remote-connections"&gt;Remote connections&lt;/a&gt; for mobile setup, choosing
+a host, what comes from the connected machine, and SSH hosts. This launch also
+includes &lt;a href="/codex/hooks"&gt;Hooks&lt;/a&gt; general availability,
+&lt;a href="/codex/enterprise/access-tokens"&gt;Codex access tokens&lt;/a&gt; for trusted automation,
+and &lt;a href="/codex/enterprise/admin-setup"&gt;Enterprise admin setup&lt;/a&gt; guidance.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-14-Work with Codex from anywhere</guid>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Expanded Auto-review documentation</title>
