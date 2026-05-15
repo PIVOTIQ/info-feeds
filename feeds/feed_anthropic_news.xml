@@ -13,7 +13,7 @@
       <link>https://www.anthropic.com/news</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 15 May 2026 15:56:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 17:20:24 +0000</lastBuildDate>
     <item>
       <title>Anthropic forms $200 million partnership with the Gates Foundation</title>
       <link>https://www.anthropic.com/news/gates-foundation-partnership</link>
@@ -1255,6 +1255,14 @@
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients</title>
+      <link>https://www.anthropic.com/news/pwc-expanded-partnership</link>
+      <description>PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients</description>
+      <guid isPermaLink="false">https://www.anthropic.com/news/pwc-expanded-partnership</guid>
+      <category>Announcements</category>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Introducing Contextual Retrieval</title>
       <link>https://www.anthropic.com/news/contextual-retrieval</link>
       <description>Introducing Contextual Retrieval</description>
@@ -1677,14 +1685,6 @@
       <guid isPermaLink="false">https://www.anthropic.com/news/anthropic-partners-with-google-cloud</guid>
       <category>Announcements</category>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients</title>
-      <link>https://www.anthropic.com/news/pwc-expanded-partnership</link>
-      <description>PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients</description>
-      <guid isPermaLink="false">https://www.anthropic.com/news/pwc-expanded-partnership</guid>
-      <category>Announcements</category>
-      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Anthropic Raises Series B to build steerable, interpretable, robust AI systems</title>
