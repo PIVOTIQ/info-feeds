@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Mon, 18 May 2026 06:04:29 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:53:02 +0000</lastBuildDate>
+    <item>
+      <title>地政学が「技術の地図」を塗り替える──CTOに突き付けられたチャレンジ</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/geopolitics-reshaping-technology-cto-challenges.html</link>
+      <description>近年の大きな地政学的変化は、産業構造そのものの地殻変動であり、各企業の技術開発において「何に投資するか」を根底から問い直すことを迫る事態ともいえます。本稿では、地政学的変化が技術戦略にどう作用し、次の戦略をどう考えるべきかを、モビリティ産業の技術アーキテクチャの組み替えを事例に考察します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/geopolitics-reshaping-technology-cto-challenges.html</guid>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>Strategy\\\\u0026「洞察」を組織能力へ 変革期の意思決定を支える企業インテリジェンス\―5つの論点から導く機能構築のアプローチ\―</title>
       <link>https://www.strategyand.pwc.com/jp/ja/publications/report/corporate-intelligence.html</link>
@@ -90,13 +97,6 @@
       <description>PwCは、世界のビジネスリーダーとテクノロジーリーダーを対象に、サイバーリスクに関する年次調査「Global Digital Trust Insights」を実施しました。本稿では、調査の結果を踏まえて日本企業を取り巻くサイバーリスク環境を概観し、日本企業が特に注目すべき課題を紹介します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trust-insights2026.html</guid>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>グローバルコンプライアンス調査2025 加速する未来へ：コンプライアンスの再構築\―\―失敗せずに進むために</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/global-compliance-survey-2025.html</link>
-      <description>コンプライアンス対応の複雑さとコストが企業にとっての課題となる中、PwCは、世界のエグゼクティブを対象に「グローバルコンプライアンス調査2025」を実施しました。調査を通じて得たコンプライアンスの実践、課題、そして将来に向けての進化についての意見を基に、市場での競争に勝つための方法などを紹介します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/global-compliance-survey-2025.html</guid>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
