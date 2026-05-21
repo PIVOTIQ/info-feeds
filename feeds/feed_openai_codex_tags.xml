@@ -8,7 +8,36 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 16:11:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 18:50:19 +0000</lastBuildDate>
+    <item>
+      <title>0.133.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.133.0</link>
+      <description>## New Features
+- Goals are now enabled by default, backed by dedicated storage, and track progress across active turns. (#23300, #23685, #23696, #23732)
+- `codex remote-control` now runs like a foreground command, waits for readiness, reports machine status, and keeps explicit daemon-style `start`/`stop` commands. (#22878)
+- Permission profiles gained list APIs, inheritance, managed `requirements.toml` support, runtime refresh behavior, and stronger Windows sandbox integration. (#22928, #23412, #22270, #23433, #22931, #23715)
+- Plugin discovery is easier to inspect, with marketplace-aware list output, installed versions, visible marketplace roots, and remote collection support. (#23372, #23584, #23727, #23730)
+- Extensions can observe more lifecycle events, including subagent start/stop, tool execution, turn metadata, and async approval/turn processing. (#22782, #22873, #23309, #23688, #23690, #23692)
+
+## Bug Fixes
+- Fixed TUI startup choosing the wrong working directory when reusing a local app-server socket. (#23538)
+- Fixed plan-mode free-form answers so modified Enter keys, like Shift+Enter, no longer submit unexpectedly. (#23536)
+- Removed stale background terminal poll events after a process exits. (#23231)
+- Preserved raw code-mode exec output unless an explicit output token limit is requested. (#23564)
+- Made AGENTS instruction loading more reliable, including local global reads and warnings for invalid UTF-8 instead of silent drops. (#23343, #23232)
+- Fixed app-server startup/shutdown races, empty resume/fork paths, plugin upgrade failures, and realtime v1 websocket compatibility. (#23516, #23578, #23400, #23356, #23771)
+
+## Documentation
+- Added clearer plugin-creator guidance for updating and reinstalling local personal plugins. (#23542)
+- Expanded app-server/API docs and schema coverage around managed permission profile requirements. (#23433, #23555)
+
+## Chores
+- Added a canonical Codex package archive pipeline and moved installers, npm packages, DotSlash, and SDK runtimes toward that shared layout. (#23513, #23582, #23586, #23596, #23635, #23636, #23637, #23638, #23786)
+- Fixed Linux Python runtime wheel tags so glibc-based systems can install the runtime artifacts. (#21812)
+- Improved release and CI reliability with package-builder tests, prebuilt resource packaging, DotSlash zstd handling, platform-sharded Rust tests, and Codex Linux release runners. (#23760, #23759, #23752, #23358, #23761)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.133.0</guid>
+      <pubDate>Thu, 21 May 2026 16:48:03 +0000</pubDate>
+    </item>
     <item>
       <title>0.132.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.132.0</link>
