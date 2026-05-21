@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 23:02:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 01:56:09 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.146</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21146</link>
+      <description>&lt;ul&gt;&lt;li&gt;Renamed `/simplify` to `/code-review` with an optional effort level (e.g. `/code-review high`)&lt;/li&gt;&lt;li&gt;Auto mode no longer suppresses `AskUserQuestion` when the user or a skill explicitly relies on it&lt;/li&gt;&lt;li&gt;Fixed Windows PowerShell tool failing with "command line is invalid" when `pwsh` is installed via winget or the Microsoft Store (regression in v2.1.124)&lt;/li&gt;&lt;li&gt;Fixed MCP `resources/list`, `resources/templates/list`, and `prompts/list` dropping items past page 1 on paginating servers&lt;/li&gt;&lt;li&gt;Fixed full-screen strobing in attached background sessions on Windows Terminal while Claude is streaming&lt;/li&gt;&lt;li&gt;Fixed the auto-updater status line not showing your current version when an update fails&lt;/li&gt;&lt;li&gt;Fixed on Windows, removing a background-job worktree no longer follows NTFS junctions into the main repo&lt;/li&gt;&lt;li&gt;Fixed `/background` refusing sessions whose only typed input was a skill or custom slash command&lt;/li&gt;&lt;li&gt;Fixed backgrounded sessions re-prompting for tool permissions you already granted with "don't ask again"&lt;/li&gt;&lt;li&gt;Fixed `/theme` color editor and "New custom theme" dialogs not responding to Esc&lt;/li&gt;&lt;li&gt;Fixed an uncaught exception at the end of streaming sessions when running via the Agent SDK&lt;/li&gt;&lt;li&gt;Fixed `forceLoginOrgUUID` and `forceLoginMethod` managed-settings policies not being enforced against third-party-provider and API-key sessions&lt;/li&gt;&lt;li&gt;Fixed GNOME Terminal right-click and middle-click paste not inserting text&lt;/li&gt;&lt;li&gt;Fixed `CLAUDE_CODE_SUBAGENT_MODEL` not being forwarded to child processes in multi-agent sessions&lt;/li&gt;&lt;li&gt;Improved auto-updater reliability: native version checks and downloads now retry transient network failures instead of failing immediately&lt;/li&gt;&lt;li&gt;Improved diff rendering performance for large file edits&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21146</guid>
+      <category>Changelog</category>
+      <pubDate>Wed, 20 May 2026 20:14:13 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.145</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21145</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2180</guid>
       <category>Changelog</category>
       <pubDate>Thu, 19 Mar 2026 21:01:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.79</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2179</link>
-      <description>&lt;ul&gt;&lt;li&gt;Added `--console` flag to `claude auth login` for Anthropic Console (API billing) authentication&lt;/li&gt;&lt;li&gt;Added "Show turn duration" toggle to the `/config` menu&lt;/li&gt;&lt;li&gt;Fixed `claude -p` hanging when spawned as a subprocess without explicit stdin (e.g. Python `subprocess.run`)&lt;/li&gt;&lt;li&gt;Fixed Ctrl+C not working in `-p` (print) mode&lt;/li&gt;&lt;li&gt;Fixed `/btw` returning the main agent's output instead of answering the side question when triggered during streaming&lt;/li&gt;&lt;li&gt;Fixed voice mode not activating correctly on startup when `voiceEnabled: true` is set&lt;/li&gt;&lt;li&gt;Fixed left/right arrow tab navigation in `/permissions`&lt;/li&gt;&lt;li&gt;Fixed `CLAUDE_CODE_DISABLE_TERMINAL_TITLE` not preventing terminal title from being set on startup&lt;/li&gt;&lt;li&gt;Fixed custom status line showing nothing when workspace trust is blocking it&lt;/li&gt;&lt;li&gt;Fixed enterprise users being unable to retry on rate limit (429) errors&lt;/li&gt;&lt;li&gt;Fixed `SessionEnd` hooks not firing when using interactive `/resume` to switch sessions&lt;/li&gt;&lt;li&gt;Improved startup memory usage by ~18MB across all scenarios&lt;/li&gt;&lt;li&gt;Improved non-streaming API fallback with a 2-minute per-attempt timeout, preventing sessions from hanging indefinitely&lt;/li&gt;&lt;li&gt;`CLAUDE_CODE_PLUGIN_SEED_DIR` now supports multiple seed directories separated by the platform path delimiter (`:` on Unix, `;` on Windows)&lt;/li&gt;&lt;li&gt;[VSCode] Added `/remote-control` — bridge your session to claude.ai/code to continue from a browser or phone&lt;/li&gt;&lt;li&gt;[VSCode] Session tabs now get AI-generated titles based on your first message&lt;/li&gt;&lt;li&gt;[VSCode] Fixed the thinking pill showing "Thinking" instead of "Thought for Ns" after a response completes&lt;/li&gt;&lt;li&gt;[VSCode] Fixed missing session diff button when opening sessions from the left sidebar&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2179</guid>
-      <category>Changelog</category>
-      <pubDate>Wed, 18 Mar 2026 21:34:08 +0000</pubDate>
     </item>
   </channel>
 </rss>
