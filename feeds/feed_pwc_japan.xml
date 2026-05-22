@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 May 2026 05:59:36 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 08:56:55 +0000</lastBuildDate>
+    <item>
+      <title>Strategy\\\\u0026 コンテンツ産業を揺るがす「買い手の独占」－大手配信サービスが生む支配構造への対抗策は－</title>
+      <link>https://www.strategyand.pwc.com/jp/ja/publications/report/ott-monopsony.html</link>
+      <description>グローバルOTTをはじめとするプラットフォームの台頭により、モノプソニーと呼ばれる「買い手による市場の独占」状態が注目されています。本稿では、グローバルOTTによる日本のコンテンツ産業への影響などを解説し、生成AIの活用を含めた対抗策を提言します。</description>
+      <guid isPermaLink="false">https://www.strategyand.pwc.com/jp/ja/publications/report/ott-monopsony.html</guid>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>地政学が「技術の地図」を塗り替える──CTOに突き付けられたチャレンジ</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/geopolitics-reshaping-technology-cto-challenges.html</link>
@@ -90,13 +97,6 @@
       <description>情報システムは、事業に不可欠であり、競争力を生み出す源泉でもある一方、システム導入プロジェクトの失敗が後を絶ちません。本稿では、訴訟事例を踏まえて失敗の背景を分析するとともに、ユーザー企業に課される「協力義務」に焦点を当て、プロジェクト成功の道筋を探ります。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/duty-to-cooperate.html</guid>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>Digital Trust Insights 2026：日本企業向け示唆</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trust-insights2026.html</link>
-      <description>PwCは、世界のビジネスリーダーとテクノロジーリーダーを対象に、サイバーリスクに関する年次調査「Global Digital Trust Insights」を実施しました。本稿では、調査の結果を踏まえて日本企業を取り巻くサイバーリスク環境を概観し、日本企業が特に注目すべき課題を紹介します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trust-insights2026.html</guid>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
