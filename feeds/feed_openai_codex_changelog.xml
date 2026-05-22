@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 May 2026 18:56:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 20:27:55 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.133.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-05-21-Codex CLI0.133.0</link>
@@ -191,7 +191,7 @@ local input, and manual-unlock fallback.&lt;/li&gt;
 &lt;li&gt;&lt;a href="/codex/plugins/build#share-a-local-plugin-with-your-workspace"&gt;Plugin sharing&lt;/a&gt;
 through marketplace sources is available for ChatGPT Business. Enterprise
 support is coming soon. Teams can distribute reusable plugin bundles that
-include skills, app integrations, and MCP servers.&lt;/li&gt;
+include skills, app integrations, MCP servers, and lifecycle hooks.&lt;/li&gt;
 &lt;li&gt;&lt;a href="/codex/app/browser#styling-feedback"&gt;Advanced in-app browser annotations&lt;/a&gt;
 let you tweak styling such as font size, colors, and spacing directly using
 annotations. This gives Codex a clearer signal for changes.&lt;/li&gt;
