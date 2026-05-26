@@ -8,7 +8,39 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 May 2026 17:17:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 19:50:43 +0000</lastBuildDate>
+    <item>
+      <title>0.134.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.134.0</link>
+      <description>## New Features
+- Added search across local conversation history, including case-insensitive content matches with result previews. (#23519, #23921)
+- Made `--profile` the primary profile selector across CLI, TUI permissions, and sandbox flows, with legacy profile configs rejected through migration guidance. (#23708, #23883, #23890, #24051, #24055, #24059, #24067, #24110)
+- Improved MCP setup with per-server environment targeting and OAuth options for streamable HTTP servers. (#23583, #24120)
+- Made connector tool schemas more reliable by preserving local `$ref`/`$defs` structures and compacting oversized schemas before exposure. (#23357, #23904)
+- Let read-only MCP tools run concurrently when they advertise `readOnlyHint`. (#23750)
+- Added richer extension and hook context, including conversation history for extension tools and subagent identity in hook inputs. (#22882, #23963)
+
+## Bug Fixes
+- Improved remote reliability by reconnecting stale exec-server websocket clients, retrying remote control immediately after auth recovery, and retrying remote compaction v2 streams. (#23867, #23775, #23951)
+- Fixed Windows TUI rendering corruption by restoring virtual terminal mode before drawing. (#24082)
+- Displayed workspace-specific usage-limit messages for credit and spend-cap failures. (#24114)
+- Allowed plugin skills to reuse shared plugin-level icon assets. (#23776)
+- Preserved active permission profile metadata when syncing auto-review runtime settings. (#23956)
+- Ensured Node-based tools honor Codex’s managed network proxy environment. (#23905)
+
+## Documentation
+- Documented the curl and PowerShell installer paths in the README. (#24106)
+- Updated developer docs to prefer `just test` over direct `cargo test` for repo-local test runs. (#23910)
+- Added profile migration documentation links to relevant config errors. (#23879)
+
+## Chores
+- Simplified release packaging around canonical native artifacts, reusable DotSlash fetching, and a new macOS x64 zsh artifact. (#23833, #23836, #24129, #24165)
+- Added release-build support for Codex-produced V8 artifacts. (#23934)
+- Added image re-encoding benchmarks and connector-style JSON schema policy fixtures. (#23935, #24152)
+- Improved tracing and analytics for websocket requests, turn starts, and remote compaction v2. (#23581, #23980, #24146)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.134.0</guid>
+      <pubDate>Tue, 26 May 2026 19:13:26 +0000</pubDate>
+    </item>
     <item>
       <title>0.133.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.133.0</link>
