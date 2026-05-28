@@ -8,7 +8,38 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2026 16:52:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 19:33:01 +0000</lastBuildDate>
+    <item>
+      <title>0.135.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.135.0</link>
+      <description>## New Features
+- `codex doctor` now reports richer environment, Git, terminal, app-server, and thread inventory diagnostics for support cases. (#24261, #24311, #24305)
+- `/status` shows remote connection details and server version when the TUI is connected over a remote transport. (#24420)
+- Vim mode gained text-object editing, improved word/line-end behavior, and a configurable interrupt-turn binding. (#24382, #24380, #24766)
+- `/permissions` now understands named permission profiles and displays configured custom profiles. (#21559)
+- Packaged Codex builds can discover and use the bundled patched zsh helper across supported macOS and Linux targets. (#23756, #24171)
+- The Python SDK now exposes friendly `Sandbox` presets for thread and turn APIs. (#24772)
+
+## Bug Fixes
+- Markdown tables and multiline lists render more readably in the TUI, with better column sizing and app-style table formatting. (#24489, #24346, #24351)
+- TUI output is more stable on macOS and Zellij, avoiding stderr/composer corruption and raw-output overlap. (#24459, #24479, #24593)
+- Slash-command completion now preserves existing draft text for commands that accept inline arguments. (#23950)
+- Older tmux/iTerm control-mode sessions no longer lose normal `Ctrl-C` handling from unsupported keyboard enhancement setup. (#24371)
+- App mentions now exclude inaccessible or disabled apps instead of offering unusable `$` suggestions. (#24625)
+- Resume flows now include non-interactive exec sessions when requested and honor cwd overrides for idle cached threads. (#24503, #24528)
+
+## Documentation
+- Clarified image-viewing tool detail behavior and removed stale TUI composer documentation references. (#23949, #24641)
+- Updated Python SDK docs, examples, and notebook content to use the new sandbox preset API. (#24772)
+
+## Chores
+- Updated Rust toolchain pins and SQLx/SQLite dependencies. (#24684, #24728)
+- Moved memory runtime state into a dedicated SQLite database. (#24591)
+- Removed remaining legacy config-profile consumers and routed more TUI config/plugin state through app-server-owned APIs. (#24076, #24254, #24255, #24265, #24266, #24257)
+- Centralized Responses retry handling and MCP tool naming logic to reduce duplicated internal plumbing. (#24131, #21576)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.135.0</guid>
+      <pubDate>Thu, 28 May 2026 17:31:35 +0000</pubDate>
+    </item>
     <item>
       <title>0.134.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.134.0</link>
