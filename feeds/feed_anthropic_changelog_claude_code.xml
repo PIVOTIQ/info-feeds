@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 28 May 2026 23:05:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 01:54:37 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.156</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21156</link>
+      <description>&lt;ul&gt;&lt;li&gt;Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21156</guid>
+      <category>Changelog</category>
+      <pubDate>Thu, 28 May 2026 20:12:52 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.154</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21154</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2189</guid>
       <category>Changelog</category>
       <pubDate>Tue, 31 Mar 2026 23:32:40 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.87</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2187</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed messages in Cowork Dispatch not getting delivered&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2187</guid>
-      <category>Changelog</category>
-      <pubDate>Sun, 29 Mar 2026 01:40:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
