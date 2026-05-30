@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 May 2026 23:59:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 02:52:50 +0000</lastBuildDate>
     <item>
       <title>Computer use and mobile access on Windows26.527</title>
       <link>https://developers.openai.com/codex/changelog/#2026-05-29-Computer use and mobile access on Windows26.527</link>
@@ -22,6 +22,10 @@ can start Codex work on a Windows device from ChatGPT on iOS or Android, or
 from a Mac running Codex, and check its progress remotely.&lt;/li&gt;
 &lt;li&gt;The &lt;a href="/codex/app/settings#profile"&gt;Profile section&lt;/a&gt; now shows your profile
 details, usage stats, and token activity.&lt;/li&gt;
+&lt;li&gt;Added thread coordination for local projects and worktrees, including
+separate background threads when explicitly requested.&lt;/li&gt;
+&lt;li&gt;Expanded search for past Codex app threads to include conversation content
+and Git branch names.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="performance-improvements-and-bug-fixes"&gt;Performance improvements and bug fixes&lt;/h3&gt;
 &lt;ul&gt;
