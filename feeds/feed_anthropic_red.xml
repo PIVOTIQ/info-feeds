@@ -13,7 +13,7 @@
       <link>https://anthropic.com/feed_anthropic_red.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2026 15:56:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 16:51:59 +0000</lastBuildDate>
     <item>
       <title>Measuring LLMs' Ability to Develop Exploits</title>
       <link>https://red.anthropic.com/2026/exploit-evals/</link>
@@ -58,15 +58,6 @@
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AI Models on Realistic Cyber Ranges</title>
-      <link>https://red.anthropic.com/2026/cyber-toolkits-update/</link>
-      <description>In a recent evaluation of AI models’ cyber capabilities, current Claude models can now succeed
-                        at multistage attacks on networks with dozens of hosts using only standard, open-source tools,
-                        instead of the custom tools needed by previous generations.</description>
-      <guid isPermaLink="false">https://red.anthropic.com/2026/cyber-toolkits-update/</guid>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Finding Bugs with Claude and Property-based Testing</title>
       <link>https://red.anthropic.com/2026/property-based-testing/</link>
       <description>Ensuring that programs are bug-free is one of the most challenging aspects of software
@@ -89,6 +80,15 @@
                     for national security.</description>
       <guid isPermaLink="false">https://red.anthropic.com/2026/critical-infrastructure-defense/</guid>
       <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI Models on Realistic Cyber Ranges</title>
+      <link>https://red.anthropic.com/2026/cyber-toolkits-update/</link>
+      <description>In a recent evaluation of AI models’ cyber capabilities, current Claude models can now succeed
+                        at multistage attacks on networks with dozens of hosts using only standard, open-source tools,
+                        instead of the custom tools needed by previous generations.</description>
+      <guid isPermaLink="false">https://red.anthropic.com/2026/cyber-toolkits-update/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Project Vend: Phase Two</title>
