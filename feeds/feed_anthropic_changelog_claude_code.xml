@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Sun, 31 May 2026 18:58:30 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 20:04:03 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.159</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21159</link>
+      <description>&lt;ul&gt;&lt;li&gt;Internal infrastructure improvements (no user-facing changes)&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21159</guid>
+      <category>Changelog</category>
+      <pubDate>Sun, 31 May 2026 17:50:06 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.158</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21158</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2192</guid>
       <category>Changelog</category>
       <pubDate>Sat, 04 Apr 2026 00:05:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.91</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2191</link>
-      <description>&lt;ul&gt;&lt;li&gt;Added MCP tool result persistence override via `_meta["anthropic/maxResultSizeChars"]` annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation&lt;/li&gt;&lt;li&gt;Added `disableSkillShellExecution` setting to disable inline shell execution in skills, custom slash commands, and plugin commands&lt;/li&gt;&lt;li&gt;Added support for multi-line prompts in `claude-cli://open?q=` deep links (encoded newlines `%0A` no longer rejected)&lt;/li&gt;&lt;li&gt;Plugins can now ship executables under `bin/` and invoke them as bare commands from the Bash tool&lt;/li&gt;&lt;li&gt;Fixed transcript chain breaks on `--resume` that could lose conversation history when async transcript writes fail silently&lt;/li&gt;&lt;li&gt;Fixed `cmd+delete` not deleting to start of line on iTerm2, kitty, WezTerm, Ghostty, and Windows Terminal&lt;/li&gt;&lt;li&gt;Fixed plan mode in remote sessions losing track of the plan file after a container restart, which caused permission prompts on plan edits and an empty plan-approval modal&lt;/li&gt;&lt;li&gt;Fixed JSON schema validation for `permissions.defaultMode: "auto"` in settings.json&lt;/li&gt;&lt;li&gt;Fixed Windows version cleanup not protecting the active version's rollback copy&lt;/li&gt;&lt;li&gt;`/feedback` now explains why it's unavailable instead of disappearing from the slash menu&lt;/li&gt;&lt;li&gt;Improved `/claude-api` skill guidance for agent design patterns including tool surface decisions, context management, and caching strategy&lt;/li&gt;&lt;li&gt;Improved performance: faster `stripAnsi` on Bun by routing through `Bun.stripANSI`&lt;/li&gt;&lt;li&gt;Edit tool now uses shorter `old_string` anchors, reducing output tokens&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2191</guid>
-      <category>Changelog</category>
-      <pubDate>Thu, 02 Apr 2026 22:37:15 +0000</pubDate>
     </item>
   </channel>
 </rss>
