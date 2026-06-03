@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jun 2026 15:22:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 22:20:49 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.162</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21162</link>
+      <description>&lt;ul&gt;&lt;li&gt;`claude agents --json` now includes `waitingFor` showing what a waiting session is blocked on (e.g. permission prompt)&lt;/li&gt;&lt;li&gt;`--tools`: explicitly listing Grep/Glob now provides the dedicated search tools on native builds with embedded search (previously these names were silently ignored)&lt;/li&gt;&lt;li&gt;`/effort` now confirms when your chosen level will persist as the default for new sessions&lt;/li&gt;&lt;li&gt;Clicking a slash command in the autocomplete menu now fills it into your prompt instead of running it immediately; press Enter to run&lt;/li&gt;&lt;li&gt;Remote Control now shows as a persistent footer pill (with a link to the session) instead of a startup message&lt;/li&gt;&lt;li&gt;Renamed Windsurf to Devin Desktop in the `/ide` menu, `/terminal-setup`, and `/scroll-speed`, following the editor's rebrand&lt;/li&gt;&lt;li&gt;Fixed a silent startup hang when the config directory is read-only or unwritable — Claude Code now starts with in-memory config and surfaces startup errors instead of showing a blank screen&lt;/li&gt;&lt;li&gt;Fixed WebFetch permission rules not being applied to built-in preapproved domains; explicit `WebFetch(domain:...)` deny/ask/allow rules now take precedence over the preapproved-host auto-allow&lt;/li&gt;&lt;li&gt;Fixed Windows permission rules never matching when spelled with backslashes (`~\`, `\\server\share`) or case-variant paths, and Read deny rules not hiding files from Glob/Grep results&lt;/li&gt;&lt;li&gt;Fixed an interrupt (Esc) sent at the very start of a turn being silently dropped in stream-json/SDK sessions, leaving the turn running with no "Interrupted" feedback&lt;/li&gt;&lt;li&gt;Fixed API 400 `no low surrogate in string` errors for classifier side-queries and MCP server descriptions containing emoji near a truncation boundary&lt;/li&gt;&lt;li&gt;Fixed MCP per-server `timeout` config values below 1000 ms being floored to a 1-second watchdog that aborted every tool call; sub-1000 ms values are now ignored (falling back to `MCP_TOOL_TIMEOUT` or default), and `claude mcp get` annotates them accordingly&lt;/li&gt;&lt;li&gt;Fixed the LSP tool's `workspaceSymbol` operation returning no results; it now accepts a `query` parameter and passes it to the language server&lt;/li&gt;&lt;li&gt;Fixed `claude agents` cutting live status text (tool args, replies, prompts, exec output) at 60–120 columns on wide terminals; the status detail now uses the full terminal width&lt;/li&gt;&lt;li&gt;Fixed `claude agents` truncating long session names at 40 columns; the name column now grows with terminal width&lt;/li&gt;&lt;li&gt;Fixed `claude agents` attach occasionally bouncing straight back to the session list on the first try after a background-service restart&lt;/li&gt;&lt;li&gt;Fixed `claude agents` Ctrl+V image paste doing nothing in the dispatch input and the session reply box; pasting with no image now shows a hint&lt;/li&gt;&lt;li&gt;Fixed backgrounding a session with ← silently losing the conversation when the background service cannot start; the session stays in the list as a failed row you can wake with Enter&lt;/li&gt;&lt;li&gt;Fixed replies from the agents view that fail to send being lost; they are now queued for delivery on the next session start&lt;/li&gt;&lt;li&gt;Fixed cross-session messaging (`SendMessage`) silently breaking when `CLAUDE_CODE_TMPDIR` or `$TMPDIR` points at a deep directory&lt;/li&gt;&lt;li&gt;Fixed opening a running background session from `claude agents` stalling for 5 seconds before attaching&lt;/li&gt;&lt;li&gt;Quieter startup: notices group by severity, and session info and announcements share a single line per launch&lt;/li&gt;&lt;li&gt;Startup warnings rewritten to be shorter and clearer, each with a concrete fix&lt;/li&gt;&lt;li&gt;Launch-prompt warnings (deep link/pre-filled prompt) now stay pinned below the input until you act instead of scrolling away&lt;/li&gt;&lt;li&gt;Failed turns now show a compact warning line instead of a multi-line red error block&lt;/li&gt;&lt;li&gt;Improved background service startup and `claude update` verification to wait out endpoint-security scanning of new binaries instead of failing after 5 seconds&lt;/li&gt;&lt;li&gt;Background dispatch spawn failures now report the error class name when no errno is available&lt;/li&gt;&lt;li&gt;Removed the "Claude in Chrome enabled" and "marketplace installed" startup messages; model auto-updates and the team-onboarding tip now show as quiet notices under the logo&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21162</guid>
+      <category>Changelog</category>
+      <pubDate>Wed, 03 Jun 2026 18:09:44 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.161</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21161</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2197</guid>
       <category>Changelog</category>
       <pubDate>Wed, 08 Apr 2026 21:27:55 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.96</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2196</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed Bedrock requests failing with `403 "Authorization header is missing"` when using `AWS_BEARER_TOKEN_BEDROCK` or `CLAUDE_CODE_SKIP_BEDROCK_AUTH` (regression in 2.1.94)&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#2196</guid>
-      <category>Changelog</category>
-      <pubDate>Wed, 08 Apr 2026 04:32:44 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jun 2026 05:53:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 22:21:05 +0000</lastBuildDate>
     <item>
       <title>May 27, 2026Economic ResearchCoding agents in the social sciences</title>
       <link>https://www.anthropic.com/research/coding-agents-social-sciences</link>
@@ -85,14 +85,6 @@
       <guid isPermaLink="false">https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench</guid>
       <category>Research</category>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Apr 22, 2026Economic ResearchAnnouncing the Anthropic Economic Index Survey</title>
-      <link>https://www.anthropic.com/research/economic-index-survey-announcement</link>
-      <description>Apr 22, 2026Economic ResearchAnnouncing the Anthropic Economic Index Survey</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/economic-index-survey-announcement</guid>
-      <category>Research</category>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?</title>
