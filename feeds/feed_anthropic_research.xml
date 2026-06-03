@@ -13,7 +13,23 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 20 May 2026 20:00:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 00:22:08 +0000</lastBuildDate>
+    <item>
+      <title>May 27, 2026Economic ResearchCoding agents in the social sciences</title>
+      <link>https://www.anthropic.com/research/coding-agents-social-sciences</link>
+      <description>May 27, 2026Economic ResearchCoding agents in the social sciences</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/coding-agents-social-sciences</guid>
+      <category>Research</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>May 22, 2026AnnouncementsProject Glasswing: An initial update</title>
+      <link>https://www.anthropic.com/research/glasswing-initial-update</link>
+      <description>May 22, 2026AnnouncementsProject Glasswing: An initial update</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/glasswing-initial-update</guid>
+      <category>Research</category>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>May 14, 2026Policy2028: Two scenarios for global AI leadership</title>
       <link>https://www.anthropic.com/research/2028-ai-leadership</link>
@@ -71,28 +87,12 @@
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Apr 22, 2026Economic ResearchWhat 81,000 people told us about the economics of AI</title>
-      <link>https://www.anthropic.com/research/81k-economics</link>
-      <description>Apr 22, 2026Economic ResearchWhat 81,000 people told us about the economics of AI</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/81k-economics</guid>
-      <category>Research</category>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Apr 22, 2026Economic ResearchAnnouncing the Anthropic Economic Index Survey</title>
       <link>https://www.anthropic.com/research/economic-index-survey-announcement</link>
       <description>Apr 22, 2026Economic ResearchAnnouncing the Anthropic Economic Index Survey</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/economic-index-survey-announcement</guid>
       <category>Research</category>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Apr 14, 2026AlignmentAutomated Alignment Researchers: Using large language models to scale scalable oversight</title>
-      <link>https://www.anthropic.com/research/automated-alignment-researchers</link>
-      <description>Apr 14, 2026AlignmentAutomated Alignment Researchers: Using large language models to scale scalable oversight</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/automated-alignment-researchers</guid>
-      <category>Research</category>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?</title>
