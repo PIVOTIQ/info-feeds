@@ -8,7 +8,39 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Jun 2026 00:26:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 05:32:36 +0000</lastBuildDate>
+    <item>
+      <title>0.137.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.137.0</link>
+      <description>## New Features
+- TUI controls now support F13-F24 keybindings, paste in searchable menus, and a compact reasoning-only status/title item (#25329, #25400, #25504).
+- Enterprise/admin flows now show monthly credit limits and can apply cloud-managed config bundles, including EDU workspaces (#24812, #24617, #24619, #24620, #24622, #25963).
+- Remote-control clients can start pairing and list or revoke controller grants through app-server v2 RPCs (#25675, #25785).
+- Plugin workflows gained machine-readable `codex plugin list --json` output and cached remote catalog suggestions (#25330, #25457).
+- Hosted web and image tools are available in more code-mode flows, with standalone web searches able to run in parallel (#25176, #25702, #25890, #25923).
+- Multi-agent v2 keeps runtime choice with each thread and exposes cleaner follow-up and metadata defaults for spawned agents (#25266, #25636, #25720, #25721, #25722, #25841, #26114).
+
+## Bug Fixes
+- Cancelling a submitted prompt before visible output now restores the draft, attachments, and collaboration mode for editing (#25316).
+- Slash-command filtering and footer shortcut hints now reset or render according to the current UI state (#25492, #25625).
+- Platform reliability improved for macOS app launches and Windows SQLite startup, thread resume, and sandbox setup refreshes (#25485, #25490, #25509, #25949).
+- Plugin loading preserves app manifest order, deduplicates local/remote curated installs, and treats malformed `skills` fields as warnings (#25491, #25681, #25717, #25782).
+- Permission requests and approvals now carry environment identity, and managed MITM proxying exports readable CA bundles to child commands (#25850, #25858, #25862, #22668).
+- Local session history is safer for compressed rollouts, renamed titles, pathless side-chat reloads, and stack-heavy startup/config rebuilds (#25087, #25624, #25661, #25814, #25844, #25847).
+
+## Documentation
+- Added app-server docs and generated schema updates for monthly credit limits, remote-control RPCs, and environment-scoped permission approvals (#24812, #25675, #25785, #25862).
+- Moved repo review rules and contributor conventions into `AGENTS.md`, including Rust test-module layout and Python 3 compatibility guidance (#25682, #25690, #25738).
+
+## Chores
+- Root formatting and Justfile workflows are more complete and Windows-aware (#24983, #25165, #25683).
+- Rust CI and release workflows use the git CLI for Cargo fetches to avoid intermittent libgit2/submodule failures (#25644, #25775).
+- Python SDK releases now publish runtime wheels from the SDK workflow and pin to a glibc-compatible runtime package (#25906, #25907).
+- Bazel CI’s BuildBuddy wrapper was reintroduced with Windows-safe process handling and validation (#25915).
+- Shared prompts, context fragments, and skills plumbing moved into dedicated crates/extension paths to reduce `codex-core` coupling (#25151, #25953, #25959, #26106, #26122, #26167).</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.137.0</guid>
+      <pubDate>Thu, 04 Jun 2026 01:17:20 +0000</pubDate>
+    </item>
     <item>
       <title>0.136.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.136.0</link>
