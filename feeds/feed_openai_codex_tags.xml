@@ -8,7 +8,39 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Jun 2026 21:44:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 23:08:07 +0000</lastBuildDate>
+    <item>
+      <title>0.138.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0</link>
+      <description>## New Features
+
+- The `/app` command can now hand off the current CLI thread into Codex Desktop on macOS and native Windows, and Windows workspace launches can open directly into Desktop instead of stopping at a manual prompt. (#25638, #26500)
+- Local image attachments and standalone image generations now expose their saved file paths to the model, which makes follow-up edits and file references more reliable. (#25944, #25947)
+- Reasoning effort selection is more flexible: the TUI adds fallback shortcuts for terminals that miss `Alt` bindings, and model-defined effort levels now flow through in the order advertised by the model. (#25623, #26444, #26446)
+- App-server integrations can now read account token usage, and Codex auth supports v2 personal access tokens in CLI and app-server flows. (#25344, #25731)
+- Plugin automation got richer structured output: add/remove and marketplace commands support `--json`, plugin list JSON includes marketplace source, and plugin detail data now exposes default prompts, remote MCP servers, and unavailable app templates. (#26631, #26417, #25887, #26453, #26317)
+
+## Bug Fixes
+
+- Goal workflows are more predictable: multiline paste in `/goal edit` no longer submits early, idle auto-turns stay out of Plan mode, and goals stop auto-continuing after terminal turn failures. (#26047, #26147, #26690)
+- Forked threads now keep user-renamed titles instead of falling back to the original first-prompt name. (#26075)
+- The TUI no longer adds extra blank space while streaming, and cancelled prompts reopen with the cursor at the end so you can keep editing naturally. (#26636, #26457)
+- TUI config write failures now show the underlying cause, making validation problems and read-only filesystem issues much easier to diagnose. (#26537)
+- Startup is more resilient across environments, with support for `/usr/bin/bash`, shorter Linux proxy socket paths, and pre-refresh of expired OAuth-backed MCP credentials. (#26538, #26553, #26482)
+- Workspace instruction loading is more accurate for remote and symlinked workspaces, so the right `AGENTS.md` files are picked up consistently. (#26205, #26465)
+
+## Documentation
+
+- The CLI README was refreshed to remove stale guidance and better match the current documentation flow. (#26313)
+
+## Chores
+
+- TUI startup does less repeated plugin work by reusing discovery results and loading only hook metadata on the critical path. (#26469, #26272)
+- `resume --last` now finds the newest matching session through the state DB first, which speeds up restore on large local histories. (#26462)
+- Large MCP/Ollama streams and long message histories process much faster thanks to optimized byte scanning. (#26265)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.138.0</guid>
+      <pubDate>Mon, 08 Jun 2026 23:00:27 +0000</pubDate>
+    </item>
     <item>
       <title>0.137.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.137.0</link>
