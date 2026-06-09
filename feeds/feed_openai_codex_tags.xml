@@ -8,7 +8,30 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2026 19:53:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 21:29:52 +0000</lastBuildDate>
+    <item>
+      <title>0.139.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.139.0</link>
+      <description>## New Features
+- Code mode can now call standalone web search directly, including from nested JavaScript tool calls, and receive plaintext search results. (#26719)
+- Tool and connector input schemas now preserve `oneOf` and `allOf`, and large schemas keep more shallow structure when compacted, improving compatibility with richer MCP tools. (#24118, #27084)
+- `codex doctor` now includes editor and pager environment details in the local report while redacting raw values in JSON output. (#27081)
+- Plugin marketplace automation is more informative and responsive: `codex plugin marketplace list --json` now includes each marketplace source, and plugin lists can return from the cached remote catalog before refreshing in the background. (#27009, #26932)
+
+## Bug Fixes
+- `codex resume --last "..."` and `codex fork --last "..."` now treat the trailing argument as the initial prompt instead of misreading it as a session ID. (#26818)
+- MCP startup warnings from subagents now stay in the thread that owns them, avoiding duplicate parent-thread alerts and stuck startup spinners in the TUI. (#26639)
+- Image edits now use the exact referenced image file paths instead of guessing from conversation history, so attached-image edits land on the intended input. (#26486)
+- Bare URLs with `~` in the path are now linkified end to end in the TUI instead of being truncated before the tilde. (#27088)
+- Thread resets such as `/new`, `/clear`, and `/fork` no longer drop cloud-managed requirements or feature flags during TUI config reloads. (#25177)
+- Sandbox execution now preserves approved escalation decisions and enforces configured proxy-only networking more consistently. (#24981, #27035)
+
+## Chores
+- Release builds once again publish separate symbol archives with line tables, improving post-release crash symbolication without bringing back the earlier full-debug build slowdown. (#26202)
+- The embedded V8 toolchain was updated to `rusty_v8` 149.2.0. (#26464)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.139.0</guid>
+      <pubDate>Tue, 09 Jun 2026 20:13:29 +0000</pubDate>
+    </item>
     <item>
       <title>0.138.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.138.0</link>
