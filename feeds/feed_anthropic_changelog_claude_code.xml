@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2026 15:49:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 17:49:24 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.170</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21170</link>
+      <description>&lt;ul&gt;&lt;li&gt;Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ever made generally available. Update to version 2.1.170 for access. https://www.anthropic.com/news/claude-fable-5-mythos-5&lt;/li&gt;&lt;li&gt;Fixed sessions not saving transcripts (and not appearing in --resume) when launched from the VS Code integrated terminal or any shell that inherited Claude Code environment variables.&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21170</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 09 Jun 2026 16:15:44 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.169</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21169</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21110</guid>
       <category>Changelog</category>
       <pubDate>Wed, 15 Apr 2026 20:40:53 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.109</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21109</link>
-      <description>&lt;ul&gt;&lt;li&gt;Improved the extended-thinking indicator with a rotating progress hint&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21109</guid>
-      <category>Changelog</category>
-      <pubDate>Wed, 15 Apr 2026 03:45:21 +0000</pubDate>
     </item>
   </channel>
 </rss>
