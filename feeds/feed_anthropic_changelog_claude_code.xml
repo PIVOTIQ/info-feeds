@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Jun 2026 20:59:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 22:23:16 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.176</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21176</link>
+      <description>&lt;ul&gt;&lt;li&gt;Session titles are now generated in the language of your conversation (set the `language` setting to pin a specific language)&lt;/li&gt;&lt;li&gt;Added `footerLinksRegexes` setting for regex-matched link badges in the footer row, configurable via user or managed settings&lt;/li&gt;&lt;li&gt;Improved Bedrock credential caching: credentials from `awsCredentialExport` are now cached until their `Expiration` instead of a fixed 1 hour&lt;/li&gt;&lt;li&gt;Fixed `availableModels` enforcement: alias model picks can no longer be redirected to a blocked model via `ANTHROPIC_DEFAULT_*_MODEL` environment variables, and `/fast` now refuses to toggle when it would switch to a model outside the allowlist&lt;/li&gt;&lt;li&gt;Fixed auto mode failing on Fable 5 for organizations without Opus 4.8 enabled — the classifier now falls back to the best available Opus model&lt;/li&gt;&lt;li&gt;Fixed hook `if` conditions for Read/Edit/Write tool paths: documented patterns like `Edit(src/**)`, `Read(~/.ssh/**)`, and `Read(.env)` now match correctly&lt;/li&gt;&lt;li&gt;Fixed Linux sandbox failing to start when `.claude/settings.json` is a symlink with an absolute target&lt;/li&gt;&lt;li&gt;Fixed `/copy` and mouse-selection copy not reaching the system clipboard inside tmux over SSH, and tmux paste buffer not loading on versions older than 3.2&lt;/li&gt;&lt;li&gt;Fixed Remote Control connecting from web/mobile silently switching the session's model&lt;/li&gt;&lt;li&gt;Fixed Remote Control disconnect notifications showing a bare numeric code instead of a human-readable reason, and connection failures adding a duplicate line to the conversation transcript&lt;/li&gt;&lt;li&gt;Fixed Remote Control sessions not disconnecting when you sign in to a different account&lt;/li&gt;&lt;li&gt;Fixed `/cd` and worktree moves leaving the session reporting the previous directory's git branch&lt;/li&gt;&lt;li&gt;Fixed `claude agents`: pressing back in one window no longer detaches other windows attached to the same session&lt;/li&gt;&lt;li&gt;Fixed backgrounded sessions showing "Working" forever when `/bg` mid-turn had nothing left to continue&lt;/li&gt;&lt;li&gt;Fixed background agent search by PR URL: PRs opened during scheduled wakeups or while a job was blocked now appear in `claude agents` search&lt;/li&gt;&lt;li&gt;Fixed the agents view input showing no text cursor on Windows&lt;/li&gt;&lt;li&gt;Fixed `claude --bg -cn &lt;name&gt;` not seeding the session name&lt;/li&gt;&lt;li&gt;Fixed background sessions to neutralize Windows network paths in persisted state before respawn&lt;/li&gt;&lt;li&gt;Fixed background-session respawn rejecting malformed resume IDs from corrupted state files&lt;/li&gt;&lt;li&gt;Fixed the Windows background-service daemon not starting when `~/.claude/daemon` has the ReadOnly attribute set&lt;/li&gt;&lt;li&gt;Fixed cloud sessions failing with "Could not resolve authentication method" when idle for too long before being claimed&lt;/li&gt;&lt;li&gt;Background sessions now show clearer guidance when a window left open across an auto-update can't submit a reply, and `claude daemon status` explains version-skew behavior&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21176</guid>
+      <category>Changelog</category>
+      <pubDate>Fri, 12 Jun 2026 19:45:41 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.175</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21175</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21116</guid>
       <category>Changelog</category>
       <pubDate>Mon, 20 Apr 2026 19:24:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.114</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed a crash in the permission dialog when an agent teams teammate requested tool permission&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21114</guid>
-      <category>Changelog</category>
-      <pubDate>Fri, 17 Apr 2026 23:26:20 +0000</pubDate>
     </item>
   </channel>
 </rss>
