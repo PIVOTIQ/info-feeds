@@ -13,7 +13,7 @@
       <link>https://anthropic.com/feed_anthropic_red.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 13:19:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 15:25:31 +0000</lastBuildDate>
     <item>
       <title>Measuring LLMs' Impact on N-day Exploits</title>
       <link>https://red.anthropic.com/2026/n-days/</link>
@@ -34,6 +34,14 @@
                         trends we are seeing in AI-enabled cyber operations.</description>
       <guid isPermaLink="false">https://red.anthropic.com/2026/attack-navigator/</guid>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Reverse engineering Claude's CVE-2026-2796 exploit</title>
+      <link>https://red.anthropic.com/2026/exploit/</link>
+      <description>This post dives deep into how Claude wrote an exploit for one of the vulnerabilities it found in
+                        Firefox.</description>
+      <guid isPermaLink="false">https://red.anthropic.com/2026/exploit/</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Measuring LLMs' Ability to Develop Exploits</title>
@@ -61,14 +69,6 @@
                         defenses.</description>
       <guid isPermaLink="false">https://red.anthropic.com/2026/mythos-preview/</guid>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Reverse engineering Claude's CVE-2026-2796 exploit</title>
-      <link>https://red.anthropic.com/2026/exploit/</link>
-      <description>This post dives deep into how Claude wrote an exploit for one of the vulnerabilities it found in
-                        Firefox.</description>
-      <guid isPermaLink="false">https://red.anthropic.com/2026/exploit/</guid>
-      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>LLM-discovered 0-days</title>
