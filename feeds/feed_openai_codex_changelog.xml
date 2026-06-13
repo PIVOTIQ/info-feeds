@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:11:09 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 05:14:06 +0000</lastBuildDate>
     <item>
       <title>Codex app26.609</title>
       <link>https://developers.openai.com/codex/changelog/#2026-06-11-Codex app26.609</link>
@@ -982,6 +982,17 @@ Full release on Github
 Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-26-Codex CLI0.134.0</guid>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GPT-5.3-Codex and GPT-5.2 deprecated</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-05-26-GPT-5.3-Codex and GPT-5.2 deprecated</link>
+      <description>&lt;p&gt;GPT-5.3-Codex and GPT-5.2 are now deprecated as user-selectable models in Codex
+for users signed in with ChatGPT. API-key workflows aren’t affected.&lt;/p&gt;
+&lt;p&gt;Use a current Codex model, such as GPT-5.5, GPT-5.4, or GPT-5.4 mini. See
+&lt;a href="/codex/models#deprecated-codex-models"&gt;Codex models&lt;/a&gt; for model availability
+and &lt;a href="/codex/pricing#credits-overview"&gt;Codex pricing&lt;/a&gt; for credit rates.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-05-26-GPT-5.3-Codex and GPT-5.2 deprecated</guid>
       <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
