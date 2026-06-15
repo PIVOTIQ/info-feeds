@@ -8,7 +8,39 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2026 19:38:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 22:09:38 +0000</lastBuildDate>
+    <item>
+      <title>0.140.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.140.0</link>
+      <description>## New Features
+
+- Added `/usage` views for daily, weekly, and cumulative account token activity. (#27925)
+- `/goal` now preserves oversized text, large pasted blocks, and image attachments, including in remote app-server sessions. (#27508, #27509, #27510)
+- Added permanent session deletion through `codex delete`, `/delete`, and app-server `thread/delete`, with confirmation safeguards and subagent cleanup. (#25018, #27476)
+- Added `/import` for selectively importing setup, project configuration, and recent chats from Claude Code. (#27070, #27071, #27703)
+- Typing `@` now opens the unified mentions menu for files, plugins, and skills by default. (#27499)
+- Added managed Amazon Bedrock API-key authentication and encrypted local storage for CLI and MCP OAuth credentials. (#27443, #27689, #27504, #27535, #27539, #27541)
+
+## Bug Fixes
+
+- Corrupted SQLite state databases are now backed up and rebuilt automatically from rollout data, including malformed database-directory cases. (#26859, #27719)
+- Prevented `/review` from crashing when `Esc` is pressed with queued guidance, while preserving that guidance when the review is canceled. (#22879)
+- Improved MCP reliability by retrying transient startup failures, reporting unusable OAuth credentials as logged out, and preserving explicitly disabled servers. (#25147, #26713, #27414)
+- Fixed remote plugin uninstall requests and correctly surfaced apps requiring authentication during installation. (#27085, #27223)
+- Persisted “Don’t remind me” update dismissals reliably and cleared stale running-hook indicators after completed turns. (#27619, #27783)
+- Non-TTY background commands can now be interrupted with Ctrl-C while preserving their final output and exit status. (#26734)
+
+## Documentation
+
+- Clarified contributor guidance around keeping crate APIs narrow and supporting Linux, macOS, and Windows. (#27939, #27966)
+
+## Chores
+
+- Improved responsiveness for large repositories and long sessions by preserving Git’s built-in filesystem monitor, avoiding duplicate history reads, accelerating archive lookup, and caching turn-diff rendering. (#26880, #27031, #27276, #27489)
+- Removed the experimental `/realtime` voice controls and related audio dependencies from the TUI. (#27801)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.140.0</guid>
+      <pubDate>Mon, 15 Jun 2026 21:06:37 +0000</pubDate>
+    </item>
     <item>
       <title>0.139.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.139.0</link>
