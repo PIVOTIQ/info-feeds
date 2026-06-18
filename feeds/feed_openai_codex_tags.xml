@@ -8,7 +8,36 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2026 23:14:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 07:24:14 +0000</lastBuildDate>
+    <item>
+      <title>0.141.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.141.0</link>
+      <description>## New Features
+
+- Remote executors now use authenticated, end-to-end encrypted Noise relay channels. (#26242, #26245)
+- Cross-platform remote execution now preserves executor-native working directories and shells, including filesystem permission paths across app-server and exec-server boundaries. (#27819, #27995, #28032, #28122, #28165, #28367)
+- Selected executor plugins can activate their stdio MCP servers per thread; plugin discovery also adds a created-by-me marketplace and auth-specific curated catalogs. (#27870, #27884, #27893, #28203, #28383)
+- App-server clients can list immediate child threads, correlate external-agent imports with detailed results, and read or redeem rate-limit reset credits. (#26662, #28008, #28143)
+- Realtime clients can explicitly append speech, control how Codex responses enter conversations, and omit startup context. (#27917, #28405)
+- TUI input prompts can auto-resolve after inactivity, with a countdown that pauses on interaction. (#28235)
+
+## Bug Fixes
+
+- Hook trust bypass now persists through `codex exec` thread start and resume, while blocking `PostToolUse` hooks correctly reject code-mode tool calls. (#26434, #28365)
+- Plugin capabilities now route consistently by authentication mode, deduplicate conflicting App/MCP declarations, and preserve remote marketplace ordering. (#27461, #27602, #27607, #27902, #27958, #28395)
+- Windows sandbox execution repairs stale credentials automatically and gives PowerShell commands more time before backgrounding. (#27086, #27944)
+- Idle exec-server relays remain connected, and steered user input immediately interrupts `wait_agent`. (#28286, #28341)
+- Bundled SQLite is pinned to a version containing the WAL-reset corruption fix. (#27992)
+- TLS connections now support P-521 certificate signatures commonly used by enterprise proxies. (#27706)
+
+## Chores
+
+- Reduced latency and memory use in large, tool-heavy sessions by caching tool search and eliminating repeated request and history copies. (#27258, #27813, #28306, #28309, #28313, #28323, #28327)
+- Bounded prompt-image caching to 64 MiB and feedback uploads to eight related threads. (#28294, #28332)
+- Terminal resize reflow is now always enabled, ignoring obsolete disabled settings. (#27794)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.141.0</guid>
+      <pubDate>Thu, 18 Jun 2026 04:43:06 +0000</pubDate>
+    </item>
     <item>
       <title>0.140.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.140.0</link>
