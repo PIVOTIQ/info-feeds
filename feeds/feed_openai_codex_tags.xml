@@ -8,7 +8,35 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Jun 2026 17:23:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 06:39:03 +0000</lastBuildDate>
+    <item>
+      <title>0.142.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.142.0</link>
+      <description>## New Features
+
+- `/usage` can now show and redeem earned usage-limit reset credits, with confirmation, retry, and refreshed availability states. (#28154, #28793)
+- `/plugins` now organizes remote plugins into OpenAI Curated, Workspace, and Shared with me sections, while eligible turns can recommend and install relevant plugins. (#26703, #28399, #28400, #27704, #28403)
+- Configurable rollout token budgets track usage across agent threads, provide remaining-budget reminders, and abort turns when exhausted. (#28746, #28494, #28707, #29423)
+- App-server clients can configure multi-agent delegation as disabled, explicit-request-only, or proactive at the thread and turn level. (#28685, #28792, #29324)
+- Added an indexed web-search mode that permits live searches while restricting direct page access to server-approved URLs. (#28489)
+- Codex can now receive scheduled UTC time reminders and query the current time directly, including through client-provided app-server clocks. (#28822, #28824, #28835, #29011)
+
+## Bug Fixes
+
+- Restored reliable Linux TUI rendering after suspending with `Ctrl+Z` and resuming with `fg`. (#28342)
+- Exec-server processes and stdio MCP sessions now survive transient disconnects, including signed-URL refresh and retry-safe stdin writes. (#28512, #28374, #28546, #28895)
+- Remote environments now preserve executor-native paths, shells, `AGENTS.md` discovery, and sandbox behavior across operating systems. (#28146, #28152, #28958, #28983, #29099, #29108, #29113, #29424)
+- Plugin loading and installation now handle root marketplace layouts, manifest fallbacks, multiple skill paths, actionable download errors, and immediate tool refreshes. (#28771, #28789, #28790, #28863, #28951)
+- Parent agents now receive terminal subagent errors instead of seeing failed work as an empty successful completion. (#28375)
+- Goal-first threads are once again persisted and returned by `thread/list` and `thread/search`. (#28808)
+
+## Chores
+
+- Reduced startup and session latency by deferring unnecessary DNS work, warming the model cache, reusing parsed plugin skills, parallelizing skill metadata reads, and skipping redundant catalog synchronization. (#28542, #28699, #28844, #29326, #29005)
+- Reduced persistent-log churn by removing per-event WebSocket payload logging and filtering duplicated telemetry records. (#29432, #29457)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.142.0</guid>
+      <pubDate>Mon, 22 Jun 2026 22:19:53 +0000</pubDate>
+    </item>
     <item>
       <title>0.141.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.141.0</link>
