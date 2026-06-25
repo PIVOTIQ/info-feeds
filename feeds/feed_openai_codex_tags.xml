@@ -8,7 +8,33 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2026 06:01:21 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 09:21:34 +0000</lastBuildDate>
+    <item>
+      <title>0.142.2</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.142.2</link>
+      <description>## New Features
+
+- MCP tools now use tool search by default when supported, improving tool discovery while preserving compatibility with older models and providers. (#29486)
+- macOS authentication clients can honor system proxy, PAC, and WPAD settings when `respect_system_proxy` is enabled. (#26709)
+- Plugins can provide dedicated dark-mode logos through local manifests and remote catalogs. (#29488)
+- Apps can display richer safety-buffering UI using server-provided visibility and faster-model metadata. (#29473)
+
+## Bug Fixes
+
+- Remote plugin catalogs now return curated featured-plugin rankings. (#29485)
+- Expired Amazon Bedrock credentials now produce actionable recovery guidance instead of a generic authorization error. (#28992)
+- Remote stdio MCP servers now accept absolute working directories written in the remote platform’s path format. (#29493)
+- Remote HTTP(S) image inputs now return clear model-visible validation errors; inline data URLs and local images remain supported. (#29417, #29419)
+- PowerShell commands containing executable AST regions the safety classifier cannot inspect now require approval. (#24092)
+- Code Mode now warns when the selected model lacks the required metadata. (#29490)
+
+## Chores
+
+- Updated bundled OpenSSL and esbuild dependencies to patched releases. (#29487, #29489)
+- Successful formatter runs are now quiet while failures still show diagnostics. (#29467)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.142.2</guid>
+      <pubDate>Thu, 25 Jun 2026 07:32:07 +0000</pubDate>
+    </item>
     <item>
       <title>0.142.1</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.142.1</link>
