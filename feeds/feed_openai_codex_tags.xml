@@ -8,7 +8,16 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jun 2026 23:58:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 01:59:15 +0000</lastBuildDate>
+    <item>
+      <title>0.142.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.142.1</link>
+      <description>## New Features
+
+- Added opt-in Windows system proxy support for authentication, including PAC, WPAD, static proxies, and bypass rules. (#26708)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.142.1</guid>
+      <pubDate>Thu, 25 Jun 2026 00:36:09 +0000</pubDate>
+    </item>
     <item>
       <title>0.142.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.142.0</link>
