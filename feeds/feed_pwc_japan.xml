@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 Jun 2026 21:52:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 07:19:00 +0000</lastBuildDate>
+    <item>
+      <title>サプライチェーンリスクマネジメント実態調査\―リスク管理投資は「1億円未満」が半数　全社横断体制・投資・人材面に残る課題\―</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/survey-of-supplychain-risk-management.html</link>
+      <description>PwC Japanグループはサプライチェーンリスク管理の実態と課題を捉える国内調査を実施しました。多様な業種・規模の企業の部門長から経営幹部までを対象に、サプライチェーンを取り巻く12のリスクへの意識や対応状況を集計。各リスクをどの程度「経営課題」として捉え、どこまで対策に踏み込めているかを検証しました。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/survey-of-supplychain-risk-management.html</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>動き出した天然水素（上）\―\―最新研究・開発動向と将来シナリオ</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</link>
@@ -71,6 +78,13 @@
       <pubDate>Tue, 09 Jun 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
+      <title>日本企業におけるB2Bセールス業務への生成AI活用実態調査 2025 \―AI活用の現在地と、次のステージに進むための3つの提言\―</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-in-b2b-sales-survey2025.html</link>
+      <description>PwCが実施したB2Bセールス業務への生成AI活用実態調査によると、68％の日本企業がすでに生成AIを導入している一方で、収益への貢献を実感している企業は29％にとどまります。本レポートではAI活用の成熟度ごとに特徴的な傾向と課題を分析し、AI活用を次のステージに進めるための提言を行います。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-in-b2b-sales-survey2025.html</guid>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
       <title>ブランド・マーケティングが拓く成果への道筋\―マーケティング成熟度の経年比較と投資実態から見えた重要性\―</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/brand-marketing-maturity.html</link>
       <description>PwCは国内企業の経営層を対象にマーケティング成熟度の経年変化と投資の実態に関する調査を実施しました。その結果、日本企業のボリュームゾーンで成熟度の伸び悩みが確認され、中長期的なブランド価値の構築と、それを支えるマーケティング基盤の整備が、成果を分ける鍵であることが浮き彫りになりました。</description>
@@ -83,20 +97,6 @@
       <description>本稿では、ディープテックを用いた価値創造のためにPwCが開発した新しいロジックモデルについて、その開発および高度化の思考過程を紹介するとともに、ディープテックオープンイノベーションを円滑に進めるために求められる思考転換を提案します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/expanded-logic-model.html</guid>
       <pubDate>Fri, 29 May 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>日本企業におけるB2Bセールス業務への生成AI活用実態調査 2025 \―AI活用の現在地と、次のステージに進むための3つの提言\―</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-in-b2b-sales-survey2025.html</link>
-      <description>PwCが実施したB2Bセールス業務への生成AI活用実態調査によると、68％の日本企業がすでに生成AIを導入している一方で、収益への貢献を実感している企業は29％にとどまります。本レポートではAI活用の成熟度ごとに特徴的な傾向と課題を分析し、AI活用を次のステージに進めるための提言を行います。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-in-b2b-sales-survey2025.html</guid>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>資産運用業界における変革への対応 2025 収益性のパラドックス：存在価値とリターンをめぐる競争</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/asset-and-wealth-management-revolution-2025.html</link>
-      <description>資産運用業界は、厳しい収益性のパラドックスに直面しています。PwCは、グローバルの資産運用会社、販売会社、機関投資家を対象とした国際調査を実施し、その結果を基に業界の現状を分析するとともに、収益性を左右する将来のメガトレンドなどを予測します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/asset-and-wealth-management-revolution-2025.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
