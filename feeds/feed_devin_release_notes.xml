@@ -8,13 +8,41 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2026 14:22:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 22:07:33 +0000</lastBuildDate>
     <item>
       <title>Classic Environment Setup Deprecation</title>
       <link>https://docs.devin.ai/release-notes/overview#june-30-2026</link>
       <description>Classic Environment Setup Deprecation</description>
       <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#june-30-2026</guid>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - June 26, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#june-26-2026</link>
+      <description>Release Notes - June 26, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#june-26-2026</guid>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - June 24, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#june-24-2026</link>
+      <description>Release Notes - June 24, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#june-24-2026</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - June 19, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#june-19-2026</link>
+      <description>Release Notes - June 19, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#june-19-2026</guid>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - June 17, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#june-17-2026</link>
+      <description>Release Notes - June 17, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#june-17-2026</guid>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Release Notes - June 12, 2026</title>

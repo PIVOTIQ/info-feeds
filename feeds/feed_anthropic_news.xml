@@ -13,7 +13,39 @@
       <link>https://www.anthropic.com/news</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2026 14:21:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 22:06:02 +0000</lastBuildDate>
+    <item>
+      <title>Claude Science, an AI workbench for scientists, is now available</title>
+      <link>https://www.anthropic.com/news/claude-science-ai-workbench</link>
+      <description>Claude Science, an AI workbench for scientists, is now available</description>
+      <guid isPermaLink="false">https://www.anthropic.com/news/claude-science-ai-workbench</guid>
+      <category>Announcements</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Introducing Claude Sonnet 5</title>
+      <link>https://www.anthropic.com/news/claude-sonnet-5</link>
+      <description>Introducing Claude Sonnet 5</description>
+      <guid isPermaLink="false">https://www.anthropic.com/news/claude-sonnet-5</guid>
+      <category>Product</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Introducing Claude Tag</title>
+      <link>https://www.anthropic.com/news/introducing-claude-tag</link>
+      <description>Introducing Claude Tag</description>
+      <guid isPermaLink="false">https://www.anthropic.com/news/introducing-claude-tag</guid>
+      <category>Product</category>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem</title>
+      <link>https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem</link>
+      <description>Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem</description>
+      <guid isPermaLink="false">https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem</guid>
+      <category>Announcements</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>TCS and Anthropic partner to bring Claude to regulated industries</title>
       <link>https://www.anthropic.com/news/tcs-anthropic-partnership</link>
@@ -39,18 +71,18 @@
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on</title>
-      <link>https://www.anthropic.com/news/dxc-anthropic-alliance</link>
-      <description>DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on</description>
-      <guid isPermaLink="false">https://www.anthropic.com/news/dxc-anthropic-alliance</guid>
-      <category>Announcements</category>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Introducing Claude Corps</title>
       <link>https://www.anthropic.com/news/claude-corps</link>
       <description>Introducing Claude Corps</description>
       <guid isPermaLink="false">https://www.anthropic.com/news/claude-corps</guid>
+      <category>Announcements</category>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on</title>
+      <link>https://www.anthropic.com/news/dxc-anthropic-alliance</link>
+      <description>DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on</description>
+      <guid isPermaLink="false">https://www.anthropic.com/news/dxc-anthropic-alliance</guid>
       <category>Announcements</category>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
     </item>
