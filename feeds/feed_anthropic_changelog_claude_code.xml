@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Jul 2026 15:47:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 17:09:36 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.200</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21200</link>
+      <description>&lt;ul&gt;&lt;li&gt;Changed `AskUserQuestion` dialogs to no longer auto-continue by default; opt into an idle timeout via `/config`&lt;/li&gt;&lt;li&gt;Changed the "default" permission mode to "Manual" across the CLI, `--help`, VS Code, and JetBrains; `--permission-mode manual` and `"defaultMode": "manual"` are accepted alongside `default`&lt;/li&gt;&lt;li&gt;Fixed a crash at startup when `disabledMcpServers` or `enabledMcpServers` in `.claude.json` is set to a non-array value&lt;/li&gt;&lt;li&gt;Fixed background sessions silently stopping mid-turn after sleep/wake or when reopening a stalled session&lt;/li&gt;&lt;li&gt;Fixed background sessions re-running a turn cancelled with Esc after a stall respawn&lt;/li&gt;&lt;li&gt;Fixed background agents never starting again after a crash left a stale `daemon.lock` whose PID the OS reused&lt;/li&gt;&lt;li&gt;Fixed background-agent daemon handover so a reinstalled older build can no longer take over the daemon; build recency is now judged by the version's embedded build timestamp&lt;/li&gt;&lt;li&gt;Fixed background-agent roster issues: transient corruption permanently disabling orphan cleanup, older binaries not preserving fields written by newer versions, and socket auth tokens being stripped during daemon restarts&lt;/li&gt;&lt;li&gt;Fixed subagents cut off by a rate limit before producing any text output returning an empty result instead of failing cleanly&lt;/li&gt;&lt;li&gt;Fixed control bytes from background-agent output reaching the terminal in the agent view&lt;/li&gt;&lt;li&gt;Fixed `claude agents --plugin-dir &lt;dir&gt;` not showing the plugin's agents and skills in the agent view when the flag is placed after `agents`&lt;/li&gt;&lt;li&gt;Fixed project-scoped plugins not loading correctly from git worktrees of the same repository&lt;/li&gt;&lt;li&gt;Fixed `/mcp` server list not tracking focus for screen readers and magnifiers&lt;/li&gt;&lt;li&gt;Fixed voice dictation showing a misleading "Voice connection failed" message when a recording captures no audio&lt;/li&gt;&lt;li&gt;Fixed rendering flicker under tmux 3.4+ by enabling synchronized terminal output&lt;/li&gt;&lt;li&gt;Improved screen-reader output: decorative glyphs are now hidden, transcript symbols read as short labels, and nested tables read as `Header: value.` lines&lt;/li&gt;&lt;li&gt;Improved the install script to explain when installation is killed by the system running out of memory&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21200</guid>
+      <category>Changelog</category>
+      <pubDate>Fri, 03 Jul 2026 04:33:49 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.199</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21199</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21138</guid>
       <category>Changelog</category>
       <pubDate>Sat, 09 May 2026 05:57:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.137</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21137</link>
-      <description>&lt;ul&gt;&lt;li&gt;[VSCode] Fixed extension failing to activate on Windows&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21137</guid>
-      <category>Changelog</category>
-      <pubDate>Sat, 09 May 2026 00:04:08 +0000</pubDate>
     </item>
   </channel>
 </rss>
