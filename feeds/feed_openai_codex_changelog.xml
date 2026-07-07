@@ -8,7 +8,45 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jul 2026 06:34:23 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 10:17:08 +0000</lastBuildDate>
+    <item>
+      <title>ChatGPT for iOS1.2026.181</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-06-ChatGPT for iOS1.2026.181</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for creating, searching, opening, forking, and managing Codex
+tasks directly from a conversation.&lt;/li&gt;
+&lt;li&gt;Added filters for staged, unstaged, branch, and last-turn changes, with controls
+for comparing branches.&lt;/li&gt;
+&lt;li&gt;Added support for adding selected transcript text directly to the composer.&lt;/li&gt;
+&lt;li&gt;Added previews for image and file attachments before sending.&lt;/li&gt;
+&lt;li&gt;Added inline Photos and Camera pickers to the attachment menu.&lt;/li&gt;
+&lt;li&gt;Added a connection shortcut and support for SSH hosts using private keys or no
+credentials.&lt;/li&gt;
+&lt;li&gt;Added usage limits and credit details to the task menu.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved the task list with consistent task terminology, clearer delegated
+task titles, and a Needs input status.&lt;/li&gt;
+&lt;li&gt;Improved initial task loading and foreground recovery.&lt;/li&gt;
+&lt;li&gt;Improved autocomplete by selecting the first result automatically and
+accepting it with Return.&lt;/li&gt;
+&lt;li&gt;Improved model, reasoning, and Fast settings so changes remain scoped to the
+current task.&lt;/li&gt;
+&lt;li&gt;Improved task-management and dynamic tool activity presentation.&lt;/li&gt;
+&lt;li&gt;Improved side chats to open directly when only one conversation is available.&lt;/li&gt;
+&lt;li&gt;Improved plugin autocomplete with installed plugins and their icons.&lt;/li&gt;
+&lt;li&gt;Improved workspace diff accuracy and expand-and-collapse navigation.&lt;/li&gt;
+&lt;li&gt;Improved recovery by preserving thread state across reconnects and host
+pairings across sign-out.&lt;/li&gt;
+&lt;li&gt;Fixed stuck thread-list loading, prompt mode deadlocks, stale images, and
+microphone permission alerts.&lt;/li&gt;
+&lt;li&gt;Fixed shake to undo and keyboard refocusing after sending a prompt.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-06-ChatGPT for iOS1.2026.181</guid>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.142.5</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-01-Codex CLI0.142.5</link>
