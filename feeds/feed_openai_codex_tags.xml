@@ -8,7 +8,38 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 01:20:58 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 07:21:53 +0000</lastBuildDate>
+    <item>
+      <title>0.143.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.143.0</link>
+      <description>## New Features
+
+- Remote plugins are now enabled by default, with richer catalog rows, npm marketplace sources, and visible remote/local versions. (#30297, #26705, #29375, #30981)
+- Codex can route authentication and Responses API traffic through macOS and Windows system proxies, including PAC and WPAD configurations. (#26708, #26709, #31335)
+- Added `codex remote-control pair` for generating manual pairing codes from a running daemon. (#29913)
+- Added Amazon Bedrock GPT-5.6 Sol, Terra, and Luna models, with first-class support for `max` reasoning effort. (#30285, #30467)
+- MCP tools now use tool search by default, and ChatGPT-hosted MCP servers can explicitly use session authentication. (#29486, #29733)
+- App-server clients can inspect environments, list descendant threads, and fork history through a specific turn. (#30291, #29591, #30277)
+
+## Bug Fixes
+
+- Fixed Windows ConPTY input handling for line endings and backspace, plus sandbox credential retry edge cases. (#29734, #29624, #29637)
+- Fixed stale TUI safety prompts and cancelled reviews that could leave MCP startup appearing busy. (#30490, #31189)
+- Improved recovery when exec servers are temporarily offline and prevented remote-control token refresh retry storms. (#30098, #30201)
+- Preserved trailing realtime transcript text and terminal rollout events during shutdown. (#29918, #30144)
+- Improved incremental WebSocket request success by ignoring response metadata during comparisons. (#30770)
+- Reduced installer failures from GitHub API rate limits by reusing release metadata. (#31056)
+
+## Documentation
+
+- Documented UUID7 thread and turn IDs, plus recommended remote-executor integration-test workflows. (#27714, #29790)
+
+## Chores
+
+- Updated OpenSSL, Hono, fast-uri, quick-xml, and crossbeam-epoch to address security advisories. (#29487, #29650, #30941, #31308)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.143.0</guid>
+      <pubDate>Wed, 08 Jul 2026 01:31:10 +0000</pubDate>
+    </item>
     <item>
       <title>0.142.5</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.142.5</link>
