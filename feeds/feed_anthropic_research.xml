@@ -13,7 +13,15 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 21:57:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 23:59:33 +0000</lastBuildDate>
+    <item>
+      <title>Jul 8, 2026AlignmentAn off switch for dual use knowledge in AI models</title>
+      <link>https://www.anthropic.com/research/off-switch-dual-use</link>
+      <description>Jul 8, 2026AlignmentAn off switch for dual use knowledge in AI models</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/off-switch-dual-use</guid>
+      <category>Research</category>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>A global workspace in language models</title>
       <link>https://www.anthropic.com/research/global-workspace</link>
@@ -77,14 +85,6 @@
       <guid isPermaLink="false">https://www.anthropic.com/research/attack-navigator</guid>
       <category>Research</category>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>May 27, 2026Economic ResearchCoding agents in the social sciences</title>
-      <link>https://www.anthropic.com/research/coding-agents-social-sciences</link>
-      <description>May 27, 2026Economic ResearchCoding agents in the social sciences</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/coding-agents-social-sciences</guid>
-      <category>Research</category>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>AlignmentMay 8, 2026Teaching Claude whyNew research on how we've reduced agentic misalignment.</title>
