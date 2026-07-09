@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2026 22:12:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 23:58:13 +0000</lastBuildDate>
+    <item>
+      <title>0.144.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.144.1</link>
+      <description>## Bug Fixes
+
+- Fixed standalone installs failing when GitHub returns compact or reordered release metadata. (#31913)
+- Ensured macOS package installs expose the code-mode host alongside the `codex` executable. (#31913)
+- Kept code mode working when the companion host binary is unavailable by falling back to the embedded runtime. (#31913)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.144.1</guid>
+      <pubDate>Thu, 09 Jul 2026 23:02:40 +0000</pubDate>
+    </item>
     <item>
       <title>0.144.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.144.0</link>
