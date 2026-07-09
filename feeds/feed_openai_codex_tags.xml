@@ -8,7 +8,41 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2026 16:21:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 20:33:21 +0000</lastBuildDate>
+    <item>
+      <title>0.144.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.144.0</link>
+      <description>## New Features
+
+- Usage-limit reset credits now show their type and expiration, and let you choose which credit to redeem. (#30488)
+- Added a `writes` app-approval mode that allows declared read-only actions while prompting for writes. (#30482)
+- MCP tools can now request authentication interactively without an experimental opt-in. (#28772)
+- App-server hosts can provide Codex authentication at runtime and redirect successful logins to a hosted page. (#28745, #31274)
+- Global pnunen installs are now detected so diagnostics and updates use the correct package manager. (#31503)
+- Selecting Ultra reasoning now warns when high multi-agent concurrency could increase usage quickly. (#31621)
+
+## Bug Fixes
+
+- Resumed ChatGPT threads recover when compaction references a retired model by retrying with the currently selected model. (#30319)
+- Fixed Code Mode crashes in Intel macOS release binaries. (#30953)
+- Windows sandbox sessions can delete files in writable roots and access the managed primary runtime. (#31138, #31574)
+- Pasted terminal control sequences can no longer corrupt TUI rendering or resumed conversation history. (#31494)
+- Long-running app sessions now refresh expired authentication for the hosted `codex_apps` connector. (#31486)
+- Responses WebSockets continue using the low-latency transport while respecting system proxies and custom certificate authorities. (#31441, #31622)
+
+## Documentation
+
+- Device-code login warnings now explain how to recognize and stop phishing attempts. (#31648)
+
+## Chores
+
+- Reduced plugin skill-loading time on remote executors by resolving namespaces once per root. (#31348)
+- Made the `/review` branch picker faster and more reliable in large repositories. (#31464)
+- Improved automatic review behavior with clearer instructions and a focused tool set. (#31480)
+- Made Amazon Bedrock model names clearly identify their GPT-5.6 family and variant. (#31636)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.144.0</guid>
+      <pubDate>Thu, 09 Jul 2026 16:47:12 +0000</pubDate>
+    </item>
     <item>
       <title>0.143.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.143.0</link>
