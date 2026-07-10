@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Thu, 09 Jul 2026 23:56:34 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 01:26:44 +0000</lastBuildDate>
+    <item>
+      <title>ELSI／RRIのパラダイムシフトとフレームワークの推進者達 産学共創による社会変革とイノベーションリスクマネジメント</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/innovation-risk-management.html</link>
+      <description>デジタル・AI技術への期待により、新興技術の探索、研究開発、社会実装のサイクルが加速しています。本稿では、PwCと東北大学の共同研究の結果を基に、科学技術イノベーションを推進するために重要視されるELSI／RRIの動向や産学共創の意義、URAの役割を解説します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/innovation-risk-management.html</guid>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>資産運用業界の現状と取り組むべき施策</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/asset-management-situation-and-strategy.html</link>
@@ -50,17 +57,17 @@
       <pubDate>Mon, 29 Jun 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>動き出した天然水素（上）\―\―最新研究・開発動向と将来シナリオ</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</link>
-      <description>本稿では、天然水素開発に関心を有する事業者の意思決定支援を目的に、天然水素に関する最新の研究・開発動向および課題を整理し、地下資源という共通点を有する他の地下事業の事例も参照しながら天然水素の将来像を類推します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</guid>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>動き出した天然水素（下）\―\―不確実性の分析と国内開発の勝ち筋</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-02.html</link>
       <description>本稿では、天然水素の商業化を阻む主要因である、①資源としての存在確度、②技術成熟度、③経済性、④規制・法制度における不確実性を整理し、国内の天然水素開発推進に必要な要素を提言します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-02.html</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>動き出した天然水素（上）\―\―最新研究・開発動向と将来シナリオ</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</link>
+      <description>本稿では、天然水素開発に関心を有する事業者の意思決定支援を目的に、天然水素に関する最新の研究・開発動向および課題を整理し、地下資源という共通点を有する他の地下事業の事例も参照しながら天然水素の将来像を類推します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</guid>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <description>近年、リアルワールドデータ（RWD）を活用した治験設計が、国内外で現実的な選択肢として、急速に位置付けられつつあります。本稿では、RWDを中核に据えた治験エコシステムに焦点を当て、制度的背景、実装事例、今後の実務的論点を整理します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/future-clinical-ecosystem-rwd.html</guid>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>生成AIに関する実態調査2026 春 6カ国比較\―AI変革は選択肢から生存条件へ 変わりゆく世界に日本企業は追いつけるのか\―</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/generative-ai-survey2026.html</link>
-      <description>本調査では、日本企業における生成AI活用の進展と、効果創出・成果還元の実態を明らかにするとともに、米国・英国・中国・ドイツ・韓国との比較を通じて、日本企業が抱える構造課題を読み解きます。生成AIが単なる業務効率化ツールから企業変革の中核へ移行する中、日本企業がAI変革を実現するための示唆を提示します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/generative-ai-survey2026.html</guid>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
