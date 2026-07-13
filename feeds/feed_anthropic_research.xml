@@ -13,7 +13,15 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jul 2026 16:19:20 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 18:26:51 +0000</lastBuildDate>
+    <item>
+      <title>Jul 13, 2026Societal ImpactsClaude’s values across models and languages</title>
+      <link>https://www.anthropic.com/research/claude-values-models-languages</link>
+      <description>Jul 13, 2026Societal ImpactsClaude’s values across models and languages</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-values-models-languages</guid>
+      <category>Research</category>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Jul 9, 2026Frontier Red TeamClaude plays robotics</title>
       <link>https://www.anthropic.com/research/claude-plays-robotics</link>
@@ -85,14 +93,6 @@
       <guid isPermaLink="false">https://www.anthropic.com/research/making-claude-a-chemist</guid>
       <category>Research</category>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Jun 3, 2026Frontier Red TeamMapping AI-enabled cyber threats: Insights from the LLM ATT&amp;CK Navigator</title>
-      <link>https://www.anthropic.com/research/attack-navigator</link>
-      <description>Jun 3, 2026Frontier Red TeamMapping AI-enabled cyber threats: Insights from the LLM ATT&amp;CK Navigator</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/attack-navigator</guid>
-      <category>Research</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>AlignmentMay 8, 2026Teaching Claude whyNew research on how we've reduced agentic misalignment.</title>
