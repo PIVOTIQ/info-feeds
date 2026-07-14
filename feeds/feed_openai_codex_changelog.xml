@@ -8,7 +8,30 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jul 2026 09:05:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 11:16:08 +0000</lastBuildDate>
+    <item>
+      <title>ChatGPT for iOS1.2026.188</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-13-ChatGPT for iOS1.2026.188</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for inline visualizations in Codex tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved creating and managing tasks from conversations, with reliable links
+to newly created tasks.&lt;/li&gt;
+&lt;li&gt;Improved tool activity styling and progress indicators.&lt;/li&gt;
+&lt;li&gt;Improved file-opening feedback.&lt;/li&gt;
+&lt;li&gt;Improved the composer so controls remain visible above the keyboard for long
+prompts and larger text sizes.&lt;/li&gt;
+&lt;li&gt;Fixed Fast mode selection and restoration for each task.&lt;/li&gt;
+&lt;li&gt;Fixed initial prompts ignoring the selected approval preset.&lt;/li&gt;
+&lt;li&gt;Fixed autocomplete backgrounds and task rows becoming unresponsive during
+swipe gestures.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-13-ChatGPT for iOS1.2026.188</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex joins the ChatGPT desktop app</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-09-Codex joins the ChatGPT desktop app</link>
