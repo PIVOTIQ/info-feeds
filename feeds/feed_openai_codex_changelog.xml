@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 16:59:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 18:04:48 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.144.5</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-16-Codex CLI0.144.5</link>
@@ -234,8 +234,8 @@ Full release on Github
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Codex joins the ChatGPT desktop app</title>
-      <link>https://developers.openai.com/codex/changelog/#2026-07-09-Codex joins the ChatGPT desktop app</link>
+      <title>Codex joins the ChatGPT desktop app26.707</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-09-Codex joins the ChatGPT desktop app26.707</link>
       <description>&lt;p&gt;Codex is now part of the ChatGPT desktop app on macOS and Windows. Existing
 Codex app users can update as usual and keep their projects, settings, and
 workflows. You can make Codex the default view and, on macOS, keep the Codex
@@ -247,17 +247,23 @@ Codex to revise selected content.&lt;/li&gt;
 &lt;li&gt;Review GitHub pull requests in the sidebar, with reviewer feedback alongside
 the diff, without leaving the app.&lt;/li&gt;
 &lt;li&gt;Work across repositories in one project.&lt;/li&gt;
+&lt;li&gt;Connect custom domains to published Sites.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="performance-improvements-and-bug-fixes"&gt;Performance improvements and bug fixes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Made Computer Use faster with GPT-5.6.&lt;/li&gt;
-&lt;li&gt;Made task activity and progress easier to follow while Codex works.&lt;/li&gt;
+&lt;li&gt;Made task and subagent activity easier to follow while Codex works.&lt;/li&gt;
 &lt;li&gt;Simplified plugin management by moving it into Settings.&lt;/li&gt;
+&lt;li&gt;Improved permission handling when resuming tasks or sending follow-ups.&lt;/li&gt;
+&lt;li&gt;Improved macOS and Windows setup, including macOS installation, Git-backed
+workflows, and Computer Use on Windows.&lt;/li&gt;
+&lt;li&gt;Fixed task resumption for local projects and onboarding retry loops.&lt;/li&gt;
+&lt;li&gt;Fixed scrolling in pull request reviews and expanded Mermaid diagram labels.&lt;/li&gt;
 &lt;li&gt;Improved mobile connection reliability and fixed video rendering for SSH
 projects.&lt;/li&gt;
 &lt;li&gt;Additional performance improvements and bug fixes.&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-09-Codex joins the ChatGPT desktop app</guid>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-09-Codex joins the ChatGPT desktop app26.707</guid>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
