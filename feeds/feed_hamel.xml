@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Jul 2026 19:20:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 20:58:51 +0000</lastBuildDate>
     <item>
       <title>Automated Machine Learning — A Paradigm Shift That Accelerates Data Scientist Productivity @ Airbnb</title>
       <link>https://medium.com/airbnb-engineering/automated-machine-learning-a-paradigm-shift-that-accelerates-data-scientist-productivity-airbnb-f1f8a10d61f8</link>
@@ -255,6 +255,13 @@
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>LLM Evals: Everything You Need to Know</title>
+      <link>https://hamel.dev/./blog/posts/evals-faq/index.html</link>
+      <description>LLM Evals: Everything You Need to Know</description>
+      <guid isPermaLink="false">https://hamel.dev/./blog/posts/evals-faq/index.html</guid>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Inspect AI, An OSS Python Library For LLM Evals</title>
       <link>https://hamel.dev/./notes/llm/evals/inspect.html</link>
       <description>Inspect AI, An OSS Python Library For LLM Evals</description>
@@ -274,13 +281,6 @@
       <description>Selecting The Right AI Evals Tool</description>
       <guid isPermaLink="false">https://hamel.dev/./blog/posts/eval-tools/index.html</guid>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>LLM Evals: Everything You Need to Know</title>
-      <link>https://hamel.dev/./blog/posts/evals-faq/index.html</link>
-      <description>LLM Evals: Everything You Need to Know</description>
-      <guid isPermaLink="false">https://hamel.dev/./blog/posts/evals-faq/index.html</guid>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Why I Stopped Using nbdev</title>
