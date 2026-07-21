@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2026 20:10:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 21:50:46 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.217</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21217</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added emoji shortcode autocomplete in the prompt input: type `:heart:` to insert ❤️, or `:hea` for suggestions — disable with the `emojiCompletionEnabled` setting&lt;/li&gt;&lt;li&gt;Added warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing transcripts silently&lt;/li&gt;&lt;li&gt;Fixed a memory leak where truncated MCP tool outputs kept the full untruncated result in memory for the rest of the session&lt;/li&gt;&lt;li&gt;Fixed Windows auto-update failures that could leave `claude.exe` missing; failed updates now restore the preserved executable automatically&lt;/li&gt;&lt;li&gt;Fixed background session isolation not canonicalizing symlinked working directories, which could let sessions escape their workspace folder&lt;/li&gt;&lt;li&gt;Fixed auto-compact never triggering for Claude Opus 4.8 on Bedrock and `/compact` failing once over the limit&lt;/li&gt;&lt;li&gt;Fixed corporate mTLS, TLS-verify, OAuth scope, and proxy settings being ignored in Claude Desktop sessions&lt;/li&gt;&lt;li&gt;Fixed screen reader mode's startup announcement being cut off by the first prompt render, and the thinking status row re-rendering every few seconds to update elapsed time and token counts&lt;/li&gt;&lt;li&gt;Fixed managed settings that set `OTEL_EXPORTER_OTLP_ENDPOINT` not governing all signals — lower-scope signal-specific overrides no longer redirect telemetry away from the managed endpoint&lt;/li&gt;&lt;li&gt;Fixed `--resume`/`--continue` and `/resume` failing with a TypeError when a transcript has a malformed attachment entry&lt;/li&gt;&lt;li&gt;Fixed Remote Control sessions not showing a pending permission prompt or dialog to viewers that connected after it appeared&lt;/li&gt;&lt;li&gt;Fixed background shells sometimes becoming impossible to stop after a session is sent to the background (`/background` or `←`) or when the session exits on a heavily loaded machine, most visible on Windows&lt;/li&gt;&lt;li&gt;Fixed a `CLAUDE.md` or `SKILL.md` paths frontmatter value with many brace groups OOM-killing or stalling the CLI at startup — brace expansion is now budget-bounded&lt;/li&gt;&lt;li&gt;Fixed the transcript preview sitting flush against the input area when attaching to a starting background session; it now leaves the same one-line gap as the live layout, so the transcript no longer shifts when the session takes over&lt;/li&gt;&lt;li&gt;Improved footer PR badge links to be clickable hyperlinks even when terminal support can't be detected (e.g. over ssh/tmux); set `FORCE_HYPERLINK=0` to opt out&lt;/li&gt;&lt;li&gt;Changed the login-expiry warning to appear 3 days before expiry instead of 5&lt;/li&gt;&lt;li&gt;Capped the frontend-design plugin suggestion tip at 3 lifetime impressions instead of repeating indefinitely&lt;/li&gt;&lt;li&gt;Added a cap on concurrently-running subagents (default 20, override with `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS`) so one message can't fan out unbounded background agents&lt;/li&gt;&lt;li&gt;Changed subagents to no longer spawn nested subagents by default; set `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` to allow deeper nesting&lt;/li&gt;&lt;li&gt;Fixed `--max-budget-usd` not stopping background subagents: once the cap is reached, new spawns are denied and running background agents are halted&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21217</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 21 Jul 2026 19:55:38 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.216</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21216</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21157</guid>
       <category>Changelog</category>
       <pubDate>Fri, 29 May 2026 17:30:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.156</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21156</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21156</guid>
-      <category>Changelog</category>
-      <pubDate>Thu, 28 May 2026 20:12:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
