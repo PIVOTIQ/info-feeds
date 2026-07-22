@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jul 2026 12:20:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 14:52:42 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.145.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-21-Codex CLI0.145.0</link>
@@ -388,6 +388,34 @@ Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-21-Codex CLI0.145.0</guid>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ChatGPT for iOS1.2026.195</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-20-ChatGPT for iOS1.2026.195</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for rendering Mermaid diagrams inline in task transcripts.&lt;/li&gt;
+&lt;li&gt;Added support for interactive forms in Codex tasks.&lt;/li&gt;
+&lt;li&gt;Added support for restoring unsent prompts when switching between tasks,
+hosts, and workspaces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved task lists to sort by recent activity and show unavailable hosts when
+creating a task.&lt;/li&gt;
+&lt;li&gt;Improved the composer with selected-text previews and smoother new-task
+transitions.&lt;/li&gt;
+&lt;li&gt;Improved goals with support for resuming blocked or usage-limited runs.&lt;/li&gt;
+&lt;li&gt;Improved plan progress, Fast controls, and inline dictation.&lt;/li&gt;
+&lt;li&gt;Improved Remote onboarding, composer guidance, and iPad navigation.&lt;/li&gt;
+&lt;li&gt;Fixed an issue that could close the app when duplicate task-list entries
+appeared while starting a task.&lt;/li&gt;
+&lt;li&gt;Fixed iOS 18 task actions and task-list styling.&lt;/li&gt;
+&lt;li&gt;Fixed composer spacing, attachment menu padding, and duplicate transcription
+indicators.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-20-ChatGPT for iOS1.2026.195</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Codex CLI0.144.6</title>
