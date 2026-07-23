@@ -8,7 +8,27 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2026 18:06:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 20:07:34 +0000</lastBuildDate>
+    <item>
+      <title>ChatGPT Voice and multi-folder projects26.715</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-23-ChatGPT Voice and multi-folder projects26.715</link>
+      <description>&lt;p&gt;Powered by GPT-Live, ChatGPT Voice lets you talk through work and coordinate
+tasks in Chat, Work, and Codex in the ChatGPT desktop app.&lt;/p&gt;
+&lt;p&gt;Start a new chat or task in voice mode, then ask ChatGPT to start, check, or
+steer work in other threads. On macOS, turn on &lt;strong&gt;Screen context&lt;/strong&gt; to share an
+&lt;a href="/codex/appshots"&gt;appshot&lt;/a&gt; of your frontmost window.&lt;/p&gt;
+&lt;p&gt;Voice is available with Plus, Pro, Business, Edu, and Enterprise plans in the
+desktop app and through &lt;a href="/codex/remote-connections#set-up-mobile-access"&gt;Remote on iOS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Local projects in the ChatGPT desktop app can now include multiple related
+folders. From a project’s menu, select &lt;strong&gt;Edit project&lt;/strong&gt; to add folders and choose
+the primary folder. New chats, Git operations, and automatic discovery of
+&lt;code&gt;AGENTS.md&lt;/code&gt;, skills, and &lt;code&gt;config.toml&lt;/code&gt; use the primary folder. Secondary
+folders remain available for file search, reading, and editing.&lt;/p&gt;
+&lt;p&gt;Get started with &lt;a href="/codex/features/voice"&gt;ChatGPT Voice&lt;/a&gt; and &lt;a href="/codex/projects#use-local-projects-for-folders-and-codebases"&gt;multi-folder local
+projects&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-23-ChatGPT Voice and multi-folder projects26.715</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.145.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-21-Codex CLI0.145.0</link>
