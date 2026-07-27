@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Mon, 27 Jul 2026 01:27:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 05:34:49 +0000</lastBuildDate>
+    <item>
+      <title>世界のM\\\\u0026A動向：2026年中間見通し</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/dealsinsights/deals-trends2026-mid-year.html</link>
+      <description>グローバルのディール金額は2026年に4兆米ドルに達する見通しで、2021年以来の力強い年となる見込みです。メガディールがM\\\\u0026A市場をけん引し、AIによる影響がより顕著になっている中、本稿では、「大型化」が進む市場の動向や、ディールメーカーが押さえておくべきポイントなどを解説します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/dealsinsights/deals-trends2026-mid-year.html</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>フィジカルAI時代の技術動向と日本が進むべき道</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/physical-ai-tech-trends.html</link>
@@ -71,17 +78,17 @@
       <pubDate>Mon, 29 Jun 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>動き出した天然水素（上）\―\―最新研究・開発動向と将来シナリオ</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</link>
-      <description>本稿では、天然水素開発に関心を有する事業者の意思決定支援を目的に、天然水素に関する最新の研究・開発動向および課題を整理し、地下資源という共通点を有する他の地下事業の事例も参照しながら天然水素の将来像を類推します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</guid>
-      <pubDate>Tue, 23 Jun 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>動き出した天然水素（下）\―\―不確実性の分析と国内開発の勝ち筋</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-02.html</link>
       <description>本稿では、天然水素の商業化を阻む主要因である、①資源としての存在確度、②技術成熟度、③経済性、④規制・法制度における不確実性を整理し、国内の天然水素開発推進に必要な要素を提言します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-02.html</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>動き出した天然水素（上）\―\―最新研究・開発動向と将来シナリオ</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</link>
+      <description>本稿では、天然水素開発に関心を有する事業者の意思決定支援を目的に、天然水素に関する最新の研究・開発動向および課題を整理し、地下資源という共通点を有する他の地下事業の事例も参照しながら天然水素の将来像を類推します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/natural-hydrogen-emergin-01.html</guid>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <description>近年、テクノロジーの発展や新たなサービスの登場により、購買行動の変化のスピードは一層速まっています。本稿では、日本国内の消費者を対象とした調査の結果から、消費者の購買行動や意識の変化を分析するとともに、注目トピックスとして、AIツールの利用状況および購買におけるAIツールの活用について取り上げています。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/consumer-insights-survey2026.html</guid>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>システムリスク管理の新潮流 守りから支援へ、企業価値を高めるITガバナンスの再構築</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/system-risk-management.html</link>
-      <description>企業が直面するシステムリスクは年々深刻化・多様化しており、従来の管理体制では十分に対応しきれないケースが顕在化しています。本レポートでは、PwCが実施した「システムリスクに関する調査」に基づき、日本企業の現状と課題を整理し、求められる対策を提言します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/system-risk-management.html</guid>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
