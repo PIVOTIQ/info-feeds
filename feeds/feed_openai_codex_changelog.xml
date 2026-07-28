@@ -8,7 +8,26 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jul 2026 11:50:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 13:25:20 +0000</lastBuildDate>
+    <item>
+      <title>ChatGPT for iOS1.2026.202</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-27-ChatGPT for iOS1.2026.202</link>
+      <description>&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Voice conversations now use your selected ChatGPT voice and show usage-limit warnings.&lt;/li&gt;
+&lt;li&gt;Improved task reconnection and continuity when returning to the app or unlocking with Face ID.&lt;/li&gt;
+&lt;li&gt;Composer autocomplete now matches desktop plugin mentions and includes skills from installed plugins.&lt;/li&gt;
+&lt;li&gt;Selected-text references remain available after sending so you can preview them again.&lt;/li&gt;
+&lt;li&gt;Improved goal controls with clearer progress when pausing or resuming.&lt;/li&gt;
+&lt;li&gt;Inline visualizations now render tables and visual themes more reliably.&lt;/li&gt;
+&lt;li&gt;Large workspace diffs are more responsive.&lt;/li&gt;
+&lt;li&gt;Fixed restored tasks changing the selected model.&lt;/li&gt;
+&lt;li&gt;Prevented the composer from becoming stuck after a prompt started.&lt;/li&gt;
+&lt;li&gt;Corrected browser and computer tool labels, icons, and placeholder output.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-27-ChatGPT for iOS1.2026.202</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>ChatGPT Voice and multi-folder projects26.715</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-23-ChatGPT Voice and multi-folder projects26.715</link>
