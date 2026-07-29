@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 15:03:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 17:02:30 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.146.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-29-Codex CLI0.146.0</link>
@@ -270,6 +270,23 @@
 Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-29-Codex CLI0.146.0</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sign in with ChatGPT (beta)</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-29-Sign in with ChatGPT (beta)</link>
+      <description>&lt;p&gt;Sign in with ChatGPT is beginning to roll out in beta across select plugins and
+partner sites, starting with Airtable, GitLab, HubSpot, Notion, Supabase, and
+Vercel.&lt;/p&gt;
+&lt;p&gt;When you connect a supported plugin from the ChatGPT plugin directory, you can
+use Sign in with ChatGPT to create or link an account with that service in fewer
+steps. On participating partner sites, you can also select &lt;strong&gt;Sign in with
+ChatGPT&lt;/strong&gt; to create or access your account.&lt;/p&gt;
+&lt;p&gt;This makes it easier to start working with supported tools in ChatGPT and Codex.&lt;/p&gt;
+&lt;p&gt;When you sign in, the partner receives only your name, email address, and profile
+picture, if available. You must still review and approve each plugin’s requested
+access as a separate step.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-29-Sign in with ChatGPT (beta)</guid>
       <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
