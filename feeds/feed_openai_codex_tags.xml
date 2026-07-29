@@ -8,7 +8,42 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 01:18:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 04:55:51 +0000</lastBuildDate>
+    <item>
+      <title>0.146.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.146.0</link>
+      <description>## New Features
+
+- Name new sessions with `/new` or `/clear`, pin important threads, and switch between side conversations without closing them. (#34605, #34840, #35011)
+- Support Agent Plugins manifests, workspace plugin publishing, and additional plugin marketplaces for Amazon Bedrock and Claude Code. (#35105, #35254, #34931, #34979)
+- Fork threads with paginated history, including temporary forks that do not appear in thread listings. (#35220, #35251)
+- Connect app-server to remote Code Mode hosts over WebSocket. (#35078, #35098)
+- Enable standalone web search for compatible custom model providers. (#34846)
+- Discover executor-provided skills and securely read their associated resources, including explicitly selected skills. (#35184, #35198)
+
+## Bug Fixes
+
+- Honor configured proxies across authentication, plugin downloads, MCP authorization, remote execution, WebSockets, redirects, and LM Studio connections. (#34479, #34509, #34655, #34678, #35023, #35056, #35239)
+- Keep MCP connections and Apps tools current when authentication or configuration changes, reconnecting closed servers without restarting healthy connections. (#34952, #34957, #35028, #35144, #35146, #35151)
+- Preserve submitted messages, final responses, failed-turn errors, imported timestamps, and approval settings across interruptions, replay, imports, and forks. (#34839, #34777, #35524, #34989, #34664)
+- Improve terminal responsiveness and rendering, including nonblocking interrupts, keyboard handling, narrow layouts, hyperlinks, and refreshed mention results. (#35000, #35021, #34775, #34778, #35365, #35375)
+- Fix Windows navigation keys, reliably terminate sandboxed process trees, and preserve proxy settings during security reviews. (#34625, #34624, #35036)
+- Retain more available skills under tight context budgets and warn when skill catalogs must be truncated. (#34732, #34738, #34997)
+
+## Documentation
+
+- Document shared HTTP-client usage, proxy-aware connection pooling, and safe outbound request handling. (#34669)
+- Clarify Windows drive-letter canonicalization for `PathUri` values. (#34667)
+
+## Chores
+
+- Publish release artifacts, channel metadata, and installer aliases through OpenAI-hosted release infrastructure, with GitHub fallback. (#34505, #34508, #34729, #34910)
+- Sign and notarize bundled macOS helper executables before packaging. (#35264)
+- Reduce app-server serialization overhead and unnecessary request-building allocations. (#34761, #34766, #34825)
+- Add enterprise-plan recognition and administrator controls for in-app updates. (#35238, #35537)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.146.0</guid>
+      <pubDate>Wed, 29 Jul 2026 01:42:51 +0000</pubDate>
+    </item>
     <item>
       <title>0.145.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.145.0</link>
