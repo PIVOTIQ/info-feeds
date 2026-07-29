@@ -8,7 +8,49 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Jul 2026 20:57:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 22:46:02 +0000</lastBuildDate>
+    <item>
+      <title>Release Notes - July 24, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#july-24-2026</link>
+      <description>Release Notes - July 24, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#july-24-2026</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - July 22, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#july-22-2026</link>
+      <description>Release Notes - July 22, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#july-22-2026</guid>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - July 17, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#july-17-2026</link>
+      <description>Release Notes - July 17, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#july-17-2026</guid>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - July 15, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#july-15-2026</link>
+      <description>Release Notes - July 15, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#july-15-2026</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - July 10, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#july-10-2026</link>
+      <description>Release Notes - July 10, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#july-10-2026</guid>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - July 8, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#july-8-2026</link>
+      <description>Release Notes - July 8, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#july-8-2026</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Release Notes - July 3, 2026</title>
       <link>https://docs.devin.ai/release-notes/overview#july-3-2026</link>
@@ -274,13 +316,6 @@
       <description>Release Notes - February 6, 2026</description>
       <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#february-6-2026</guid>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Release Notes - December 5, 2025</title>
-      <link>https://docs.devin.ai/release-notes/overview#december-5-2025</link>
-      <description>Release Notes - December 5, 2025</description>
-      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#december-5-2025</guid>
-      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
