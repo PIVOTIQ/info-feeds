@@ -8,7 +8,45 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jul 2026 20:11:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 21:58:02 +0000</lastBuildDate>
+    <item>
+      <title>Browser upgrades, multi-repository review, and image editing26.727</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-30-Browser upgrades, multi-repository review, and image editing26.727</link>
+      <description>&lt;p&gt;The latest ChatGPT desktop app update makes browsing, reviewing code, and
+editing generated images faster and easier.&lt;/p&gt;
+&lt;h3 id="browse-and-find-context-faster"&gt;Browse and find context faster&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Type in the built-in browser’s address bar to revisit pages from your
+browsing history or search Google when there’s no match.&lt;/li&gt;
+&lt;li&gt;Manage your browsing history in Settings, and let ChatGPT search that
+history when a task needs to find a page you visited before.&lt;/li&gt;
+&lt;li&gt;Use the Chrome extension to mention open tabs or bring highlighted page
+text into your side chat.&lt;/li&gt;
+&lt;li&gt;Ask questions about any YouTube video in the Chrome extension and get
+answers in seconds.&lt;/li&gt;
+&lt;li&gt;Right-click a webpage and select &lt;strong&gt;Ask ChatGPT&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more about the &lt;a href="/codex/browser"&gt;built-in browser&lt;/a&gt; and the
+&lt;a href="/codex/chrome-extension"&gt;Chrome extension&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="review-changes-across-repositories"&gt;Review changes across repositories&lt;/h3&gt;
+&lt;p&gt;See all repositories in a &lt;a href="/codex/projects#use-local-projects-for-folders-and-codebases"&gt;multi-folder project&lt;/a&gt;
+and the lines changed in each one. Select &lt;strong&gt;Review&lt;/strong&gt; to inspect diffs across
+those repositories without switching between separate review views.&lt;/p&gt;
+&lt;h3 id="refine-generated-images"&gt;Refine generated images&lt;/h3&gt;
+&lt;p&gt;Open generated images in an expanded viewer, and switch between &lt;strong&gt;Focused view&lt;/strong&gt;
+and &lt;strong&gt;Canvas view&lt;/strong&gt;. Add comments across images, choose the ones you want, and
+send targeted edits without leaving your conversation. Learn more about
+&lt;a href="/codex/image-generation"&gt;image generation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="other-improvements-and-bug-fixes"&gt;Other improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a new “Activity view” in the sidebar to view which chats you engaged with recently and require attention. Click the bell or use &lt;kbd&gt;Cmd&lt;/kbd&gt;/&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Opt&lt;/kbd&gt;+&lt;kbd&gt;U&lt;/kbd&gt; to change to the new view.&lt;/li&gt;
+&lt;li&gt;Updated browser settings to show only supported browsers.&lt;/li&gt;
+&lt;li&gt;Improved Windows installation reliability when package file paths are long.&lt;/li&gt;
+&lt;li&gt;Other performance and bug fixes.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-30-Browser upgrades, multi-repository review, and image editing26.727</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.146.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-07-29-Codex CLI0.146.0</link>
