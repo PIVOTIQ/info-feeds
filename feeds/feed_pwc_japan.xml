@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Tue, 04 Aug 2026 23:51:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 01:15:57 +0000</lastBuildDate>
+    <item>
+      <title>AIが再編する次世代デジタル基盤\―\―地上・宇宙融合インフラと日本の産業戦略</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/next-generation-digital-platform.html</link>
+      <description>本レポートでは、AI需要の拡大がデータセンターの立地や機能分担に与える影響、軌道上データセンターの可能性、地上・宇宙融合インフラが支える新たなAI活用の可能性、そして日本企業の勝ち筋を整理します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/next-generation-digital-platform.html</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>製造業が目指すべきAI-Ready</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-ready-manufacturing.html</link>
@@ -90,13 +97,6 @@
       <description>攻撃側と防御側の双方でAIの活用が進み、サイバー空間における脅威情勢は大きく変化しています。本レポートでは、主戦場となっているアイデンティティを取り巻く状況に加え、産業ごとの動向などを解説し、日本の企業が取るべき対応策についても言及します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/annual-threat-dynamics.html</guid>
       <pubDate>Wed, 01 Jul 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>サプライチェーンリスクマネジメント実態調査\―リスク管理投資は「1億円未満」が半数　全社横断体制・投資・人材面に残る課題\―</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/survey-of-supplychain-risk-management.html</link>
-      <description>PwC Japanグループはサプライチェーンリスク管理の実態と課題を捉える国内調査を実施しました。多様な業種・規模の企業の部門長から経営幹部までを対象に、サプライチェーンを取り巻く12のリスクへの意識や対応状況を集計。各リスクをどの程度「経営課題」として捉え、どこまで対策に踏み込めているかを検証しました。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/survey-of-supplychain-risk-management.html</guid>
-      <pubDate>Mon, 29 Jun 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
