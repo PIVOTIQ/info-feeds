@@ -8,7 +8,37 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Aug 2026 23:46:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 01:57:20 +0000</lastBuildDate>
+    <item>
+      <title>0.147.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.147.0</link>
+      <description>## New Features
+- Install portable Agent Plugins and search across local, personal, workspace, and remote plugin catalogs. (#36544, #36409, #36919, #36796)
+- Organize conversations into persistent, manually ordered sections and browse long transcripts incrementally. (#35722, #36007, #36380, #36948, #36950)
+- Enable automatically reviewed approvals with the new `--approve-for-me` CLI flag. (#36373)
+- Import Cursor-managed skills and synchronize changes to imported Claude and Cursor conversations without creating duplicates. (#36361, #36356, #35623)
+- Support the opt-in MCP 2026-07-28 protocol, including paginated discovery, multi-round requests, and non-blocking server startup. (#35724, #35725, #35590, #35742)
+- Enable cached web search and remote conversation compaction for Amazon Bedrock. (#36938, #36981)
+
+## Bug Fixes
+- Redact secrets and complete bearer tokens from displayed commands and replayed conversation history. (#36893, #36908)
+- Prevent lost or stalled terminal input when focus returns, MCP servers initialize, or Ghostty handles keyboard shortcuts. (#35649, #35957, #36834)
+- Correct rendering and cursor positioning for Japanese characters, emoji, hyperlinks, and text near viewport boundaries. (#35960, #35962, #37166)
+- Properly interrupt Windows background processes and handle Windows filesystem paths consistently. (#35655, #35851, #37129)
+- Require explicit trust for unfamiliar local projects and enforce managed authentication restrictions before credentials are used. (#36960, #37132)
+- Harden plugin isolation and deny network access when policy updates fail. (#37027, #36967, #36037)
+
+## Documentation
+- Improve the bundled OpenAI documentation skill with targeted official-source lookup and clearer guidance for Codex, model selection, and API workflows. (#36014)
+
+## Chores
+- Upgrade the MCP SDK to 3.0.0, Ratatui to 0.30.2, and V8 to 150.4.0. (#36001, #35959, #35831)
+- Secure macOS release notarization using Azure Key Vault instead of exporting private signing keys. (#37154)
+- Remove the deprecated `codex exec --full-auto` flag; use `--sandbox workspace-write` instead. (#36054)
+- Stop publishing redundant Linux bundle archives; use the standard `codex-package-&lt;target&gt;` release archives. (#36342)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.147.0</guid>
+      <pubDate>Fri, 07 Aug 2026 01:41:49 +0000</pubDate>
+    </item>
     <item>
       <title>0.146.1</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.146.1</link>
