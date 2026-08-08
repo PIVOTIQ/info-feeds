@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 02:49:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 04:02:30 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.226</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21226</link>
+      <description>&lt;ul&gt;&lt;li&gt;Bug fixes and reliability improvements&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21226</guid>
+      <category>Changelog</category>
+      <pubDate>Sat, 08 Aug 2026 01:53:22 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.225</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21225</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21167</guid>
       <category>Changelog</category>
       <pubDate>Sat, 06 Jun 2026 01:18:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.166</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21166</link>
-      <description>&lt;ul&gt;&lt;li&gt;Added `fallbackModel` setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; `--fallback-model` now also applies to interactive sessions&lt;/li&gt;&lt;li&gt;Added glob pattern support in deny rule tool-name position (`"*"` denies all tools); allow rules reject non-MCP globs, and unknown tool names in deny rules warn at startup&lt;/li&gt;&lt;li&gt;Hardened cross-session messaging: messages relayed via `SendMessage` from other Claude sessions no longer carry user authority — receivers refuse relayed permission requests, and auto mode blocks them&lt;/li&gt;&lt;li&gt;`MAX_THINKING_TOKENS=0`, `--thinking disabled`, and the per-model thinking toggle now disable thinking on models that think by default via the Claude API (3P providers unchanged)&lt;/li&gt;&lt;li&gt;Claude Code now retries a turn once on the fallback model when the API rejects an unexpected non-retryable error; auth, rate-limit, request-size, and transport errors still surface immediately&lt;/li&gt;&lt;li&gt;`claude update` now announces the target version before downloading instead of going silent&lt;/li&gt;&lt;li&gt;`claude agents`: typing a URL into the list now filters to the session whose first prompt contained it&lt;/li&gt;&lt;li&gt;Fixed a recurring "image could not be processed" error and extra token usage when an unprocessable image was sent in a session&lt;/li&gt;&lt;li&gt;Fixed remote sessions becoming permanently stuck when a brief backend disruption occurred during worker registration at startup&lt;/li&gt;&lt;li&gt;Fixed flickering in JetBrains IDE terminals (IntelliJ, PyCharm, WebStorm, etc.) on 2026.1+ by enabling synchronized output&lt;/li&gt;&lt;li&gt;Fixed Shift+non-ASCII characters (e.g. Shift+ä → Ä) being dropped in terminals using the Kitty keyboard protocol (WezTerm, Ghostty, kitty)&lt;/li&gt;&lt;li&gt;Fixed PowerShell command validation occasionally hanging far past its time budget on Windows when a killed process's children held its output pipes&lt;/li&gt;&lt;li&gt;Fixed orphaned `claude --bg-pty-host` processes spinning at 100% CPU after the daemon dies while connected on macOS&lt;/li&gt;&lt;li&gt;Fixed voice mode requiring `/login` to clear a stale auth check after toggling `/voice`&lt;/li&gt;&lt;li&gt;Fixed managed settings with an invalid entry silently disabling enforcement of their remaining valid policies&lt;/li&gt;&lt;li&gt;Fixed managed-settings `allowedMcpServers`/`deniedMcpServers` predicates not matching when they use `${VAR}` references&lt;/li&gt;&lt;li&gt;Fixed background agent sessions that entered a git worktree crash-looping with "No conversation found" when reopened from `claude agents`&lt;/li&gt;&lt;li&gt;Fixed duplicated thinking text in the Ctrl+O transcript view while streaming&lt;/li&gt;&lt;li&gt;Fixed `/doctor` showing a contradictory failed "Not inside a remote session" check when run inside a remote session&lt;/li&gt;&lt;li&gt;Fixed the cursor sticking at the end of the first line when typing a multiline prompt in the `claude agents` dispatch and reply inputs&lt;/li&gt;&lt;li&gt;Fixed blank lines appearing between background agent rows in the task list on terminals without Unicode support&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21166</guid>
-      <category>Changelog</category>
-      <pubDate>Fri, 05 Jun 2026 19:01:59 +0000</pubDate>
     </item>
   </channel>
 </rss>
