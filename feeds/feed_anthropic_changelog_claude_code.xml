@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 00:40:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 02:49:27 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.225</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21225</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)&lt;/li&gt;&lt;li&gt;Added a workspace trust prompt to `claude agents` for untrusted directories, matching the behavior of `claude`&lt;/li&gt;&lt;li&gt;Fixed a transient 401 replacing a long-lived `CLAUDE_CODE_OAUTH_TOKEN` with a stored login's short-lived token, breaking headless sessions until restart&lt;/li&gt;&lt;li&gt;Fixed MCP OAuth servers on macOS intermittently failing with a burst of 401 errors, as if never authenticated, after a keychain read timed out&lt;/li&gt;&lt;li&gt;Fixed auto mode counting a safety-filter refusal of its own permission check toward the consecutive-block limit; the action is still denied, but the model is now told to move on rather than retry&lt;/li&gt;&lt;li&gt;Fixed cross-session messages staying parked without a notice or expiry in headless sessions and during startup&lt;/li&gt;&lt;li&gt;Fixed conversation history breaking on Remote Control session resume after very large conversations were compacted&lt;/li&gt;&lt;li&gt;Fixed hovering over a session in another project in the agents list changing the directory the next agent starts in&lt;/li&gt;&lt;li&gt;Fixed `claude self-hosted-runner` registering and then failing every session when `--base-dir` cannot be created or written; it now exits at startup with a clear error&lt;/li&gt;&lt;li&gt;Fixed Claude Code on the web sessions being misreported as stuck, re-sending a growing event backlog on every reconnect&lt;/li&gt;&lt;li&gt;Improved Remote Control: photos attached from the Claude app are now shown to Claude directly instead of being read from disk with a separate tool call&lt;/li&gt;&lt;li&gt;[VSCode] Fixed Focus view folding away the latest to-do list, a pending question's context, and settled answers; thinking-only folds show "Thought for Ns" and re-collapse when their turn completes&lt;/li&gt;&lt;li&gt;SendMessage can now start a conversation with your Remote Control sessions on other machines by name (`ListAgents` shows them as `name [ref]`), instead of only replying after they message you first&lt;/li&gt;&lt;li&gt;SendMessage: a Remote Control recipient you already confirmed is never swapped for a same-named session on this machine when its own list couldn't be checked&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21225</guid>
+      <category>Changelog</category>
+      <pubDate>Fri, 07 Aug 2026 23:08:56 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.224</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21224</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21166</guid>
       <category>Changelog</category>
       <pubDate>Fri, 05 Jun 2026 19:01:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.165</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21165</link>
-      <description>&lt;ul&gt;&lt;li&gt;Bug fixes and reliability improvements&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21165</guid>
-      <category>Changelog</category>
-      <pubDate>Fri, 05 Jun 2026 05:22:42 +0000</pubDate>
     </item>
   </channel>
 </rss>
