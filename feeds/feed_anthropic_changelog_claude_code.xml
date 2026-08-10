@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 22:25:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 23:24:42 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.227</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21227</link>
+      <description>&lt;ul&gt;&lt;li&gt;Fixed feature flags being evaluated without the user's subscription tier when a session started with an expired login token, which could wrongly prompt Max plan users to enable usage credits for Fable&lt;/li&gt;&lt;li&gt;Fixed every Bash command failing under `claude-code-action` with `allowed_non_write_users` on GitHub-hosted runners&lt;/li&gt;&lt;li&gt;Fixed `/tui` bringing back a conversation that had been rewound to before its first message&lt;/li&gt;&lt;li&gt;Improved slash-command menu: blue now marks only the selected row, matched characters are bolded instead of recolored, and emoji or accented names keep their glyphs&lt;/li&gt;&lt;li&gt;Improved performance: fewer event-loop stalls on file-not-found suggestions and at-mention size checks&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21227</guid>
+      <category>Changelog</category>
+      <pubDate>Mon, 10 Aug 2026 20:56:57 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.226</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21226</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21168</guid>
       <category>Changelog</category>
       <pubDate>Sat, 06 Jun 2026 23:32:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.167</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21167</link>
-      <description>&lt;ul&gt;&lt;li&gt;Bug fixes and reliability improvements&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21167</guid>
-      <category>Changelog</category>
-      <pubDate>Sat, 06 Jun 2026 01:18:42 +0000</pubDate>
     </item>
   </channel>
 </rss>
