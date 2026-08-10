@@ -8,7 +8,35 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 16:41:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 17:43:59 +0000</lastBuildDate>
+    <item>
+      <title>Introducing Daybreak Blue and Daybreak Red</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-08-10-Introducing Daybreak Blue and Daybreak Red</link>
+      <description>&lt;p&gt;Daybreak now offers two access tiers for approved defenders: Daybreak Blue and
+Daybreak Red. Use them to move from security findings to validated fixes in
+explicitly authorized engagements.&lt;/p&gt;
+&lt;p&gt;Start with Daybreak Blue for most defensive security work. It provides access
+to general-purpose models such as GPT-5.6 Sol for vulnerability discovery,
+secure code review, detection engineering, incident response, malware analysis,
+and patch validation.&lt;/p&gt;
+&lt;p&gt;Daybreak Red provides separately approved access to purpose-trained models such
+as GPT-5.6 Cyber for authorized vulnerability reproduction, exploit validation,
+penetration testing, red teaming, and complex system analysis.&lt;/p&gt;
+&lt;p&gt;Access requires approval through
+&lt;a href="/codex/cyber-safety#trusted-access-for-cyber"&gt;Trusted Access for Cyber&lt;/a&gt; and
+applies only to the approved identity, workspace or API organization and
+project, model, and product surface. Daybreak Red requires separate approval
+and provisioning; Daybreak Blue access doesn’t grant access to Daybreak Red.&lt;/p&gt;
+&lt;p&gt;Work in an isolated environment, define your engagement scope, use
+least-privilege &lt;a href="/codex/permissions"&gt;permission profiles&lt;/a&gt;, and configure
+&lt;a href="/codex/sandboxing/auto-review"&gt;Auto-review&lt;/a&gt; for eligible actions before they
+cross the sandbox boundary.&lt;/p&gt;
+&lt;p&gt;Learn more about &lt;a href="/codex/cyber-safety"&gt;Cyber Safety&lt;/a&gt;,
+&lt;a href="/codex/pricing#credits-overview"&gt;Codex credit rates&lt;/a&gt;, and
+&lt;a href="/api/docs/pricing"&gt;API token prices&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-10-Introducing Daybreak Blue and Daybreak Red</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.147.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-08-07-Codex CLI0.147.0</link>
