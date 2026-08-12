@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 21:33:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 22:29:11 +0000</lastBuildDate>
     <item>
       <title>Automated Machine Learning — A Paradigm Shift That Accelerates Data Scientist Productivity @ Airbnb</title>
       <link>https://medium.com/airbnb-engineering/automated-machine-learning-a-paradigm-shift-that-accelerates-data-scientist-productivity-airbnb-f1f8a10d61f8</link>
@@ -25,9 +25,9 @@
     </item>
     <item>
       <title>How To Create Magical Data Products Using Sequence-to-Sequence Models</title>
-      <link>https://towardsdatascience.com/how-to-create-data-products-that-are-magical-using-sequence-to-sequence-models-703f86a231f8</link>
+      <link>https://medium.com/data-science/how-to-create-data-products-that-are-magical-using-sequence-to-sequence-models-703f86a231f8</link>
       <description>How To Create Magical Data Products Using Sequence-to-Sequence Models</description>
-      <guid isPermaLink="false">https://towardsdatascience.com/how-to-create-data-products-that-are-magical-using-sequence-to-sequence-models-703f86a231f8</guid>
+      <guid isPermaLink="false">https://medium.com/data-science/how-to-create-data-products-that-are-magical-using-sequence-to-sequence-models-703f86a231f8</guid>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>How to Automate Tasks on GitHub With Machine Learning for Fun and Profit</title>
-      <link>https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&amp;sk=760e18a2d6e60999d7eb2887352a92a8</link>
+      <link>https://medium.com/%40hamelhusain/mlapp-419f90e8f007?sk=760e18e8f007</link>
       <description>How to Automate Tasks on GitHub With Machine Learning for Fun and Profit</description>
-      <guid isPermaLink="false">https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&amp;sk=760e18a2d6e60999d7eb2887352a92a8</guid>
+      <guid isPermaLink="false">https://medium.com/%40hamelhusain/mlapp-419f90e8f007?sk=760e18e8f007</guid>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -316,6 +316,13 @@
       <description>Do Automated Evals Work?</description>
       <guid isPermaLink="false">https://parlance-labs.com/blog/posts/auto-evals.html</guid>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI Product Engineering Notes</title>
+      <link>https://hamel.dev/./notes/llm/ai-product-engineering/index.html</link>
+      <description>AI Product Engineering Notes</description>
+      <guid isPermaLink="false">https://hamel.dev/./notes/llm/ai-product-engineering/index.html</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
