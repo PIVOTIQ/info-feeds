@@ -8,7 +8,40 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Aug 2026 18:45:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 19:51:08 +0000</lastBuildDate>
+    <item>
+      <title>Computer History</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-08-13-Computer History</link>
+      <description>&lt;p&gt;&lt;a href="/codex/customization/computer-history"&gt;Computer History&lt;/a&gt; is an opt-in feature
+in the ChatGPT desktop app on macOS that turns activity across apps and
+websites into memories and a timeline that ChatGPT and Codex can use. Choose
+which apps and websites contribute, pause collection, and review or delete
+your history at any time.&lt;/p&gt;
+&lt;p&gt;Computer History is available to ChatGPT Pro, Business, and Enterprise users.
+Business and Enterprise administrators must enable access before workspace
+members can turn it on. Initial availability excludes the European Economic Area (EEA),
+Switzerland, and the United Kingdom.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-13-Computer History</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Linux desktop preview and agent imports</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-08-11-Linux desktop preview and agent imports</link>
+      <description>&lt;h3 id="install-the-chatgpt-desktop-app-on-linux"&gt;Install the ChatGPT desktop app on Linux&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="/codex/linux/linux-app"&gt;ChatGPT desktop app for Linux&lt;/a&gt; is available in
+preview for supported Ubuntu, Debian, and Fedora desktop distributions on x64
+and ARM64 processors. Download the &lt;code&gt;.deb&lt;/code&gt; or &lt;code&gt;.rpm&lt;/code&gt; package for your
+distribution, then sign in to work with projects, local files, and Codex.&lt;/p&gt;
+&lt;h3 id="import-setup-and-recent-work-from-other-agents"&gt;Import setup and recent work from other agents&lt;/h3&gt;
+&lt;p&gt;The desktop app supports &lt;strong&gt;Claude Code&lt;/strong&gt;, &lt;strong&gt;Claude Cowork&lt;/strong&gt;, and
+&lt;strong&gt;Cursor&lt;/strong&gt;. &lt;a href="/codex/import"&gt;Import instructions, settings, skills, plugins, projects, and
+recent work&lt;/a&gt;, then turn on automatic updates in
+&lt;strong&gt;Settings &amp;gt; Import&lt;/strong&gt; to keep imported work in sync.&lt;/p&gt;
+&lt;p&gt;Codex CLI can also import supported setup and recent chats from Claude Code
+and Cursor with &lt;code&gt;/import&lt;/code&gt;.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-11-Linux desktop preview and agent imports</guid>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Introducing Daybreak Blue and Daybreak Red</title>
       <link>https://developers.openai.com/codex/changelog/#2026-08-10-Introducing Daybreak Blue and Daybreak Red</link>
