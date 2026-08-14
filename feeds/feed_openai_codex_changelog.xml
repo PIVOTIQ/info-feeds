@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 10:46:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 11:35:29 +0000</lastBuildDate>
     <item>
       <title>Computer History</title>
       <link>https://developers.openai.com/codex/changelog/#2026-08-13-Computer History</link>
@@ -3955,16 +3955,16 @@ It also powers the cloud agent and Code Review in GitHub.&lt;/p&gt;
       <title>Late August update</title>
       <link>https://developers.openai.com/codex/changelog/#2025-08-27-Late August update</link>
       <description>&lt;h4 id="ide-extension-compatible-with-vs-code-cursor-windsurf"&gt;IDE extension (Compatible with VS Code, Cursor, Windsurf)&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="https://cdn.openai.com/devhub/gifs/local_task.gif"/&gt;&lt;/p&gt;
+&lt;video aria-hidden="true" autoplay="" class="my-0 w-full rounded-2xl border border-default" loop="" muted="" playsinline="" preload="metadata"&gt;&lt;source src="https://cdn.openai.com/devhub/gifs/local_task.webm" type="video/webm"/&gt;&lt;/video&gt;
 &lt;p&gt;Codex now runs in your IDE with an interactive UI for fast local iteration. Easily switch between modes and reasoning efforts.&lt;/p&gt;
 &lt;h4 id="sign-in-with-chatgpt-ide--cli"&gt;Sign in with ChatGPT (IDE &amp;amp; CLI)&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="https://cdn.openai.com/devhub/gifs/sign-in-with-chat.gif"/&gt;&lt;/p&gt;
+&lt;video aria-hidden="true" autoplay="" class="my-0 w-full rounded-2xl border border-default" loop="" muted="" playsinline="" preload="metadata"&gt;&lt;source src="https://cdn.openai.com/devhub/gifs/sign-in-with-chat.webm" type="video/webm"/&gt;&lt;/video&gt;
 &lt;p&gt;One-click authentication that removes API keys and uses ChatGPT Enterprise credits.&lt;/p&gt;
 &lt;h4 id="move-work-between-local--cloud"&gt;Move work between local ↔ cloud&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="https://cdn.openai.com/devhub/gifs/cloud_task.gif"/&gt;&lt;/p&gt;
+&lt;video aria-hidden="true" autoplay="" class="my-0 w-full rounded-2xl border border-default" loop="" muted="" playsinline="" preload="metadata"&gt;&lt;source src="https://cdn.openai.com/devhub/gifs/cloud_task.webm" type="video/webm"/&gt;&lt;/video&gt;
 &lt;p&gt;Hand off tasks to Codex web from the IDE with the ability to apply changes locally so you can delegate jobs without leaving your editor.&lt;/p&gt;
 &lt;h4 id="code-reviews"&gt;Code Reviews&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="https://cdn.openai.com/devhub/gifs/codex_review.gif"/&gt;&lt;/p&gt;
+&lt;video aria-hidden="true" autoplay="" class="my-0 w-full rounded-2xl border border-default" loop="" muted="" playsinline="" preload="metadata"&gt;&lt;source src="https://cdn.openai.com/devhub/gifs/codex_review.webm" type="video/webm"/&gt;&lt;/video&gt;
 &lt;p&gt;Codex goes beyond static analysis. It checks a PR against its intent, reasons across the codebase and dependencies, and can run code to validate the behavior of changes.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2025-08-27-Late August update</guid>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
@@ -4003,7 +4003,7 @@ It also powers the cloud agent and Code Review in GitHub.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="/images/codex/changelog/update_prs.png"/&gt;&lt;/p&gt;
 &lt;p&gt;Now you can update existing pull requests when following up on a task.&lt;/p&gt;
 &lt;h4 id="voice-dictation"&gt;Voice dictation&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="" src="https://cdn.openai.com/devhub/gifs/voice_dictation.gif"/&gt;&lt;/p&gt;
+&lt;video aria-hidden="true" autoplay="" class="my-0 w-full rounded-2xl border border-default" loop="" muted="" playsinline="" preload="metadata"&gt;&lt;source src="https://cdn.openai.com/devhub/gifs/voice_dictation.webm" type="video/webm"/&gt;&lt;/video&gt;
 &lt;p&gt;Now you can dictate tasks to Codex.&lt;/p&gt; &lt;h4&gt;Fixes &amp;amp; improvements&lt;/h4&gt; &lt;ul class="list-disc pl-8 mt-2 [&amp;amp;&amp;gt;li+li]:mt-1 text-default [&amp;amp;_p]:m-0"&gt; &lt;li&gt;&lt;p&gt;Added a link to this changelog from the profile menu.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Added support for binary files: When applying patches, all file operations are supported. When using PRs, only deleting or renaming binary files is supported for now.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Fixed an issue on iOS where follow up tasks where shown duplicated in the task list.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Fixed an issue on iOS where pull request statuses were out of date.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Fixed an issue with follow ups where the environments were incorrectly started with the state from the first turn, rather than the most recent state.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Fixed internationalization of task events and logs.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Improved error messages for setup scripts.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Increased the limit on task diffs from 1 MB to 5 MB.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Increased the limit for setup script duration from 5 to 10 minutes.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Polished GitHub connection flow.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Re-enabled Live Activities on iOS after resolving an issue with missed notifications.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Removed the mandatory two-factor authentication requirement for users using SSO or social logins.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2025-06-03-June update</guid>
       <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
