@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 22:10:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 23:10:21 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.233</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21233</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added GitLab merge request URL support to the `--worktree` flag and the `claude agents` view (where MRs display as `!N`)&lt;/li&gt;&lt;li&gt;Added an opt-in `forward_user_identity` apps gateway setting on Anthropic upstreams that sends the signed-in user's identity as headers, so a proxy behind the gateway can attribute spend per user&lt;/li&gt;&lt;li&gt;Added opt-in memory cgroup support for Bash tool commands on Linux (`CLAUDE_CODE_TOOL_MEMORY_LIMIT`) so a runaway build can't stall the session&lt;/li&gt;&lt;li&gt;Added `CLAUDE_CODE_WEBFETCH_CACHE_TTL_MS` environment variable to configure the WebFetch session URL cache TTL (default unchanged: 15 minutes)&lt;/li&gt;&lt;li&gt;Fixed cloud sessions occasionally being marked as lost when the environment shut down while Claude was waiting on a permission prompt&lt;/li&gt;&lt;li&gt;Fixed MCP v2 connections endlessly reopening the subscriptions/listen stream against servers that terminate long-held streams on a fixed timeout (e.g. serverless hosts)&lt;/li&gt;&lt;li&gt;Fixed Notification hooks not firing for permission prompts when running under Claude Desktop or VS Code&lt;/li&gt;&lt;li&gt;Fixed idle sessions on Linux sometimes keeping one CPU core at 100% when sandboxing is enabled&lt;/li&gt;&lt;li&gt;Fixed bundled skill aliases like `/checkup` and `/review` reporting "Unknown command" in `-p` mode or with plugins/MCP loaded when a user or project skill shadows the bundled skill&lt;/li&gt;&lt;li&gt;Fixed skill/command argument substitution to prevent argument values from being re-expanded as template markers&lt;/li&gt;&lt;li&gt;Fixed Windows paths spelled with the NT `\??\` device prefix bypassing UNC path validation, closing an NTLM credential-leak vector&lt;/li&gt;&lt;li&gt;Improved `claude self-hosted-runner` session start time: the session branch is now created without rewriting the working tree, and two server round trips no longer block the agent's launch&lt;/li&gt;&lt;li&gt;Improved apps gateway error forwarding: 400/413 errors from Vertex, Foundry, and Claude Platform on AWS upstreams now carry the upstream's own message; fixes a bug with auto-compact on apps gateway&lt;/li&gt;&lt;li&gt;Improved `claude plugin validate` to check a bare `.claude/skills` directory, reporting SKILL.md files whose frontmatter fails to parse&lt;/li&gt;&lt;li&gt;Improved screen reader mode: the `/effort` selector renders as a numbered list with a typed-number prompt, and hint and dialog text is no longer clipped&lt;/li&gt;&lt;li&gt;Improved print mode diagnostics: a `[claude-code:unrecognized_model]` line is written to stderr when a request goes out for a model ID Claude Code doesn't recognize; map it with `modelOverrides` to silence&lt;/li&gt;&lt;li&gt;Changed the GitHub app setup tip to no longer appear in repositories whose origin remote is on gitlab.com or bitbucket.org; the enterprise marketplace tip now covers non-GitHub internal git hosts&lt;/li&gt;&lt;li&gt;Todo/task-tracking tools (TaskCreate/Get/Update/List, TodoWrite) are no longer available on Opus 4.8, Sonnet 5, Fable 5, Mythos 5, and newer models; set `CLAUDE_CODE_ENABLE_TODO_TOOLS=1` to bring them back&lt;/li&gt;&lt;li&gt;Windows: fixed auto mode repeatedly stopping for manual approval on ordinary `cd &lt;dir&gt; &amp;&amp; &lt;command&gt; &gt; file` Bash commands (a 2.1.232 regression)&lt;/li&gt;&lt;li&gt;Reverted the 2.1.232 Bash permission changes for Cygwin-style symlinks on Windows and for input redirections (`&lt; file`); a narrower version will return in a later release&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21233</guid>
+      <category>Changelog</category>
+      <pubDate>Fri, 14 Aug 2026 18:50:44 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.232</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21232</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21174</guid>
       <category>Changelog</category>
       <pubDate>Thu, 11 Jun 2026 22:27:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.173</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21173</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed Fable 5 model names with a `[1m]` suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically&lt;/li&gt;&lt;li&gt;Fixed a spurious "sandbox dependencies missing" startup warning on Windows when sandbox was enabled in settings&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21173</guid>
-      <category>Changelog</category>
-      <pubDate>Thu, 11 Jun 2026 02:09:50 +0000</pubDate>
     </item>
   </channel>
 </rss>
