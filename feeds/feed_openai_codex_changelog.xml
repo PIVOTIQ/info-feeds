@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 21:15:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 22:10:43 +0000</lastBuildDate>
     <item>
       <title>Computer History</title>
       <link>https://developers.openai.com/codex/changelog/#2026-08-13-Computer History</link>
@@ -470,6 +470,16 @@ Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-05-Codex CLI0.146.1</guid>
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Record &amp; Replay expands to the EU, UK, and Switzerland</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-07-31-Record &amp; Replay expands to the EU, UK, and Switzerland</link>
+      <description>&lt;p&gt;&lt;a href="/codex/extend/record-and-replay"&gt;Record &amp;amp; Replay&lt;/a&gt; is now available in the
+European Union, the United Kingdom, and Switzerland. On macOS, demonstrate a
+workflow and turn it into a reusable skill. Computer Use must also be available
+and enabled.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-07-31-Record &amp; Replay expands to the EU, UK, and Switzerland</guid>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>GPT-5.4 and GPT-5.4 mini retire from Codex on August 31</title>
