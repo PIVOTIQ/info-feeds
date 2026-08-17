@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Mon, 17 Aug 2026 07:42:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 08:28:25 +0000</lastBuildDate>
+    <item>
+      <title>AIが読み手になる時代：企業報告の転換点</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-as-reader.html</link>
+      <description>AIは企業報告の新たな読み手になりつつあります。企業は、AIが開示情報をどのように解釈・評価するのか、それがガバナンスにとってどのような意味を持つのかを理解し、AI時代に適した開示に取り組む必要があります。 </description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-as-reader.html</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>オペレーションのデジタルトレンド調査 2026\―\―AIへの期待を、エンドツーエンドの抜本的な業務変革へつなげる</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/digital-trends-operations-survey.html</link>
@@ -36,17 +43,17 @@
       <pubDate>Tue, 04 Aug 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>PwC「AIパフォーマンス調査」 AIの投資対効果を狙うには成長を目指す姿勢が不可欠</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-roi.html</link>
-      <description>各企業がAIを活用する中、効果を享受している企業と、そうでない企業の二極化が進みつつあります。本レポートでは、世界的な上場企業の経営幹部を対象としたPwCのアンケート調査の結果を分析し、AI活用を事業モデルの変革へとつなげる道筋について言及します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-roi.html</guid>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>AI時代のB2Bビジネスと、人に求められる力</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-b2b-commerce.html</link>
       <description>AI前提社会において、B2Bビジネスの枠組みは大きく変化すると考えられます。本稿では、AIによる購買構造の変化を俯瞰しながら、企業が取り組むべきAI導入に向けた4つのステップと、これからの法人営業人材に求められる力を解説します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-b2b-commerce.html</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>PwC「AIパフォーマンス調査」 AIの投資対効果を狙うには成長を目指す姿勢が不可欠</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-roi.html</link>
+      <description>各企業がAIを活用する中、効果を享受している企業と、そうでない企業の二極化が進みつつあります。本レポートでは、世界的な上場企業の経営幹部を対象としたPwCのアンケート調査の結果を分析し、AI活用を事業モデルの変革へとつなげる道筋について言及します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-roi.html</guid>
       <pubDate>Thu, 30 Jul 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <description>日本の通信業界は、成熟市場としての安定性を保ちながらも、収益の源泉が通信サービスそのものからデータ処理・活用へと移行しています。本レポートでは、日本の通信業界の現状を俯瞰した上で、日本市場固有の課題と機会を整理し、ビジネスモデル再構築の方向性を提示します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/telecom-outlook-perspectives2026-ja.html</guid>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>TOPIX100企業のSASBスタンダードの適用と開示状況に対する調査 投資家はサステナビリティ開示に何を求めるのか \―SSBJ基準で考慮が求められるSASBスタンダード活用の現在地\―</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/sasb2026.html</link>
-      <description>2027年3月期からSSBJ基準に準拠したサステナビリティ開示義務化が段階的に始まります。PwCは、TOPIX100企業を対象に、SSBJ基準で考慮が求められるSASBスタンダードの活用状況を調査しました。本報告書では、投資家ニーズに応えていくために、SASBスタンダードを企業が活用する際のポイントを解説します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/sasb2026.html</guid>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
