@@ -13,7 +13,13 @@
       <link>https://cursor.com/blog</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 16:17:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 19:19:25 +0000</lastBuildDate>
+    <item>
+      <title>Git at any scale</title>
+      <link>https://cursor.com/blog/git-at-any-scale</link>
+      <guid isPermaLink="false">https://cursor.com/blog/git-at-any-scale</guid>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Cursor is now a part of SpaceX</title>
       <link>https://cursor.com/blog/joining-spacex</link>
@@ -93,16 +99,9 @@
     <item>
       <title>Agent swarms and the new model economics</title>
       <link>https://cursor.com/blog/agent-swarm-model-economics</link>
-      <description>We compared old and new agent swarms building SQLite from scratch and found that better coordination delivers similar quality at a fraction of the cost.</description>
       <guid isPermaLink="false">https://cursor.com/blog/agent-swarm-model-economics</guid>
-      <pubDate>Mon, 20 Jul 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Grok 4.5 Model Card</title>
-      <link>https://cursor.com/blog/grok-4-5-model-card</link>
-      <guid isPermaLink="false">https://cursor.com/blog/grok-4-5-model-card</guid>
       <category>research</category>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Jul 2026 12:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Coinbase reduces time from idea to production by 90% with Cursor</title>
