@@ -8,7 +8,34 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 22:10:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 23:10:44 +0000</lastBuildDate>
+    <item>
+      <title>0.148.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.148.0</link>
+      <description>## New Features
+
+- Export complete TUI conversations to Markdown with `/export`, either to the clipboard or a new file. (#37358)
+- Fork sessions with `codex exec fork`, and archive or restore sessions from the TUI resume picker. (#37367, #37369, #37371)
+- Draft prompts while the TUI initializes, with resume and fork progress shown during startup. (#38642, #38788)
+- View estimated thread credits or cost in `/status`, status lines, and terminal titles for eligible workspaces. (#38281, #38282)
+- Use Amazon Bedrock Runtime as a built-in provider with AWS profile, region, and GPT-5.6 routing support. (#38470)
+- Hooks can now run commands asynchronously and invoke MCP tools. (#37533, #38705)
+
+## Bug Fixes
+
+- Model switches and settings updates no longer leave stale instructions behind or change an active turn midstream. (#37260, #38785)
+- Resumed sessions now restore their persisted working directory and approval policy, with more accurate transcript previews. (#37198, #37368, #38605)
+- Turns reconnect through temporary provider outages, and MCP servers recover after OAuth reauthentication without restarting Codex. (#37337, #37485, #38418)
+- TUI startup no longer lets buffered terminal input activate prompts accidentally, and onboarding appears when authentication is missing. (#38641, #38643, #38644)
+- Composer and transcript rendering now handle CRLF pastes, wrapped whitespace, and long URLs correctly. (#37709, #38380, #38704)
+- Sandbox restrictions now fail closed for denied or unreadable paths across Linux and Windows. (#37875, #38026, #38416, #38660)
+
+## Documentation
+
+- The bundled skill-creator guide is more focused, and validation now rejects unfinished TODO placeholders. (#38384)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.148.0</guid>
+      <pubDate>Tue, 18 Aug 2026 22:26:03 +0000</pubDate>
+    </item>
     <item>
       <title>0.147.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.147.0</link>
