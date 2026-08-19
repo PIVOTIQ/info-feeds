@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2026 04:25:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 06:21:46 +0000</lastBuildDate>
     <item>
       <title>5 Examples of the Importance of Context-Sensitivity in Data-Centric AI</title>
       <link>https://www.surgehq.ai/blog/why-context-aware-datasets-are-crucial-for-data-centric-ai</link>
@@ -332,7 +332,7 @@
       <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Tuesday: A Frontier Index for AI at Work</title>
+      <title>Introducing Tuesday: A Frontier Index for AI at Work</title>
       <link>https://www.surgehq.ai/blog/tuesday-frontier-work-index</link>
       <description>Introducing the Tuesday Index, a composite benchmark measuring how well frontier AI models handle the capabilities required for real professional work.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/tuesday-frontier-work-index</guid>
