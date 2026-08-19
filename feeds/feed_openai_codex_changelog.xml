@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2026 06:22:09 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 07:31:28 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.148.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-08-18-Codex CLI0.148.0</link>
@@ -421,6 +421,30 @@
 Full release on Github
 &lt;/a&gt; &lt;/p&gt; &lt;/details&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-18-Codex CLI0.148.0</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ChatGPT for iOS1.2026.223</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-08-18-ChatGPT for iOS1.2026.223</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a setting to open ChatGPT directly in Codex Remote on launch.&lt;/li&gt;
+&lt;li&gt;Added support for standard MCP forms and editable Messages approvals.&lt;/li&gt;
+&lt;li&gt;Linked folders now open directly in Files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved the New Thread project picker to reflect the selected host’s current projects.&lt;/li&gt;
+&lt;li&gt;Voice now works directly from existing task composers, connects more reliably, and continues task actions in the background.&lt;/li&gt;
+&lt;li&gt;Improved diff review stability and performance, especially in large workspaces.&lt;/li&gt;
+&lt;li&gt;Added a Retry action when task messages fail to load.&lt;/li&gt;
+&lt;li&gt;Fixed large task responses failing to load.&lt;/li&gt;
+&lt;li&gt;Fixed tasks disappearing or remaining unavailable after being idle, reconnecting, or returning to the task list.&lt;/li&gt;
+&lt;li&gt;Improved host pairing reliability and prevented enrollment checks from freezing the app.&lt;/li&gt;
+&lt;li&gt;Improved response annotations and preserved streamed activity when tasks complete.&lt;/li&gt;
+&lt;li&gt;Canceling or editing a steering message now prevents delivery.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-18-ChatGPT for iOS1.2026.223</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
