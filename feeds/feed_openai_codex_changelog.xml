@@ -8,7 +8,50 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 17:18:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 18:19:57 +0000</lastBuildDate>
+    <item>
+      <title>Codex and ChatGPT updates</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-08-20-Codex and ChatGPT updates</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apple Messages:&lt;/strong&gt; Use the &lt;a href="/codex/plugins?surface=app#app-use-apple-messages-from-codex"&gt;Apple Messages plugin&lt;/a&gt; to read and search Messages chats on your Mac and prepare or send messages. It’s available on all plans in the ChatGPT desktop app for macOS. You can use the plugin in ChatGPT Work and Codex. By default, ChatGPT sends messages only after you approve the message and its recipients. See the plugin guide for persistent-approval risks, revocation steps, and the known issue with tasks that disable approval prompts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Site co-editing:&lt;/strong&gt; Where Site collaboration is available, owners can &lt;a href="/codex/sites#collaborate-on-a-site"&gt;invite active members of the same workspace as editors&lt;/a&gt;. Editors can read the Site’s live database data, update the Site, save versions, and publish changes after the owner publishes the Site for the first time. Owners retain control of the audience, settings, analytics, ownership, version restoration, and editor access.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editable Site URLs:&lt;/strong&gt; Where URL editing is available, owners can &lt;a href="/codex/sites#change-a-site-url"&gt;change an existing Site’s ChatGPT-hosted address&lt;/a&gt; without creating another deployment. The previous address redirects to the new URL. Custom domains are a separate, existing feature and aren’t changed by this setting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Computer History in Europe:&lt;/strong&gt; &lt;a href="/codex/customization/computer-history"&gt;Computer History&lt;/a&gt; is now available in the EEA, Switzerland, and the United Kingdom for ChatGPT Pro, Business, and Enterprise users in the ChatGPT desktop app on macOS. It’s off by default and requires Memories. Business and Enterprise administrators must enable access before workspace members can choose to turn it on.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Shared thread snapshots:&lt;/strong&gt; On all Codex plans, &lt;a href="/codex/use-chatgpt#share-a-read-only-snapshot-of-a-codex-thread"&gt;share a read-only snapshot of a local Codex thread&lt;/a&gt; from the ChatGPT desktop app for macOS. The snapshot doesn’t update when the original thread changes. Personal-account links can be opened by anyone with the link; workspace-account links are limited to members of the originating workspace. Codex redacts known secret patterns, but review the shared content because sensitive content may remain. View or revoke links in &lt;a href="https://chatgpt.com/#settings/DataControls"&gt;ChatGPT data controls&lt;/a&gt;, under &lt;strong&gt;Shared links&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Unified pinned threads:&lt;/strong&gt; Keep the same &lt;a href="/codex/projects?surface=app#app-organize-projects-and-chats"&gt;pinned chats&lt;/a&gt; across the ChatGPT desktop app and iOS.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-20-Codex and ChatGPT updates</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GitLab support in Codex cloud (Beta)</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-08-19-GitLab support in Codex cloud (Beta)</link>
+      <description>&lt;p&gt;GitLab support is available in beta on all ChatGPT plans. Connect a GitLab
+project to Codex cloud, create an environment for it, start tasks from issues
+or merge requests with &lt;code&gt;@codex&lt;/code&gt;, and request one-off or automatic merge request
+reviews.&lt;/p&gt;
+&lt;p&gt;The integration runs in Codex cloud. A managed workspace admin can disable the
+connector. GitLab-triggered activity requires permission to configure the
+applicable webhook. For GitLab Self-Managed or GitLab Dedicated, a workspace admin must
+configure the connection, and webhook activity requires GitLab 19.0 or later.&lt;/p&gt;
+&lt;p&gt;Codex cannot complete a review when GitLab omits a collapsed or oversize diff.&lt;/p&gt;
+&lt;p&gt;Learn how to &lt;a href="/codex/third-party/gitlab"&gt;use Codex with GitLab&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-08-19-GitLab support in Codex cloud (Beta)</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Codex CLI0.148.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-08-18-Codex CLI0.148.0</link>
