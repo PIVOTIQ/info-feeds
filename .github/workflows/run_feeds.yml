@@ -39,14 +39,19 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-      - name: Install Python dependencies and run feed generators
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Python dependencies
         run: |
           set -e  # Fail the step on any error
           uv venv
           source .venv/bin/activate
           uv pip install -r requirements.txt
+
+      # Expose the token only to the generators (openai_codex_tags uses the GraphQL API), not to package installs
+      - name: Run feed generators
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          source .venv/bin/activate
           python feed_generators/run_all_feeds.py
 
       - name: Commit and push feed
