@@ -68,7 +68,10 @@ def fetch_stable_releases(repo=GITHUB_REPO):
                 )
         if not connection["pageInfo"]["hasNextPage"]:
             break
-        cursor = connection["pageInfo"]["endCursor"]
+        next_cursor = connection["pageInfo"]["endCursor"]
+        if not next_cursor or next_cursor == cursor:
+            raise RuntimeError(f"GraphQL pagination did not advance (cursor={cursor!r})")
+        cursor = next_cursor
 
     logger.info(f"Fetched {len(releases)} stable releases from {repo}")
     return releases
