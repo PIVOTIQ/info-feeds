@@ -18,10 +18,8 @@ FEED_NAME = "pwc_japan"
 
 def fetch_blog_content(url):
     """Fetch blog content from the given URL."""
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-    }
-    response = requests.get(url, headers=headers, timeout=30)
+    # PwC answers 403 to the old browser User-Agent string, so use the requests default
+    response = requests.get(url, timeout=30)
     response.raise_for_status()
     response.encoding = response.apparent_encoding
     return response.text

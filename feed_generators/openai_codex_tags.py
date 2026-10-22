@@ -16,32 +16,59 @@ TAGS_URL = f"https://github.com/{GITHUB_REPO}/tags"
 FEED_NAME = "openai_codex_tags"
 
 
+RELEASES_QUERY = """
+query($owner: String!, $name: String!, $cursor: String) {
+  repository(owner: $owner, name: $name) {
+    releases(first: 100, after: $cursor, orderBy: {field: CREATED_AT, direction: DESC}) {
+      pageInfo { hasNextPage endCursor }
+      nodes { name tagName url publishedAt description isPrerelease isDraft }
+    }
+  }
+}
+"""
+
+
 def fetch_stable_releases(repo=GITHUB_REPO):
-    """Fetch stable (non-prerelease) releases from GitHub API."""
+    """Fetch stable (non-prerelease) releases from the GitHub GraphQL API.
+
+    The REST releases endpoint returns every asset of every release (about 50 MB per 100 releases
+    for openai/codex), which times out with 504 and caps out at 1,000 results. GraphQL returns only
+    the fields the feed needs, but it requires a token.
+    """
     token = os.environ.get("GITHUB_TOKEN")
-    headers = {"Accept": "application/vnd.github.v3+json"}
-    if token:
-        headers["Authorization"] = f"token {token}"
+    if not token:
+        raise SystemExit("GITHUB_TOKEN is required (locally: export GITHUB_TOKEN=$(gh auth token))")
+    headers = {"Authorization": f"bearer {token}"}
+    owner, name = repo.split("/")
 
     releases = []
-    page = 1
+    cursor = None
     while True:
-        response = requests.get(
-            f"https://api.github.com/repos/{repo}/releases",
+        response = requests.post(
+            "https://api.github.com/graphql",
             headers=headers,
-            params={"per_page": 100, "page": page},
+            json={"query": RELEASES_QUERY, "variables": {"owner": owner, "name": name, "cursor": cursor}},
             timeout=30,
         )
         response.raise_for_status()
-        data = response.json()
-        if not data:
+        payload = response.json()
+        if "errors" in payload:
+            raise RuntimeError(f"GraphQL errors: {payload['errors']}")
+        connection = payload["data"]["repository"]["releases"]
+        for r in connection["nodes"]:
+            if not r["isPrerelease"] and not r["isDraft"]:
+                releases.append(
+                    {
+                        "name": r["name"],
+                        "tag_name": r["tagName"],
+                        "html_url": r["url"],
+                        "body": r["description"],
+                        "published_at": r["publishedAt"],
+                    }
+                )
+        if not connection["pageInfo"]["hasNextPage"]:
             break
-        for r in data:
-            if not r.get("prerelease", True) and not r.get("draft", True):
-                releases.append(r)
-        if len(data) < 100:
-            break
-        page += 1
+        cursor = connection["pageInfo"]["endCursor"]
 
     logger.info(f"Fetched {len(releases)} stable releases from {repo}")
     return releases

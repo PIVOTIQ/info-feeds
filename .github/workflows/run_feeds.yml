@@ -40,6 +40,8 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       - name: Install Python dependencies and run feed generators
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e  # Fail the step on any error
           uv venv
@@ -48,6 +50,8 @@ jobs:
           python feed_generators/run_all_feeds.py
 
       - name: Commit and push feed
+        # Publish the feeds that did generate even when another generator failed
+        if: ${{ !cancelled() }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
