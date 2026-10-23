@@ -8,7 +8,584 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 18:19:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:35:18 +0000</lastBuildDate>
+    <item>
+      <title>0.163.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.163.0</link>
+      <description>## New Features
+
+- Open `/config` to search preferences across categories, change supported settings immediately, and see which changes require a restart. (#52990, #53429)
+- Send a follow-up while Codex is responding to steer it immediately. Interrupting a turn also stops active Code Mode cells and their nested tool calls. (#51812, #51835)
+- Configure a leader key in `/keymap`. The default is `Ctrl+X`, shortcut hints stay open until you choose or cancel, and voice mute moves to `F9`. (#52273)
+- Restart a managed background server from `/daemon`. Codex warns about work the restart could interrupt, then reconnects automatically. (#53173)
+- Codex can run independent read-only tools in parallel, including skill, memory, and conversation-history lookups. (#52245)
+- Daybreak is enabled by default for eligible accounts. `codex exec` can also select it with an OpenAI API key when the server offers access. (#53701, #53717)
+
+## Bug Fixes
+
+- Resuming a saved thread restores its permissions and network approvals, while respecting explicit overrides and current managed policy. (#53150, #53419, #53424)
+- The network proxy now checks permission before a DNS lookup, rejects duplicate `Host` headers, and prevents credential aliases from bypassing inspection hooks. (#51650, #52661, #53506)
+- Return to an existing side conversation with `/side` after switching threads. Answers to pending prompts also go back to the thread that asked. (#52184, #53436)
+- On Windows, `Ctrl+V` and `Shift+Insert` paste text as well as images. On WSL, repeated pastes reuse the clipboard reader, and copy attempts time out instead of hanging. (#53224, #52967, #53453)
+- Local commands finish promptly when a child keeps an output pipe open. Remote commands preserve late-arriving output so the final poll can still collect it. (#52652, #53331, #53622)
+- `codex exec` no longer prints the same file diff again after an unrelated command. (#53444)
+
+## Documentation
+
+- Updated the bundled OpenAI Docs guidance for migrations to the GPT-6 family, including model-specific reasoning, tool use, and data residency considerations. (#51768)
+- Clarified how the Linux sandbox uses bubblewrap for filesystem isolation and seccomp for syscall filtering. (#52610)
+
+## Chores
+
+- Codex now uses its standard shell executor and no longer bundles a patched `zsh`. Configurations using the retired shell flags receive a migration notice. (#52160, #52213)
+- Reduced Linux and macOS release package size by stripping symbols from packaged binaries while preserving them in the original build outputs. (#52178)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.163.0</guid>
+      <pubDate>Thu, 15 Oct 2026 21:30:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.162.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.162.1</link>
+      <description>## Bug Fixes
+
+- Fixed a TUI crash when asynchronous questions contain multiple lines, preserving line breaks and complete hyperlink destinations. (#51866)
+- Fixed startup failures caused by differences between a running background server's feature settings and CLI defaults. Compatibility checks now apply only to explicit command-line feature overrides. (#52648)
+
+Full Changelog: https://github.com/openai/codex/compare/rust-v0.162.0...rust-v0.162.1</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.162.1</guid>
+      <pubDate>Fri, 09 Oct 2026 19:44:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.162.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.162.0</link>
+      <description>## New Features
+
+- Add tools for creating and listing managed Git worktrees from trusted local projects when the worktrees feature is enabled. (#50148)
+- Pin tasks in the agent Command Center with `p` and keep them in a shared Pinned group when supported by the server. (#51500)
+- Navigate and copy transcript blocks with `/copy`, use `Ctrl+Insert` to copy selections, and tune mouse-wheel scrolling with `tui.mouse_scroll_speed`. (#50434, #50215, #50209)
+- Make URLs clickable in approval headers, questions, MCP prompts, warnings, banners, and verification prompts, including when links wrap across lines. (#51439, #51449, #51450, #51451, #51452, #51458)
+- Configure live web access and remote compaction capabilities for custom Responses-compatible model providers. (#50459)
+- Add JavaScript helpers for streaming promise results as they settle, plus opt-in ranked tool search in Code Mode. (#51126, #51209)
+
+## Bug Fixes
+
+- Respect server model and reasoning-summary defaults for new TUI threads while retaining explicit launch overrides. (#50013, #50811, #50913)
+- Preserve existing CRLF line endings in `apply_patch` updates without requiring an opt-in. (#51203)
+- Fix Linux sandbox startup with multiple denied files, reject writable sandbox-construction executables, and keep ripgrep configuration from weakening deny-glob masks. (#50059, #51211, #51407, #51527)
+- Restore ordinary drive-letter file access on Windows 10 and match Windows sandbox temp permissions to the child process environment. (#51511, #51512)
+- Honor server `Retry-After` advice for retryable Responses and WebSocket failures. (#50418, #51440)
+- Fix archive checksum verification when installing through Windows PowerShell with PowerShell 7 module paths present. (#51257)
+
+## Chores
+
+- Publish a signed PowerShell installer with Windows releases. (#51158)
+- Keep older stable releases and prereleases from replacing newer stable download targets or installer aliases. (#51186, #51425)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.162.0</guid>
+      <pubDate>Thu, 08 Oct 2026 18:55:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.161.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.161.0</link>
+      <description>## New Features
+
+- GPT-6.1 Sol is now the default model in the bundled and Amazon Bedrock catalogs. (#49318, #49339)
+- Amazon Bedrock supports multi-agent V2 and Ultra reasoning on compatible models; Bedrock Mantle also accepts AWS GovCloud regions. (#49345, #49813)
+- Sign in to MCP servers from an active terminal session with `/mcp login &lt;name&gt;`. (#49290)
+- Choose your microphone, speaker, and microphone input channels for voice conversations, with preferences saved locally. (#49437, #49836)
+- Daybreak is opt-in through `--enable cli_daybreak` or `features.cli_daybreak=true`; `daybreak=true` alone is insufficient. By default, controls and indicators are hidden, `/daybreak` is unavailable, and automatic Cyber routing is omitted—even for saved Daybreak threads. Saved preferences remain intact. Opt-in routing requires eligible ChatGPT sign-in, the OpenAI provider, and advertised model/program support. (#49856, #49858, #49859, #49861, #51207)
+- Select a Cyber access program per turn with `codex exec --cyber-access-program` or the TypeScript SDK’s `cyberAccessProgram` option. The explicit exec override remains available with `cli_daybreak` disabled and leaves the saved choice unchanged. (#49939, #51207)
+
+## Bug Fixes
+
+- Approved filesystem escalation can now grant broader write access while preserving denied reads and network restrictions. Background tasks retain their originating turn’s permissions. (#49353, #49880)
+- Explicit launch permissions survive terminal reconnects and new sessions, while implicit client settings no longer overwrite server or saved-thread web-search settings. (#49809, #49799)
+- Elevated Windows terminal sessions can start using an embedded server, and sandboxed PowerShell preserves relative paths beneath protected user profiles. (#49855, #49690)
+- Enter correctly submits buffered input after paste detection expires, including in Vim insert mode. (#49810)
+- Thread resume includes the latest committed history. Startup detects recoverable SQLite corruption earlier and preserves damaged databases as backups. (#49599, #49701)
+- Responses retries and WebSocket-to-HTTP fallback honor server retry guidance, reducing premature failures during overload. (#49441)
+
+## Documentation
+
+- Authentication guidance now accounts for keyring storage instead of implying credentials always reside in `auth.json`. (#49361)
+
+## Chores
+
+- Publishing an older alpha or hotfix no longer moves npm alpha tags backward. (#49704)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.161.0</guid>
+      <pubDate>Wed, 07 Oct 2026 15:58:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.160.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.160.1</link>
+      <description>## Bug Fixes
+
+- Preserve `SYSTEMROOT`, `TEMP`, and `TMP` when launching remote stdio MCP servers with explicitly configured remote environment variables, allowing Unix hosts to retain the Windows executor's startup environment.</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.160.1</guid>
+      <pubDate>Mon, 05 Oct 2026 18:29:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.160.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.160.0</link>
+      <description>## New Features
+
+- Browse older tasks in the agent command center with a keyboard-accessible “Show more” action. (#49106)
+- Select transcript text and paste with middle-click in fullscreen mode on supported local Linux X11 terminals. (#49112)
+- Start sessions outside a project with workspace defaults when policy permits, and restore saved permissions when resuming. (#49160)
+- Added opt-in Guardian review capabilities to retrieve earlier user instructions and include context from agent handoffs. (#49036, #49057)
+
+## Bug Fixes
+
+- Unsent queued messages now resume after reconnection once uncertain submissions are resolved, avoiding duplicate sends. (#49105)
+- The terminal UI now preserves server provider, reasoning-summary, and verbosity settings and shows the correct sessions in resume and fork history. (#49144, #49161, #49171)
+- Fixed Windows sandbox PowerShell fallbacks and long-path permission repairs, and suppressed unwanted console windows from background helpers. (#49019, #49058, #49098, #49164, #49386)
+- Subagents now retain environments that are still starting and receive their configuration or preparation failure. (#49075)
+- Prevented SQLite stalls during connection setup and logging, and surfaced initialization errors instead of masking them as timeouts. (#49032, #49102)
+- Explicit provider model catalogs no longer include unsupported bundled models or reuse stale entries after refresh failures. (#49135)
+
+## Documentation
+
+- Clarified how provider credentials use the configured storage backend and how `env_key` identifies the API-key environment variable. (#49118)
+
+## Chores
+
+- Reduced repeated plugin-loading work by caching parsed manifests and reusing HTTP connections for remote plugin requests. (#49099, #49100)
+- Added background reclamation of unused log database space to reduce disk usage. (#49069)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.160.0</guid>
+      <pubDate>Thu, 01 Oct 2026 20:19:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.159.3</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.159.3</link>
+      <description>## New Features
+
+- Eligible local sessions signed in with ChatGPT can now show optional reminders to complete account security setup. (#49744)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.159.3</guid>
+      <pubDate>Wed, 30 Sep 2026 22:57:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.159.2</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.159.2</link>
+      <description>## Bug Fixes
+
+- Suppressed console windows flashing on Windows when Codex launches background processes and sandboxed commands. (#49385)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.159.2</guid>
+      <pubDate>Tue, 29 Sep 2026 23:57:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.159.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.159.1</link>
+      <description>## New Features
+- Added GPT-6.1 Sol as the default model in the bundled catalog and Amazon Bedrock Mantle and Runtime catalogs. (#49323, #49342)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.159.1</guid>
+      <pubDate>Tue, 29 Sep 2026 20:32:34 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.159.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.159.0</link>
+      <description>## New Features
+
+- Opt-in `instant_interrupt` lets new input steer Codex during model responses or long-running code-mode calls. (#48135, #48141)
+- New sessions get a compact welcome screen and consistent headers, with occasional tips during and after turns. (#48513, #48562, #48352)
+- The warnings viewer dismisses reviewed warnings when closed; press `k` to keep one for later. (#48205, #48206)
+- You can scroll the transcript while deciding whether to implement a plan. (#48805)
+- Native Mermaid rendering supports more flowchart edges, labels, and node groups. (#48814, #48895)
+- App-server clients can paginate thread history from a specific item. (#48151)
+
+## Bug Fixes
+
+- Windows launches avoid stray console windows for MCP servers, code-mode hosts, and piped commands; restrictive launchers can fall back to embedded mode. (#48138, #48238, #48483, #48491)
+- Copying transcript selections preserves Markdown tables, formatting, and significant whitespace. More terminals now copy automatically on selection. (#48548, #48549, #48469)
+- Blank sessions retain drafts when switching tasks, and threads can be archived and listed before their first turn. (#48628, #48828, #48199)
+- Local ChatGPT sign-in opens the browser reliably; onboarding also provides a shortcut to copy the login link. (#48502, #48544)
+- Approved commands retain explicit filesystem denials, and `.aws` directories are protected by default under writable roots. (#48155, #48176)
+- Fixed macOS TLS access in network-enabled sandboxes and remote environments that require proxy access. (#48565, #48198)
+
+## Chores
+
+- Removed automatic follow-up prompt suggestions and the `tui.prompt_suggestions` setting. (#48621)
+- Removed the bundled `plugin-creator` skill. (#48604)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.159.0</guid>
+      <pubDate>Tue, 29 Sep 2026 08:05:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.158.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.158.0</link>
+      <description>## New Features&#13;
+&#13;
+- Configure copy-on-select and right-click paste in the fullscreen TUI. Copied transcript selections now preserve Markdown formatting. (#47639, #47896, #48118)&#13;
+- Connect to MCP servers that require pre-registered OAuth client secrets, including through `codex mcp add --oauth-client-secret`. (#47891)&#13;
+- Secure direct exec-server WebSocket connections with bearer tokens, including connections configured through app-server. (#47601, #47648)&#13;
+- Image generation and editing can explicitly request transparent backgrounds, and edits now accept file-backed conversation images. (#47484, #47956)&#13;
+- Terminal input approval is enabled by default for commands running with elevated permissions; runtime-only grants no longer cause unnecessary reviews. (#47799, #48073)&#13;
+&#13;
+## Bug Fixes&#13;
+&#13;
+- Fixed Windows sandbox failures involving ordinary Windows 10 paths, rejected stored credentials, and large permission policies. (#47672, #47695, #47919)&#13;
+- Fixed Linux sandbox startup with nested writable roots and preserved Git metadata protections across writable roots on Linux and macOS. (#47623, #47974)&#13;
+- macOS patch operations now recognize system path aliases covered by existing permissions, avoiding unnecessary approval prompts. (#47879)&#13;
+- Approval reviews now retry when new user input arrives, so a status question does not automatically abort a pending action. (#47819)&#13;
+- Mermaid flowcharts now render quoted labels and ampersands; unsupported diagrams explain why they fall back to source. (#47572, #47678)&#13;
+- Command completion events now include early output and report process-launch failures to clients. (#47529, #47665)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.158.0</guid>
+      <pubDate>Mon, 28 Sep 2026 05:07:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.157.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.157.1</link>
+      <description>## Chores
+
+- Release highlights could not be determined: the supplied PR index is empty, and the GitHub tag comparison returned 404.</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.157.1</guid>
+      <pubDate>Sat, 26 Sep 2026 01:02:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.157.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.157.0</link>
+      <description>## New Features
+
+- Added GPT-6 Sol and Luna, including Amazon Bedrock support and migration prompts for older models. (#47332, #47347)
+- Enabled fullscreen transcripts by default and added Shift-click to extend text selections. (#47178, #47414)
+- Enabled automatic background-server startup for eligible interactive sessions, with recovery choices when server settings are incompatible. (#47179, #47318)
+- Added an `f` shortcut to fork conversations open in another app, preserving drafts and queued prompts. (#47185)
+- Made `/import` available in remote sessions and local background-server sessions. (#47317)
+- Improved terminal rendering with Unicode bullets, checkboxes, aligned equations, and optimization notation. (#47191, #47322)
+
+## Bug Fixes
+
+- Preserved active voice conversations when switching threads. (#47381)
+- Recovered unsent question answers into the composer when turns end, without disrupting active history searches. (#47422, #47423)
+- Respected tmux mouse settings and restored native scrollback for Terminal.app over SSH in automatic screen mode. (#47399, #47417)
+- Fixed configured proxy routing for realtime connections and standalone web search, including search redirects. (#47101, #47142, #47204)
+- Added retries for transient file-upload failures and increased the upload timeout to five minutes. (#47122, #47393)
+- Enforced network restrictions across redirects and ongoing HTTP and WebSocket traffic, including cancellation when policy changes revoke access. (#47389, #47407)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.157.0</guid>
+      <pubDate>Fri, 25 Sep 2026 02:31:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.156.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.156.1</link>
+      <description>## New Features
+
+- Choose GPT-6 Sol or GPT-6 Luna from the model picker. The rate-limit switch prompt now recommends GPT-6 Luna. (#47405)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.156.1</guid>
+      <pubDate>Wed, 23 Sep 2026 02:41:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.156.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.156.0</link>
+      <description>## New Features
+
+- Choose an optional fullscreen UI with `/tui` for your next launch, including transcript search, mouse selection, and right-click copying. (#46732, #46734, #46883, #46895)
+- Voice conversations are enabled by default, with an F8 toggle, a `/voice settings` picker, and bundled audio runtimes for Linux and Windows. (#44921, #46071, #44622, #44714, #44922)
+- Explore account usage, token totals, and plugin and skill activity through the `/usage` analytics dashboard. (#45764, #45769)
+- Filter tasks by status and create worktree sessions from the agent command center; worktree support is now enabled by default. (#46839, #45276, #44870)
+- Customize the terminal with six new themes and view supported Mermaid diagrams and display equations directly in responses. (#46504, #46054, #45612)
+- Update the local background server through `/daemon`, or bypass it with `--no-daemon`. (#45854, #46088)
+
+## Bug Fixes
+
+- Preserve streamed answers and plans when turns fail, are interrupted, or receive subagent completion events. (#45549, #46867)
+- Fix clipboard forwarding in tmux and SSH sessions and preserve tab indentation when terminals send pasted text as individual keystrokes. (#45457, #45454)
+- Restore Plan mode when resuming sessions and preserve thread identity and settings when editing earlier prompts. (#45519, #45845)
+- Recover login through system proxies and refresh MCP credentials when OAuth discovery returns a 503 error. (#46562, #44636)
+- Prevent speech from being dropped during playback pauses or bursts of incoming audio. (#46880)
+- Close sandbox isolation gaps involving inbound Windows connections, privileged Linux/macOS sockets, and writes through read-only macOS file handles. (#44639, #45984, #46500)
+
+## Documentation
+
+- Clarify that deprecated `friendly` and `pragmatic` personality settings no longer select response styles. (#45809)
+- Explain how `?` matches a single character in network proxy allow and deny patterns. (#46027)
+
+## Chores
+
+- Update bundled TLS dependencies, including OpenSSL 3.6.4 for Linux musl builds. (#45149, #45489)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.156.0</guid>
+      <pubDate>Tue, 22 Sep 2026 19:51:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.155.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.155.1</link>
+      <description>## Bug Fixes
+
+- New local TUI sessions now leave reasoning summaries disabled by default, fixing request rejection by providers that do not support them. Explicit reasoning-summary settings remain respected. (#46467)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.155.1</guid>
+      <pubDate>Fri, 18 Sep 2026 20:03:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.155.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.155.0</link>
+      <description>## New Features
+
+- Added experimental `/voice` conversations with live transcripts and microphone controls on supported builds, enabled through `/experimental`. (#43581, #43651, #44331)
+- The TUI now shows live reasoning summaries in the status row and completion timestamps after successful turns. (#43558, #43921)
+- Added task hiding, archiving, and deletion in the agents overview, plus worktree ownership details and confirmed deletion of clean managed worktrees. (#43942, #44424, #44433)
+- Added Touch ID verification for MCP requests in local TUI sessions on supported Macs. (#43624, #43712, #43715)
+- Added configurable daemon update schedules and `codex app-server daemon update`; saved threads and active goals can recover after daemon restarts. (#43542, #43562, #44314)
+- Amazon Bedrock can now obtain AWS credentials from configured commands, with caching, expiration-based refresh, and authentication recovery. (#44028)
+
+## Bug Fixes
+
+- Accepted prompts are now saved even when compaction fails before a turn starts. (#44487)
+- Fixed missed tmux resizes, transcript viewport restoration, and stale history appearing after switching threads. (#43603, #43889, #43994)
+- MCP servers now report expired OAuth credentials accurately and provide reconnect guidance when token refresh fails. (#43947, #44359)
+- Automatic approval reviews now preserve complete actions and authorization evidence more reliably, retry transient failures, and distinguish review failures from unsafe-action findings. (#44482, #44569, #44570)
+- Switching accounts now invalidates remote-control sessions, cached WebSocket state, and model catalogs belonging to the previous identity. (#43906, #44341, #44489)
+- Blocked Windows-process escapes from restricted WSL sandboxes and hardened brokered shell snapshots against credential exposure. (#44286, #43909, #44040)
+
+## Chores
+
+- Aligned Python SDK and runtime publishing with stable CLI releases, using matching versions and verifying runtime assets before SDK publication. (#44067)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.155.0</guid>
+      <pubDate>Thu, 17 Sep 2026 23:14:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Python SDK 0.154.0</title>
+      <link>https://github.com/openai/codex/releases/tag/python-v0.154.0</link>
+      <description>Install with `pip install --upgrade openai-codex==0.154.0` (Python 3.10 or later). This release includes the matching `openai-codex-cli-bin==0.154.0` runtime.
+
+- Add `max` and `ultra` reasoning-effort values. [#39662](https://github.com/openai/codex/pull/39662)
+- Add `ExternalMessage` to synchronous and asynchronous `run()` and `turn()` calls. External content can start a turn or join an active regular turn with tool-level authority; it does not grant user authorization. Consumers receive independent event streams. [#44086](https://github.com/openai/codex/pull/44086)
+- Add `include_turns` on resume/fork, `turn_service_tier` for one newly started turn, and `source` metadata. History selection changes the returned response, not model context. Existing defaults are preserved when these options are omitted. [#44084](https://github.com/openai/codex/pull/44084)
+- Refresh generated protocol models and notifications, and preserve completion events that arrive before a turn-start response. [#44032](https://github.com/openai/codex/pull/44032), [#44400](https://github.com/openai/codex/pull/44400)
+
+Check these migrations when upgrading:
+
+- `HookMetadata` wraps its handler in `.root`. Replace accesses such as `hook.command` with `hook.root.command`, checking `hook.root.handler_type` before reading handler-specific fields.
+- Some previously unknown notifications now have typed payloads. Read named fields instead of `.params`; unknown or invalid payloads still use `UnknownNotification`.
+- Manually constructed or late-joining turn handles receive events from their attachment point. Earlier output is not replayed, so collected results can be partial; attaching after completion can raise `TransportClosedError`. Use `thread.read(include_turns=True)` for saved history. Handles returned directly by `thread.turn(...)` retain events from when their request is sent.
+
+Custom `codex_bin` overrides require CLI 0.151.0 or newer for `ExternalMessage` and the new history/per-turn options.</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/python-v0.154.0</guid>
+      <pubDate>Thu, 10 Sep 2026 19:51:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.154.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.154.0</link>
+      <description>## New Features
+
+- GPT-6-Astra is now available in the model picker and Amazon Bedrock catalogs. (#42879, #42619)
+- Experimental worktree support lets you create isolated checkouts for new or forked sessions using `--worktree` or `/worktree`, then browse and resume them. (#42652, #43069, #43120, #43286)
+- Answer questions inline while Codex continues working, using suggested choices or custom text without losing your main draft. (#42891, #42894, #42897)
+- Windows sessions can now share a background Codex server, with daemon lifecycle commands and managed updates. (#42405, #42392)
+- Vim editing gains `R` replace mode with undo and dot-repeat, plus more reliable Escape handling in legacy terminals. (#42194, #42584)
+- Copying responses preserves formatting in rich-text apps, and `/copy` can copy status output or individual session fields. (#42847, #43055)
+
+## Bug Fixes
+
+- Existing sessions pick up newly installed plugin tools and refresh skills and hooks after external plugin upgrades or rollbacks. (#42284, #42593, #42990)
+- MCP connections coordinate OAuth token refreshes and surface login challenges when refresh fails, without automatically replaying rejected tool calls. (#42413, #42552)
+- Startup avoids running workspace-controlled helpers before trust is established, and the macOS sandbox blocks terminal input injection. (#42324, #42590)
+- Remote resume and fork operations preserve saved permissions; fresh sessions and forks respect server model defaults unless explicitly overridden. (#43330, #43177, #43355)
+- Resuming a conversation open in another app now shows a read-only transcript with a retry option while preserving your draft. (#43253)
+- Automatic approval reviews better preserve authorization context through compaction and reject approvals invalidated by new user instructions or answers. (#42844, #42852, #43442)
+
+## Documentation
+
+- Updated the bundled OpenAI Docs skill with GPT-6-Astra migration, compatibility, and prompting guidance. (#42931)
+
+## Chores
+
+- The deprecated `codex mcp-server` entry point is no longer available. (#42993)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.154.0</guid>
+      <pubDate>Wed, 09 Sep 2026 22:35:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.153.4</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.4</link>
+      <description>## Bug Fixes
+
+- Fixed Astra’s visibility in the bundled model picker and made it the bundled default when no model is explicitly configured. (#42874)
+- Updated Astra’s guidance to use asynchronous questions only when the tool is available in the session. (#42878)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.153.4</guid>
+      <pubDate>Fri, 04 Sep 2026 23:25:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.153.3</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.3</link>
+      <description>## New Features
+- Added GPT-6-Astra to the Amazon Bedrock model picker for Mantle and Runtime global/US routes. (#42805)
+
+## Bug Fixes
+- Corrected GPT-6-Astra’s guidance for asynchronous clarification questions to use the supported tool and recognize that it accepts text only. (#42809)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.153.3</guid>
+      <pubDate>Fri, 04 Sep 2026 19:01:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.153.2</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.2</link>
+      <description>## Bug Fixes
+
+- Corrected the GPT-6-Astra Fast tier description to say “2x speed, increased usage” instead of “1.5x.” This changes only the displayed text, not how requests run. (#42632)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.153.2</guid>
+      <pubDate>Thu, 03 Sep 2026 23:53:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.153.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.1</link>
+      <description>## New Features
+
+- Added support for configuring GPT-6-Astra through the API without changing the default model or showing it in the model picker. (#42605)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.153.1</guid>
+      <pubDate>Thu, 03 Sep 2026 21:02:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.153.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.0</link>
+      <description>## New Features
+
+- Vim mode now supports undo with `u` and redo with `Ctrl+R`, preserving complete drafts including pasted content and attachments. ([#41941](https://github.com/openai/codex/pull/41941), [#42140](https://github.com/openai/codex/pull/42140))
+- The plugin CLI can list, install, and remove plugins from remote marketplaces. ([#42150](https://github.com/openai/codex/pull/42150))
+- Set `tui.auto_recap = false` to disable automatic recaps while keeping manual `/recap` available. ([#42101](https://github.com/openai/codex/pull/42101))
+- TUI history shows complete patches, input sent to background terminals, and individual completed commands. ([#41893](https://github.com/openai/codex/pull/41893), [#42107](https://github.com/openai/codex/pull/42107))
+- Plus and Team users receive an earlier warning when less than half of their allowance remains in an approximately five-hour usage window. ([#42142](https://github.com/openai/codex/pull/42142))
+
+## Bug Fixes
+
+- TUI sessions reconnect after an external app-server connection drops, preserving drafts and transcripts while keeping uncertain or queued submissions paused for review. ([#41911](https://github.com/openai/codex/pull/41911), [#41916](https://github.com/openai/codex/pull/41916), [#41918](https://github.com/openai/codex/pull/41918))
+- Full Access skips Guardian reviews for confirmation-only actions. User approval mode skips background Guardian scoring and prewarming, while sensitive-action checks and requests for user input retain their existing handling. ([#42147](https://github.com/openai/codex/pull/42147), [#42256](https://github.com/openai/codex/pull/42256))
+- Guardian review history survives compaction, restarts, and user-created forks while respecting rollback boundaries and isolating subagent history. ([#41879](https://github.com/openai/codex/pull/41879), [#42065](https://github.com/openai/codex/pull/42065))
+- Remembered MCP tool approvals are scoped to the selected app account, and relative MCP executable paths start more reliably on macOS. ([#42133](https://github.com/openai/codex/pull/42133), [#42117](https://github.com/openai/codex/pull/42117))
+- Rollout compression includes shared histories, `codex exec resume` handles compressed rollouts when selecting by working directory, and thread forks work with symlinked session roots. ([#42039](https://github.com/openai/codex/pull/42039), [#42135](https://github.com/openai/codex/pull/42135))
+
+## Configuration and API Updates
+
+- App-server thread metadata includes nullable `model` and `reasoningEffort` fields. Structured asynchronous questions are supported through `request_user_input_async` when enabled by the model catalog. ([#42151](https://github.com/openai/codex/pull/42151), [#42178](https://github.com/openai/codex/pull/42178))
+- `tui.disable_paste_burst` replaces the top-level setting, which remains supported as a fallback. ([#41976](https://github.com/openai/codex/pull/41976))
+- Adds the disabled-by-default `features.context_management.experimental_mode` configuration. When enabled for eligible ChatGPT Plus, Pro, or Pro Lite sessions using the Codex backend, it activates token-budget context, history notes, and the `new_context` tool. API-key sessions, custom providers, and temporary structured threads remain excluded. ([#42385](https://github.com/openai/codex/pull/42385))</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.153.0</guid>
+      <pubDate>Thu, 03 Sep 2026 01:37:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.152.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.152.1</link>
+      <description>## Bug Fixes
+- Guardian approval review now honors Node REPL policies provided through model metadata.
+
+**Full Changelog**: https://github.com/openai/codex/compare/rust-v0.152.0...rust-v0.152.1</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.152.1</guid>
+      <pubDate>Tue, 01 Sep 2026 22:33:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.152.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.152.0</link>
+      <description>## New Features
+
+- Vim mode supports `/` and `?` searches within drafts, highlighted matches, and repeat navigation with `n` and `N`. (#41586)
+- Rate-limit banners offer actions for checking usage, managing credits, resetting limits, and managing plans. (#41742)
+- The terminal UI and `codex exec` show credential-refresh progress, including Amazon Bedrock reauthentication. (#41239)
+- MCP server names can contain `:`, `@`, `/`, and `.`, supporting package-style names throughout CLI commands and authentication. (#41700)
+- Individual MCP tools support an `output_token_limit` setting, with consistent truncation across session resumes. (#41421)
+- App-server clients can configure `thread/shellCommand` timeouts, including deadlines longer than one hour. (#41384)
+
+## Bug Fixes
+
+- Vim-enabled composers now start fresh drafts in Insert mode, including after submitting messages or dispatching slash commands. (#41921)
+- Automatic approval reviews can retain longer messages and a larger conversation transcript. (#41931)
+
+- Automatic approval reviews preserve user instructions, answers, and valid authorizations across history compaction. (#41660, #41846, #41852)
+- Resumed threads restore their saved working directory when none is supplied, and client metadata updates preserve filesystem permissions. (#41567, #41464)
+- MCP tools remain available through cache refreshes and remote plugin changes; authentication retries use refreshed helper-provided headers. (#41336, #41344, #41396, #41400)
+- Opening the model picker refreshes available models without losing the highlighted choice. (#41467)
+- Fixed Windows sandbox execution with Microsoft Store PowerShell, subprocess hangs on terminal queries, and cursor-related display corruption in older JediTerm terminals. (#41227, #41436, #41673)
+- Cloud task requests reject untrusted backend URLs and disable redirects to protect saved credentials. (#41403)
+
+## Chores
+
+- The planning tool is disabled by default; enable it with `tools.update_plan.enabled = true`. (#41744)
+- Plugin recommendations begin loading during startup, reducing delays before the first turn. (#41375)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.152.0</guid>
+      <pubDate>Tue, 01 Sep 2026 01:58:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.151.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.151.0</link>
+      <description>## New Features
+
+- Added a configurable grace period for discovering tools from optional MCP servers. (#41199)
+- Extensions can now inspect or replace MCP tool results before they reach the model. (#41202)
+- Plugin catalogs now combine per-repository configuration and report invalid project marketplaces without hiding valid plugins. (#41208)
+
+## Bug Fixes
+
+- Preserved restored permission profiles across TUI turns and prevented `/cd` from weakening sandbox restrictions. (#41192)
+- Kept tool availability and reasoning effort correct when switching models or falling back to another model. (#41195, #41206)
+- Improved remote sandbox enforcement using the executor’s actual home directory, operating system, and path conventions. (#41196, #41204, #41207, #41209)
+- Preserved structured MCP tool and resource errors in app-server responses. (#41196)
+- Counted nested subagent token usage toward root goal budgets. (#41183)
+- Prevented stale Guardian classifications from authorizing actions after permission state changes. (#41196)
+
+## Chores
+
+- Added telemetry for escalated stdin reviews and remote executor MCP discovery. (#41189, #41205)
+- Stabilized Guardian WebSocket and core fixture tests under slow or highly concurrent CI. (#41191, #41194)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.151.0</guid>
+      <pubDate>Sat, 29 Aug 2026 09:55:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.150.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.150.1</link>
+      <description>## Bug Fixes
+- Remote compaction now counts retained images toward its token budget by default, trimming older images as needed. (#41003)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.150.1</guid>
+      <pubDate>Thu, 27 Aug 2026 01:56:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.150.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.150.0</link>
+      <description>## New Features
+
+- Reference other Codex tasks with `@` mentions, and ask agents to read, create, or message tasks from the terminal. (#40308, #40315)
+- `/copy` now offers a picker for full responses, individual code blocks, and blockquotes. (#39997)
+- Unnamed terminal tasks receive descriptive titles automatically, and `/rename` suggests an editable title based on the conversation. (#40492, #40495)
+- Markdown links appear as clickable labels in supported terminals, with visible URLs retained elsewhere. (#40471)
+- Bind shortcuts to cycle permission modes, and use `.` in Vim mode to repeat your last edit. (#39873, #40521)
+- New `Interrupt` hooks can run commands or MCP handlers when an active top-level turn is interrupted. (#40511)
+
+## Bug Fixes
+
+- Untrusted projects no longer supply project-level `AGENTS.md` instructions, and managed deny-read rules remain enforced after permission changes. (#39837, #40004)
+- Improved credential redaction in app-server diagnostics, including provider, authentication refresh, and attestation fields. (#39993)
+- Fixed remote MCP bearer-token lookup and required-server startup while preserving compatibility with older executors. (#39926, #39952, #39979)
+- Fixed elevated Windows sandbox setup and launch aliases under Unicode user paths. (#39971, #40570)
+- Prevented Unix shutdown hangs caused by detached processes retaining a terminal or full terminal output buffers. (#40460)
+- Fixed conversation compaction and multi-agent compatibility for Amazon Bedrock models. (#39804, #39825)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.150.0</guid>
+      <pubDate>Wed, 26 Aug 2026 19:37:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.149.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.149.1</link>
+      <description>No description available</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.149.1</guid>
+      <pubDate>Mon, 24 Aug 2026 00:28:28 +0000</pubDate>
+    </item>
+    <item>
+      <title>0.149.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.149.0</link>
+      <description>## New Features
+
+- Added an interactive `codex agents` dashboard for searching, starting, opening, renaming, and stopping tasks, with configurable shortcuts. (#39094, #39112, #39114, #39142)
+- Added `/cd`, `/pwd`, and `/cwd` commands for managing the working directory in TUI sessions. (#38894)
+- Added `codex queue` for sending messages to existing local or remote sessions. (#39092)
+- Expanded Vim editing with character replacement and more change motions such as `cw`, `c$`, and `cc`. (#39661)
+- `codex doctor` now diagnoses endpoint protection, network/proxy failures, desktop app state, and update connectivity. (#38827, #38918, #39060, #39074)
+- SDK users can now pass exact CLI config overrides and select `max` or `ultra` reasoning effort. (#38817, #39662)
+
+## Bug Fixes
+
+- Queued messages now wake idle sessions reliably, resolve duplicate session names more usefully, and preserve pasted or deferred command semantics. (#39034, #39385, #39604)
+- Resumed and forked threads now restore their active permission profile instead of silently falling back to current defaults. (#39153)
+- Fixed duplicate sub-agent activity and tightened TUI routing for sub-agent notifications and approvals. (#39049, #39088)
+- Realtime WebRTC sideband connections now reconnect after unexpected transport loss without dropping pending output. (#39257)
+- Inline TUI history now remains available in Windows Terminal scrollback. (#39619)
+- Inactive TUI thread replay buffers are now bounded to prevent excessive retained streamed output. (#39081)
+
+## Documentation
+
+- Clarified that external contributions should go through issues and design discussion rather than pull requests. (#39089)
+- Documented DNS exfiltration risks and trust limitations for secure devcontainers. (#39283)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.149.0</guid>
+      <pubDate>Thu, 20 Aug 2026 21:04:55 +0000</pubDate>
+    </item>
     <item>
       <title>0.148.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.148.0</link>

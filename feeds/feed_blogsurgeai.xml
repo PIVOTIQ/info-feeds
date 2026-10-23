@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 18:19:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:33:53 +0000</lastBuildDate>
     <item>
       <title>5 Examples of the Importance of Context-Sensitivity in Data-Centric AI</title>
       <link>https://www.surgehq.ai/blog/why-context-aware-datasets-are-crucial-for-data-centric-ai</link>
@@ -234,9 +234,9 @@
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Hemingway-bench: Because Good Writing Isn't a Checklist of Vibes</title>
+      <title>Hemingway-bench: The AI Writing Leaderboard Judged by Expert Writers</title>
       <link>https://www.surgehq.ai/blog/hemingway-bench-ai-writing-leaderboard</link>
-      <description>Stop rewarding slop. Hemingway-bench is an AI writing leaderboard that takes real-world writing tasks and puts them in front of master wordsmiths. Our goal: to push AI writing from two-second vibes to genuine nuance and impact.</description>
+      <description>Hemingway-bench is an AI writing leaderboard judged by expert writers, measuring frontier models on taste, creativity, nuance, and real-world writing quality.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/hemingway-bench-ai-writing-leaderboard</guid>
       <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
     </item>
@@ -269,9 +269,9 @@
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Cross-Benchmark Generalization for Long-Horizon Agentic Tasks</title>
+      <title>Training on Long-Horizon Agent Tasks: +9.6 on Toolathlon, +5.3 on τ²-Bench</title>
       <link>https://www.surgehq.ai/blog/cross-benchmark-generalization-for-long-horizon-agentic-tasks</link>
-      <description>Post-training on Surge AI's agentic RL environments and why it generalizes to external tool-use benchmarks like Toolathlon, τ²-Bench, and BFCL-V4.</description>
+      <description>Post-training on Surge RL environments improved Qwen3.5-122B-A10B by +9.6 on Toolathlon, +5.3 on τ²-Bench, and +3.5 on BFCL-V4 across unseen agent benchmarks.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/cross-benchmark-generalization-for-long-horizon-agentic-tasks</guid>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
     </item>
@@ -304,7 +304,7 @@
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Deeper Instructions, Stronger Generalization: Training on ComplexConstraints</title>
+      <title>Training on ComplexConstraints: +10.1 on MultiChallenge, +8.5 on AdvancedIF</title>
       <link>https://www.surgehq.ai/blog/training-on-complexconstraints</link>
       <description>We trained a 4B model on 1,000 expert-written rubrics from ComplexConstraints, our frontier instruction-following benchmark. It reached parity with a 60x larger model, and the gains transferred to external benchmarks it never saw.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/training-on-complexconstraints</guid>
@@ -325,18 +325,81 @@
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>We Trained a Model on Office Work. It Got Better at Coding.</title>
+      <title>We Trained a Model on Office Work. It Also Got Better at Coding.</title>
       <link>https://www.surgehq.ai/blog/office-work-post-training-improves-coding</link>
-      <description>A model post-trained on non-coding office tasks gained 5.8 points on SWE-Bench Pro. Our analysis points to transferable Goal-Directed Execution.</description>
+      <description>A model post-trained on non-coding office tasks gained 5.7 points on SWE-Bench Pro. Why? Our analysis points to a capability we call Goal-Directed Execution.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/office-work-post-training-improves-coding</guid>
       <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Introducing Tuesday: A Frontier Index for AI at Work</title>
+      <title>Introducing the Tuesday Work Index: Can AI Get Through an Ordinary Day?</title>
       <link>https://www.surgehq.ai/blog/tuesday-frontier-work-index</link>
-      <description>Introducing the Tuesday Index, a composite benchmark measuring how well frontier AI models handle the capabilities required for real professional work.</description>
+      <description>Introducing the Tuesday Work Index, a composite benchmark measuring how well frontier AI models handle the capabilities required for real professional work.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/tuesday-frontier-work-index</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Qwen 3.8 Max Scores 58.7 on the Tuesday Work Index</title>
+      <link>https://www.surgehq.ai/blog/qwen-3-8-max-scores-58-7-on-the-tuesday-work-index</link>
+      <description>Qwen 3.8 Max scores 58.7 on the Tuesday Work Index, up 8.6 points from Qwen 3.7 Max, and reaches the ComplexConstraints cost-performance Pareto frontier.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/qwen-3-8-max-scores-58-7-on-the-tuesday-work-index</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>DeepSeek V4 Pro Scores 59.7 on the Tuesday Work Index</title>
+      <link>https://www.surgehq.ai/blog/deepseek-v4-pro-tuesday-work-index</link>
+      <description>DeepSeek V4 Pro scores 59.7 on the Tuesday Work Index and delivers standout cost-performance on Riemann-bench and ComplexConstraints.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/deepseek-v4-pro-tuesday-work-index</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fable 5.1, Muse Spark 1.3, and Gemini 3.8 Flash on the Tuesday Work Index</title>
+      <link>https://www.surgehq.ai/blog/fable-5-1-tuesday-work-index</link>
+      <description>Fable 5.1 leads overall with 68.7 on the Tuesday Work Index. Muse Spark 1.3 leads ComplexConstraints. Gemini 3.8 Flash pushes the cost-performance frontier on frontier mathematics.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/fable-5-1-tuesday-work-index</guid>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hill-Climbing a SWE Agent: What 1,700 Coding Tasks Taught Kimi K2.7</title>
+      <link>https://www.surgehq.ai/blog/hill-climbing-swe-agent-kimi-k-2-7</link>
+      <description>We post-trained Kimi K2.7 on 1,700 Surge agentic coding tasks. The trained model improved on all external benchmarks we tested, including +20.0pp on SWE-Marathon, +12.4pp on DeepSWE, and +7.6pp on Terminal-Bench 4.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/hill-climbing-swe-agent-kimi-k-2-7</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Helping Anthropic Build Automated Alignment Researchers</title>
+      <link>https://www.surgehq.ai/blog/anthropic-automated-alignment-research</link>
+      <description>Anthropic recently published new work on automated alignment researchers. Surge contributed to the research by building the human baseline, including researcher recruitment, structured submissions, quality control, and expert review.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/anthropic-automated-alignment-research</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>DAYJOB: Can Agents Survive a 9 to 5?</title>
+      <link>https://www.surgehq.ai/blog/dayjob</link>
+      <description>Introducing DAYJOB, Surge AI’s benchmark family for economically valuable agents: realistic requests in complex environments, requiring end-to-end professional judgment.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/dayjob</guid>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What Does GDP.pdf Teach — Beyond PDFs?</title>
+      <link>https://www.surgehq.ai/blog/gdp-pdf-post-training</link>
+      <description>Post-training on GDP.pdf improved Kimi K2.7 on GDPval, including tasks without PDFs, and changed how it gathered information and used tools before building deliverables.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/gdp-pdf-post-training</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GDP.xlsx: Can Agents Understand the Spreadsheets That Run the World?</title>
+      <link>https://www.surgehq.ai/blog/gdp-xlsx</link>
+      <description>GDP.xlsx tests whether frontier agents can read the professional spreadsheets that run the world. It spans 70 tasks across 12 knowledge-work domains: finance, healthcare, engineering, manufacturing, insurance, real estate, legal, human resources, agriculture, energy, logistics, and public sector.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/gdp-xlsx</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>sudo L7: Can Coding Agents Act Like Staff Engineers?</title>
+      <link>https://www.surgehq.ai/blog/sudo-l7</link>
+      <description>Introducing sudo L7, a coding benchmark testing whether AI agents can go beyond correct code and exercise staff-level engineering judgment.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/sudo-l7</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

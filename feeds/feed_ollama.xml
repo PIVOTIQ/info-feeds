@@ -13,7 +13,7 @@
       <link>https://ollama.com/blog/feed_ollama.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 18:20:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:33:55 +0000</lastBuildDate>
     <item>
       <title>Run Llama 2 uncensored locally</title>
       <link>https://ollama.com/blog/run-llama2-uncensored-locally</link>
@@ -405,6 +405,48 @@
       <description>NVIDIA Nemotron 3.5 Lightning is now available on Ollama. It's a 30 billion parameter (3B active) open model built for agents that stay running, gathering context, calling tools, and working through multi-step tasks on your own hardware.</description>
       <guid isPermaLink="false">https://ollama.com/blog/nemotron-3-5-lightning</guid>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude Desktop support with Ollama</title>
+      <link>https://ollama.com/blog/claude-desktop</link>
+      <description>Claude Desktop can now be configured to work with Ollama as a third-party gateway provider, making it possible to use open models in Claude.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/claude-desktop</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ollama's transparent pricing</title>
+      <link>https://ollama.com/blog/transparent-pricing</link>
+      <description>Ollama's Pro, Max, and Team plans now use industry-standard per-token pricing with usage included on every plan.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/transparent-pricing</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ollama now supports Jev-style decision models</title>
+      <link>https://ollama.com/blog/ollama-now-supports-jev-style-decision-models</link>
+      <description>Ollama now supports decision models, based on TypeSafe's Jev API for fast, typed decisions. Decision models can now be run at no cost with low latency. Based on text, decision models answer yes-or-no questions, choices and scores about it, with a probability for every option.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/ollama-now-supports-jev-style-decision-models</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Run AI agents safely with Ollama and Fly.io</title>
+      <link>https://ollama.com/blog/fly-io-sprites</link>
+      <description>AI agents can now use Ollama's cloud models safely inside Fly.io's cloud computers.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/fly-io-sprites</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Reflection's Beam is freely available on Ollama for a limited time</title>
+      <link>https://ollama.com/blog/reflection-beam</link>
+      <description>Reflection's first open-weight model is now available on Ollama, and free for a limited time only. Beam is designed for software engineering, reasoning, and long-running agentic tasks. Access Beam through Ollama Cloud.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/reflection-beam</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Clef is available on Ollama's cloud</title>
+      <link>https://ollama.com/blog/clef</link>
+      <description>Clef, a 27B multimodal decision model from Cloudflare, is now available on Ollama. Run it locally or on Ollama's cloud.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/clef</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
