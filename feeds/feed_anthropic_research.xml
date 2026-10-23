@@ -13,19 +13,19 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 10:49:06 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 15:35:12 +0000</lastBuildDate>
+    <item>
+      <title>Learning more about Claude's mathematical capabilities</title>
+      <link>https://www.anthropic.com/research/riemann-zeta</link>
+      <description>Learning more about Claude's mathematical capabilities</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/riemann-zeta</guid>
+      <category>Research</category>
+    </item>
     <item>
       <title>Reviewing the evidence on worker retraining programs</title>
       <link>https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs</link>
       <description>Reviewing the evidence on worker retraining programs</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Patterns and problems in emerging multiagent systems</title>
-      <link>https://www.anthropic.com/research/multiagent-systems</link>
-      <description>Patterns and problems in emerging multiagent systems</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/multiagent-systems</guid>
       <category>Research</category>
     </item>
     <item>
@@ -141,17 +141,10 @@
       <category>Research</category>
     </item>
     <item>
-      <title>How Claude designed protein binders against scorpion neurotoxins</title>
-      <link>https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</link>
-      <description>How Claude designed protein binders against scorpion neurotoxins</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>LLMs are making formal software verification feasible at a much larger scale</title>
-      <link>https://www.anthropic.com/research/formal-verification</link>
-      <description>LLMs are making formal software verification feasible at a much larger scale</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/formal-verification</guid>
+      <title>An alignment assessment of the UK AISI cybertesting incident</title>
+      <link>https://www.anthropic.com/research/alignment-assessment-ukaisi</link>
+      <description>An alignment assessment of the UK AISI cybertesting incident</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/alignment-assessment-ukaisi</guid>
       <category>Research</category>
     </item>
   </channel>
