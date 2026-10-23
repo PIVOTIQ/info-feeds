@@ -8,7 +8,35 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:35:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 05:38:35 +0000</lastBuildDate>
+    <item>
+      <title>0.164.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.164.0</link>
+      <description>## New Features
+
+- Save reusable prompts and slash commands in ten numbered `/presets` slots, with a keyboard menu for quick access. (#54380, #54381)
+- Set model, reasoning effort, speed, and permission profiles directly with inline `/model` and `/permissions` arguments. (#54378, #54383)
+- Preview viewed and generated images in the fullscreen transcript on terminals supporting Kitty or Sixel graphics. (#54216)
+- Authenticate enterprise MCP connections using eligible Codex account grants or dedicated sign-in, including OAuth clients requiring secrets. (#55334, #55859, #56001)
+- Mask credentials during supported remote Bash commands and Zsh snapshot sessions, including credentials from custom providers. (#54309, #54432, #56049)
+- The Amazon Bedrock setup wizard is now enabled by default, with API key entry grouped alongside other AWS sign-in methods when credentials are detected. (#56033, #56023)
+
+## Bug Fixes
+
+- Failed compaction no longer leaves partial summaries in conversation history, and background compaction failures fall back without panicking. (#53932, #55581)
+- Resuming sessions now finds compressed histories and restores saved thread settings instead of replacing them with global defaults. (#54008, #55923)
+- Windows HTTPS and WebSocket connections now handle proxy authentication challenges using the signed-in user’s Negotiate or NTLM credentials. (#55994, #56000)
+- CLI configuration overrides are preserved when `-c` or `--config` appears at multiple subcommand levels. (#56022)
+- Queued prompts now wait for pending permission selections to resolve before continuing. (#55682)
+- Hardened sandbox checks for case-variant metadata paths on macOS and replaceable symlinks used to locate executables. (#54273, #55384)
+
+## Chores
+
+- Reduced disk usage by pruning unused installations, cleaning abandoned marketplace checkouts, and bounding daemon logs. (#53827, #55149, #55689, #55690, #55856)
+- Updated the embedded JavaScript runtime with safety checks for optimized `Array.sort` operations. (#54519)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.164.0</guid>
+      <pubDate>Fri, 23 Oct 2026 04:48:10 +0000</pubDate>
+    </item>
     <item>
       <title>0.163.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.163.0</link>

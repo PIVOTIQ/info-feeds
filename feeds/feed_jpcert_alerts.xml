@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:33:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 05:36:48 +0000</lastBuildDate>
+    <item>
+      <title>注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)</title>
+      <link>https://www.jpcert.or.jp/at/2026/at260030.html</link>
+      <description>注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)</description>
+      <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260030.html</guid>
+      <pubDate>Fri, 23 Oct 2026 11:37:00 +0900</pubDate>
+    </item>
     <item>
       <title>注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (公開)</title>
       <link>https://www.jpcert.or.jp/at/2026/at260033.html</link>
@@ -29,13 +36,6 @@
       <description>注意喚起: 2026年10月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)</description>
       <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260031.html</guid>
       <pubDate>Wed, 14 Oct 2026 11:25:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)</title>
-      <link>https://www.jpcert.or.jp/at/2026/at260030.html</link>
-      <description>注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)</description>
-      <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260030.html</guid>
-      <pubDate>Fri, 09 Oct 2026 10:12:00 +0900</pubDate>
     </item>
     <item>
       <title>注意喚起: NetScaler ADCおよびNetScaler Gatewayにおける複数の脆弱性（CVE-2026-88771、CVE-2026-88772等）に関する注意喚起  (更新)</title>
