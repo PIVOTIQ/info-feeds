@@ -13,94 +13,146 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 16:45:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 10:49:06 +0000</lastBuildDate>
     <item>
-      <title>Learning more about Claude's mathematical capabilities</title>
-      <link>https://www.anthropic.com/research/riemann-zeta</link>
-      <description>Learning more about Claude's mathematical capabilities</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/riemann-zeta</guid>
+      <title>Reviewing the evidence on worker retraining programs</title>
+      <link>https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs</link>
+      <description>Reviewing the evidence on worker retraining programs</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs</guid>
       <category>Research</category>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jul 28, 2026Frontier Red TeamDiscovering cryptographic weaknesses with Claude</title>
-      <link>https://www.anthropic.com/research/discovering-cryptographic-weaknesses</link>
-      <description>Jul 28, 2026Frontier Red TeamDiscovering cryptographic weaknesses with Claude</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/discovering-cryptographic-weaknesses</guid>
+      <title>Patterns and problems in emerging multiagent systems</title>
+      <link>https://www.anthropic.com/research/multiagent-systems</link>
+      <description>Patterns and problems in emerging multiagent systems</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/multiagent-systems</guid>
       <category>Research</category>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jul 24, 2026Frontier Red TeamProject Pilot: Can AI control a drone?</title>
-      <link>https://www.anthropic.com/research/project-pilot</link>
-      <description>Jul 24, 2026Frontier Red TeamProject Pilot: Can AI control a drone?</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/project-pilot</guid>
+      <title>How Claude is accelerating protein design and analytical chemistry</title>
+      <link>https://www.anthropic.com/research/Claude-accelerates-protein-design</link>
+      <description>How Claude is accelerating protein design and analytical chemistry</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/Claude-accelerates-protein-design</guid>
       <category>Research</category>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jul 14, 2026Economic ResearchHow Canada uses Claude: Findings from the Anthropic Economic Index</title>
-      <link>https://www.anthropic.com/research/how-canada-uses-claude</link>
-      <description>Jul 14, 2026Economic ResearchHow Canada uses Claude: Findings from the Anthropic Economic Index</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/how-canada-uses-claude</guid>
+      <title>Enabling independent research on how people use Claude</title>
+      <link>https://www.anthropic.com/research/enabling-independent-research</link>
+      <description>Enabling independent research on how people use Claude</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/enabling-independent-research</guid>
       <category>Research</category>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jul 13, 2026Societal ImpactsClaude’s values across models and languages</title>
-      <link>https://www.anthropic.com/research/claude-values-models-languages</link>
-      <description>Jul 13, 2026Societal ImpactsClaude’s values across models and languages</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-values-models-languages</guid>
+      <title>Automated researchers can reliably mitigate alignment failures</title>
+      <link>https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures</link>
+      <description>Automated researchers can reliably mitigate alignment failures</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures</guid>
       <category>Research</category>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jul 9, 2026Frontier Red TeamClaude plays robotics</title>
-      <link>https://www.anthropic.com/research/claude-plays-robotics</link>
-      <description>Jul 9, 2026Frontier Red TeamClaude plays robotics</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-plays-robotics</guid>
+      <title>Formalizing Fermat's Last Theorem</title>
+      <link>https://www.anthropic.com/research/formalizing-fermats-last-theorem</link>
+      <description>Formalizing Fermat's Last Theorem</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/formalizing-fermats-last-theorem</guid>
       <category>Research</category>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jul 8, 2026AlignmentAn off switch for dual-use knowledge in AI models</title>
-      <link>https://www.anthropic.com/research/off-switch-dual-use</link>
-      <description>Jul 8, 2026AlignmentAn off switch for dual-use knowledge in AI models</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/off-switch-dual-use</guid>
+      <title>An alignment assessment of recent cybersecurity incidents</title>
+      <link>https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents</link>
+      <description>An alignment assessment of recent cybersecurity incidents</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents</guid>
       <category>Research</category>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>InterpretabilityJul 6, 2026A global workspace in language modelsNew interpretability research reveals an emergent mental workspace in Claude that holds internal thoughts that don’t appear in the model’s output.</title>
-      <link>https://www.anthropic.com/research/global-workspace</link>
-      <description>InterpretabilityJul 6, 2026A global workspace in language modelsNew interpretability research reveals an emergent mental workspace in Claude that holds internal thoughts that don’t appear in the model’s output.</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/global-workspace</guid>
+      <title>How Claude is uplifting biomolecular modeling</title>
+      <link>https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling</link>
+      <description>How Claude is uplifting biomolecular modeling</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling</guid>
       <category>Research</category>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jun 26, 2026Economic ResearchAnthropic Economic Index report: Cadences</title>
-      <link>https://www.anthropic.com/research/economic-index-june-2026-report</link>
-      <description>Jun 26, 2026Economic ResearchAnthropic Economic Index report: Cadences</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/economic-index-june-2026-report</guid>
+      <title>Claude discovers a novel enzyme system with CRISPR-like repeats</title>
+      <link>https://www.anthropic.com/research/claude-discovers-novel-enzyme-system</link>
+      <description>Claude discovers a novel enzyme system with CRISPR-like repeats</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-discovers-novel-enzyme-system</guid>
       <category>Research</category>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Jun 18, 2026Frontier Red TeamProject Fetch: Phase two</title>
-      <link>https://www.anthropic.com/research/project-fetch-phase-two</link>
-      <description>Jun 18, 2026Frontier Red TeamProject Fetch: Phase two</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/project-fetch-phase-two</guid>
+      <title>What do you want from AI?</title>
+      <link>https://www.anthropic.com/research/your-thoughts-on-ai</link>
+      <description>What do you want from AI?</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/your-thoughts-on-ai</guid>
       <category>Research</category>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>AlignmentMay 8, 2026Teaching Claude whyNew research on how we've reduced agentic misalignment.</title>
-      <link>https://www.anthropic.com/research/teaching-claude-why</link>
-      <description>AlignmentMay 8, 2026Teaching Claude whyNew research on how we've reduced agentic misalignment.</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/teaching-claude-why</guid>
+      <title>What work can robots do?</title>
+      <link>https://www.anthropic.com/research/what-work-can-robots-do</link>
+      <description>What work can robots do?</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/what-work-can-robots-do</guid>
       <category>Research</category>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude-shaped science</title>
+      <link>https://www.anthropic.com/research/claude-shaped-science</link>
+      <description>Claude-shaped science</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-shaped-science</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Investigating unintended model actions in our evaluations and internal use</title>
+      <link>https://www.anthropic.com/research/investigating-unintended-model-actions</link>
+      <description>Investigating unintended model actions in our evaluations and internal use</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/investigating-unintended-model-actions</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Redesigning source control at Anthropic</title>
+      <link>https://www.anthropic.com/research/redesigning-source-control</link>
+      <description>Redesigning source control at Anthropic</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/redesigning-source-control</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Designing more efficient quantum circuits with Claude</title>
+      <link>https://www.anthropic.com/research/designing-efficient-quantum-circuits</link>
+      <description>Designing more efficient quantum circuits with Claude</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/designing-efficient-quantum-circuits</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>The AI expectations gap</title>
+      <link>https://www.anthropic.com/research/ai-expectations-gap</link>
+      <description>The AI expectations gap</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/ai-expectations-gap</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>How employment is changing at Anthropic</title>
+      <link>https://www.anthropic.com/research/employment-at-anthropic</link>
+      <description>How employment is changing at Anthropic</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/employment-at-anthropic</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Working at the frontier shapes expectations for the future</title>
+      <link>https://www.anthropic.com/research/expectations-for-the-future</link>
+      <description>Working at the frontier shapes expectations for the future</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/expectations-for-the-future</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>How Claude designed protein binders against scorpion neurotoxins</title>
+      <link>https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</link>
+      <description>How Claude designed protein binders against scorpion neurotoxins</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>LLMs are making formal software verification feasible at a much larger scale</title>
+      <link>https://www.anthropic.com/research/formal-verification</link>
+      <description>LLMs are making formal software verification feasible at a much larger scale</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/formal-verification</guid>
+      <category>Research</category>
     </item>
   </channel>
 </rss>

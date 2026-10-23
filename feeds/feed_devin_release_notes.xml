@@ -8,7 +8,175 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 19:55:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 10:48:02 +0000</lastBuildDate>
+    <item>
+      <title>Release Notes - October 21, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-21-2026</link>
+      <description>Release Notes - October 21, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-21-2026</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 19, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-19-2026</link>
+      <description>Release Notes - October 19, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-19-2026</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 16, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-16-2026</link>
+      <description>Release Notes - October 16, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-16-2026</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 14, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-14-2026</link>
+      <description>Release Notes - October 14, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-14-2026</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 9, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-9-2026</link>
+      <description>Release Notes - October 9, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-9-2026</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 7, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-7-2026</link>
+      <description>Release Notes - October 7, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-7-2026</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 5, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-5-2026</link>
+      <description>Release Notes - October 5, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-5-2026</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - October 2, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-2-2026</link>
+      <description>Release Notes - October 2, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-2-2026</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 30, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-30-2026</link>
+      <description>Release Notes - September 30, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-30-2026</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 25, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-25-2026</link>
+      <description>Release Notes - September 25, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-25-2026</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 23, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-23-2026</link>
+      <description>Release Notes - September 23, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-23-2026</guid>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 21, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-21-2026</link>
+      <description>Release Notes - September 21, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-21-2026</guid>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 18, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-18-2026</link>
+      <description>Release Notes - September 18, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-18-2026</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 16, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-16-2026</link>
+      <description>Release Notes - September 16, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-16-2026</guid>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 11, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-11-2026</link>
+      <description>Release Notes - September 11, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-11-2026</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 9, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-9-2026</link>
+      <description>Release Notes - September 9, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-9-2026</guid>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 4, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-4-2026</link>
+      <description>Release Notes - September 4, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-4-2026</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - September 2, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#september-2-2026</link>
+      <description>Release Notes - September 2, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#september-2-2026</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - August 28, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#august-28-2026</link>
+      <description>Release Notes - August 28, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#august-28-2026</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - August 26, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#august-26-2026</link>
+      <description>Release Notes - August 26, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#august-26-2026</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - August 21, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#august-21-2026</link>
+      <description>Release Notes - August 21, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#august-21-2026</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - August 19, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#august-19-2026</link>
+      <description>Release Notes - August 19, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#august-19-2026</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - August 14, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#august-14-2026</link>
+      <description>Release Notes - August 14, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#august-14-2026</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Release Notes - August 12, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#august-12-2026</link>
+      <description>Release Notes - August 12, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#august-12-2026</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Release Notes - August 7, 2026</title>
       <link>https://docs.devin.ai/release-notes/overview#august-7-2026</link>
