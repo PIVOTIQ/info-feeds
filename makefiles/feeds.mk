@@ -212,6 +212,20 @@ feeds_pwc_japan: ## Generate RSS feed for PwC Japan Thought Leadership
 	$(Q)python feed_generators/pwc_japan_blog.py
 	$(call print_success,PwC Japan feed generated)
 
+.PHONY: feeds_cisa_kev
+feeds_cisa_kev: ## Generate RSS feed for CISA Known Exploited Vulnerabilities
+	$(call check_venv)
+	$(call print_info,Generating CISA KEV feed)
+	$(Q)python feed_generators/cisa_kev.py
+	$(call print_success,CISA KEV feed generated)
+
+.PHONY: feeds_jpcert_alerts
+feeds_jpcert_alerts: ## Generate RSS feed for JPCERT/CC 注意喚起
+	$(call check_venv)
+	$(call print_info,Generating JPCERT/CC alerts feed)
+	$(Q)python feed_generators/jpcert_alerts.py
+	$(call print_success,JPCERT/CC alerts feed generated)
+
 .PHONY: clean_feeds
 clean_feeds: ## Clean generated RSS feed files
 	$(call print_warning,Removing generated RSS feeds)
