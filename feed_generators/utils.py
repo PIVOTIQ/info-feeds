@@ -1,5 +1,8 @@
 """Shared utilities for feed generators."""
 
+import xml.etree.ElementTree as ET
+from datetime import datetime
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 
@@ -69,3 +72,23 @@ def sort_posts_for_feed(posts: list[dict[str, Any]], date_field: str = "date") -
 
     # Posts without dates go at the end
     return posts_with_date + posts_without_date
+
+
+def load_published_dates(feed_name: str) -> dict[str, datetime]:
+    """Map each item's guid to the pubDate already written in feeds/feed_{feed_name}.xml.
+
+    For feeds dated by when an item first reaches the feed rather than by the source's date.
+    Feed readers such as Slack's /feed skip items dated before their previous fetch, and a
+    source date (CISA KEV's dateAdded is midnight UTC) is often older than that fetch by the
+    time the hourly run publishes the item. Keeping the stored date also stops already
+    published items from moving on every run.
+    """
+    path = get_feeds_dir() / f"feed_{feed_name}.xml"
+    if not path.exists():
+        return {}
+    dates = {}
+    for item in ET.parse(path).getroot().iter("item"):
+        guid, pub_date = item.findtext("guid"), item.findtext("pubDate")
+        if guid and pub_date:
+            dates[guid] = parsedate_to_datetime(pub_date)
+    return dates

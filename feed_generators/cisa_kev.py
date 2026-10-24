@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import requests
 from feedgen.feed import FeedGenerator
 
-from utils import get_feeds_dir, setup_feed_links
+from utils import get_feeds_dir, load_published_dates, setup_feed_links
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -44,8 +44,11 @@ def build_description(v):
     )
 
 
-def generate_rss_feed(vulnerabilities, feed_name=FEED_NAME):
-    """Generate RSS feed with one item per CVE."""
+def generate_rss_feed(vulnerabilities, published_dates, now, feed_name=FEED_NAME):
+    """Generate RSS feed with one item per CVE.
+
+    pubDate is when the CVE first reached this feed (see load_published_dates); new CVEs get now.
+    """
     fg = FeedGenerator()
     fg.title("CISA Known Exploited Vulnerabilities")
     fg.description("Latest additions to the CISA Known Exploited Vulnerabilities (KEV) catalog")
@@ -61,14 +64,14 @@ def generate_rss_feed(vulnerabilities, feed_name=FEED_NAME):
         fe.description(build_description(v))
         fe.link(href=link)
         fe.id(link)
-        fe.published(datetime.strptime(v["dateAdded"], "%Y-%m-%d").replace(tzinfo=timezone.utc))
+        fe.published(published_dates.get(link, now))
 
     return fg
 
 
 def main():
     vulnerabilities = latest_vulnerabilities(fetch_vulnerabilities())
-    fg = generate_rss_feed(vulnerabilities)
+    fg = generate_rss_feed(vulnerabilities, load_published_dates(FEED_NAME), datetime.now(timezone.utc))
     output_file = get_feeds_dir() / f"feed_{FEED_NAME}.xml"
     fg.rss_file(str(output_file), pretty=True)
     logger.info(f"Saved {len(vulnerabilities)} entries to {output_file}")
