@@ -56,15 +56,21 @@ def generate_rss_feed(vulnerabilities, published_dates, now, feed_name=FEED_NAME
     fg.author({"name": "CISA"})
     setup_feed_links(fg, blog_url=CATALOG_URL, feed_name=feed_name)
 
-    # feedgen prepends each entry, so add oldest first to get newest first in the XML
+    entries = []
     for v in reversed(vulnerabilities):
         link = f"https://nvd.nist.gov/vuln/detail/{v['cveID']}"
+        entries.append((published_dates.get(link, now), link, v))
+    # Order by pubDate so a CVE first seen now sits on top even if its dateAdded is older.
+    # feedgen prepends each entry, so add oldest first; the stable sort keeps catalog order on ties
+    entries.sort(key=lambda e: e[0])
+
+    for published, link, v in entries:
         fe = fg.add_entry()
         fe.title(f"{v['cveID']}: {v['vendorProject']} {v['product']} — {v['vulnerabilityName']}")
         fe.description(build_description(v))
         fe.link(href=link)
         fe.id(link)
-        fe.published(published_dates.get(link, now))
+        fe.published(published)
 
     return fg
 
