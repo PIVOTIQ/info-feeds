@@ -1,11 +1,11 @@
 import logging
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timezone
 
 import requests
 from feedgen.feed import FeedGenerator
 
-from utils import get_feeds_dir, setup_feed_links, sort_posts_for_feed
+from utils import get_feeds_dir, load_published_dates, setup_feed_links, sort_posts_for_feed
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -17,7 +17,6 @@ TITLE_PREFIX = "注意喚起:"
 
 NS = {
     "rss": "http://purl.org/rss/1.0/",
-    "dc": "http://purl.org/dc/elements/1.1/",
 }
 
 
@@ -36,20 +35,16 @@ def parse_alerts(rdf_content):
         title = item.findtext("rss:title", default="", namespaces=NS).strip()
         if not title.startswith(TITLE_PREFIX):
             continue
-        date_text = item.findtext("dc:date", namespaces=NS)
-        alerts.append(
-            {
-                "title": title,
-                "link": item.findtext("rss:link", namespaces=NS).strip(),
-                "date": datetime.fromisoformat(date_text) if date_text else None,
-            }
-        )
+        alerts.append({"title": title, "link": item.findtext("rss:link", namespaces=NS).strip()})
     logger.info(f"Found {len(alerts)} alerts")
     return alerts
 
 
-def generate_rss_feed(alerts, feed_name=FEED_NAME):
-    """Generate RSS feed from JPCERT/CC alerts."""
+def generate_rss_feed(alerts, published_dates, now, feed_name=FEED_NAME):
+    """Generate RSS feed from JPCERT/CC alerts.
+
+    pubDate is when the alert first reached this feed (see load_published_dates); new alerts get now.
+    """
     fg = FeedGenerator()
     fg.title("JPCERT/CC 注意喚起")
     fg.description("JPCERT/CC の注意喚起（Weekly Report を除く）")
@@ -57,21 +52,23 @@ def generate_rss_feed(alerts, feed_name=FEED_NAME):
     fg.author({"name": "JPCERT/CC"})
     setup_feed_links(fg, blog_url=ALERTS_URL, feed_name=feed_name)
 
+    for alert in alerts:
+        alert["date"] = published_dates.get(alert["link"], now)
+
     for alert in sort_posts_for_feed(alerts):
         fe = fg.add_entry()
         fe.title(alert["title"])
         fe.description(alert["title"])
         fe.link(href=alert["link"])
         fe.id(alert["link"])
-        if alert["date"]:
-            fe.published(alert["date"])
+        fe.published(alert["date"])
 
     return fg
 
 
 def main():
     alerts = parse_alerts(fetch_rss())
-    fg = generate_rss_feed(alerts)
+    fg = generate_rss_feed(alerts, load_published_dates(FEED_NAME), datetime.now(timezone.utc))
     output_file = get_feeds_dir() / f"feed_{FEED_NAME}.xml"
     fg.rss_file(str(output_file), pretty=True)
     logger.info(f"Saved {len(alerts)} entries to {output_file}")
