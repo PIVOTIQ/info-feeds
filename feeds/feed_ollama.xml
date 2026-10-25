@@ -13,7 +13,7 @@
       <link>https://ollama.com/blog/feed_ollama.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Oct 2026 02:30:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 07:58:09 +0000</lastBuildDate>
     <item>
       <title>Run Llama 2 uncensored locally</title>
       <link>https://ollama.com/blog/run-llama2-uncensored-locally</link>
@@ -447,6 +447,13 @@
       <description>Clef, a 27B multimodal decision model from Cloudflare, is now available on Ollama. Run it locally or on Ollama's cloud.</description>
       <guid isPermaLink="false">https://ollama.com/blog/clef</guid>
       <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Speech models in Ollama</title>
+      <link>https://ollama.com/blog/speech-models</link>
+      <description>Ollama now supports speech models, starting with Phonon from Gradium. Read text aloud in five languages and dozens of voices, streamed as it is generated, over 100 times faster than real time on Apple Silicon.</description>
+      <guid isPermaLink="false">https://ollama.com/blog/speech-models</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
