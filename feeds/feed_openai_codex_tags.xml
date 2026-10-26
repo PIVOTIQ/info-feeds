@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 11:59:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 18:18:01 +0000</lastBuildDate>
     <item>
       <title>0.164.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.164.0</link>
