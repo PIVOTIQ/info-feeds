@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 05:39:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 11:58:14 +0000</lastBuildDate>
     <item>
       <title>Codex CLI0.164.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-10-23-Codex CLI0.164.0</link>
@@ -373,6 +373,30 @@
       <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
+      <title>ChatGPT for iOS1.2026.286</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-10-22-ChatGPT for iOS1.2026.286</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;View and stop background commands from a new pill above the composer on supported remote hosts.&lt;/li&gt;
+&lt;li&gt;Mention chats from other connected hosts with &lt;code&gt;@&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A loading indicator now shows when saved messages are refreshing.&lt;/li&gt;
+&lt;li&gt;Activity groups are cleaner, and you can open images inspected by Codex on demand.&lt;/li&gt;
+&lt;li&gt;Unanswered questions remain available after a turn finishes and when reopening a chat.&lt;/li&gt;
+&lt;li&gt;More reliable replies to questions while another prompt is starting or finishing.&lt;/li&gt;
+&lt;li&gt;Autocomplete suggestions appear as each source loads, without waiting for slower sources.&lt;/li&gt;
+&lt;li&gt;Usage-limit explanations and reset times now appear directly in the chat.&lt;/li&gt;
+&lt;li&gt;Fixed prompts incorrectly appearing to fail after a response timeout.&lt;/li&gt;
+&lt;li&gt;Corrected extra diff lines after repeated edits to the same file.&lt;/li&gt;
+&lt;li&gt;Images in responses open in the full-screen gallery, and attachment removal targets the correct image.&lt;/li&gt;
+&lt;li&gt;The voice button returns after a call ends, so you can start another without reopening the chat.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-10-22-ChatGPT for iOS1.2026.286</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Codex CLI0.163.0</title>
       <link>https://developers.openai.com/codex/changelog/#2026-10-15-Codex CLI0.163.0</link>
       <description>&lt;div class="w-full [&amp;amp;&amp;gt;pre]:w-full [&amp;amp;&amp;gt;pre]:max-w-full [&amp;amp;&amp;gt;pre]:mb-0 pt-4"&gt;&lt;pre class="astro-code astro-code-themes min-light github-dark" data-language="bash" style="background-color:#ffffff;--shiki-dark-bg:#24292e;color:#24292eff;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0"&gt;&lt;code&gt;&lt;span class="line"&gt;&lt;span style="color:#6F42C1;--shiki-dark:#B392F0"&gt;$&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; npm&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; install&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#79B8FF"&gt; -g&lt;/span&gt;&lt;span style="color:#2B5581;--shiki-dark:#9ECBFF"&gt; @openai/codex@0.163.0&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -652,6 +676,32 @@ replacements and &lt;a href="/codex/enterprise/workspace-model-availability#prep
 for administrator guidance.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-10-14-GPT-5.5 retirement in Codex</guid>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ChatGPT for iOS1.2026.279</title>
+      <link>https://developers.openai.com/codex/changelog/#2026-10-13-ChatGPT for iOS1.2026.279</link>
+      <description>&lt;h3 id="new-features"&gt;New features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;File citations now open directly in the file viewer.&lt;/li&gt;
+&lt;li&gt;Collapse the entire Projects section to reach recent tasks faster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="improvements-and-bug-fixes"&gt;Improvements and bug fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Faster task and thread loading, with saved task names and recent messages visible while reconnecting.&lt;/li&gt;
+&lt;li&gt;Markdown now renders in sent prompts, with questions quoted above your replies.&lt;/li&gt;
+&lt;li&gt;Queued messages appear immediately, with more reliable handling during turn interruptions.&lt;/li&gt;
+&lt;li&gt;Markdown files open in rendered view by default.&lt;/li&gt;
+&lt;li&gt;Clearer skill names and improved autocomplete after punctuation.&lt;/li&gt;
+&lt;li&gt;Fixed missing Rename prompts and usage percentages on iPad.&lt;/li&gt;
+&lt;li&gt;Plan mode stays selected when returning to the task list.&lt;/li&gt;
+&lt;li&gt;Custom permission mode now respects project-defined permissions.&lt;/li&gt;
+&lt;li&gt;Improved task widget reliability, including when local authentication is enabled for Codex.&lt;/li&gt;
+&lt;li&gt;Usage widgets adapt to accounts with only a weekly limit.&lt;/li&gt;
+&lt;li&gt;Connection errors offer a Retry action without hiding saved messages.&lt;/li&gt;
+&lt;li&gt;Fixed raw image URLs appearing in image-only messages.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://developers.openai.com/codex/changelog/#2026-10-13-ChatGPT for iOS1.2026.279</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Codex CLI0.162.1</title>
@@ -7860,7 +7910,7 @@ building, create richer outputs, and keep momentum across longer-running tasks.&
 &lt;p&gt;The Codex app now includes an early &lt;a href="/codex/browser?surface=app"&gt;&lt;strong&gt;in-app browser&lt;/strong&gt;&lt;/a&gt;. You
 can open local or public pages that don’t require sign-in, comment directly on
 the rendered page, and ask Codex to address page-level feedback.&lt;/p&gt;
-&lt;div data-codex-screenshot-root=""&gt; &lt;figure class="not-prose m-0 w-full"&gt; &lt;button aria-label="Open Codex app showing a browser comment on a local web app preview" class="not-prose flex w-full cursor-zoom-in items-center rounded-xl justify-center mb-8" data-codex-screenshot-trigger="" type="button"&gt; &lt;picture class="block min-w-0 max-w-full dark:hidden"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="mx-auto max-w-full object-contain w-auto rounded-xl" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/in-app-browser-light.webp" style="max-height: 400px;"/&gt; &lt;/picture&gt; &lt;picture class="hidden min-w-0 max-w-full dark:block"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="mx-auto max-w-full object-contain w-auto rounded-xl" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/in-app-browser-dark.webp" style="max-height: 400px;"/&gt; &lt;/picture&gt; &lt;/button&gt; &lt;/figure&gt; &lt;div aria-label="Codex app showing a browser comment on a local web app preview" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-6" data-codex-screenshot-overlay="" hidden="" role="dialog" tabindex="-1"&gt; &lt;button aria-label="Close" class="absolute right-6 top-6 z-10 inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-black/35 text-white transition hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:scale-95" data-codex-screenshot-close="" type="button"&gt; &lt;svg class="h-6 w-6" fill="currentColor" height="1em" viewbox="0 0 24 24" width="1em"&gt;&lt;path clip-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt; &lt;/button&gt; &lt;div class="h-full w-full flex items-center justify-center"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="object-contain dark:hidden max-h-[90vh] w-auto max-w-full" loading="lazy" src="/images/codex/app/in-app-browser-light.webp"/&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="hidden object-contain dark:block max-h-[90vh] w-auto max-w-full" loading="lazy" src="/images/codex/app/in-app-browser-dark.webp"/&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script src="/_astro/CodexScreenshot.astro_astro_type_script_index_0_lang.BLxn1JrJ.js?dpl=dpl_Goo1sYhHoLhmmdH6KHXMLEWDxKSr" type="module"&gt;&lt;/script&gt;
+&lt;div data-codex-screenshot-root=""&gt; &lt;figure class="not-prose m-0 w-full"&gt; &lt;button aria-label="Open Codex app showing a browser comment on a local web app preview" class="not-prose flex w-full cursor-zoom-in items-center rounded-xl justify-center mb-8" data-codex-screenshot-trigger="" type="button"&gt; &lt;picture class="block min-w-0 max-w-full dark:hidden"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="mx-auto max-w-full object-contain w-auto rounded-xl" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/in-app-browser-light.webp" style="max-height: 400px;"/&gt; &lt;/picture&gt; &lt;picture class="hidden min-w-0 max-w-full dark:block"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="mx-auto max-w-full object-contain w-auto rounded-xl" data-codex-screenshot-inline-image="" loading="lazy" src="/images/codex/app/in-app-browser-dark.webp" style="max-height: 400px;"/&gt; &lt;/picture&gt; &lt;/button&gt; &lt;/figure&gt; &lt;div aria-label="Codex app showing a browser comment on a local web app preview" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-6" data-codex-screenshot-overlay="" hidden="" role="dialog" tabindex="-1"&gt; &lt;button aria-label="Close" class="absolute right-6 top-6 z-10 inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-black/35 text-white transition hover:bg-black/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 active:scale-95" data-codex-screenshot-close="" type="button"&gt; &lt;svg class="h-6 w-6" fill="currentColor" height="1em" viewbox="0 0 24 24" width="1em"&gt;&lt;path clip-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt; &lt;/button&gt; &lt;div class="h-full w-full flex items-center justify-center"&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="object-contain dark:hidden max-h-[90vh] w-auto max-w-full" loading="lazy" src="/images/codex/app/in-app-browser-light.webp"/&gt; &lt;img alt="Codex app showing a browser comment on a local web app preview" class="hidden object-contain dark:block max-h-[90vh] w-auto max-w-full" loading="lazy" src="/images/codex/app/in-app-browser-dark.webp"/&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script src="/_astro/CodexScreenshot.astro_astro_type_script_index_0_lang.BLxn1JrJ.js?dpl=dpl_72n4GLsjrok7S1ygpjRHuyaNCXJH" type="module"&gt;&lt;/script&gt;
 &lt;p&gt;&lt;a href="/codex/computer-use"&gt;&lt;strong&gt;Computer use&lt;/strong&gt;&lt;/a&gt; lets Codex operate macOS apps by seeing,
 clicking, and typing, which helps with native app testing, simulator flows,
 low-risk app settings, and GUI-only bugs.&lt;/p&gt;

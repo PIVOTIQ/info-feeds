@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 26 Oct 2026 05:39:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 11:58:09 +0000</lastBuildDate>
+    <item>
+      <title>注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起  (公開)</title>
+      <link>https://www.jpcert.or.jp/at/2026/at260034.html</link>
+      <description>注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起  (公開)</description>
+      <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260034.html</guid>
+      <pubDate>Mon, 26 Oct 2026 11:58:09 +0000</pubDate>
+    </item>
     <item>
       <title>注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起  (更新)</title>
       <link>https://www.jpcert.or.jp/at/2026/at260030.html</link>
@@ -17,9 +24,9 @@
       <pubDate>Fri, 23 Oct 2026 11:37:00 +0900</pubDate>
     </item>
     <item>
-      <title>注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (公開)</title>
+      <title>注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)</title>
       <link>https://www.jpcert.or.jp/at/2026/at260033.html</link>
-      <description>注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (公開)</description>
+      <description>注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)</description>
       <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260033.html</guid>
       <pubDate>Thu, 22 Oct 2026 13:11:00 +0900</pubDate>
     </item>
@@ -43,13 +50,6 @@
       <description>注意喚起: NetScaler ADCおよびNetScaler Gatewayにおける複数の脆弱性（CVE-2026-88771、CVE-2026-88772等）に関する注意喚起  (更新)</description>
       <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260029.html</guid>
       <pubDate>Fri, 02 Oct 2026 14:15:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>注意喚起: F5 BIG-IP Access Policy Managerにおけるヒープベースのバッファオーバーフローの脆弱性（CVE-2026-94127）に関する注意喚起  (公開)</title>
-      <link>https://www.jpcert.or.jp/at/2026/at260028.html</link>
-      <description>注意喚起: F5 BIG-IP Access Policy Managerにおけるヒープベースのバッファオーバーフローの脆弱性（CVE-2026-94127）に関する注意喚起  (公開)</description>
-      <guid isPermaLink="false">https://www.jpcert.or.jp/at/2026/at260028.html</guid>
-      <pubDate>Thu, 24 Sep 2026 16:14:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
