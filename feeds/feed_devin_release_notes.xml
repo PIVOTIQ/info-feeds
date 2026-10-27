@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 18:17:54 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 07:08:03 +0000</lastBuildDate>
+    <item>
+      <title>Release Notes - October 26, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#october-26-2026</link>
+      <description>Release Notes - October 26, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#october-26-2026</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Choose Your Own Default Agent</title>
       <link>https://docs.devin.ai/release-notes/overview#october-24-2026</link>
