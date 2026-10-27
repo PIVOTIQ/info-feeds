@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Oct 2026 13:49:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 19:08:28 +0000</lastBuildDate>
     <item>
       <title>注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起  (公開)</title>
       <link>https://www.jpcert.or.jp/at/2026/at260034.html</link>
