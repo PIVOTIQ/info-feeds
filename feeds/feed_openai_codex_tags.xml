@@ -8,7 +8,30 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2026 19:09:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 23:25:39 +0000</lastBuildDate>
+    <item>
+      <title>0.165.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.165.0</link>
+      <description>## New Features
+
+- Added a built-in Google Cloud Vertex AI provider, configured with `model_provider = "gcp"`. (#56265)
+- Added GPT-6.1 Terra to the model catalogs. (#57337)
+- Added a repository filter to the session picker and directory grouping to the agent command center, making it easier to navigate sessions across linked worktrees. (#56308)
+- Added experimental attached thread forks to the app-server API. (#56351)
+- Enabled reasoning effort changes during a conversation by default for supported models. (#56163)
+- Enabled memory v2 by default for fresh profiles and added support for importing external-agent memories into it. (#56211, #56414)
+
+## Bug Fixes
+
+- Fixed fresh TUI sessions to honor the server’s default approval reviewer when no explicit override is provided. (#56090)
+- Kept TUI preferences editable and immediately applicable when execution settings are invalid. (#56091)
+- Cancelled remote MCP tool requests when their local response futures are dropped. (#56132)
+- Prevented queued agent messages from restarting work after an interrupt or a switch to Plan mode. (#56330)
+- Stopped retrying when a provider reports that a model was not found, preserving its error message. (#56445)
+- Closed a marketplace URL validation gap that could allow Git to connect to a different host than the one checked against allowed patterns. (#56263)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.165.0</guid>
+      <pubDate>Tue, 27 Oct 2026 20:09:38 +0000</pubDate>
+    </item>
     <item>
       <title>0.164.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.164.0</link>
