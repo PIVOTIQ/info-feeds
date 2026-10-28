@@ -13,21 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2026 01:52:28 +0000</lastBuildDate>
-    <item>
-      <title>Learning more about Claude's mathematical capabilities</title>
-      <link>https://www.anthropic.com/research/riemann-zeta</link>
-      <description>Learning more about Claude's mathematical capabilities</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/riemann-zeta</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Reviewing the evidence on worker retraining programs</title>
-      <link>https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs</link>
-      <description>Reviewing the evidence on worker retraining programs</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs</guid>
-      <category>Research</category>
-    </item>
+    <lastBuildDate>Wed, 28 Oct 2026 10:15:01 +0000</lastBuildDate>
     <item>
       <title>How Claude is accelerating protein design and analytical chemistry</title>
       <link>https://www.anthropic.com/research/Claude-accelerates-protein-design</link>
@@ -145,6 +131,20 @@
       <link>https://www.anthropic.com/research/alignment-assessment-ukaisi</link>
       <description>An alignment assessment of the UK AISI cybertesting incident</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/alignment-assessment-ukaisi</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>How AI agents shape experts’ judgment calls</title>
+      <link>https://www.anthropic.com/research/agents-judgment-calls</link>
+      <description>How AI agents shape experts’ judgment calls</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/agents-judgment-calls</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Early progress on accelerating drug development with Claude</title>
+      <link>https://www.anthropic.com/research/early-progress-drug-development</link>
+      <description>Early progress on accelerating drug development with Claude</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/early-progress-drug-development</guid>
       <category>Research</category>
     </item>
   </channel>
