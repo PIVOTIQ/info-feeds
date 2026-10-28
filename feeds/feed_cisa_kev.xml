@@ -8,7 +8,29 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Oct 2026 16:58:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 21:31:11 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2026-41709: Broadcom VMware ESX — Broadcom VMWare ESX Insufficient Logging Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41709</link>
+      <description>Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-11
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-41709</guid>
+      <pubDate>Wed, 28 Oct 2026 21:31:11 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-46300: Linux Kernel — Linux Kernel Missing Initialization of a Variable Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-46300</link>
+      <description>Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-10-31
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-46300</guid>
+      <pubDate>Wed, 28 Oct 2026 21:31:11 +0000</pubDate>
+    </item>
     <item>
       <title>CVE-2026-48356: Adobe Commerce and Magento — Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-48356</link>
@@ -1086,28 +1108,6 @@ Due date: 2026-08-14
 Known ransomware campaign use: Unknown</description>
       <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-72898</guid>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-8037: Progress LoadMaster — Progress LoadMaster Command Injection Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-8037</link>
-      <description>Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-10
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-8037</guid>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-63077: JetBrains TeamCity — JetBrains TeamCity Deserialization of Untrusted Data Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-63077</link>
-      <description>JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-08
-Known ransomware campaign use: Known</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-63077</guid>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
