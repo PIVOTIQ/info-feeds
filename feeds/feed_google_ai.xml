@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 07:55:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 14:52:56 +0000</lastBuildDate>
     <item>
       <title>Smaller apps and faster GPU inference with LiteRT in Google Play services</title>
       <link>https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/</link>
