@@ -8,7 +8,37 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 14:53:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 20:02:33 +0000</lastBuildDate>
+    <item>
+      <title>0.166.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.166.0</link>
+      <description>## New Features
+
+- Added keyboard-driven transcript selection with word, line, and page motions, integrated search, and configurable shortcuts. (#57221, #57222, #57223, #57224)
+- Rendered Markdown consistently in async questions, choices, answers, and transcript replies. (#57259, #57292)
+- Added GPT-6.1 Terra to the bundled, Vertex AI, and Amazon Bedrock model catalogs. (#57293)
+- Added `codex queue --resume` to resume unloaded threads after queueing a message. (#57232)
+- Added clearer safety-block explanations and selectable safer follow-up prompts in the TUI. (#57363, #57365)
+- Added `codex doctor --network-only` for focused configuration, connectivity, and WebSocket diagnostics. (#57606)
+
+## Bug Fixes
+
+- Preserved acknowledged approval and permission settings when resuming or forking threads. (#57227)
+- Preserved local image attachments when restoring killed composer text. (#57502)
+- Fixed standalone release cleanup on macOS when installations are in use or paths contain non-ASCII characters. (#57503)
+- Restored spawned descendant threads when unarchiving their parent. (#57635)
+- Fixed app-server thread startup and shutdown races and released completed runtimes promptly. (#57787, #57788)
+- Improved TUI reconnection recovery, including offline `/quit` and `/exit` handling. (#57820)
+- Preserved reasoning-token accounting across resume and fork to avoid premature compaction. (#57839)
+
+## Chores
+
+- Switched Bazel to source-built V8 with target-matched Rust bindings and native Windows MSVC archive support. (#57164, #57269, #57644, #57832)
+- Shipped the standalone executor in canonical CLI and app-server release packages. (#57837)
+- Standardized development and release builds on Node.js 24.22.1 and Rust 1.95.0. (#57168, #57373)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.166.0</guid>
+      <pubDate>Thu, 29 Oct 2026 19:47:53 +0000</pubDate>
+    </item>
     <item>
       <title>0.165.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.165.0</link>

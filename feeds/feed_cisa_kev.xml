@@ -8,7 +8,29 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 14:52:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 20:02:08 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2026-97229: GitLab Community Edition and Enterprise Edition — GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-97229</link>
+      <description>GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-01
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-97229</guid>
+      <pubDate>Thu, 29 Oct 2026 20:02:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-76418: Cisco Secure Firewall ASA Software and Cisco Secure FTD Software — Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-76418</link>
+      <description>Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-01
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-76418</guid>
+      <pubDate>Thu, 29 Oct 2026 20:02:08 +0000</pubDate>
+    </item>
     <item>
       <title>CVE-2026-41709: Broadcom VMware ESX — Broadcom VMWare ESX Insufficient Logging Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41709</link>
@@ -1085,28 +1107,6 @@ Required action: Apply mitigations in accordance with vendor instructions, ensur
 Due date: 2026-08-14
 Known ransomware campaign use: Unknown</description>
       <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-20349</guid>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-68820: Microsoft Windows Ancillary Function Driver for WinSock  — Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-68820</link>
-      <description>Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-25
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-68820</guid>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-72898: Metabase Metabase — Metabase SQL Injection Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-72898</link>
-      <description>Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-14
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-72898</guid>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>

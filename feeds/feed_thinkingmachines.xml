@@ -8,55 +8,55 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 14:51:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 20:00:17 +0000</lastBuildDate>
     <item>
       <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</link>
-      <description>Untitled by Horace He in collaboration with others at Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</guid>
-      <pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate>
+      <link>https://thinkingmachines.ai/blog/on-policy-distillation/</link>
+      <description>Untitled by Kevin Lu in collaboration with others at Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/on-policy-distillation/</guid>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Untitled</title>
       <link>https://thinkingmachines.ai/blog/the-future-worth-building-is-human/</link>
       <description>Untitled by Thinking Machines</description>
       <guid isPermaLink="false">https://thinkingmachines.ai/blog/the-future-worth-building-is-human/</guid>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Untitled</title>
       <link>https://thinkingmachines.ai/blog/lora/</link>
       <description>Untitled by John Schulman in collaboration with others at Thinking Machines</description>
       <guid isPermaLink="false">https://thinkingmachines.ai/blog/lora/</guid>
-      <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/interaction-models/</link>
-      <description>Untitled by Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/interaction-models/</guid>
-      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Untitled</title>
       <link>https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/</link>
       <description>Untitled by Thinking Machines</description>
       <guid isPermaLink="false">https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/</guid>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</link>
+      <description>Untitled by Horace He in collaboration with others at Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</guid>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Untitled</title>
       <link>https://thinkingmachines.ai/blog/modular-manifolds/</link>
       <description>Untitled by Jeremy Bernstein</description>
       <guid isPermaLink="false">https://thinkingmachines.ai/blog/modular-manifolds/</guid>
-      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/on-policy-distillation/</link>
-      <description>Untitled by Kevin Lu in collaboration with others at Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/on-policy-distillation/</guid>
-      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      <link>https://thinkingmachines.ai/blog/interaction-models/</link>
+      <description>Untitled by Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/interaction-models/</guid>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
