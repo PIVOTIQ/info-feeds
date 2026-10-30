@@ -13,7 +13,14 @@
       <link>https://cursor.com/blog</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Oct 2026 03:47:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 10:41:24 +0000</lastBuildDate>
+    <item>
+      <title>Security notice — malicious version of Anthropic.claude-code (2.1.313) identified in the Cursor Extension Marketplace</title>
+      <link>https://cursor.com/blog/claude-code-extension-security-notice</link>
+      <guid isPermaLink="false">https://cursor.com/blog/claude-code-extension-security-notice</guid>
+      <category>company</category>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Introducing the Agent SDK</title>
       <link>https://cursor.com/blog/agent-sdk</link>
@@ -106,13 +113,6 @@
       <guid isPermaLink="false">https://cursor.com/blog/aiuc-1</guid>
       <category>company</category>
       <pubDate>Thu, 13 Aug 2026 12:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Introducing Grok 4.6</title>
-      <link>https://cursor.com/blog/grok-4-6</link>
-      <guid isPermaLink="false">https://cursor.com/blog/grok-4-6</guid>
-      <category>research</category>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Building a better Bugbot</title>
