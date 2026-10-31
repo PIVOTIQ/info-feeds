@@ -8,55 +8,55 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Oct 2026 07:49:33 +0000</lastBuildDate>
-    <item>
-      <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</link>
-      <description>Untitled by Horace He in collaboration with others at Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</guid>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/</link>
-      <description>Untitled by Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/</guid>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/interaction-models/</link>
-      <description>Untitled by Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/interaction-models/</guid>
-      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/modular-manifolds/</link>
-      <description>Untitled by Jeremy Bernstein</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/modular-manifolds/</guid>
-      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sat, 31 Oct 2026 14:09:17 +0000</lastBuildDate>
     <item>
       <title>Untitled</title>
       <link>https://thinkingmachines.ai/blog/on-policy-distillation/</link>
       <description>Untitled by Kevin Lu in collaboration with others at Thinking Machines</description>
       <guid isPermaLink="false">https://thinkingmachines.ai/blog/on-policy-distillation/</guid>
-      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>https://thinkingmachines.ai/blog/lora/</link>
-      <description>Untitled by John Schulman in collaboration with others at Thinking Machines</description>
-      <guid isPermaLink="false">https://thinkingmachines.ai/blog/lora/</guid>
-      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Untitled</title>
       <link>https://thinkingmachines.ai/blog/the-future-worth-building-is-human/</link>
       <description>Untitled by Thinking Machines</description>
       <guid isPermaLink="false">https://thinkingmachines.ai/blog/the-future-worth-building-is-human/</guid>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 May 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</link>
+      <description>Untitled by Horace He in collaboration with others at Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</guid>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>https://thinkingmachines.ai/blog/lora/</link>
+      <description>Untitled by John Schulman in collaboration with others at Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/lora/</guid>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>https://thinkingmachines.ai/blog/interaction-models/</link>
+      <description>Untitled by Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/interaction-models/</guid>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/</link>
+      <description>Untitled by Thinking Machines</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/</guid>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>https://thinkingmachines.ai/blog/modular-manifolds/</link>
+      <description>Untitled by Jeremy Bernstein</description>
+      <guid isPermaLink="false">https://thinkingmachines.ai/blog/modular-manifolds/</guid>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
