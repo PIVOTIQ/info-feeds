@@ -13,7 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Nov 2026 03:42:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 11:55:52 +0000</lastBuildDate>
     <item>
       <title>How Claude is accelerating protein design and analytical chemistry</title>
       <link>https://www.anthropic.com/research/Claude-accelerates-protein-design</link>
@@ -127,17 +127,17 @@
       <category>Research</category>
     </item>
     <item>
+      <title>How Claude designed protein binders against scorpion neurotoxins</title>
+      <link>https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</link>
+      <description>How Claude designed protein binders against scorpion neurotoxins</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</guid>
+      <category>Research</category>
+    </item>
+    <item>
       <title>An alignment assessment of the UK AISI cybertesting incident</title>
       <link>https://www.anthropic.com/research/alignment-assessment-ukaisi</link>
       <description>An alignment assessment of the UK AISI cybertesting incident</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/alignment-assessment-ukaisi</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>How AI agents shape experts’ judgment calls</title>
-      <link>https://www.anthropic.com/research/agents-judgment-calls</link>
-      <description>How AI agents shape experts’ judgment calls</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/agents-judgment-calls</guid>
       <category>Research</category>
     </item>
     <item>
