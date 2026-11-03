@@ -13,14 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2026 03:14:54 +0000</lastBuildDate>
-    <item>
-      <title>How Claude is accelerating protein design and analytical chemistry</title>
-      <link>https://www.anthropic.com/research/Claude-accelerates-protein-design</link>
-      <description>How Claude is accelerating protein design and analytical chemistry</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/Claude-accelerates-protein-design</guid>
-      <category>Research</category>
-    </item>
+    <lastBuildDate>Tue, 03 Nov 2026 11:32:25 +0000</lastBuildDate>
     <item>
       <title>Enabling independent research on how people use Claude</title>
       <link>https://www.anthropic.com/research/enabling-independent-research</link>
@@ -145,6 +138,13 @@
       <link>https://www.anthropic.com/research/early-progress-drug-development</link>
       <description>Early progress on accelerating drug development with Claude</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/early-progress-drug-development</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Progress on provable inference for large language models</title>
+      <link>https://www.anthropic.com/research/provable-inference</link>
+      <description>Progress on provable inference for large language models</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/provable-inference</guid>
       <category>Research</category>
     </item>
   </channel>
