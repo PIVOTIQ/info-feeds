@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2026 18:55:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 23:52:17 +0000</lastBuildDate>
+    <item>
+      <title>Are Coding Agent Harnesses Worth the Tokens?</title>
+      <link>https://www.surgehq.ai/blog/coding-agent-harnesses-comparison</link>
+      <description>We benchmarked Superpowers, Compound Engineering, and Claude Code's built-in workflows on real software engineering tasks. Some helped. One came with 37 skills, spawned 17 agents, cost 8x as much -- and performed the worst.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/coding-agent-harnesses-comparison</guid>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>5 Examples of the Importance of Context-Sensitivity in Data-Centric AI</title>
       <link>https://www.surgehq.ai/blog/why-context-aware-datasets-are-crucial-for-data-centric-ai</link>
