@@ -13,14 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2026 08:51:02 +0000</lastBuildDate>
-    <item>
-      <title>Automated researchers can reliably mitigate alignment failures</title>
-      <link>https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures</link>
-      <description>Automated researchers can reliably mitigate alignment failures</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures</guid>
-      <category>Research</category>
-    </item>
+    <lastBuildDate>Thu, 05 Nov 2026 22:38:25 +0000</lastBuildDate>
     <item>
       <title>Formalizing Fermat's Last Theorem</title>
       <link>https://www.anthropic.com/research/formalizing-fermats-last-theorem</link>
@@ -50,6 +43,13 @@
       <category>Research</category>
     </item>
     <item>
+      <title>Project Swap: What happens when agents trade for us?</title>
+      <link>https://www.anthropic.com/research/project-swap</link>
+      <description>Project Swap: What happens when agents trade for us?</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/project-swap</guid>
+      <category>Research</category>
+    </item>
+    <item>
       <title>What do you want from AI?</title>
       <link>https://www.anthropic.com/research/your-thoughts-on-ai</link>
       <description>What do you want from AI?</description>
@@ -68,6 +68,13 @@
       <link>https://www.anthropic.com/research/claude-shaped-science</link>
       <description>Claude-shaped science</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/claude-shaped-science</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>The missing map of the sky</title>
+      <link>https://www.anthropic.com/research/the-missing-map-of-the-sky</link>
+      <description>The missing map of the sky</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/the-missing-map-of-the-sky</guid>
       <category>Research</category>
     </item>
     <item>
@@ -138,13 +145,6 @@
       <link>https://www.anthropic.com/research/provable-inference</link>
       <description>Progress on provable inference for large language models</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/provable-inference</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Investigating vault particles with Claude</title>
-      <link>https://www.anthropic.com/research/investigating-vault-particles-with-claude</link>
-      <description>Investigating vault particles with Claude</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/investigating-vault-particles-with-claude</guid>
       <category>Research</category>
     </item>
   </channel>
