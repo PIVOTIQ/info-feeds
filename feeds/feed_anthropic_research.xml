@@ -13,14 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Nov 2026 12:45:04 +0000</lastBuildDate>
-    <item>
-      <title>Enabling independent research on how people use Claude</title>
-      <link>https://www.anthropic.com/research/enabling-independent-research</link>
-      <description>Enabling independent research on how people use Claude</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/enabling-independent-research</guid>
-      <category>Research</category>
-    </item>
+    <lastBuildDate>Thu, 05 Nov 2026 08:51:02 +0000</lastBuildDate>
     <item>
       <title>Automated researchers can reliably mitigate alignment failures</title>
       <link>https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures</link>
@@ -145,6 +138,13 @@
       <link>https://www.anthropic.com/research/provable-inference</link>
       <description>Progress on provable inference for large language models</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/provable-inference</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Investigating vault particles with Claude</title>
+      <link>https://www.anthropic.com/research/investigating-vault-particles-with-claude</link>
+      <description>Investigating vault particles with Claude</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/investigating-vault-particles-with-claude</guid>
       <category>Research</category>
     </item>
   </channel>
