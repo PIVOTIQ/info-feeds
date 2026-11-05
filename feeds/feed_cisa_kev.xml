@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Nov 2026 20:11:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 01:12:21 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2024-27834: Apple Multiple Products — Apple Multiple Products Improper Authentication Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2024-27834</link>
+      <description>Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-18
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2024-27834</guid>
+      <pubDate>Thu, 05 Nov 2026 01:12:21 +0000</pubDate>
+    </item>
     <item>
       <title>CVE-2026-119977: WordPress WordPress Core — WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-119977</link>
@@ -1096,17 +1107,6 @@ Required action: Apply mitigations in accordance with vendor instructions, ensur
 Due date: 2026-08-21
 Known ransomware campaign use: Known</description>
       <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-59310</guid>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-55040: Microsoft SharePoint — Microsoft SharePoint Weak Authentication Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-55040</link>
-      <description>Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-21
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-55040</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
