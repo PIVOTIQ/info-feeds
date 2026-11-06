@@ -13,7 +13,21 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 22:36:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 03:00:11 +0000</lastBuildDate>
+    <item>
+      <title>衛星データで「観る」から「動かす」へ データとAIによる産業・業務変革の未来 FDE（Forward Deployed Engineer）の視点から考える「業務実装」</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/satellite-data-ai-business-transformation.html</link>
+      <description>本レポートでは、衛星データを企業内・外部データやAIと組み合わせることで生み出し得る経済価値と市場ポテンシャルを整理するとともに、データ活用が「観る」段階から、意思決定や実行を「動かす」段階へどのように広がるかを考察します。さらに、FDEの視点も踏まえ、衛星データを実際の企業業務へ組み込むための業務起点の実装アプローチを提示します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/satellite-data-ai-business-transformation.html</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0919</pubDate>
+    </item>
+    <item>
+      <title>恐れなき委任\―AIとともに経営を動かすリスクガバナンスアーキテクチャ実証実験</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/risk-governance-architecture.html</link>
+      <description>AIに経営を任せると、何が起きるのか。PwCはオフィス内の仮設店舗で、AI自律運営の実証実験を行いました。本稿では、運営記録と10領域の専門家による評価をもとに、AI活用を成果につなげる条件と、企業が今取り組むべきリスクガバナンスの設計を考察します。</description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/risk-governance-architecture.html</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>大企業等の事業会社とスタートアップの共成長を導くオープンイノベーションの実践 スタートアップ調達・購買の実態調査に基づく示唆</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/open-innovation.html</link>
@@ -78,25 +92,11 @@
       <pubDate>Wed, 30 Sep 2026 00:00:00 +0919</pubDate>
     </item>
     <item>
-      <title>Strategy\\\\u0026 進化する価格設定：生成AI価格設定フレームワーク</title>
-      <link>https://www.strategyand.pwc.com/jp/ja/publications/report/pricing-framework-for-genai.html</link>
-      <description>生成AIは企業向けソフトウェアの形を根本から変えつつあり、ソフトウェアベンダーが価値を獲得する方法を再定義しています。本レポートでは、ソフトウェアベンダーや投資家が生成AIの収益化に取り組む際に役立つ体系的なフレームワークを紹介します。</description>
-      <guid isPermaLink="false">https://www.strategyand.pwc.com/jp/ja/publications/report/pricing-framework-for-genai.html</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
       <title>資産とマネーの再設計が切り開く新たな金融市場 オンチェーン金融の最新潮流と金融機関の次の一手 第1回 なぜ今、オンチェーン金融なのか</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/onchain-finance-01.html</link>
       <description>オンチェーン金融を、既存の金融商品や取引をブロックチェーン上へ移すものと捉えるだけでは、その本質を見誤ります。本稿では、実物資産のトークン化やデジタルマネーの進展を背景に生まれつつある新たな金融市場の姿と、金融機関に求められる次の一手を考察します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/onchain-finance-01.html</guid>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>有価証券報告書から読み解くガバナンスとリスクマネジメントの動向2026\―テキストマイニングによる分析\―</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/corporate-governance-trend2026.html</link>
-      <description>本調査は、「コーポレート・ガバナンス」「リスクマネジメント」および「その他トレンドとなっているキーワード」の3つに焦点をあて、近年、企業および投資家の間でホットトピックスとなっており、その推移に顕著な変化がみられたキーワードを中心に分析・考察を行っています。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/corporate-governance-trend2026.html</guid>
-      <pubDate>Tue, 15 Sep 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>
