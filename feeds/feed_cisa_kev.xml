@@ -8,7 +8,40 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 07:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 18:02:57 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2026-102895: GPUStack GPUStack — GPUStack Improper Authentication Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-102895</link>
+      <description>GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-12
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-102895</guid>
+      <pubDate>Mon, 09 Nov 2026 18:02:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-123158: OpenBSD OpenSSH — OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-123158</link>
+      <description>OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-12
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-123158</guid>
+      <pubDate>Mon, 09 Nov 2026 18:02:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-116779: SignalWire FreeSwitch — SignalWire FreeSwitch Code Injection Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-116779</link>
+      <description>SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-12
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-116779</guid>
+      <pubDate>Mon, 09 Nov 2026 18:02:57 +0000</pubDate>
+    </item>
     <item>
       <title>CVE-2026-19868: SonicWall SonicOS SSLVPN — SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-19868</link>
@@ -1075,39 +1108,6 @@ Due date: 2026-09-03
 Known ransomware campaign use: Unknown</description>
       <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-72530</guid>
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-72529: TrueConf Server — TrueConf Server Missing Authentication for Critical Function Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-72529</link>
-      <description>TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-23
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-72529</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-64849: MLflow MLflow — MLflow Server-Side Request Forgery Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-64849</link>
-      <description>MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-09-02
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-64849</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-33824: Microsoft Internet Key Exchange (IKE) Service Extensions — Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-33824</link>
-      <description>Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-21
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-33824</guid>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
