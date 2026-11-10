@@ -13,7 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 07:32:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 01:52:25 +0000</lastBuildDate>
     <item>
       <title>How Claude is uplifting biomolecular modeling</title>
       <link>https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling</link>
@@ -145,6 +145,13 @@
       <link>https://www.anthropic.com/research/teaching-ai-to-build-scientific-models</link>
       <description>Teaching AI to build scientific models</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/teaching-ai-to-build-scientific-models</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Testing Claude on real-world electronics design</title>
+      <link>https://www.anthropic.com/research/claude-electronics-design</link>
+      <description>Testing Claude on real-world electronics design</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-electronics-design</guid>
       <category>Research</category>
     </item>
   </channel>
