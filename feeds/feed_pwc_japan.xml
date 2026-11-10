@@ -13,7 +13,14 @@
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html</link>
     </image>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Nov 2026 01:50:13 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 09:00:51 +0000</lastBuildDate>
+    <item>
+      <title>AIによる歴史的なインフラ投資拡大の中、31.6兆米ドル（約5,000兆円）の設備投資はどこへ向かうのか</title>
+      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/data-centre-outlook.html</link>
+      <description>AIの普及を背景に、世界のデータセンター設備投資は2050年までに累計31.6兆米ドル（約5,000兆円）へ拡大する可能性があります。本稿では、機器更新、電力制約、データ主権、半導体供給などが投資規模と地域配分に与える影響を、複数シナリオで分析します。 </description>
+      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/data-centre-outlook.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0919</pubDate>
+    </item>
     <item>
       <title>衛星データで「観る」から「動かす」へ データとAIによる産業・業務変革の未来 FDE（Forward Deployed Engineer）の視点から考える「業務実装」</title>
       <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/satellite-data-ai-business-transformation.html</link>
@@ -90,13 +97,6 @@
       <description>2026年から2030年までの世界のエンタテイメント＆メディア（E\\\\u0026M）業界の市場動向と予測を提供する「グローバル エンタテイメント＆メディア アウトルック」の概要を紹介します。</description>
       <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/outlook.html</guid>
       <pubDate>Wed, 30 Sep 2026 00:00:00 +0919</pubDate>
-    </item>
-    <item>
-      <title>資産とマネーの再設計が切り開く新たな金融市場 オンチェーン金融の最新潮流と金融機関の次の一手 第1回 なぜ今、オンチェーン金融なのか</title>
-      <link>https://www.pwc.com/jp/ja/knowledge/thoughtleadership/onchain-finance-01.html</link>
-      <description>オンチェーン金融を、既存の金融商品や取引をブロックチェーン上へ移すものと捉えるだけでは、その本質を見誤ります。本稿では、実物資産のトークン化やデジタルマネーの進展を背景に生まれつつある新たな金融市場の姿と、金融機関に求められる次の一手を考察します。</description>
-      <guid isPermaLink="false">https://www.pwc.com/jp/ja/knowledge/thoughtleadership/onchain-finance-01.html</guid>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0919</pubDate>
     </item>
   </channel>
 </rss>

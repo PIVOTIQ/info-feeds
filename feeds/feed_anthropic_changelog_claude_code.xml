@@ -13,7 +13,15 @@
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Nov 2026 01:50:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 09:00:52 +0000</lastBuildDate>
+    <item>
+      <title>v2.1.322</title>
+      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21322</link>
+      <description>&lt;ul&gt;&lt;li&gt;Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it&lt;/li&gt;&lt;/ul&gt;</description>
+      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21322</guid>
+      <category>Changelog</category>
+      <pubDate>Tue, 10 Nov 2026 01:58:41 +0000</pubDate>
+    </item>
     <item>
       <title>v2.1.321</title>
       <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21321</link>
@@ -405,14 +413,6 @@
       <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21267</guid>
       <category>Changelog</category>
       <pubDate>Wed, 09 Sep 2026 18:25:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>v2.1.266</title>
-      <link>https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21266</link>
-      <description>&lt;ul&gt;&lt;li&gt;Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented `CLAUDE_CODE_USE_GATEWAY` environment variable, previously ignored unless `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN` were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, `apiKeyHelper`, or custom auth headers failed every request with "Not signed in to the Cloud gateway". The variable on its own is ignored again; no configuration change is needed&lt;/li&gt;&lt;/ul&gt;</description>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21266</guid>
-      <category>Changelog</category>
-      <pubDate>Tue, 08 Sep 2026 23:32:32 +0000</pubDate>
     </item>
   </channel>
 </rss>
