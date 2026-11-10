@@ -8,7 +8,73 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Nov 2026 17:23:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 22:41:32 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2026-124194: Microsoft Office — Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-124194</link>
+      <description>Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-24
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-124194</guid>
+      <pubDate>Tue, 10 Nov 2026 22:41:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-111793: Openwave Messaging Limited Webtop Media Transcoder — Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-111793</link>
+      <description>Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-24
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-111793</guid>
+      <pubDate>Tue, 10 Nov 2026 22:41:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-20320: Cisco BroadWorks — Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-20320</link>
+      <description>Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-24
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-20320</guid>
+      <pubDate>Tue, 10 Nov 2026 22:41:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-111560: Barracuda Networks Multiple Products — Barracuda Networks Multiple Products OS Command Injection Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-111560</link>
+      <description>Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-13
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-111560</guid>
+      <pubDate>Tue, 10 Nov 2026 22:41:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-116606: Barracuda Networks Barracuda Email Security Gateway (ESG) — Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-116606</link>
+      <description>Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration. This vulnerability can be chained with CVE-2026-111560.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-13
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-116606</guid>
+      <pubDate>Tue, 10 Nov 2026 22:41:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-125350: Google Chromium — Google Chromium Use-After-Free Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-125350</link>
+      <description>Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-11-24
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-125350</guid>
+      <pubDate>Tue, 10 Nov 2026 22:41:32 +0000</pubDate>
+    </item>
     <item>
       <title>CVE-2026-123218: IBM Aspera Faspex — IBM Aspera Faspex Incorrect Authorization Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-123218</link>
@@ -1042,72 +1108,6 @@ Due date: 2026-09-09
 Known ransomware campaign use: Unknown</description>
       <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2015-5287</guid>
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2022-0995: Linux Kernel — Linux Kernel Out-of-Bounds Write Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2022-0995</link>
-      <description>Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-29
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2022-0995</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-8452: Citrix NetScaler ADC and NetScaler Gateway — Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-8452</link>
-      <description>Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. 
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-29
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-8452</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2019-1068: Microsoft SQL Server — Microsoft SQL Server Remote Code Execution Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2019-1068</link>
-      <description>Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-29
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2019-1068</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-60004: Gitea Gitea — Gitea Code Injection Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-60004</link>
-      <description>Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-28
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-60004</guid>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-21962: Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in — Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-21962</link>
-      <description>Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-27
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-21962</guid>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-73570: Synacor Zimbra Collaboration Suite (ZCS) — Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-73570</link>
-      <description>Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-08-24
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-73570</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
