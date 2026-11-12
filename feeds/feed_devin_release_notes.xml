@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Nov 2026 10:07:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 17:50:00 +0000</lastBuildDate>
+    <item>
+      <title>Release Notes - November 11, 2026</title>
+      <link>https://docs.devin.ai/release-notes/overview#november-11-2026</link>
+      <description>Release Notes - November 11, 2026</description>
+      <guid isPermaLink="false">https://docs.devin.ai/release-notes/overview#november-11-2026</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Release Notes - November 9, 2026</title>
       <link>https://docs.devin.ai/release-notes/overview#november-9-2026</link>
