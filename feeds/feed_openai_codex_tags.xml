@@ -8,7 +8,39 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 23:03:20 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 04:20:47 +0000</lastBuildDate>
+    <item>
+      <title>0.168.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.168.0</link>
+      <description>## New Features
+
+- Browse model providers under Sessions → Model providers and choose the default for new chats. (#59541, #59722)
+- Enable `features.tui_workspace` to view a side conversation beside the main chat. Drag the divider to resize the panes or press `leader z` to zoom the focused pane. (#58992, #59527, #59595)
+- Attach recordings when using an audio-capable model. Codex skips confirmed rejected recordings on later turns and uses clip duration to keep more short recordings in context. (#59234, #59268)
+- Enable `features.image_generation_animation` to generate or edit animated GIFs with optional frame count and timing controls. (#59073)
+- Fullscreen Codex displays image previews and pets in tmux on Ghostty and Kitty with `allow-passthrough all`. (#59579, #59580)
+- Set `tui.notification_method = "osc777"` for terminal notifications. Approval notifications show longer command previews and distinguish terminal input from network access requests. (#59256)
+
+## Bug Fixes
+
+- Local TUI history and resume pickers filter newly created threads by the signed-in ChatGPT account. (#58918)
+- Open and resumed chats use their saved model provider after you change the default for new chats. (#59503)
+- The TUI renders replies interrupted by tool calls as a single Markdown message and restores reasoning summaries when replaying a conversation. (#59698, #59700)
+- Steering messages reach running turns when sent during the final transcript save or after switching back to a long-running chat. (#58877, #58998)
+- Fuzzy file search gives filename matches more weight so matching parent directories are less likely to crowd them out. (#59709)
+- Idle local MCP servers on Windows leave filesystem I/O available to the rest of Codex. (#59726)
+
+## Documentation
+
+- The app-server reference covers listing model providers, creating custom gateways, and updating gateway, Bedrock, and GCP settings. (#58845, #58876)
+
+## Chores
+
+- Codex warns when `features.multi_agent` is explicitly configured and points to `agents.enabled` for disabling subagent tools. (#59479)
+- Contributors can run Bazel CI jobs locally without BuildBuddy credentials. (#59055)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.168.0</guid>
+      <pubDate>Fri, 13 Nov 2026 03:54:29 +0000</pubDate>
+    </item>
     <item>
       <title>0.167.2</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.167.2</link>
