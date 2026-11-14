@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Nov 2026 20:12:28 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:09:38 +0000</lastBuildDate>
     <item>
       <title>CVE-2026-114713: UnrealIRCd UnrealIRCd — UnrealIRCd Improper Neutralization of Delimiters Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-114713</link>
@@ -353,7 +353,7 @@ Known ransomware campaign use: Unknown</description>
     <item>
       <title>CVE-2026-96652: Plex Media Server — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-96652</link>
-      <description>Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. 
+      <description>Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656.
 
 Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 Due date: 2026-11-03
@@ -472,7 +472,7 @@ Known ransomware campaign use: Unknown</description>
       <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>CVE-2015-5477: ISC BIND —  ISC BIND Data Processing Errors Vulnerability</title>
+      <title>CVE-2015-5477: ISC BIND — ISC BIND Data Processing Errors Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2015-5477</link>
       <description>ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.
 
@@ -496,7 +496,7 @@ Known ransomware campaign use: Unknown</description>
     <item>
       <title>CVE-2023-22894: Strapi Strapi — Strapi Cleartext Storage of Sensitive Information Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2023-22894</link>
-      <description>Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. 
+      <description>Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution.
 
 Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 Due date: 2026-10-11
@@ -648,9 +648,9 @@ Known ransomware campaign use: Unknown</description>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>CVE-2026-5430: WSO2 Multiple Products — WSO2 Multiple Products Path Traversal Vulnerability </title>
+      <title>CVE-2026-5430: WSO2 Multiple Products — WSO2 Multiple Products Path Traversal Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-5430</link>
-      <description>WSO2 API Control Plane, API Manager, Traffic Manager &amp; Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. 
+      <description>WSO2 API Control Plane, API Manager, Traffic Manager &amp; Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.
 
 Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 Due date: 2026-09-27
@@ -659,9 +659,9 @@ Known ransomware campaign use: Unknown</description>
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>CVE-2026-71362: Adobe Commerce and Magento  — Adobe Commerce and Magento Incorrect Authorization Vulnerability </title>
+      <title>CVE-2026-71362: Adobe Commerce and Magento — Adobe Commerce and Magento Incorrect Authorization Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-71362</link>
-      <description>Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. 
+      <description>Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction.
 
 Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 Due date: 2026-09-27
@@ -1002,7 +1002,7 @@ Known ransomware campaign use: Unknown</description>
     <item>
       <title>CVE-2026-82329: JFrog Artifactory — JFrog Artifactory Improper Authentication Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-82329</link>
-      <description>JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. 
+      <description>JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges.
 
 Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 Due date: 2026-09-05
@@ -1079,7 +1079,7 @@ Known ransomware campaign use: Unknown</description>
     <item>
       <title>CVE-2026-53362: Linux Kernel — Linux Kernel Unspecified Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-53362</link>
-      <description>Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. 
+      <description>Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux.
 
 Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
 Due date: 2026-08-30
