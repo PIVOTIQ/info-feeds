@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 09:56:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 18:54:59 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2026-115731: Perforce Puppet Enterprise — Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability</title>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-115731</link>
+      <description>Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vulnerability.
+
+Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
+Due date: 2026-12-01
+Known ransomware campaign use: Unknown</description>
+      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-115731</guid>
+      <pubDate>Tue, 17 Nov 2026 18:54:59 +0000</pubDate>
+    </item>
     <item>
       <title>CVE-2026-114713: UnrealIRCd UnrealIRCd — UnrealIRCd Improper Neutralization of Delimiters Vulnerability</title>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-114713</link>
@@ -1097,17 +1108,6 @@ Due date: 2026-09-10
 Known ransomware campaign use: Unknown</description>
       <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2026-66384</guid>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2021-23758: Ajax.NET Professional Ajax.NET Professional — Ajax.NET Professional Deserialization of Untrusted Data Vulnerability</title>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2021-23758</link>
-      <description>Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.
-
-Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.
-Due date: 2026-09-09
-Known ransomware campaign use: Unknown</description>
-      <guid isPermaLink="false">https://nvd.nist.gov/vuln/detail/CVE-2021-23758</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
