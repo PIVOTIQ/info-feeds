@@ -8,7 +8,28 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 01:27:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 09:31:41 +0000</lastBuildDate>
+    <item>
+      <title>0.170.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.170.0</link>
+      <description>## New Features
+- Added WebRTC negotiation for realtime voice calls in the TUI. (#61172)
+- Added automatically refreshed authentication headers for OpenTelemetry HTTP exporters. (#61028)
+- Added experimental support for using identically named MCP servers across environments. (#60905)
+
+## Bug Fixes
+- Oversized WebSocket requests now fall back to HTTP without unnecessary retries. (#60840, #60841)
+- Fixed MCP OAuth credential races during cancellation, login, and logout. (#60849, #60981)
+- Improved automatic reconnection for Cloud conversations and preserved active recovery turns when clients reconnect. (#60969, #61014)
+- Fixed Windows file replacement, sandbox permission preservation, and runtime registration recovery. (#60872, #60943, #60944)
+- Fixed permission updates and child threads losing existing sandbox restrictions. (#60936, #61134)
+- Removed duplicate file search results and fixed thread search snippets for queries containing whitespace. (#60845, #60846)
+
+## Documentation
+- Updated sandbox documentation to explain permission profiles and filesystem rules. (#61133)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.170.0</guid>
+      <pubDate>Wed, 18 Nov 2026 03:40:48 +0000</pubDate>
+    </item>
     <item>
       <title>0.169.1</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.169.1</link>
