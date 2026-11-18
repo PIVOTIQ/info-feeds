@@ -8,14 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 09:31:49 +0000</lastBuildDate>
-    <item>
-      <title>DAYJOB: Law — Can AI Agents Think Like Lawyers?</title>
-      <link>https://www.surgehq.ai/blog/dayjob-law</link>
-      <description>DAYJOB: Law challenges AI agents to investigate independently, reason through complex legal problems, and exercise professional judgment when evidence is incomplete or contradictory.</description>
-      <guid isPermaLink="false">https://www.surgehq.ai/blog/dayjob-law</guid>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 18 Nov 2026 18:32:32 +0000</lastBuildDate>
     <item>
       <title>5 Examples of the Importance of Context-Sensitivity in Data-Centric AI</title>
       <link>https://www.surgehq.ai/blog/why-context-aware-datasets-are-crucial-for-data-centric-ai</link>
@@ -442,6 +435,13 @@
       <description>We benchmarked the top Claude and GPT models on sudo L7. Every Claude beat every GPT.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/claude-vs-gpt-software-engineering</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>DAYJOB: Law — Can AI Agents Think Like Lawyers?</title>
+      <link>https://www.surgehq.ai/blog/dayjob-law</link>
+      <description>DAYJOB: Law challenges AI agents to investigate independently, reason through complex legal problems, and exercise professional judgment when evidence is incomplete or contradictory.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/dayjob-law</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

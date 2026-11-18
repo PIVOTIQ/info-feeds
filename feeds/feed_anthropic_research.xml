@@ -13,14 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 09:33:50 +0000</lastBuildDate>
-    <item>
-      <title>Claude discovers a novel enzyme system with CRISPR-like repeats</title>
-      <link>https://www.anthropic.com/research/claude-discovers-novel-enzyme-system</link>
-      <description>Claude discovers a novel enzyme system with CRISPR-like repeats</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-discovers-novel-enzyme-system</guid>
-      <category>Research</category>
-    </item>
+    <lastBuildDate>Wed, 18 Nov 2026 18:33:22 +0000</lastBuildDate>
     <item>
       <title>Project Swap: What happens when agents trade for us?</title>
       <link>https://www.anthropic.com/research/project-swap</link>
@@ -159,6 +152,13 @@
       <link>https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</link>
       <description>Updating our coordinated vulnerability disclosure policy timelines</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</guid>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Claude Fable 5.2 solves two open problems in the physics of black holes</title>
+      <link>https://www.anthropic.com/research/claude-black-hole-physics</link>
+      <description>Claude Fable 5.2 solves two open problems in the physics of black holes</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-black-hole-physics</guid>
       <category>Research</category>
     </item>
   </channel>
