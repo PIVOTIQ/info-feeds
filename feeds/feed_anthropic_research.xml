@@ -13,7 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 18:33:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 08:15:04 +0000</lastBuildDate>
     <item>
       <title>Project Swap: What happens when agents trade for us?</title>
       <link>https://www.anthropic.com/research/project-swap</link>
@@ -155,9 +155,9 @@
       <category>Research</category>
     </item>
     <item>
-      <title>Claude Fable 5.2 solves two open problems in the physics of black holes</title>
+      <title>Claude solves two open problems in the physics of black holes</title>
       <link>https://www.anthropic.com/research/claude-black-hole-physics</link>
-      <description>Claude Fable 5.2 solves two open problems in the physics of black holes</description>
+      <description>Claude solves two open problems in the physics of black holes</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/claude-black-hole-physics</guid>
       <category>Research</category>
     </item>
