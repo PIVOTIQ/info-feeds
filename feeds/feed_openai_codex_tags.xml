@@ -8,7 +8,35 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 00:05:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 07:55:25 +0000</lastBuildDate>
+    <item>
+      <title>0.171.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0</link>
+      <description>## New Features
+
+- Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. (#62106)
+- Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation. (#61352, #61888, #61889, #61919, #62157)
+- Added configurable undo and redo shortcuts to the non-Vim prompt composer, including restoration of attachments and large pastes. (#61954)
+- Added `codex exec --remote &lt;ADDR&gt;` to start or resume noninteractive sessions on an existing app server. (#61707)
+- Added `/rc` and `/remote` to manage local remote control and display device pairing codes from the TUI. (#62121)
+- Added custom MCP status line selection and authoring through `/statusline` when `tui_extensions_statusline` is enabled. (#61979, #61988, #62037)
+
+## Bug Fixes
+
+- Preserved drafts, queued follow-ups, and interrupted input with their original threads when switching or resuming sessions. (#61216)
+- Kept permission profiles intact when changing working directories. (#61195)
+- Prevented late completion events from cancelling approvals for a newer turn. (#61801)
+- Preserved earlier edits in aggregate diffs when steering an active turn. (#61820)
+- Fixed scrolling that inserted stray characters, composer caret jumps, and redraws using stale terminal dimensions. (#62139, #62174, #62175)
+- Fixed enterprise MCP sign-in for identity providers that issue ID tokens without refresh tokens. (#62129)
+
+## Chores
+
+- Updated source builds and release tooling to Rust 1.99.1. (#61205)
+- Updated XML dependencies and removed obsolete security advisory exceptions. (#62068)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.171.0</guid>
+      <pubDate>Fri, 20 Nov 2026 00:44:47 +0000</pubDate>
+    </item>
     <item>
       <title>0.170.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.170.0</link>
