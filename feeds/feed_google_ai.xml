@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 17:52:21 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:05:09 +0000</lastBuildDate>
+    <item>
+      <title>Distributed LLM Training Across Metros: Streaming DiLoCo in MaxText</title>
+      <link>https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/</link>
+      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Dilco_header.2e16d0ba.fill-800x400.jpg" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;Streaming DiLoCo in MaxText enables developers to efficiently train large language models across geographically distributed TPU slices by streaming parameter fragments instead of synchronizing full models at every step. This approach slashes cross-slice communication volume by over 60× and eliminates network stalls, allowing seamless multi-datacenter scaling without degrading model convergence or quality.</description>
+      <category>AI</category>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs</title>
       <link>https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/</link>
@@ -64,13 +71,6 @@
       <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Screenshot_2026-11-11_at_4.46.52PM.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;AI agent sessions remain active and idle for most of the workday, making traditional one-Pod-per-session allocations inefficient for cluster resources. By using open-source tools like Agent Substrate and AX on GKE, developers can park idle sessions in object storage to release compute resources while maintaining session state. This approach optimizes resource utilization and reduces Kubernetes node costs by up to 40%.</description>
       <category>AI</category>
       <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>How Agent Anomaly Detection scores on benchmarks we didn't write</title>
-      <link>https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/</link>
-      <description>&lt;img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Banner_-_1600x900.2e16d0ba.fill-800x400.png" alt="Featured image" /&gt;&lt;br/&gt;&lt;br/&gt;Agent Anomaly Detection (AAD) provides asynchronous, low-latency monitoring for AI agents by analyzing OpenTelemetry traces and logs to flag goal hijacks and tool misuse. Tested across five public security benchmarks, AAD successfully caught 87% of harmful instructions carried out by agents without adding runtime latency. Developers can integrate AAD alongside semantic governance and strict tool limits as part of a defense-in-depth strategy to secure agentic applications.</description>
-      <category>AI</category>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Catch Go bugs that fuzzing misses with Gemini and a constraint solver</title>
