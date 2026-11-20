@@ -13,7 +13,7 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 16:34:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 22:54:53 +0000</lastBuildDate>
     <item>
       <title>Project Swap: What happens when agents trade for us?</title>
       <link>https://www.anthropic.com/research/project-swap</link>
@@ -152,13 +152,6 @@
       <link>https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</link>
       <description>Updating our coordinated vulnerability disclosure policy timelines</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Claude solves two open problems in the physics of black holes</title>
-      <link>https://www.anthropic.com/research/claude-black-hole-physics</link>
-      <description>Claude solves two open problems in the physics of black holes</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-black-hole-physics</guid>
       <category>Research</category>
     </item>
   </channel>
