@@ -8,7 +8,14 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 01:17:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 10:03:39 +0000</lastBuildDate>
+    <item>
+      <title>Glimmers of RSI: Coding Agents on an Exponential Curve</title>
+      <link>https://www.surgehq.ai/blog/glimmers-of-rsi</link>
+      <description>Coding agents aren't just improving. They're improving faster and developing the engineering judgment to debug complex systems, verify their own work, and challenge flawed assumptions. Surge AI's latest research explores how these advances in coding signal the beginnings of recursive self-improvement.</description>
+      <guid isPermaLink="false">https://www.surgehq.ai/blog/glimmers-of-rsi</guid>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>5 Examples of the Importance of Context-Sensitivity in Data-Centric AI</title>
       <link>https://www.surgehq.ai/blog/why-context-aware-datasets-are-crucial-for-data-centric-ai</link>
@@ -395,7 +402,7 @@
       <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>sudo L7: Can Coding Agents Act Like Staff Engineers?</title>
+      <title>sudo L7: Do Coding Agents Have the Taste and Judgment of Staff Engineers?</title>
       <link>https://www.surgehq.ai/blog/sudo-l7</link>
       <description>Introducing sudo L7, a coding benchmark testing whether AI agents can go beyond correct code and exercise staff-level engineering judgment.</description>
       <guid isPermaLink="false">https://www.surgehq.ai/blog/sudo-l7</guid>
