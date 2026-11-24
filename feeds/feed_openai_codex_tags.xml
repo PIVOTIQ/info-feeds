@@ -8,7 +8,39 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2026 22:20:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 06:37:58 +0000</lastBuildDate>
+    <item>
+      <title>0.172.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.172.0</link>
+      <description>## New Features
+
+- Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. (#62332)
+- Press `Tab` to complete arguments for supported slash commands. For example, `/mcp lo` completes to `/mcp login`. (#62343)
+- Jump between task groups in the agent command center with `Shift+Up` and `Shift+Down`. (#62200)
+- Optional stdio MCP servers with cached tool lists now start on their first tool call by default. (#62366)
+- Set an approval reviewer for individual connected app tools in `config.toml`. (#62360)
+- App-server clients can select Amazon Bedrock Runtime during setup or sign-in. (#62222)
+
+## Bug Fixes
+
+- `codex exec resume` restores saved sandbox permissions, the working directory, and workspace roots unless explicitly overridden. (#62194)
+- Remote sessions preserve working directories, workspace roots, and writable paths when the client and server run on different operating systems. (#62375, #62376, #62377)
+- Codex reports provider errors as soon as they arrive in a response stream and identifies which API spend limit was reached. (#62329, #62356)
+- Interrupting a parent turn preserves queued replies from child agents for the next turn. (#62348)
+- Use `PageUp` and `PageDown` to read and submit answer choices that are taller than the terminal’s answer area. (#62209)
+- Cloud replies that finish after history loads now update in place, keeping the terminal transcript in order. (#62403)
+
+## Documentation
+
+- The bundled `openai-docs` skill now covers migration to GPT-6.2 Astra and Sol, including endpoint choices and tool-calling requirements. (#62447)
+
+## Chores
+
+- Code Mode now uses gRPC for all host connections. The `code_mode_host_grpc` setting is deprecated. (#62476)
+- Python formatting and SDK type generation now verify dependency hashes against the repository lockfile. (#62346)</description>
+      <guid isPermaLink="false">https://github.com/openai/codex/releases/tag/rust-v0.172.0</guid>
+      <pubDate>Tue, 24 Nov 2026 00:03:55 +0000</pubDate>
+    </item>
     <item>
       <title>0.171.0</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0</link>
