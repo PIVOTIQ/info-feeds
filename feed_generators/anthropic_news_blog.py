@@ -236,33 +236,31 @@ def parse_date(text):
     return None
 
 
+HEADINGS = ["h2", "h3", "h4"]
+
+
 def parse_news_html(html_content):
-    """Parse the news listing and return (articles, undated_titles).
+    """Parse the news listing and return (articles, problems).
 
     Each article is one <li> row of the listing: a heading inside a link, and a
     <time> that sits next to the link (not inside it). Model launches link
     outside /news/ (e.g. /claude-opus-5-5), so rows are not filtered by href.
-    Dates are never made up: rows whose <time> does not parse are returned in
-    undated_titles so the caller can fail loudly.
+    Dates are never made up: a row without a parseable <time>, or with more
+    than one article link, is returned in problems so the caller can fail loudly.
     """
     soup = BeautifulSoup(html_content, "html.parser")
     articles = []
-    undated_titles = []
+    problems = []
     seen_links = set()
 
     for row in soup.find_all("li"):
-        time_elem = row.find("time")
-        heading = row.find(["h2", "h3", "h4"])
-        if not time_elem or not heading:
+        heading_links = [a for a in row.find_all("a", href=True) if a.find(HEADINGS)]
+        if not heading_links:
             continue
 
-        article_hrefs = {
-            a["href"]
-            for a in row.find_all("a", href=True)
-            if a.find(["h2", "h3", "h4"])
-        }
+        article_hrefs = {a["href"] for a in heading_links}
         if len(article_hrefs) != 1:
-            logger.warning(f"Skipping row with {len(article_hrefs)} article links")
+            problems.append(f"row with {len(article_hrefs)} article links")
             continue
 
         link = urljoin(BLOG_URL, article_hrefs.pop())
@@ -270,11 +268,12 @@ def parse_news_html(html_content):
             continue
         seen_links.add(link)
 
-        title = heading.get_text(" ", strip=True)
-        date = parse_date(time_elem.get_text())
+        title = heading_links[0].find(HEADINGS).get_text(" ", strip=True)
+        time_elem = row.find("time")
+        date = parse_date(time_elem.get_text()) if time_elem else None
         if not date:
-            logger.error(f"Could not parse date {time_elem.get_text()!r}: {title}")
-            undated_titles.append(title)
+            date_text = time_elem.get_text() if time_elem else None
+            problems.append(f"no parseable date ({date_text!r}): {title}")
             continue
 
         category_link = next(
@@ -297,8 +296,10 @@ def parse_news_html(html_content):
             }
         )
 
-    logger.info(f"Parsed {len(articles)} dated articles, {len(undated_titles)} undated")
-    return articles, undated_titles
+    for problem in problems:
+        logger.error(f"Unreadable listing row: {problem}")
+    logger.info(f"Parsed {len(articles)} articles, {len(problems)} unreadable rows")
+    return articles, problems
 
 
 def generate_rss_feed(articles, feed_name="anthropic_news"):
@@ -396,13 +397,13 @@ def main(full_reset=False):
             logger.info("Running incremental update (2 clicks only)")
             html_content = fetch_news_content(max_clicks=2)
 
-        new_articles, undated_titles = parse_news_html(html_content)
+        new_articles, problems = parse_news_html(html_content)
 
         # Fail (exit 1) instead of publishing a feed with missing or made-up dates
-        if undated_titles:
+        if problems:
             logger.error(
-                f"{len(undated_titles)} article(s) without a parseable date; "
-                "the listing's date format may have changed. Feed not updated."
+                f"{len(problems)} listing row(s) could not be read; the listing's "
+                "structure or date format may have changed. Feed not updated."
             )
             return False
         if not new_articles:
