@@ -1,10 +1,12 @@
 import argparse
 import json
 import logging
+import sys
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from pathlib import Path
+from urllib.parse import urljoin
 
 import pytz
 import undetected_chromedriver as uc
@@ -221,208 +223,83 @@ def fetch_news_content(url=BLOG_URL, max_clicks=20):
             driver.quit()
 
 
-def extract_title(card):
-    """Extract title using multiple fallback selectors."""
-    selectors = [
-        # New FeaturedGrid layout
-        "h2[class*='featuredTitle']",
-        "h4[class*='title']",
-        # New PublicationList layout
-        "span[class*='title']",
-        # Legacy selectors
-        "h3.PostCard_post-heading__Ob1pu",
-        "h3.Card_headline__reaoT",
-        "h3[class*='headline']",
-        "h3[class*='heading']",
-        "h2[class*='headline']",
-        "h2[class*='heading']",
-        "h3",
-        "h2",
-    ]
-    for selector in selectors:
-        elem = card.select_one(selector)
-        if elem and elem.text.strip():
-            return elem.text.strip()
+DATE_FORMATS = ["%b %d, %Y", "%B %d, %Y"]
+
+
+def parse_date(text):
+    """Parse a listing date such as 'Nov 20, 2026'. Returns None if it does not parse."""
+    for date_format in DATE_FORMATS:
+        try:
+            return datetime.strptime(text.strip(), date_format).replace(tzinfo=pytz.UTC)
+        except ValueError:
+            continue
     return None
 
 
-def extract_date(card):
-    """Extract date using multiple fallback selectors and formats."""
-    selectors = [
-        # New layout selectors - time element is most reliable
-        "time[class*='date']",
-        "time",
-        # Legacy selectors
-        "p.detail-m",
-        "div.PostList_post-date__djrOA",
-        "p[class*='date']",
-        "div[class*='date']",
-    ]
-
-    date_formats = [
-        "%b %d, %Y",
-        "%B %d, %Y",
-        "%b %d %Y",
-        "%B %d %Y",
-        "%Y-%m-%d",
-        "%m/%d/%Y",
-    ]
-
-    for selector in selectors:
-        # Use select() to get all matching elements, not just the first one
-        elems = card.select(selector)
-        for elem in elems:
-            date_text = elem.text.strip()
-            # Try to parse it as a date
-            for date_format in date_formats:
-                try:
-                    date = datetime.strptime(date_text, date_format)
-                    return date.replace(tzinfo=pytz.UTC)
-                except ValueError:
-                    continue
-
-    return None
-
-
-def extract_category(card, date_elem_text=None):
-    """Extract category using multiple fallback selectors."""
-    selectors = [
-        # New layout selectors
-        "span[class*='subject']",  # PublicationList layout
-        "span.caption.bold",  # FeaturedGrid layout (category before date)
-        # Legacy selectors
-        "span.text-label",
-        "p.detail-m",
-        "span[class*='category']",
-        "div[class*='category']",
-    ]
-
-    for selector in selectors:
-        elem = card.select_one(selector)
-        if elem:
-            text = elem.text.strip()
-            # Skip if this is the date element
-            if date_elem_text and text == date_elem_text:
-                continue
-            # Skip if it looks like a date
-            if any(
-                month in text
-                for month in [
-                    "Jan",
-                    "Feb",
-                    "Mar",
-                    "Apr",
-                    "May",
-                    "Jun",
-                    "Jul",
-                    "Aug",
-                    "Sep",
-                    "Oct",
-                    "Nov",
-                    "Dec",
-                ]
-            ):
-                continue
-            return text
-
-    return "News"
-
-
-def validate_article(article):
-    """Validate that article has all required fields with reasonable values."""
-    if not article.get("title") or len(article["title"]) < 5:
-        logger.warning(f"Invalid title for article: {article.get('link', 'unknown')}")
-        return False
-
-    if not article.get("link") or not article["link"].startswith("http"):
-        logger.warning(f"Invalid link for article: {article.get('title', 'unknown')}")
-        return False
-
-    if not article.get("date"):
-        logger.warning(f"Missing date for article: {article.get('title', 'unknown')}")
-        return False
-
-    return True
+HEADINGS = ["h2", "h3", "h4"]
 
 
 def parse_news_html(html_content):
-    """Parse the news HTML content and extract article information."""
-    try:
-        soup = BeautifulSoup(html_content, "html.parser")
-        articles = []
-        seen_links = set()
-        unknown_structures = 0
+    """Parse the news listing and return (articles, problems).
 
-        # Find all links that point to news articles
-        # Use flexible selectors to catch current and future card types
-        # Handle both relative (/news/...) and absolute (https://www.anthropic.com/news/...) URLs
-        all_news_links = soup.select(
-            'a[href*="/news/"], a[href*="anthropic.com/news/"]'
+    Each article is one <li> row of the listing: a heading inside a link, and a
+    <time> that sits next to the link (not inside it). Model launches link
+    outside /news/ (e.g. /claude-opus-5-5), so rows are not filtered by href.
+    Dates are never made up: a row without a parseable <time>, or with more
+    than one article link, is returned in problems so the caller can fail loudly.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    articles = []
+    problems = []
+    seen_links = set()
+
+    for row in soup.find_all("li"):
+        heading_links = [a for a in row.find_all("a", href=True) if a.find(HEADINGS)]
+        if not heading_links:
+            continue
+
+        article_hrefs = {a["href"] for a in heading_links}
+        if len(article_hrefs) != 1:
+            problems.append(f"row with {len(article_hrefs)} article links")
+            continue
+
+        link = urljoin(BLOG_URL, article_hrefs.pop())
+        if link in seen_links:
+            continue
+        seen_links.add(link)
+
+        title = heading_links[0].find(HEADINGS).get_text(" ", strip=True)
+        time_elem = row.find("time")
+        date = parse_date(time_elem.get_text()) if time_elem else None
+        if not date:
+            date_text = time_elem.get_text() if time_elem else None
+            problems.append(f"no parseable date ({date_text!r}): {title}")
+            continue
+
+        category_link = next(
+            (
+                a
+                for a in row.find_all("a", href=True)
+                if urljoin(BLOG_URL, a["href"]) != link
+            ),
+            None,
         )
+        category = category_link.get_text(strip=True) if category_link else "News"
 
-        logger.info(f"Found {len(all_news_links)} potential news article links")
-
-        for card in all_news_links:
-            href = card.get("href", "")
-            if not href:
-                continue
-
-            # Build full URL
-            link = "https://www.anthropic.com" + href if href.startswith("/") else href
-
-            # Skip duplicates
-            if link in seen_links:
-                continue
-
-            # Skip the main news page link and anchor links
-            if link.endswith("/news") or link.endswith("/news/") or "/news#" in link:
-                continue
-
-            seen_links.add(link)
-
-            # Extract title using fallback chain
-            title = extract_title(card)
-            if not title:
-                logger.debug(f"Could not extract title for link: {link}")
-                logger.debug(f"Card HTML preview: {str(card)[:200]}")
-                unknown_structures += 1
-                continue
-
-            # Extract date using fallback chain
-            date = extract_date(card)
-            if not date:
-                logger.warning(f"Could not extract date for article: {title}")
-                date = stable_fallback_date(link)
-
-            # Extract category
-            category = extract_category(card)
-
-            # Create article object
-            article = {
+        articles.append(
+            {
                 "title": title,
                 "link": link,
                 "date": date,
                 "category": category,
-                "description": title,  # Using title as description fallback
+                "description": title,
             }
+        )
 
-            # Validate article before adding
-            if validate_article(article):
-                articles.append(article)
-            else:
-                unknown_structures += 1
-
-        if unknown_structures > 0:
-            logger.warning(
-                f"Encountered {unknown_structures} links with unknown or invalid structures"
-            )
-
-        logger.info(f"Successfully parsed {len(articles)} valid articles")
-        return articles
-
-    except Exception as e:
-        logger.error(f"Error parsing HTML content: {str(e)}")
-        raise
+    for problem in problems:
+        logger.error(f"Unreadable listing row: {problem}")
+    logger.info(f"Parsed {len(articles)} articles, {len(problems)} unreadable rows")
+    return articles, problems
 
 
 def generate_rss_feed(articles, feed_name="anthropic_news"):
@@ -516,17 +393,30 @@ def main(full_reset=False):
             mode = "full reset" if full_reset else "no cache exists"
             logger.info(f"Running full fetch ({mode})")
             html_content = fetch_news_content(max_clicks=20)
-            articles = parse_news_html(html_content)
         else:
             logger.info("Running incremental update (2 clicks only)")
             html_content = fetch_news_content(max_clicks=2)
-            new_articles = parse_news_html(html_content)
-            logger.info(f"Found {len(new_articles)} articles from recent pages")
-            articles = merge_articles(new_articles, cached_articles)
 
-        if not articles:
-            logger.warning("No articles found. Please check the HTML structure.")
+        new_articles, problems = parse_news_html(html_content)
+
+        # Fail (exit 1) instead of publishing a feed with missing or made-up dates
+        if problems:
+            logger.error(
+                f"{len(problems)} listing row(s) could not be read; the listing's "
+                "structure or date format may have changed. Feed not updated."
+            )
             return False
+        if not new_articles:
+            logger.error(
+                "No articles parsed from the listing; the HTML structure may "
+                "have changed. Feed not updated."
+            )
+            return False
+
+        if full_reset or not cached_articles:
+            articles = new_articles
+        else:
+            articles = merge_articles(new_articles, cached_articles)
 
         # Save to cache
         save_cache(articles)
@@ -551,4 +441,4 @@ if __name__ == "__main__":
         "--full", action="store_true", help="Force full reset (fetch all articles)"
     )
     args = parser.parse_args()
-    main(full_reset=args.full)
+    sys.exit(0 if main(full_reset=args.full) else 1)
