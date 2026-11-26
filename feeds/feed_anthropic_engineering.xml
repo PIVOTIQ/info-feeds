@@ -13,7 +13,7 @@
       <link>https://anthropic.com/engineering/feed_anthropic_engineering.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 13:24:40 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:44:08 +0000</lastBuildDate>
     <item>
       <title>Migrating our Messages API to Rust</title>
       <link>https://www.anthropic.com/research/migrating-api-to-rust</link>

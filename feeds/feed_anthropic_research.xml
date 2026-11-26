@@ -13,146 +13,198 @@
       <link>https://anthropic.com/research/feed_anthropic_research.xml</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 20:56:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:44:24 +0000</lastBuildDate>
     <item>
-      <title>What work can robots do?</title>
-      <link>https://www.anthropic.com/research/what-work-can-robots-do</link>
-      <description>What work can robots do?</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/what-work-can-robots-do</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Claude-shaped science</title>
-      <link>https://www.anthropic.com/research/claude-shaped-science</link>
-      <description>Claude-shaped science</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-shaped-science</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>The missing map of the sky</title>
-      <link>https://www.anthropic.com/research/the-missing-map-of-the-sky</link>
-      <description>The missing map of the sky</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/the-missing-map-of-the-sky</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Investigating unintended model actions in our evaluations and internal use</title>
-      <link>https://www.anthropic.com/research/investigating-unintended-model-actions</link>
-      <description>Investigating unintended model actions in our evaluations and internal use</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/investigating-unintended-model-actions</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Redesigning source control at Anthropic</title>
-      <link>https://www.anthropic.com/research/redesigning-source-control</link>
-      <description>Redesigning source control at Anthropic</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/redesigning-source-control</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Designing more efficient quantum circuits with Claude</title>
-      <link>https://www.anthropic.com/research/designing-efficient-quantum-circuits</link>
-      <description>Designing more efficient quantum circuits with Claude</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/designing-efficient-quantum-circuits</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>The AI expectations gap</title>
-      <link>https://www.anthropic.com/research/ai-expectations-gap</link>
-      <description>The AI expectations gap</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/ai-expectations-gap</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>How employment is changing at Anthropic</title>
-      <link>https://www.anthropic.com/research/employment-at-anthropic</link>
-      <description>How employment is changing at Anthropic</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/employment-at-anthropic</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Working at the frontier shapes expectations for the future</title>
-      <link>https://www.anthropic.com/research/expectations-for-the-future</link>
-      <description>Working at the frontier shapes expectations for the future</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/expectations-for-the-future</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>How Claude designed protein binders against scorpion neurotoxins</title>
-      <link>https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</link>
-      <description>How Claude designed protein binders against scorpion neurotoxins</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>An alignment assessment of the UK AISI cybertesting incident</title>
-      <link>https://www.anthropic.com/research/alignment-assessment-ukaisi</link>
-      <description>An alignment assessment of the UK AISI cybertesting incident</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/alignment-assessment-ukaisi</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Early progress on accelerating drug development with Claude</title>
-      <link>https://www.anthropic.com/research/early-progress-drug-development</link>
-      <description>Early progress on accelerating drug development with Claude</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/early-progress-drug-development</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Progress on provable inference for large language models</title>
-      <link>https://www.anthropic.com/research/provable-inference</link>
-      <description>Progress on provable inference for large language models</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/provable-inference</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>The components of agent memory</title>
-      <link>https://www.anthropic.com/research/components-of-agent-memory</link>
-      <description>The components of agent memory</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/components-of-agent-memory</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Teaching AI to build scientific models</title>
-      <link>https://www.anthropic.com/research/teaching-ai-to-build-scientific-models</link>
-      <description>Teaching AI to build scientific models</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/teaching-ai-to-build-scientific-models</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Testing Claude on real-world electronics design</title>
-      <link>https://www.anthropic.com/research/claude-electronics-design</link>
-      <description>Testing Claude on real-world electronics design</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/claude-electronics-design</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Building strong safety evaluations</title>
-      <link>https://www.anthropic.com/research/building-strong-safety-evaluations</link>
-      <description>Building strong safety evaluations</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/building-strong-safety-evaluations</guid>
-      <category>Research</category>
-    </item>
-    <item>
-      <title>Updating our coordinated vulnerability disclosure policy timelines</title>
-      <link>https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</link>
-      <description>Updating our coordinated vulnerability disclosure policy timelines</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</guid>
-      <category>Research</category>
+      <title>Migrating our Messages API to Rust</title>
+      <link>https://www.anthropic.com/research/migrating-api-to-rust</link>
+      <description>How we migrated our Messages API from Python to Rust.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/migrating-api-to-rust</guid>
+      <category>Engineering</category>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Working with AI</title>
       <link>https://www.anthropic.com/research/working-with-ai</link>
-      <description>Working with AI</description>
+      <description>We interviewed people at 58 companies that use Claude about how AI is changing their work. They described few layoffs but reduced hiring, and said the most valuable uses of AI often involved reorganizing roles and workplaces around it.</description>
       <guid isPermaLink="false">https://www.anthropic.com/research/working-with-ai</guid>
-      <category>Research</category>
+      <category>Economics</category>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Migrating our Messages API to Rust</title>
-      <link>https://www.anthropic.com/research/migrating-api-to-rust</link>
-      <description>Migrating our Messages API to Rust</description>
-      <guid isPermaLink="false">https://www.anthropic.com/research/migrating-api-to-rust</guid>
-      <category>Research</category>
+      <title>Claude solves two open problems in the physics of black holes</title>
+      <link>https://www.anthropic.com/research/claude-black-hole-physics</link>
+      <description>Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-black-hole-physics</guid>
+      <category>Science</category>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Updating our coordinated vulnerability disclosure policy timelines</title>
+      <link>https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</link>
+      <description>We’re shortening the disclosure window in our coordinated vulnerability disclosure (CVD) policy from 90 days to 30 days for high- and critical-severity issues, and to 45 days for all other issues.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines</guid>
+      <category>Frontier Red Team</category>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Building strong safety evaluations</title>
+      <link>https://www.anthropic.com/research/building-strong-safety-evaluations</link>
+      <description>Recommendations for designing, running, and reporting safety evaluations, based on our own experiences.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/building-strong-safety-evaluations</guid>
+      <category>Engineering</category>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Testing Claude on real-world electronics design</title>
+      <link>https://www.anthropic.com/research/claude-electronics-design</link>
+      <description>We asked Claude Fable 5.2 to design three electronic devices from short prompts: a speakerphone, a voice-assistant hub, and a handheld virtual pet. Diode Computers built working prototypes from its files.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-electronics-design</guid>
+      <category>Science</category>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The components of agent memory</title>
+      <link>https://www.anthropic.com/research/components-of-agent-memory</link>
+      <description>For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next. Here’s how “dreaming” helps it organize memory and correct mistakes.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/components-of-agent-memory</guid>
+      <category>Engineering</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Teaching AI to build scientific models</title>
+      <link>https://www.anthropic.com/research/teaching-ai-to-build-scientific-models</link>
+      <description>In this guest post, Jakob Macke, Daniel Gedon, and Stefan Wahl discuss how AI is starting to change the scientific modeling process, from construction to interpretation.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/teaching-ai-to-build-scientific-models</guid>
+      <category>Science</category>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI for scientific discovery: How researchers use Claude</title>
+      <link>https://www.anthropic.com/research/how-researchers-use-claude</link>
+      <description>We analyzed 207,000 research sessions to learn how Claude is used in science, why some tasks get more use than others, and how AI could speed up discovery.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/how-researchers-use-claude</guid>
+      <category>Economics</category>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Investigating vault particles with Claude</title>
+      <link>https://www.anthropic.com/research/investigating-vault-particles-with-claude</link>
+      <description>We’re sharing another finding from Anthropic’s biology research lab: the first 3D structure of a vault particle found in prokaryotic cells. Here, we describe how Claude helped at each step of this research.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/investigating-vault-particles-with-claude</guid>
+      <category>Science</category>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Progress on provable inference for large language models</title>
+      <link>https://www.anthropic.com/research/provable-inference</link>
+      <description>We have made progress on a type of cryptographic proof known as a “zkSNARK.” In this post, we share some of that progress, primarily through a system we call FlashProve.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/provable-inference</guid>
+      <category>Frontier Red Team</category>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How AI agents shape experts’ judgment calls</title>
+      <link>https://www.anthropic.com/research/agents-judgment-calls</link>
+      <description>As AI does more of the hands-on work, the hope is that experts still make the judgment calls, meaning the decisions with more than one defensible answer. We tested this with 50 professional analysts who did a statistical analysis with Claude Code. On each key decision, we randomly assigned which of two defensible options the agent would favor. Analysts mostly went with the agent’s side, and few named the agent as a reason afterward.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/agents-judgment-calls</guid>
+      <category>Alignment</category>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Early progress on accelerating drug development with Claude</title>
+      <link>https://www.anthropic.com/research/early-progress-drug-development</link>
+      <description>We're at the start of a major effort to speed up drug development with Claude. Over the past several months, our scientists have engaged in deep research partnerships with six organizations developing new medicines.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/early-progress-drug-development</guid>
+      <category>Science</category>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>An alignment assessment of the UK AISI cybertesting incident</title>
+      <link>https://www.anthropic.com/research/alignment-assessment-ukaisi</link>
+      <description>In a UK AISI evaluation, Mythos 5 took unsanctioned actions that impacted real people and organizations. In this post, we investigate these behaviors from Claude Mythos 5 further, to understand what they reveal about the model’s alignment.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/alignment-assessment-ukaisi</guid>
+      <category>Alignment</category>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Claude designed protein binders against scorpion neurotoxins</title>
+      <link>https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</link>
+      <description>We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-scorpion-toxin-binder-design</guid>
+      <category>Science</category>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Designing more efficient quantum circuits with Claude</title>
+      <link>https://www.anthropic.com/research/designing-efficient-quantum-circuits</link>
+      <description>We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/designing-efficient-quantum-circuits</guid>
+      <category>Science</category>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The AI expectations gap</title>
+      <link>https://www.anthropic.com/research/ai-expectations-gap</link>
+      <description>How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/ai-expectations-gap</guid>
+      <category>Economics</category>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How employment is changing at Anthropic</title>
+      <link>https://www.anthropic.com/research/employment-at-anthropic</link>
+      <description>How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor demand across the economy.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/employment-at-anthropic</guid>
+      <category>Economics</category>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Working at the frontier shapes expectations for the future</title>
+      <link>https://www.anthropic.com/research/expectations-for-the-future</link>
+      <description>We’re sharing two reports: the first covers how AI is changing employment inside Anthropic, and the second looks at the gap between how the public and Anthropic employees expect AI to affect work and the economy.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/expectations-for-the-future</guid>
+      <category>Economics</category>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Redesigning source control at Anthropic</title>
+      <link>https://www.anthropic.com/research/redesigning-source-control</link>
+      <description>As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/redesigning-source-control</guid>
+      <category>Engineering</category>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Investigating unintended model actions in our evaluations and internal use</title>
+      <link>https://www.anthropic.com/research/investigating-unintended-model-actions</link>
+      <description>This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/investigating-unintended-model-actions</guid>
+      <category>Alignment</category>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The missing map of the sky</title>
+      <link>https://www.anthropic.com/research/the-missing-map-of-the-sky</link>
+      <description>Brice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/the-missing-map-of-the-sky</guid>
+      <category>Science</category>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Claude-shaped science</title>
+      <link>https://www.anthropic.com/research/claude-shaped-science</link>
+      <description>Guest author Prof. Matthew Schwartz describes what happened when he stopped fighting Claude and allowed Claude to find “Claude-shaped” problems: ones best suited to the capabilities of the current generation of LLM tools. This led him to build BootLoops, a toolkit for exact calculations in quantitative science, which he has been applying across scientific fields alongside experts.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/claude-shaped-science</guid>
+      <category>Science</category>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What work can robots do?</title>
+      <link>https://www.anthropic.com/research/what-work-can-robots-do</link>
+      <description>We built an index of how well today’s robots can perform US job tasks. Robots can already do three-quarters of physical tasks, mostly in limited settings, but are cost-competitive for just 0.3% of them.</description>
+      <guid isPermaLink="false">https://www.anthropic.com/research/what-work-can-robots-do</guid>
+      <category>Economics</category>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
