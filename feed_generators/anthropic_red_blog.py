@@ -1,27 +1,19 @@
 import sys
 import requests
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import pytz
 from feedgen.feed import FeedGenerator
 import logging
 from pathlib import Path
-import re
 
-from utils import sort_posts_for_feed
+from utils import parse_anthropic_listing, sort_posts_for_feed
+
+# red.anthropic.com now redirects (301) to this team page on anthropic.com
+BLOG_URL = "https://www.anthropic.com/research/team/frontier-red-team"
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_project_root():
@@ -36,7 +28,7 @@ def ensure_feeds_directory():
     return feeds_dir
 
 
-def fetch_red_content(url="https://red.anthropic.com/"):
+def fetch_red_content(url=BLOG_URL):
     """Fetch content from Anthropic's red team blog."""
     try:
         headers = {
@@ -50,152 +42,17 @@ def fetch_red_content(url="https://red.anthropic.com/"):
         raise
 
 
-def parse_date(date_text):
-    """Parse date text from article pages (e.g., 'November 12, 2025', 'September 29, 2025')."""
-    date_formats = [
-        "%B %d, %Y",  # November 12, 2025
-        "%b %d, %Y",  # Nov 12, 2025
-        "%B %Y",  # November 2025 (fallback)
-        "%b %Y",  # Nov 2025 (fallback)
-    ]
-
-    for date_format in date_formats:
-        try:
-            date = datetime.strptime(date_text, date_format)
-            return date.replace(tzinfo=pytz.UTC)
-        except ValueError:
-            continue
-
-    logger.warning(f"Could not parse date: {date_text}")
-    return None
-
-
-def fetch_article_date(article_url):
-    """Fetch the publication date from an individual article page."""
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-        }
-        response = requests.get(article_url, headers=headers, timeout=10)
-        response.raise_for_status()
-
-        soup = BeautifulSoup(response.text, "html.parser")
-
-        # Look for date in d-article section
-        article_section = soup.select_one("d-article")
-        if article_section:
-            # The date is typically in the first <p> tag
-            first_p = article_section.select_one("p")
-            if first_p:
-                date_text = first_p.text.strip()
-                date = parse_date(date_text)
-                if date:
-                    logger.debug(f"Found date '{date_text}' for {article_url}")
-                    return date
-
-        logger.warning(f"Could not find date in article: {article_url}")
-        return None
-
-    except Exception as e:
-        logger.warning(f"Error fetching article date from {article_url}: {str(e)}")
-        return None
-
-
 def parse_red_html(html_content):
-    """Parse the red team blog HTML content and extract article information."""
-    try:
-        soup = BeautifulSoup(html_content, "html.parser")
-        articles = []
-        seen_links = set()
+    """Parse the Frontier Red Team listing and return (articles, problems).
 
-        # Find the table of contents container
-        toc = soup.select_one("div.toc")
-        if not toc:
-            logger.error("Could not find table of contents container")
-            return articles
-
-        current_date = None
-
-        # Iterate through all children to process dates and articles in order
-        for elem in toc.children:
-            # Skip text nodes and non-tag elements
-            if not hasattr(elem, "name"):
-                continue
-
-            # Check if this is a date divider
-            if elem.name == "div" and "date" in elem.get("class", []):
-                date_text = elem.text.strip()
-                current_date = parse_date(date_text)
-                logger.debug(f"Found date section: {date_text}")
-                continue
-
-            # Check if this is an article link or a div containing an article link
-            article_link = None
-            if elem.name == "a" and "note" in elem.get("class", []):
-                article_link = elem
-            elif elem.name == "div":
-                # Some articles are wrapped in divs (e.g., for scheduled releases)
-                article_link = elem.select_one("a.note")
-
-            if not article_link:
-                continue
-
-            # Extract article information
-            href = article_link.get("href", "")
-            if not href:
-                continue
-
-            # Build full URL
-            if href.startswith("http"):
-                link = href
-            elif href.startswith("/"):
-                link = f"https://red.anthropic.com{href}"
-            else:
-                link = f"https://red.anthropic.com/{href}"
-
-            # Skip duplicates
-            if link in seen_links:
-                continue
-            seen_links.add(link)
-
-            # Extract title
-            title_elem = article_link.select_one("h3")
-            if not title_elem:
-                logger.warning(f"Could not extract title for link: {link}")
-                continue
-            title = title_elem.text.strip()
-
-            # Extract description
-            description_elem = article_link.select_one("div.description")
-            description = description_elem.text.strip() if description_elem else title
-
-            # Fetch actual publication date from the article page
-            article_date = fetch_article_date(link)
-
-            # Fallback to current date from main page if fetching fails
-            if not article_date:
-                article_date = (
-                    current_date if current_date else stable_fallback_date(link)
-                )
-                logger.warning(f"Using fallback date for article: {title}")
-
-            # Create article object
-            article = {
-                "title": title,
-                "link": link,
-                "date": article_date,
-                "description": description,
-            }
-
-            articles.append(article)
-            logger.debug(f"Found article: {title} (date: {article_date})")
-
-        logger.info(f"Successfully parsed {len(articles)} articles")
-        return articles
-
-    except Exception as e:
-        logger.error(f"Error parsing HTML content: {str(e)}")
-        raise
+    The page uses the shared anthropic.com listing (one <article> row per post, the
+    date in a <time> next to the link). Rows without a readable date go to problems.
+    """
+    articles, problems = parse_anthropic_listing(html_content, BLOG_URL)
+    for problem in problems:
+        logger.error(f"Unreadable listing row: {problem}")
+    logger.info(f"Parsed {len(articles)} articles, {len(problems)} unreadable rows")
+    return articles, problems
 
 
 def generate_rss_feed(articles, feed_name="anthropic_red"):
@@ -264,10 +121,20 @@ def main(feed_name="anthropic_red"):
         html_content = fetch_red_content()
 
         # Parse articles from HTML
-        articles = parse_red_html(html_content)
+        articles, problems = parse_red_html(html_content)
 
+        # Fail (exit 1) instead of publishing a feed with missing or made-up dates
+        if problems:
+            logger.error(
+                f"{len(problems)} listing row(s) could not be read; the listing's "
+                "structure or date format may have changed. Feed not updated."
+            )
+            return False
         if not articles:
-            logger.warning("No articles found")
+            logger.error(
+                "No articles parsed from the listing; the HTML structure may "
+                "have changed. Feed not updated."
+            )
             return False
 
         # Generate RSS feed
