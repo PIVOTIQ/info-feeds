@@ -70,6 +70,7 @@ def generate_blogsurgeai_feed():
         return False
 
     # Process each blog post
+    added = 0
     for item in blog_items:
         try:
             # Find the title
@@ -127,10 +128,15 @@ def generate_blogsurgeai_feed():
             fe.description(description)
 
             logger.info(f"Added: {title}")
+            added += 1
 
         except Exception as e:
             logger.error(f"Error processing blog item: {e}")
             continue
+
+    if added == 0:
+        logger.error("No blog post could be read; the page structure may have changed")
+        return False
 
     # Generate RSS feed
     output_path = "feeds/feed_blogsurgeai.xml"
