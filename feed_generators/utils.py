@@ -95,18 +95,17 @@ def parse_anthropic_listing(html_content: str, base_url: str) -> tuple[list[dict
 
     for row in soup.find_all("article"):
         heading_links = [
-            a for heading in row.find_all(ANTHROPIC_LISTING_HEADINGS) for a in heading.find_all("a", href=True)
+            a
+            for heading in row.find_all(ANTHROPIC_LISTING_HEADINGS)
+            for a in heading.find_all("a", href=True)
+            if a["href"].strip()
         ]
-        hrefs = {a["href"] for a in heading_links}
-        if len(hrefs) != 1:
-            problems.append(f"row with {len(hrefs)} article links")
+        links = {urljoin(base_url, a["href"].strip()) for a in heading_links}
+        if len(links) != 1:
+            problems.append(f"row with {len(links)} article links")
             continue
 
-        link = urljoin(base_url, hrefs.pop())
-        if link in seen_links:
-            continue
-        seen_links.add(link)
-
+        link = links.pop()
         title = heading_links[0].get_text(" ", strip=True)
         time_elem = row.find("time")
         date_text = time_elem.get_text(strip=True) if time_elem else None
@@ -121,9 +120,15 @@ def parse_anthropic_listing(html_content: str, base_url: str) -> tuple[list[dict
             problems.append(f"no parseable date ({date_text!r}): {title}")
             continue
 
-        category_link = next(
-            (a for a in row.find_all("a", href=True) if urljoin(base_url, a["href"]) != link),
-            None,
+        if link in seen_links:
+            continue
+        seen_links.add(link)
+
+        header = row.find("header")
+        category_link = (
+            next((a for a in header.find_all("a", href=True) if urljoin(base_url, a["href"]) != link), None)
+            if header
+            else None
         )
         summary = heading_links[0].find_parent(ANTHROPIC_LISTING_HEADINGS).find_next_sibling("p")
         articles.append(

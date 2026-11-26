@@ -58,7 +58,7 @@ def fetch_research_content_selenium(url=BLOG_URL):
             from selenium.webdriver.support import expected_conditions as EC
 
             # Wait for research articles to be present
-            WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='/research/']")))
+            WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "article time")))
             logger.info("Research articles loaded successfully")
         except:
             logger.warning("Could not confirm articles loaded, proceeding anyway...")
