@@ -1,27 +1,20 @@
 import sys
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 from feedgen.feed import FeedGenerator
 import logging
 from pathlib import Path
 import re
 
-from utils import sort_posts_for_feed
+from utils import sort_posts_for_feed, missing_date
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_project_root():
@@ -175,7 +168,7 @@ def parse_red_html(html_content):
             # Fallback to current date from main page if fetching fails
             if not article_date:
                 article_date = (
-                    current_date if current_date else stable_fallback_date(link)
+                    current_date if current_date else missing_date(link)
                 )
                 logger.warning(f"Using fallback date for article: {title}")
 

@@ -1,26 +1,19 @@
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 from feedgen.feed import FeedGenerator
 import logging
 from pathlib import Path
 
-from utils import sort_posts_for_feed
+from utils import sort_posts_for_feed, missing_date, MissingDateError
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_project_root():
@@ -176,7 +169,7 @@ def extract_articles(soup):
             # Fallback: use stable date if we couldn't extract one
             if not date:
                 logger.warning(f"Could not extract date for article: {title}")
-                date = stable_fallback_date(link)
+                date = missing_date(link)
 
             # Extract category (tags like "grok", etc.)
             category = "News"
@@ -216,6 +209,8 @@ def extract_articles(soup):
             articles.append(article)
             logger.debug(f"Extracted article: {title} ({date})")
 
+        except MissingDateError:
+            raise
         except Exception as e:
             logger.warning(f"Error parsing article container: {str(e)}")
             continue

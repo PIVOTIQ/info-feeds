@@ -1,25 +1,20 @@
 import sys
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 from feedgen.feed import FeedGenerator
 import time
 import logging
 from pathlib import Path
 
+from utils import missing_date, MissingDateError
+
 # Set up logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def setup_selenium_driver():
@@ -86,9 +81,9 @@ def parse_openai_news_html(html_content):
                     date = date.replace(tzinfo=pytz.UTC)
                 except Exception:
                     logger.warning(f"Date parsing failed for article: {title}")
-                    date = stable_fallback_date(link)
+                    date = missing_date(link)
             else:
-                date = stable_fallback_date(link)
+                date = missing_date(link)
 
             articles.append(
                 {
@@ -99,6 +94,8 @@ def parse_openai_news_html(html_content):
                     "description": title,
                 }
             )
+        except MissingDateError:
+            raise
         except Exception as e:
             logger.warning(f"Skipping an article due to parsing error: {e}")
             continue

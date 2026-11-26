@@ -4,7 +4,7 @@ import logging
 import sys
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -16,7 +16,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from utils import sort_posts_for_feed
+from utils import sort_posts_for_feed, missing_date
 
 FEED_NAME = "anthropic_news"
 BLOG_URL = "https://www.anthropic.com/news"
@@ -26,17 +26,6 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash.
-
-    This prevents RSS readers from seeing entries as 'new' when date
-    extraction fails intermittently.
-    """
-    hash_val = abs(hash(identifier)) % 730  # ~2 years of days
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_project_root():
@@ -99,7 +88,7 @@ def deserialize_articles(articles):
             try:
                 article_copy["date"] = datetime.fromisoformat(article_copy["date"])
             except ValueError:
-                article_copy["date"] = stable_fallback_date(
+                article_copy["date"] = missing_date(
                     article_copy.get("link", "")
                 )
         result.append(article_copy)
