@@ -12,7 +12,6 @@
 | [Anthropic Research](https://www.anthropic.com/research)                                  | [feed_anthropic_research.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_anthropic_research.xml)                           |
 | [Chander Ramesh's Writing](https://chanderramesh.com/writing)                             | [feed_chanderramesh.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_chanderramesh.xml)                                     |
 | [CISA Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | [feed_cisa_kev.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_cisa_kev.xml) |
-| [Claude Blog](https://claude.com/blog)                                                    | [feed_claude.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_claude.xml)                                                   |
 | [Claude Code Changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) | [feed_anthropic_changelog_claude_code.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml) |
 | [Cursor Blog](https://cursor.com/blog)                                                    | [feed_cursor.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_cursor.xml)                                                   |
 | [Dagster Blog](https://dagster.io/blog)                                                   | [feed_dagster.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_dagster.xml)                                                 |
@@ -21,10 +20,8 @@
 | [Hamel Husain's Blog](https://hamel.dev/)                                                 | [feed_hamel.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_hamel.xml)                                                     |
 | [JPCERT/CC 注意喚起](https://www.jpcert.or.jp/at/) | [feed_jpcert_alerts.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_jpcert_alerts.xml) |
 | [NRI (野村総合研究所) レポート](https://www.nri.com/jp/knowledge/report)                  | [feed_nri_report.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_nri_report.xml)                                           |
-| [Ollama Blog](https://ollama.com/blog)                                                    | [feed_ollama.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_ollama.xml)                                                   |
 | [OpenAI Codex Changelog](https://developers.openai.com/codex/changelog/)                  | [feed_openai_codex_changelog.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_openai_codex_changelog.xml)                   |
 | [OpenAI Codex Tags (stable releases)](https://github.com/openai/codex/tags)               | [feed_openai_codex_tags.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_openai_codex_tags.xml)                             |
-| [OpenAI Research](https://openai.com/news/research/)                                      | [feed_openai_research.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_openai_research.xml)                                 |
 | [Paul Graham's Articles](https://www.paulgraham.com/articles.html)                        | [feed_paulgraham.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_paulgraham.xml)                                           |
 | [PwC Japan 調査／レポート](https://www.pwc.com/jp/ja/knowledge/thoughtleadership.html)    | [feed_pwc_japan.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_pwc_japan.xml)                                             |
 | [Surge AI Blog](https://www.surgehq.ai/blog)                                              | [feed_blogsurgeai.xml](https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_blogsurgeai.xml)                                         |
@@ -64,7 +61,7 @@ You know that blog you like that doesn't have an RSS feed and might never will?
 - Use the **raw** link for your RSS reader. Example:
 
   ```text
-    https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_ollama.xml
+    https://raw.githubusercontent.com/PIVOTIQ/info-feeds/main/feeds/feed_paulgraham.xml
   ```
 
 - Use your RSS reader of choice to subscribe to the feed (e.g., [Blogtrottr](https://blogtrottr.com/)).

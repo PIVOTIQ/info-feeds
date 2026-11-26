@@ -58,20 +58,6 @@ feeds_google_ai: ## Generate RSS feed for Google AI Blog
 	$(Q)python feed_generators/google_ai_blog.py
 	$(call print_success,Google AI feed generated)
 
-.PHONY: feeds_openai_research
-feeds_openai_research: ## Generate RSS feed for OpenAI Research
-	$(call check_venv)
-	$(call print_info,Generating OpenAI Research feed)
-	$(Q)python feed_generators/openai_research_blog.py
-	$(call print_success,OpenAI Research feed generated)
-
-.PHONY: feeds_ollama
-feeds_ollama: ## Generate RSS feed for Ollama Blog
-	$(call check_venv)
-	$(call print_info,Generating Ollama Blog feed)
-	$(Q)python feed_generators/ollama_blog.py
-	$(call print_success,Ollama Blog feed generated)
-
 .PHONY: feeds_paulgraham
 feeds_paulgraham: ## Generate RSS feed for Paul Graham's articles
 	$(call check_venv)
@@ -99,20 +85,6 @@ feeds_chanderramesh: ## Generate RSS feed for Chander Ramesh's writing
 	$(call print_info,Generating Chander Ramesh feed)
 	$(Q)python feed_generators/chanderramesh_blog.py
 	$(call print_success,Chander Ramesh feed generated)
-
-.PHONY: feeds_claude
-feeds_claude: ## Generate RSS feed for Claude Blog (incremental)
-	$(call check_venv)
-	$(call print_info,Generating Claude Blog feed)
-	$(Q)python feed_generators/claude_blog.py
-	$(call print_success,Claude Blog feed generated)
-
-.PHONY: feeds_claude_full
-feeds_claude_full: ## Generate RSS feed for Claude Blog (full reset)
-	$(call check_venv)
-	$(call print_info,Generating Claude Blog feed - FULL RESET)
-	$(Q)python feed_generators/claude_blog.py --full
-	$(call print_success,Claude Blog feed generated - full reset)
 
 .PHONY: feeds_thinkingmachines
 feeds_thinkingmachines: ## Generate RSS feed for Thinking Machines Lab blog
