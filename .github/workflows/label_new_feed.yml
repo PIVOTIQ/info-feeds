@@ -11,8 +11,10 @@ jobs:
     steps:
       - name: Check PR title
         id: check_title
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
         run: |
-          if echo '${{ github.event.pull_request.title }}' | grep -q '\[New RSS Feed\]'; then
+          if printf '%s' "$PR_TITLE" | grep -q '\[New RSS Feed\]'; then
             echo "has_tag=true" >> $GITHUB_OUTPUT
           else
             echo "has_tag=false" >> $GITHUB_OUTPUT
