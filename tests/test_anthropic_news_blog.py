@@ -10,7 +10,7 @@ from pathlib import Path
 
 import anthropic_news_blog
 
-LISTING = (Path(__file__).parent / "fixtures" / "anthropic_news.html").read_text()
+LISTING = (Path(__file__).parent / "fixtures" / "anthropic_news.html").read_text(encoding="utf-8")
 
 
 def test_newest_article_has_its_publish_date():
