@@ -259,7 +259,8 @@ Before submitting your PR, verify:
 
 **Date parsing errors**
 - Add the date format to the `date_formats` list
-- Use `stable_fallback_date()` for entries without parseable dates
+- If the date moved (for example, out of the post's link into a sibling element), read it from the post's container instead
+- Do not fall back to a made-up date (see [Failures and Dates](#failures-and-dates-important))
 
 ## GitHub Actions
 

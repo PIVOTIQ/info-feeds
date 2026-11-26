@@ -2,26 +2,19 @@ import sys
 import os
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 from feedgen.feed import FeedGenerator
 import logging
 from pathlib import Path
 
-from utils import sort_posts_for_feed
+from utils import sort_posts_for_feed, missing_date
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_project_root():
@@ -97,7 +90,7 @@ def parse_writing_page(html_content, base_url="https://chanderramesh.com"):
             # Parse date
             pub_date = (
                 parse_date(date_str) if date_str else None
-            ) or stable_fallback_date(full_url)
+            ) or missing_date(full_url)
 
             blog_post = {
                 "title": title,

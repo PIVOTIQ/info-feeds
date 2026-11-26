@@ -10,21 +10,16 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
-from datetime import datetime, timedelta
+from datetime import datetime
 from dateutil import parser
 import pytz
+
+from utils import missing_date, MissingDateError
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def generate_blogsurgeai_feed():
@@ -115,7 +110,7 @@ def generate_blogsurgeai_feed():
 
             # Use stable fallback if no date was parsed
             if pub_date is None:
-                pub_date = stable_fallback_date(link)
+                pub_date = missing_date(link)
 
             # Create feed entry
             fe = fg.add_entry()
@@ -130,6 +125,8 @@ def generate_blogsurgeai_feed():
             logger.info(f"Added: {title}")
             added += 1
 
+        except MissingDateError:
+            raise
         except Exception as e:
             logger.error(f"Error processing blog item: {e}")
             continue
