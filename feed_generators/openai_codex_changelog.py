@@ -1,3 +1,4 @@
+import sys
 import logging
 from datetime import datetime
 from pathlib import Path
@@ -167,4 +168,4 @@ def main(feed_name=FEED_NAME):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

@@ -1,3 +1,4 @@
+import sys
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -147,4 +148,4 @@ def main(blog_url="https://ollama.com/blog", feed_name="ollama"):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

@@ -1,3 +1,4 @@
+import sys
 import requests
 from datetime import datetime
 import pytz
@@ -163,4 +164,4 @@ def main(feed_name="windsurf_blog"):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

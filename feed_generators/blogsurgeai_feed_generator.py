@@ -4,12 +4,20 @@ RSS Feed Generator for Surge AI Blog
 Scrapes https://www.surgehq.ai/blog and generates an RSS feed
 """
 
+import sys
+import logging
+
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 from datetime import datetime, timedelta
 from dateutil import parser
 import pytz
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
 
 
 def stable_fallback_date(identifier):
@@ -47,8 +55,8 @@ def generate_blogsurgeai_feed():
         response = requests.get(url, headers=headers, timeout=30)
         response.raise_for_status()
     except Exception as e:
-        print(f"Error fetching blog page: {e}")
-        return
+        logger.error(f"Error fetching blog page: {e}")
+        return False
 
     # Parse HTML
     soup = BeautifulSoup(response.content, "html.parser")
@@ -56,7 +64,10 @@ def generate_blogsurgeai_feed():
     # Find all blog post items
     blog_items = soup.find_all("div", class_="blog-hero-cms-item")
 
-    print(f"Found {len(blog_items)} blog posts")
+    logger.info(f"Found {len(blog_items)} blog posts")
+    if not blog_items:
+        logger.error("No blog posts found; the page structure may have changed")
+        return False
 
     # Process each blog post
     for item in blog_items:
@@ -99,7 +110,7 @@ def generate_blogsurgeai_feed():
                                 pub_date = pytz.UTC.localize(pub_date)
                             break
                         except Exception as e:
-                            print(f"Could not parse date '{date_str}': {e}")
+                            logger.warning(f"Could not parse date '{date_str}': {e}")
 
             # Use stable fallback if no date was parsed
             if pub_date is None:
@@ -115,17 +126,18 @@ def generate_blogsurgeai_feed():
             # Set description
             fe.description(description)
 
-            print(f"Added: {title}")
+            logger.info(f"Added: {title}")
 
         except Exception as e:
-            print(f"Error processing blog item: {e}")
+            logger.error(f"Error processing blog item: {e}")
             continue
 
     # Generate RSS feed
     output_path = "feeds/feed_blogsurgeai.xml"
     fg.rss_file(output_path, pretty=True)
-    print(f"\nRSS feed generated successfully: {output_path}")
+    logger.info(f"RSS feed generated successfully: {output_path}")
+    return True
 
 
 if __name__ == "__main__":
-    generate_blogsurgeai_feed()
+    sys.exit(0 if generate_blogsurgeai_feed() else 1)

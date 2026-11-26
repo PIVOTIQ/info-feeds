@@ -1,3 +1,4 @@
+import sys
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -241,4 +242,4 @@ def main(blog_url="https://paulgraham.com/articles.html", feed_name="paulgraham"
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)
