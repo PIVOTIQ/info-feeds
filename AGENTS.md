@@ -34,7 +34,7 @@ source .venv/bin/activate # Activate virtual environment
 
 # Generate feeds
 make feeds_generate_all   # Run all feed generators
-make feeds_<name>         # Run specific feed (e.g., feeds_ollama, feeds_anthropic_news)
+make feeds_<name>         # Run specific feed (e.g., feeds_paulgraham, feeds_anthropic_news)
 
 # Development
 make dev_format           # Format code with black and isort
