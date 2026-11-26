@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==9.2.0
+ruff==0.17.6
+# undetected-chromedriver imports distutils, which Python 3.12+ no longer ships
+setuptools==84.2.1
