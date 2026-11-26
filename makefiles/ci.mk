@@ -3,10 +3,10 @@
 ##########################
 
 .PHONY: ci_test_workflow_local
-ci_test_workflow_local: ## Run the test_feed.yml workflow locally using act
+ci_test_workflow_local: ## Run the ci.yml workflow (lint and tests) locally using act
 	$(call check_command,act)
-	$(call print_info_section,Running test_feed workflow locally)
-	$(Q)act --container-architecture linux/amd64 -W .github/workflows/test_feed.yml
+	$(call print_info_section,Running ci workflow locally)
+	$(Q)act --container-architecture linux/amd64 -W .github/workflows/ci.yml
 	$(call print_success,Workflow completed)
 
 .PHONY: ci_run_feeds_workflow_local

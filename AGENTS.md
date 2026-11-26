@@ -37,6 +37,8 @@ make feeds_<name>         # Run specific feed (e.g., feeds_ollama, feeds_anthrop
 
 # Development
 make dev_format           # Format code with black and isort
+make dev_lint             # Lint with ruff (errors only, see pyproject.toml)
+make dev_test             # Run the tests in tests/ with pytest
 make dev_test_feed        # Run test feed generator
 
 # Run single generator directly
@@ -56,6 +58,7 @@ feed_generators/           # Python scripts that scrape blogs and generate RSS
   <source>_blog.py         # Individual feed generators
 feeds/                     # Output directory for feed_*.xml files
 cache/                     # JSON cache for paginated/dynamic feeds
+tests/                     # pytest tests; fixtures/ holds saved copies of real pages
 makefiles/                 # Modular Makefile includes (feeds.mk, env.mk, dev.mk, ci.mk)
 ```
 
@@ -207,6 +210,8 @@ python feed_generators/<source>_blog.py --full
 - [ ] Posts have titles, dates, and links
 - [ ] Dates are in correct order (newest first)
 
+**Add a test** in `tests/test_<source>.py`: save the real page to `tests/fixtures/<source>.html` and check the newest post's date against the post's own page. Do not put tests under `feed_generators/`: `run_all_feeds.py` runs every `.py` file there.
+
 ### Step 5: Register the Feed
 
 1. **Add Make target** in `makefiles/feeds.mk`:
@@ -264,4 +269,4 @@ Before submitting your PR, verify:
 ## GitHub Actions
 
 - `run_feeds.yml` - Runs hourly, executes `run_all_feeds.py`, commits updated XML files
-- `test_feed.yml` - Tests feed generation on PRs
+- `ci.yml` - Runs `ruff check` and `pytest` on every PR

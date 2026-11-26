@@ -16,7 +16,7 @@ env_source: ## Source the env; must be executed like: $$(make env_source)
 env_install: ## Install dependencies using uv
 	$(call print_info_section,Installing dependencies)
 	$(Q)uv venv
-	$(Q)uv pip install -r requirements.txt
+	$(Q)uv pip install -r requirements-dev.txt
 	$(call print_success,Dependencies installed)
 
 .PHONY: clean_env
