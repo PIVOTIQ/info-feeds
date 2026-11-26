@@ -43,7 +43,7 @@ make dev_test             # Run the tests in tests/ with pytest
 make dev_test_feed        # Run test feed generator
 
 # Run single generator directly
-python feed_generators/ollama_blog.py
+python feed_generators/paulgraham_blog.py
 
 # CI/CD
 make ci_trigger_feeds_workflow    # Trigger GitHub Action manually
@@ -71,7 +71,7 @@ Three patterns exist based on how the target site loads content:
 
 For blogs where all content loads on first request.
 
-**Examples**: `ollama_blog.py`, `paulgraham_blog.py`, `hamel_blog.py`
+**Examples**: `paulgraham_blog.py`, `hamel_blog.py`
 
 **Key functions**:
 - `fetch_blog_content(url)` - HTTP request with User-Agent header
@@ -101,7 +101,7 @@ For blogs with "Load More" or pagination that uses URL query params (`?page=2`).
 
 For JS-heavy sites where content loads dynamically via JavaScript button clicks.
 
-**Examples**: `anthropic_news_blog.py` (reference implementation), `anthropic_research_blog.py`, `openai_research_blog.py`
+**Examples**: `anthropic_news_blog.py` (reference implementation), `anthropic_research_blog.py`
 
 **Key functions**:
 - `setup_selenium_driver()` - Headless Chrome with `undetected-chromedriver`
@@ -124,7 +124,7 @@ For JS-heavy sites where content loads dynamically via JavaScript button clicks.
 
 | Site Behavior | Pattern | Example | Cache? |
 |--------------|---------|---------|--------|
-| All posts on single page | Simple Static | `ollama_blog.py` | No |
+| All posts on single page | Simple Static | `paulgraham_blog.py` | No |
 | URL-based pagination (`?page=2`) | Pagination + Caching | `dagster_blog.py` | Yes |
 | JS button loads more content | Selenium + Click | `anthropic_news_blog.py` | Yes |
 
