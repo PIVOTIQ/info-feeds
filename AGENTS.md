@@ -273,7 +273,7 @@ Before submitting your PR, verify:
 **Date parsing errors**
 - Add the date format to the `date_formats` list
 - If the date moved (for example, out of the post's link into a sibling element), read it from the post's container instead
-- Do not fall back to a made-up date (see [Failures and Dates](#failures-and-dates-important))
+- Do not fall back to a made-up date: a post without a readable date makes the generator fail
 
 ## GitHub Actions
 
