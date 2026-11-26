@@ -263,4 +263,4 @@ if __name__ == "__main__":
     import sys
 
     html_file = sys.argv[1] if len(sys.argv) > 1 else None
-    main(html_file=html_file)
+    sys.exit(0 if main(html_file=html_file) else 1)

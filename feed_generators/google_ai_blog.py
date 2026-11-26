@@ -1,3 +1,4 @@
+import sys
 import logging
 from datetime import datetime
 from pathlib import Path
@@ -202,13 +203,14 @@ def main():
         posts = parse_blog_posts(html_content)
 
         if not posts:
-            logger.warning("No posts found to add to the feed")
-            return
+            logger.error("No posts found to add to the feed")
+            return False
 
         # Create RSS feed
         feeds_dir = ensure_feeds_directory()
         output_file = feeds_dir / "feed_google_ai.xml"
         create_rss_feed(posts, str(output_file))
+        return True
 
         logger.info("RSS feed generation completed successfully!")
 
@@ -218,4 +220,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

@@ -1,3 +1,4 @@
+import sys
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
@@ -184,4 +185,4 @@ def main(feed_name="anthropic"):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

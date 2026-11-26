@@ -1,3 +1,4 @@
+import sys
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -331,4 +332,4 @@ def main(feed_name="anthropic_research"):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

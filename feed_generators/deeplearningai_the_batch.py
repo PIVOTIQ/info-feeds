@@ -1,3 +1,4 @@
+import sys
 import argparse
 import json
 import logging
@@ -429,4 +430,4 @@ if __name__ == "__main__":
         "--full", action="store_true", help="Force full reset (fetch all pages)"
     )
     args = parser.parse_args()
-    main(full_reset=args.full)
+    sys.exit(0 if main(full_reset=args.full) else 1)

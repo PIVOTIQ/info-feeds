@@ -1,3 +1,4 @@
+import sys
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -144,12 +145,15 @@ def main():
         html_content = fetch_news_content_selenium(url)
         articles = parse_openai_news_html(html_content)
         if not articles:
-            logger.warning("No articles were parsed. Check your selectors.")
+            logger.error("No articles were parsed. Check your selectors.")
+            return False
         feed = generate_rss_feed(articles)
         save_rss_feed(feed)
+        return True
     except Exception as e:
         logger.error(f"Failed to generate RSS feed: {e}")
+        return False
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

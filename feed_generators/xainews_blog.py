@@ -351,4 +351,4 @@ if __name__ == "__main__":
                 logger.info(f"Found local HTML file: {html_file}")
                 break
 
-    main(html_file=html_file)
+    sys.exit(0 if main(html_file=html_file) else 1)

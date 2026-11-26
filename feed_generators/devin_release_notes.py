@@ -1,3 +1,4 @@
+import sys
 import re
 import time
 import logging
@@ -413,4 +414,4 @@ def main(feed_name="devin_release_notes"):
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)
