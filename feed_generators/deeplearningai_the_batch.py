@@ -3,7 +3,7 @@ import argparse
 import json
 import logging
 import re
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 import pytz
@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 from feedgen.feed import FeedGenerator
-from utils import (get_cache_dir, get_feeds_dir, setup_feed_links,
+from utils import (get_cache_dir, get_feeds_dir, missing_date, setup_feed_links,
                    sort_posts_for_feed)
 
 logging.basicConfig(
@@ -22,13 +22,6 @@ logger = logging.getLogger(__name__)
 FEED_NAME = "the_batch"
 BLOG_URL = "https://www.deeplearning.ai/the-batch/"
 MAX_PAGES = 30  # Safety limit for pagination
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730  # ~2 years of days
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_cache_file():
@@ -78,7 +71,7 @@ def deserialize_articles(articles):
                     article_copy["published"]
                 )
             except ValueError:
-                article_copy["published"] = stable_fallback_date(
+                article_copy["published"] = missing_date(
                     article_copy.get("link", "")
                 )
         result.append(article_copy)
@@ -115,7 +108,7 @@ def fetch_page(url: str) -> str:
 def parse_date(value: str | None, fallback_id: str = "") -> datetime:
     """Parse date text/datetime strings into timezone-aware datetime."""
     if not value:
-        return stable_fallback_date(fallback_id)
+        return missing_date(fallback_id)
     try:
         dt = date_parser.parse(value)
         if dt.tzinfo is None:
@@ -123,7 +116,7 @@ def parse_date(value: str | None, fallback_id: str = "") -> datetime:
         return dt
     except (ValueError, TypeError) as exc:
         logger.warning("Unable to parse date %r (%s); using fallback", value, exc)
-        return stable_fallback_date(fallback_id)
+        return missing_date(fallback_id)
 
 
 def clean_text(text: str | None) -> str | None:

@@ -1,24 +1,19 @@
 import sys
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
 from feedgen.feed import FeedGenerator
 import logging
 from pathlib import Path
+
+from utils import missing_date, MissingDateError
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-
-def stable_fallback_date(identifier):
-    """Generate a stable date from a URL or title hash."""
-    hash_val = abs(hash(identifier)) % 730
-    epoch = datetime(2023, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-    return epoch + timedelta(days=hash_val)
 
 
 def get_project_root():
@@ -96,7 +91,7 @@ def parse_blog_page(html_content, base_url="https://hamel.dev"):
                     logger.warning(
                         f"Could not parse date '{date_text}' for post '{title}'"
                     )
-                    pub_date = stable_fallback_date(full_url)
+                    pub_date = missing_date(full_url)
 
                 blog_post = {
                     "title": title,
@@ -108,6 +103,8 @@ def parse_blog_page(html_content, base_url="https://hamel.dev"):
                 blog_posts.append(blog_post)
                 logger.info(f"Parsed post: {title} ({date_text})")
 
+            except MissingDateError:
+                raise
             except Exception as e:
                 logger.warning(f"Error parsing row: {str(e)}")
                 continue

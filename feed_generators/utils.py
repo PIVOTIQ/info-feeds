@@ -92,3 +92,12 @@ def load_published_dates(feed_name: str) -> dict[str, datetime]:
         if guid and pub_date:
             dates[guid] = parsedate_to_datetime(pub_date)
     return dates
+
+
+class MissingDateError(Exception):
+    """A post has no readable date. Generators fail instead of making one up."""
+
+
+def missing_date(identifier: str) -> datetime:
+    """Raise MissingDateError for a post whose date could not be read."""
+    raise MissingDateError(f"No readable date for {identifier}")
