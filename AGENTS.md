@@ -10,6 +10,7 @@ Instructions for Claude Code and contributors working on this repository.
   - [Feed Generator Patterns](#feed-generator-patterns)
   - [When to Use Each Pattern](#when-to-use-each-pattern)
   - [Feed Link Setup (Important)](#feed-link-setup-important)
+  - [Failures and Dates (Important)](#failures-and-dates-important)
 - [Adding a New Feed](#adding-a-new-feed)
   - [Step 1: Analyze the Target Blog](#step-1-analyze-the-target-blog)
   - [Step 2: Download HTML Sample](#step-2-download-html-sample)
@@ -147,6 +148,15 @@ setup_feed_links(fg, blog_url="https://example.com/blog", feed_name="example")
 
 Wrong order produces `<link>https://.../feed_example.xml</link>` instead of the blog URL.
 
+### Failures and Dates (Important)
+
+A broken generator must make `Run Feeds` fail. `run_all_feeds.py` counts a script as failed only when it exits non-zero, and it prints the script's stderr only then.
+
+- `main()` returns `True` on success and `False` on failure, and the script ends with `sys.exit(0 if main() else 1)`
+- Return `False` without writing the feed when no posts are parsed
+- Never make up a date. When a post's date cannot be parsed, report it and return `False` instead of writing a placeholder date. A fake date hides the failure, and a date derived from `hash()` changes on every run because Python salts string hashes per process
+- Log with `logging` (to stderr), not `print`
+
 ## Adding a New Feed
 
 ### Step 1: Analyze the Target Blog
@@ -209,6 +219,9 @@ python feed_generators/<source>_blog.py --full
 - [ ] `<link>` points to blog URL, not feed URL
 - [ ] Posts have titles, dates, and links
 - [ ] Dates are in correct order (newest first)
+- [ ] The script exits 1 when the page structure is broken (e.g. feed it an empty HTML)
+
+This repository has no `verify-*` skill on purpose: each generator is a single command (fetch → parse → write XML), so running the script and reading its XML, plus the parser tests, covers the user's path.
 
 **Add a test** in `tests/test_<source>.py`: save the real page to `tests/fixtures/<source>.html` and check the newest post's date against the post's own page. Do not put tests under `feed_generators/`: `run_all_feeds.py` runs every `.py` file there.
 
@@ -264,7 +277,8 @@ Before submitting your PR, verify:
 
 **Date parsing errors**
 - Add the date format to the `date_formats` list
-- Use `stable_fallback_date()` for entries without parseable dates
+- If the date moved (for example, out of the post's link into a sibling element), read it from the post's container instead
+- Do not fall back to a made-up date: a post without a readable date makes the generator fail
 
 ## GitHub Actions
 
