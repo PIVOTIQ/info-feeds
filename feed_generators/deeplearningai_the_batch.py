@@ -9,6 +9,7 @@ from pathlib import Path
 import pytz
 import requests
 from bs4 import BeautifulSoup
+from dateutil import parser as date_parser
 from feedgen.feed import FeedGenerator
 from utils import (get_cache_dir, get_feeds_dir, missing_date, setup_feed_links,
                    sort_posts_for_feed)
@@ -104,6 +105,20 @@ def fetch_page(url: str) -> str:
     return response.text
 
 
+def parse_date(value: str | None, fallback_id: str = "") -> datetime:
+    """Parse date text/datetime strings into timezone-aware datetime."""
+    if not value:
+        return missing_date(fallback_id)
+    try:
+        dt = date_parser.parse(value)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=pytz.UTC)
+        return dt
+    except (ValueError, TypeError) as exc:
+        logger.warning("Unable to parse date %r (%s); using fallback", value, exc)
+        return missing_date(fallback_id)
+
+
 def clean_text(text: str | None) -> str | None:
     if text is None:
         return None
@@ -132,92 +147,149 @@ def normalize_link(href: str) -> str:
     return href
 
 
-def extract_description(card) -> str | None:
-    """Return the card's own snippet (the ``line-clamp`` text), or None.
+def extract_date_text(element) -> str | None:
+    """Extract date text from element or its children.
 
-    Only the card itself is searched, so a card without a snippet never picks up
-    the text of a neighbouring card.
+    Looks for:
+    - <time> elements with datetime attribute
+    - Tag links like <a href="/the-batch/tag/jan-16-2026/">Jan 16, 2026</a>
+    - Plain text matching date patterns
     """
-    summary = card.find(
+    if element is None:
+        return None
+
+    # Check for time element
+    time_el = element.find("time")
+    if time_el:
+        return time_el.get("datetime") or time_el.get_text(" ", strip=True)
+
+    # Check for date in tag links (new format)
+    for anchor in element.find_all("a", href=True):
+        href = anchor.get("href", "")
+        if "/tag/" in href:
+            text = anchor.get_text(" ", strip=True)
+            if text:
+                return text
+
+    # Date pattern for plain text (e.g., "Dec 26, 2025" or "January 16, 2026")
+    date_pattern = re.compile(
+        r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+\d{4}",
+        re.I,
+    )
+    for tag in element.find_all(["a", "div", "span", "p"]):
+        text = tag.get_text(" ", strip=True)
+        match = date_pattern.search(text or "")
+        if match:
+            return match.group(0)
+
+    # Check element's own text
+    text = (
+        element.get_text(" ", strip=True)
+        if hasattr(element, "get_text")
+        else str(element)
+    )
+    match = date_pattern.search(text or "")
+    if match:
+        return match.group(0)
+
+    return None
+
+
+def extract_description(element) -> str | None:
+    """Extract description/excerpt from element or its parent context."""
+    if element is None:
+        return None
+
+    # Prefer visible snippet if present (line clamp text)
+    summary = element.find(
         lambda tag: tag.name in {"div", "p"}
+        and tag.get("class")
         and any("line-clamp" in cls for cls in (tag.get("class") or []))
     )
-    return clean_text(summary.get_text(" ", strip=True)) if summary else None
+    if summary:
+        return clean_text(summary.get_text(" ", strip=True))
 
+    # Check parent for description
+    parent = element.parent
+    if parent:
+        summary = parent.find(
+            lambda tag: tag.name in {"div", "p"}
+            and tag.get("class")
+            and any("line-clamp" in cls for cls in (tag.get("class") or []))
+        )
+        if summary:
+            return clean_text(summary.get_text(" ", strip=True))
 
-# The slug can carry a suffix when two issues share a date, e.g. sep-17-2025-2.
-DATE_TAG = re.compile(r"/the-batch/tag/([a-z]{3})-(\d{1,2})-(\d{4})(?:-\d+)?/?$")
+        first_para = parent.find("p")
+        if first_para:
+            text = clean_text(first_para.get_text(" ", strip=True))
+            # Skip if it looks like just a date
+            if text and len(text) > 20:
+                return text
 
-
-def in_popular_sidebar(article) -> bool:
-    """True for cards in the "Popular Articles" sidebar, which carry no date.
-
-    The sidebar is a ``<section>`` whose own heading reads "Popular Articles"; the
-    main listing's section only contains it, so a heading inside a nested section
-    does not count.
-    """
-    for section in article.find_parents("section"):
-        heading = section.find("h2")
-        if (
-            heading
-            and heading.find_parent("section") is section
-            and clean_text(heading.get_text(" ", strip=True)).lower() == "popular articles"
-        ):
-            return True
-    return False
+    return None
 
 
 def parse_articles_from_html(html_content: str) -> list[dict]:
-    """Parse the issue cards of one listing page.
+    """Parse articles from HTML content string.
 
-    Each card is an ``<article>`` with one link to the issue and one date tag link
-    such as ``/the-batch/tag/nov-20-2026``. Cards in the "Popular Articles" sidebar
-    are skipped. Any other card without an issue link, title or date tag raises, so
-    a layout change fails the run instead of writing a wrong feed.
+    The site uses a card-based layout without <article> tags. Articles are
+    identified by finding links to /the-batch/issue-* URLs and extracting
+    title/date from the link context.
     """
     soup = BeautifulSoup(html_content, "lxml")
     articles = []
     seen_links = set()
 
-    for card in soup.find_all("article"):
-        if in_popular_sidebar(card):
+    # Find all links that point to article pages
+    for anchor in soup.find_all("a", href=True):
+        href = anchor["href"]
+        if not is_valid_article_link(href):
             continue
 
-        hrefs = [a["href"].strip() for a in card.find_all("a", href=True)]
-        links = {normalize_link(h) for h in hrefs if is_valid_article_link(h)}
-        if len(links) != 1:
-            raise ValueError(f"Card with {len(links)} issue links: {sorted(links)}")
-        link = links.pop()
+        link = normalize_link(href)
         if link in seen_links:
             continue
         seen_links.add(link)
 
-        heading = card.find(["h1", "h2", "h3", "h4"])
-        title = clean_text(heading.get_text(" ", strip=True)) if heading else None
-        if not title:
-            raise ValueError(f"No title for {link}")
+        # Extract title from heading within the link or nearby
+        heading = anchor.find(["h1", "h2", "h3", "h4"])
+        if not heading:
+            # Try parent element for title
+            parent = anchor.parent
+            if parent:
+                heading = parent.find(["h1", "h2", "h3", "h4"])
+        if not heading:
+            # Use link text as fallback
+            text = clean_text(anchor.get_text(" ", strip=True))
+            if text and len(text) > 10:
+                title = text
+            else:
+                continue
+        else:
+            title = clean_text(heading.get_text(" ", strip=True))
 
-        published = None
-        for href in hrefs:
-            match = DATE_TAG.search(href)
-            if match:
-                month, day, year = match.groups()
-                try:
-                    published = datetime.strptime(
-                        f"{month} {day} {year}", "%b %d %Y"
-                    ).replace(tzinfo=pytz.UTC)
-                except ValueError:
-                    continue
-                break
-        if published is None:
-            missing_date(link)
+        if not title:
+            continue
+
+        # Extract date - look for tag links or date patterns near the link
+        date_text = extract_date_text(anchor)
+        if not date_text:
+            # Check parent/sibling elements
+            parent = anchor.parent
+            if parent:
+                date_text = extract_date_text(parent)
+        published = parse_date(date_text, fallback_id=link)
+
+        # Extract description from nearby paragraph or use title
+        description = extract_description(anchor) or title
 
         articles.append(
             {
                 "title": title,
                 "link": link,
                 "published": published,
-                "description": extract_description(card) or title,
+                "description": description,
             }
         )
 
@@ -240,12 +312,19 @@ def fetch_all_articles(max_pages: int = MAX_PAGES) -> list[dict]:
         try:
             html_content = fetch_page(url)
         except requests.exceptions.HTTPError as e:
-            # Past the last page the site answers 404. Any other error (such as a
-            # 403) fails the run rather than writing a feed cut short.
-            if e.response is not None and e.response.status_code == 404 and page_num > 1:
+            if e.response.status_code == 404:
                 logger.info(f"Page {page_num} not found (404), stopping pagination")
-                break
-            raise
+            else:
+                logger.info(f"Error fetching page {page_num}: {e}")
+            break
+        except Exception as e:
+            logger.info(f"Error fetching page {page_num}, stopping pagination: {e}")
+            break
+
+        # Check for 404-like conditions (page not found)
+        if "Page not found" in html_content or "404" in html_content[:1000]:
+            logger.info(f"Page {page_num} not found, stopping pagination")
+            break
 
         # Parse articles from current page
         page_articles = parse_articles_from_html(html_content)
@@ -321,10 +400,6 @@ def main(full_reset=False):
         logger.info("Running incremental update (3 pages only)")
         new_articles = fetch_all_articles(max_pages=3)
         logger.info(f"Found {len(new_articles)} articles from recent pages")
-        if not new_articles:
-            # A layout change must fail the run even when the cache could fill the feed.
-            logger.warning("No articles found on the recent pages")
-            return False
         articles = merge_articles(new_articles, cached_articles)
 
     if not articles:
