@@ -114,9 +114,6 @@ generate_paulgraham_feed: feeds_paulgraham ## (Legacy) Generate Paul Graham feed
 .PHONY: generate_blogsurgeai_feed
 generate_blogsurgeai_feed: feeds_blogsurgeai ## (Legacy) Generate Surge AI Blog feed
 
-.PHONY: generate_xainews_feed
-generate_xainews_feed: feeds_xainews ## (Legacy) Generate xAI News feed
-
 .PHONY: generate_thinkingmachines_feed
 generate_thinkingmachines_feed: feeds_thinkingmachines ## (Legacy) Generate Thinking Machines Lab feed
 
@@ -132,5 +129,3 @@ act_run_feeds_workflow: ci_run_feeds_workflow_local ## (Legacy) Run feeds workfl
 .PHONY: gh_run_feeds_workflow
 gh_run_feeds_workflow: ci_trigger_feeds_workflow ## (Legacy) Trigger feeds workflow on GitHub
 
-.PHONY: generate_the_batch_feed
-generate_the_batch_feed: feeds_the_batch ## (Legacy) Generate The Batch feed
