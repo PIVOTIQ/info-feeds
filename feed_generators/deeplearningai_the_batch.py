@@ -132,39 +132,17 @@ def normalize_link(href: str) -> str:
     return href
 
 
-def extract_description(element) -> str | None:
-    """Extract description/excerpt from element or its parent context."""
-    if element is None:
-        return None
+def extract_description(card) -> str | None:
+    """Return the card's own snippet (the ``line-clamp`` text), or None.
 
-    # Prefer visible snippet if present (line clamp text)
-    summary = element.find(
+    Only the card itself is searched, so a card without a snippet never picks up
+    the text of a neighbouring card.
+    """
+    summary = card.find(
         lambda tag: tag.name in {"div", "p"}
-        and tag.get("class")
         and any("line-clamp" in cls for cls in (tag.get("class") or []))
     )
-    if summary:
-        return clean_text(summary.get_text(" ", strip=True))
-
-    # Check parent for description
-    parent = element.parent
-    if parent:
-        summary = parent.find(
-            lambda tag: tag.name in {"div", "p"}
-            and tag.get("class")
-            and any("line-clamp" in cls for cls in (tag.get("class") or []))
-        )
-        if summary:
-            return clean_text(summary.get_text(" ", strip=True))
-
-        first_para = parent.find("p")
-        if first_para:
-            text = clean_text(first_para.get_text(" ", strip=True))
-            # Skip if it looks like just a date
-            if text and len(text) > 20:
-                return text
-
-    return None
+    return clean_text(summary.get_text(" ", strip=True)) if summary else None
 
 
 # The slug can carry a suffix when two issues share a date, e.g. sep-17-2025-2.
@@ -343,6 +321,10 @@ def main(full_reset=False):
         logger.info("Running incremental update (3 pages only)")
         new_articles = fetch_all_articles(max_pages=3)
         logger.info(f"Found {len(new_articles)} articles from recent pages")
+        if not new_articles:
+            # A layout change must fail the run even when the cache could fill the feed.
+            logger.warning("No articles found on the recent pages")
+            return False
         articles = merge_articles(new_articles, cached_articles)
 
     if not articles:
