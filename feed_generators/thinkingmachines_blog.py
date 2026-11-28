@@ -6,9 +6,11 @@ import pytz
 from feedgen.feed import FeedGenerator
 import logging
 from pathlib import Path
-from dateutil import parser
+from urllib.parse import urljoin
 
-from utils import sort_posts_for_feed, missing_date, MissingDateError
+from utils import sort_posts_for_feed, missing_date
+
+BLOG_URL = "https://thinkingmachines.ai/blog/"
 
 # Set up logging
 logging.basicConfig(
@@ -44,107 +46,79 @@ def fetch_content(url):
 
 
 def parse_date(date_text):
-    """Parse dates with multiple format support."""
+    """Parse a listing date such as "2026-11-13" or "Nov 13, 2026". Returns None if unreadable.
+
+    Formats without a year are not accepted: guessing the year would invent a date.
+    """
     if not date_text:
         return None
 
     date_text = date_text.strip()
-    current_year = datetime.now().year
-
-    # List of date formats to try
-    date_formats = [
-        "%b %d",  # "Nov 7", "Oct 29"
-        "%B %d",  # "November 7", "October 29"
-        "%b %d, %Y",  # "Nov 7, 2025"
-        "%B %d, %Y",  # "November 7, 2025"
-        "%Y-%m-%d",  # "2025-11-07"
-        "%m/%d/%Y",  # "11/07/2025"
-    ]
-
-    for date_format in date_formats:
+    for date_format in ("%Y-%m-%d", "%b %d, %Y", "%B %d, %Y"):
         try:
-            date = datetime.strptime(date_text, date_format)
-            # If the format doesn't include year, add current year
-            if "%Y" not in date_format:
-                date = date.replace(year=current_year)
-            return date.replace(tzinfo=pytz.UTC)
+            return datetime.strptime(date_text, date_format).replace(tzinfo=pytz.UTC)
         except ValueError:
             continue
 
-    # If all formats fail, log warning and return None
     logger.warning(f"Could not parse date: {date_text}")
     return None
 
 
 def extract_articles(soup):
-    """Extract article information from HTML."""
+    """Extract articles from the blog listing.
+
+    Each row is ``li > a.post-item-link`` holding an ``.post-title`` heading and a
+    ``<time datetime="YYYY-MM-DD">``. A row without a link, title or readable date
+    raises, so a layout change fails the run instead of writing a wrong feed.
+    """
     articles = []
     seen_links = set()
 
-    # Find all post items
     post_items = soup.select("li a.post-item-link")
     logger.info(f"Found {len(post_items)} potential articles")
 
     for item in post_items:
-        try:
-            # Extract link
-            href = item.get("href", "")
-            if not href:
-                continue
+        href = item.get("href", "").strip()
+        if not href:
+            raise ValueError("Listing row without a link")
+        link = urljoin(BLOG_URL, href)
+        if link in seen_links:
+            continue
+        seen_links.add(link)
 
-            # Build full URL
-            link = (
-                f"https://thinkingmachines.ai{href}" if href.startswith("/") else href
-            )
+        title_elem = item.select_one(".post-title")
+        title = title_elem.get_text(strip=True) if title_elem else ""
+        if not title:
+            raise ValueError(f"No title for {link}")
 
-            # Skip duplicates
-            if link in seen_links:
-                continue
-            seen_links.add(link)
+        time_elem = item.find("time")
+        date_text = None
+        if time_elem:
+            date_text = time_elem.get("datetime") or time_elem.get_text(strip=True)
+        pub_date = parse_date(date_text) or missing_date(link)
 
-            # Extract date from time element
-            date_elem = item.select_one("time.desktop-time")
-            date_text = date_elem.get_text(strip=True) if date_elem else None
-            pub_date = parse_date(date_text) or missing_date(link)
+        author_elem = item.select_one(".author-date")
+        author_text = author_elem.get_text(strip=True) if author_elem else ""
+        if "·" in author_text:
+            author_text = author_text.split("·")[0].strip()
+        if not author_text:
+            author_text = "Thinking Machines Lab"
 
-            # Extract title
-            title_elem = item.select_one("div.post-title")
-            title = title_elem.get_text(strip=True) if title_elem else "Untitled"
-
-            # Extract author from author-date div
-            author_elem = item.select_one("div.author-date")
-            author_text = ""
-            if author_elem:
-                # Get the text before the mobile date separator
-                author_text = author_elem.get_text(strip=True)
-                # Remove the date part (after the separator)
-                if "·" in author_text:
-                    author_text = author_text.split("·")[0].strip()
-
-            if not author_text:
-                author_text = "Thinking Machines Lab"
-
-            # Create article object
-            article = {
+        articles.append(
+            {
                 "title": title,
                 "link": link,
                 "description": f"{title} by {author_text}",
                 "pub_date": pub_date,
                 "author": author_text,
             }
+        )
+        logger.info(f"Parsed: {title} ({date_text}) by {author_text}")
 
-            articles.append(article)
-            logger.info(f"Parsed: {title} ({date_text}) by {author_text}")
+    if not articles:
+        raise ValueError("No articles found in the listing")
 
-        except MissingDateError:
-            raise
-        except Exception as e:
-            logger.warning(f"Failed to parse article: {str(e)}")
-            continue
-
-    # Sort for correct feed order (newest first in output)
     articles = sort_posts_for_feed(articles, date_field="pub_date")
-
     logger.info(f"Successfully parsed {len(articles)} articles")
     return articles
 
@@ -235,7 +209,7 @@ def main(feed_name="thinkingmachines", html_file=None):
             if not local_file_found:
                 # Fetch from website
                 logger.info("Fetching content from website")
-                html_content = fetch_content("https://thinkingmachines.ai/blog/")
+                html_content = fetch_content(BLOG_URL)
 
         # Parse articles
         articles = parse_html(html_content)
