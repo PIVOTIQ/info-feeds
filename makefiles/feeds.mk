@@ -72,13 +72,6 @@ feeds_blogsurgeai: ## Generate RSS feed for Surge AI Blog
 	$(Q)python feed_generators/blogsurgeai_feed_generator.py
 	$(call print_success,Surge AI Blog feed generated)
 
-.PHONY: feeds_xainews
-feeds_xainews: ## Generate RSS feed for xAI News
-	$(call check_venv)
-	$(call print_info,Generating xAI News feed)
-	$(Q)python feed_generators/xainews_blog.py
-	$(call print_success,xAI News feed generated)
-
 .PHONY: feeds_chanderramesh
 feeds_chanderramesh: ## Generate RSS feed for Chander Ramesh's writing
 	$(call check_venv)
@@ -134,13 +127,6 @@ feeds_windsurf_next_changelog: ## Generate RSS feed for Windsurf Next Changelog
 	$(call print_info,Generating Windsurf Next Changelog feed)
 	$(Q)python feed_generators/windsurf_next_changelog.py
 	$(call print_success,Windsurf Next Changelog feed generated)
-
-.PHONY: feeds_the_batch
-feeds_the_batch: ## Generate RSS feed for The Batch by DeepLearning.AI
-	$(call check_venv)
-	$(call print_info,Generating The Batch feed)
-	$(Q)python feed_generators/deeplearningai_the_batch.py
-	$(call print_success,The Batch feed generated)
 
 .PHONY: feeds_dagster
 feeds_dagster: ## Generate RSS feed for Dagster Blog
